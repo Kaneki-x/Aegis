@@ -18,12 +18,22 @@ Principles, borrowed from the best of Paste:
 
 ## Android mapping
 
+Known gap: the home screen widget is inflated by the launcher, which ignores
+`fontFamily` in RemoteViews on current Pixel launchers, so widget text falls back
+to the system font (bold). Everything else renders in Cue Display.
+
+
 | Token | Where |
 | --- | --- |
 | `color.light.*`, `color.dark.*` | `app/src/main/res/values/colors.xml` (`md_theme_*`), generated from the seed with Material's Fidelity scheme |
 | `color.semantic.code` | `?attr/colorCode` in `themes.xml` |
 | `radius.*` | `cue_radius_*` dimens; `ShapeAppearance.Cue.*` wired into the Material shape attributes |
+| `type.family.display` | `res/font/cue_display.xml` (Manrope statics renamed "Cue Display"; license in `fonts/`) |
 | `type.code.*` | `TextAppearance.Cue.Code.Display / Compact / Inline` |
+| `type.wordmark` | `TextAppearance.Cue.Wordmark`, `ic_cue_logo_small` / `ic_cue_logo_toolbar` |
+| `brand.rule` | `drawable/cue_brand_rule.xml` |
+| `shape.chip` | `Widget.Cue.Chip` (set as the theme's `chipStyle`) |
+| keyboard sheet, card rows, hero | `ime_panel_background`, `cue_card_background`, `cue_card_background_hero` |
 | `space.*` | `cue_space_*` dimens |
 | `brand.gradient`, `brand.mark` | launcher icon layers, `ic_cue_logo`, `ic_cue_mark` |
 | `size.countdownRing`, `motion.countdown` | `drawable/progress_ring.xml` on `TotpProgressBar` (list), `CountdownRingView` (keyboard) |

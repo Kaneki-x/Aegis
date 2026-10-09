@@ -166,7 +166,7 @@ public class AegisWidgetProvider extends AppWidgetProvider {
                     PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
             showMessage(context, views, R.string.widget_no_entries, pendingIntent, false);
         } else {
-            views.setViewVisibility(R.id.widget_message, View.GONE);
+            views.setViewVisibility(R.id.widget_message_box, View.GONE);
             views.setViewVisibility(R.id.widget_lock_icon, View.GONE);
             views.setViewVisibility(R.id.widget_list, View.VISIBLE);
 
@@ -206,10 +206,10 @@ public class AegisWidgetProvider extends AppWidgetProvider {
 
     private static void showMessage(Context context, RemoteViews views, int textRes, PendingIntent onClick, boolean locked) {
         views.setViewVisibility(R.id.widget_list, View.GONE);
-        views.setViewVisibility(R.id.widget_message, View.VISIBLE);
+        views.setViewVisibility(R.id.widget_message_box, View.VISIBLE);
         views.setViewVisibility(R.id.widget_lock_icon, locked ? View.VISIBLE : View.GONE);
         views.setTextViewText(R.id.widget_message, context.getString(textRes));
-        views.setOnClickPendingIntent(R.id.widget_message, onClick);
+        views.setOnClickPendingIntent(R.id.widget_message_box, onClick);
     }
 
     private static PendingIntent createOpenAppIntent(Context context, int requestCode) {

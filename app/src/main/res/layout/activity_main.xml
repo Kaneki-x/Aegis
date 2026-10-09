@@ -18,7 +18,10 @@
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize" />
+            android:layout_height="?attr/actionBarSize"
+            app:logo="@drawable/ic_cue_logo_toolbar"
+            app:titleMarginStart="@dimen/cue_space_3"
+            app:titleTextAppearance="@style/TextAppearance.Cue.Wordmark" />
 
         <HorizontalScrollView
             android:layout_width="match_parent"

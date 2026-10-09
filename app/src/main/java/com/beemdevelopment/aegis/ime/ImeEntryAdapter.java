@@ -1,5 +1,7 @@
 package com.beemdevelopment.aegis.ime;
 
+import android.content.Context;
+import android.content.res.ColorStateList;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,6 +10,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.content.res.AppCompatResources;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.beemdevelopment.aegis.Preferences;
@@ -19,6 +22,7 @@ import com.beemdevelopment.aegis.otp.TotpInfo;
 import com.beemdevelopment.aegis.ui.glide.GlideHelper;
 import com.beemdevelopment.aegis.vault.VaultEntry;
 import com.bumptech.glide.RequestManager;
+import com.google.android.material.color.MaterialColors;
 
 import java.text.BreakIterator;
 import java.util.ArrayList;
@@ -147,7 +151,7 @@ public class ImeEntryAdapter extends RecyclerView.Adapter<ImeEntryAdapter.Holder
 
     @Override
     public void onBindViewHolder(@NonNull Holder holder, int position) {
-        holder.bind(_visible.get(position));
+        holder.bind(_visible.get(position), position == 0);
     }
 
     @Override
@@ -171,6 +175,7 @@ public class ImeEntryAdapter extends RecyclerView.Adapter<ImeEntryAdapter.Holder
         private final ImageView _hotpIcon;
 
         private VaultEntry _entry;
+        private boolean _hero;
 
         Holder(View view) {
             super(view);
@@ -191,7 +196,7 @@ public class ImeEntryAdapter extends RecyclerView.Adapter<ImeEntryAdapter.Holder
             });
         }
 
-        void bind(ImeEntryRanker.Ranked ranked) {
+        void bind(ImeEntryRanker.Ranked ranked, boolean first) {
             _entry = ranked.getEntry();
 
             String issuer = _entry.getIssuer();
@@ -203,8 +208,11 @@ public class ImeEntryAdapter extends RecyclerView.Adapter<ImeEntryAdapter.Holder
             _issuer.setText(issuer);
             _name.setText(name);
             _name.setVisibility(name.isEmpty() ? View.GONE : View.VISIBLE);
-            _suggested.setVisibility(ranked.isSuggested() ? View.VISIBLE : View.GONE);
-            _favoriteIndicator.setVisibility(_entry.isFavorite() ? View.VISIBLE : View.INVISIBLE);
+            // the top suggestion is the hero card, further suggestions just get a pill
+            _hero = ranked.isSuggested() && first;
+            _suggested.setVisibility(ranked.isSuggested() && !_hero ? View.VISIBLE : View.GONE);
+            _favoriteIndicator.setVisibility(_entry.isFavorite() ? View.VISIBLE : View.GONE);
+            applyHero();
 
             OtpInfo info = _entry.getInfo();
             if (info instanceof TotpInfo) {
@@ -240,8 +248,28 @@ public class ImeEntryAdapter extends RecyclerView.Adapter<ImeEntryAdapter.Holder
             }
 
             _code.setText(_hideCodes ? CodeFormatHelper.hide(code) : code);
-            _code.setTextColor(com.google.android.material.color.MaterialColors.getColor(_code,
-                    _hideCodes ? R.attr.colorCodeHidden : R.attr.colorCode));
+            if (_hero) {
+                _code.setTextColor(_hideCodes ? 0x99FFFFFF : 0xFFFFFFFF);
+            } else {
+                _code.setTextColor(MaterialColors.getColor(_code, _hideCodes ? R.attr.colorCodeHidden : R.attr.colorCode));
+            }
+        }
+
+        /**
+         * The suggested entry is the one tinted card: brand gradient with white text.
+         */
+        private void applyHero() {
+            Context context = itemView.getContext();
+            itemView.setBackground(AppCompatResources.getDrawable(context,
+                    _hero ? R.drawable.cue_card_background_hero : R.drawable.cue_card_background));
+            int onSurface = MaterialColors.getColor(itemView, com.google.android.material.R.attr.colorOnSurface);
+            int onSurfaceVariant = MaterialColors.getColor(itemView, com.google.android.material.R.attr.colorOnSurfaceVariant);
+            _issuer.setTextColor(_hero ? 0xFFFFFFFF : onSurface);
+            _name.setTextColor(_hero ? 0xCCFFFFFF : onSurfaceVariant);
+            _suggested.setTextColor(_hero ? 0xFFFFFFFF : MaterialColors.getColor(itemView, androidx.appcompat.R.attr.colorPrimary));
+            _suggested.setBackgroundTintList(_hero ? ColorStateList.valueOf(0x33FFFFFF) : null);
+            _ring.setHero(_hero);
+            _hotpIcon.setImageTintList(ColorStateList.valueOf(_hero ? 0xFFFFFFFF : onSurfaceVariant));
         }
 
         void recycle() {

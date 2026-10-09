@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="widget_background">@color/md_theme_dark_surfaceContainerLow</color>
+    <color name="widget_background">@color/md_theme_dark_surface</color>
     <color name="widget_on_surface">@color/md_theme_dark_onSurface</color>
     <color name="widget_on_surface_variant">@color/md_theme_dark_onSurfaceVariant</color>
     <color name="widget_primary">@color/md_theme_dark_primary</color>
     <color name="widget_code_hidden">@color/md_theme_dark_outlineVariant</color>
+    <color name="widget_card">@color/md_theme_dark_surfaceContainerLow</color>
     <color name="widget_ripple">#33FFFFFF</color>
 </resources>

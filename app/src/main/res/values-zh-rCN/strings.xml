@@ -571,6 +571,7 @@
     <string name="ime_no_entries">数据库中还没有条目</string>
     <string name="ime_no_matches">没有符合此筛选的条目</string>
     <string name="ime_filter_favorites">收藏</string>
+    <string name="ime_suggested">推荐</string>
     <string name="ime_own_app_hint">请切换到其他键盘在此输入</string>
     <string name="widget_label">Cue 验证码</string>
     <string name="widget_description">显示收藏或所选条目的验证码，点击后才会显示。</string>

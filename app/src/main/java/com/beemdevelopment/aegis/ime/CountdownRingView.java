@@ -28,6 +28,9 @@ public class CountdownRingView extends View {
     private final int _colorNormal;
     private final int _colorExpiring;
 
+    private final int _colorTrack;
+    private boolean _hero;
+
     private long _periodMillis = TotpInfo.DEFAULT_PERIOD * 1000L;
     private long _lastSlot = -1;
     private Listener _listener;
@@ -42,16 +45,25 @@ public class CountdownRingView extends View {
         float stroke = getResources().getDisplayMetrics().density * 2.5f;
         _colorNormal = MaterialColors.getColor(this, R.attr.colorProgressbar);
         _colorExpiring = MaterialColors.getColor(this, androidx.appcompat.R.attr.colorError);
-        int colorTrack = MaterialColors.getColor(this, com.google.android.material.R.attr.colorSurfaceContainerHighest);
+        _colorTrack = MaterialColors.getColor(this, com.google.android.material.R.attr.colorSurfaceContainerHighest);
 
         _trackPaint.setStyle(Paint.Style.STROKE);
         _trackPaint.setStrokeWidth(stroke);
-        _trackPaint.setColor(colorTrack);
+        _trackPaint.setColor(_colorTrack);
 
         _arcPaint.setStyle(Paint.Style.STROKE);
         _arcPaint.setStrokeWidth(stroke);
         _arcPaint.setStrokeCap(Paint.Cap.ROUND);
         _arcPaint.setColor(_colorNormal);
+    }
+
+    /**
+     * On the brand-colored hero card the ring is drawn in white.
+     */
+    public void setHero(boolean hero) {
+        _hero = hero;
+        _trackPaint.setColor(hero ? 0x55FFFFFF : _colorTrack);
+        invalidate();
     }
 
     public void setPeriod(int periodSeconds) {
@@ -86,7 +98,8 @@ public class CountdownRingView extends View {
         }
         _lastSlot = slot;
 
-        _arcPaint.setColor(remaining <= EXPIRING_MILLIS ? _colorExpiring : _colorNormal);
+        int arcColor = remaining <= EXPIRING_MILLIS ? _colorExpiring : _colorNormal;
+        _arcPaint.setColor(_hero ? (remaining <= EXPIRING_MILLIS ? 0xFFFFD6D6 : 0xFFFFFFFF) : arcColor);
         canvas.drawOval(_rect, _trackPaint);
         canvas.drawArc(_rect, -90, 360 * fraction, false, _arcPaint);
 

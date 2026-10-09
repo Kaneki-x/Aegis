@@ -9,6 +9,7 @@
     <attr name="colorOnSurfaceDim" />
     <attr name="colorCode" />
     <attr name="colorCodeHidden" />
+    <attr name="cueCardStrokeWidth" format="dimension" />
 
     <declare-styleable name="SlideIndicator">
         <attr name="dot_radius" format="dimension" />

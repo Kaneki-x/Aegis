@@ -1034,6 +1034,7 @@ public class MainActivity extends AegisActivity implements EntryListView.Listene
             @Override
             public boolean onQueryTextSubmit(String s) {
                 setTitle(getString(R.string.search));
+                setToolbarLogoVisible(false);
                 getSupportActionBar().setSubtitle(s);
                 _entryListView.setSearchFilter(s);
                 _pendingSearchQuery = null;
@@ -1069,6 +1070,7 @@ public class MainActivity extends AegisActivity implements EntryListView.Listene
             _searchViewBackPressHandler.setEnabled(true);
         } else if (_submittedSearchQuery != null) {
             setTitle(getString(R.string.search));
+                setToolbarLogoVisible(false);
             getSupportActionBar().setSubtitle(_submittedSearchQuery);
             _entryListView.setSearchFilter(_submittedSearchQuery);
             _searchViewBackPressHandler.setEnabled(true);
@@ -1122,6 +1124,13 @@ public class MainActivity extends AegisActivity implements EntryListView.Listene
         }
 
         return true;
+    }
+
+    private void setToolbarLogoVisible(boolean visible) {
+        androidx.appcompat.widget.Toolbar toolbar = findViewById(R.id.toolbar);
+        if (toolbar != null) {
+            toolbar.setLogo(visible ? R.drawable.ic_cue_logo_toolbar : 0);
+        }
     }
 
     private void collapseSearchView() {
@@ -1409,6 +1418,7 @@ public class MainActivity extends AegisActivity implements EntryListView.Listene
 
                 collapseSearchView();
                 setTitle(R.string.app_name);
+                setToolbarLogoVisible(true);
                 getSupportActionBar().setSubtitle(null);
             }
         }

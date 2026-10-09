@@ -441,6 +441,7 @@
     <string name="ime_no_entries">No entries in your vault yet</string>
     <string name="ime_no_matches">No entries match this filter</string>
     <string name="ime_filter_favorites">Favorites</string>
+    <string name="ime_suggested" comment="small label on a keyboard row whose entry matches the app asking for input">Suggested</string>
     <string name="ime_own_app_hint">Switch to another keyboard to type here</string>
     <string name="widget_label" comment="name of the home screen widget in the widget picker">Cue</string>
     <string name="widget_description">Codes of your favorite or selected entries, hidden until you tap them.</string>

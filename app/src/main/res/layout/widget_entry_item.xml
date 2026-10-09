@@ -1,77 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/widget_row"
     android:layout_width="match_parent"
-    android:layout_height="46dp"
-    android:background="@drawable/widget_row_background"
-    android:gravity="center_vertical"
-    android:orientation="horizontal"
-    android:paddingStart="8dp"
-    android:paddingEnd="10dp">
-
-    <ImageView
-        android:id="@+id/widget_icon"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:importantForAccessibility="no" />
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp">
 
     <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_weight="1"
-        android:orientation="vertical">
+        android:id="@+id/widget_row"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/widget_row_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="8dp"
+        android:paddingEnd="12dp">
+
+        <ImageView
+            android:id="@+id/widget_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:importantForAccessibility="no" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/widget_issuer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:textColor="@color/widget_on_surface"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                tools:text="GitHub" />
+
+            <TextView
+                android:id="@+id/widget_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:ellipsize="end"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:textColor="@color/widget_on_surface_variant"
+                android:textSize="11sp"
+                tools:text="someone@example.com" />
+        </LinearLayout>
 
         <TextView
-            android:id="@+id/widget_issuer"
-            android:layout_width="match_parent"
+            android:id="@+id/widget_code"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:ellipsize="end"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/cue_display_bold"
+            android:fontFeatureSettings="tnum"
             android:includeFontPadding="false"
-            android:maxLines="1"
-            android:textColor="@color/widget_on_surface"
-            android:textSize="13sp"
+            android:layoutDirection="ltr"
+            android:letterSpacing="0.01"
+            android:textColor="@color/widget_primary"
+            android:textSize="19sp"
             android:textStyle="bold"
-            tools:text="GitHub" />
+            tools:text="123 456" />
 
-        <TextView
-            android:id="@+id/widget_name"
-            android:layout_width="match_parent"
+        <Chronometer
+            android:id="@+id/widget_countdown"
+            android:layout_width="34dp"
             android:layout_height="wrap_content"
-            android:ellipsize="end"
+            android:layout_marginStart="6dp"
+            android:fontFamily="@font/cue_display_semibold"
+            android:gravity="end"
             android:includeFontPadding="false"
-            android:maxLines="1"
             android:textColor="@color/widget_on_surface_variant"
             android:textSize="11sp"
-            tools:text="someone@example.com" />
+            android:visibility="gone"
+            tools:text="0:27"
+            tools:visibility="visible" />
     </LinearLayout>
-
-    <TextView
-        android:id="@+id/widget_code"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:fontFamily="sans-serif"
-        android:fontFeatureSettings="tnum"
-        android:includeFontPadding="false"
-        android:layoutDirection="ltr"
-        android:letterSpacing="0.04"
-        android:textColor="@color/widget_primary"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        tools:text="123 456" />
-
-    <Chronometer
-        android:id="@+id/widget_countdown"
-        android:layout_width="34dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="6dp"
-        android:gravity="end"
-        android:includeFontPadding="false"
-        android:textColor="@color/widget_on_surface_variant"
-        android:textSize="11sp"
-        android:visibility="gone"
-        tools:text="0:27"
-        tools:visibility="visible" />
-</LinearLayout>
+</FrameLayout>

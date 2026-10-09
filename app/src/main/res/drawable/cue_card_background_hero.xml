@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The suggested entry in the keyboard: the one tinted card -->
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="#33FFFFFF">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="0"
+                android:endColor="@color/cue_brand_end"
+                android:startColor="@color/cue_brand_start"
+                android:type="linear" />
+            <corners android:radius="@dimen/cue_radius_small_plus" />
+        </shape>
+    </item>
+</ripple>

@@ -1,41 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="UseAppTint"
     android:layout_width="match_parent"
     android:layout_height="@dimen/ime_panel_height"
-    android:orientation="vertical"
-    android:background="?attr/colorSurfaceContainerLow">
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:orientation="horizontal"
+        android:layout_height="48dp"
         android:gravity="center_vertical"
-        android:paddingStart="14dp"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/cue_space_4"
         android:paddingEnd="@dimen/cue_space_1">
 
         <ImageView
-            android:layout_width="18dp"
-            android:layout_height="18dp"
-            android:src="@drawable/ic_cue_mark"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
             android:importantForAccessibility="no"
-            app:tint="?attr/colorPrimary" />
+            android:src="@drawable/ic_cue_logo_small" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/cue_space_2"
+            android:includeFontPadding="false"
             android:text="@string/app_name"
-            android:textColor="?attr/colorOnSurface"
-            android:textSize="14sp"
-            android:textStyle="bold" />
+            android:textAppearance="@style/TextAppearance.Cue.Wordmark.Small" />
 
         <TextView
             android:id="@+id/header_hint"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_marginStart="@dimen/cue_space_3"
+            android:layout_weight="1"
             android:ellipsize="end"
             android:maxLines="1"
             android:textColor="?attr/colorOnSurfaceVariant"
@@ -48,7 +47,7 @@
             android:background="?attr/selectableItemBackgroundBorderless"
             android:contentDescription="@string/ime_open_app"
             android:src="@drawable/ic_outline_open_in_new_24"
-            app:tint="?attr/colorOnSurfaceVariant" />
+            android:tint="?attr/colorOnSurfaceVariant" />
 
         <ImageButton
             android:id="@+id/btn_switch_keyboard"
@@ -57,8 +56,16 @@
             android:background="?attr/selectableItemBackgroundBorderless"
             android:contentDescription="@string/ime_switch_keyboard"
             android:src="@drawable/ic_outline_keyboard_24"
-            app:tint="?attr/colorOnSurfaceVariant" />
+            android:tint="?attr/colorOnSurfaceVariant" />
     </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="@dimen/cue_space_4"
+        android:layout_marginEnd="@dimen/cue_space_4"
+        android:alpha="0.7"
+        android:background="@drawable/cue_brand_rule" />
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -70,8 +77,11 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:clipToPadding="false"
+            android:paddingStart="@dimen/cue_space_3"
+            android:paddingTop="@dimen/cue_space_2"
+            android:paddingEnd="@dimen/cue_space_3"
             android:paddingBottom="@dimen/cue_space_1"
-            android:scrollbars="vertical" />
+            android:scrollbars="none" />
 
         <LinearLayout
             android:id="@+id/state_view"
@@ -84,43 +94,45 @@
 
             <ImageView
                 android:id="@+id/state_icon"
-                android:layout_width="28dp"
-                android:layout_height="28dp"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
                 android:importantForAccessibility="no"
-                app:tint="?attr/colorOnSurfaceVariant" />
+                android:tint="?attr/colorOnSurfaceVariant" />
 
             <TextView
                 android:id="@+id/state_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="6dp"
+                android:layout_marginTop="@dimen/cue_space_2"
                 android:gravity="center"
-                android:textColor="?attr/colorOnSurfaceVariant"
-                android:textSize="14sp" />
+                android:textAppearance="@style/TextAppearance.Cue.Title"
+                android:textColor="?attr/colorOnSurfaceVariant" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/state_button"
-                style="@style/Widget.Material3.Button.TonalButton"
+                style="@style/Widget.Material3.Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/cue_space_2"
-                android:minWidth="140dp" />
+                android:layout_marginTop="@dimen/cue_space_3"
+                android:minWidth="160dp"
+                android:fontFamily="@font/cue_display"
+                android:textStyle="bold" />
         </LinearLayout>
     </FrameLayout>
 
     <HorizontalScrollView
         android:layout_width="match_parent"
-        android:layout_height="44dp"
-        android:scrollbars="none"
-        android:fillViewport="true">
+        android:layout_height="46dp"
+        android:fillViewport="true"
+        android:scrollbars="none">
 
         <com.google.android.material.chip.ChipGroup
             android:id="@+id/chips"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:paddingStart="@dimen/cue_space_2"
-            android:paddingEnd="@dimen/cue_space_2"
-            app:chipSpacingHorizontal="4dp"
+            android:paddingStart="@dimen/cue_space_3"
+            android:paddingEnd="@dimen/cue_space_3"
+            app:chipSpacingHorizontal="6dp"
             app:selectionRequired="true"
             app:singleLine="true"
             app:singleSelection="true" />

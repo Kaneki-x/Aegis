@@ -5,5 +5,6 @@
     <color name="widget_on_surface_variant">@color/md_theme_light_onSurfaceVariant</color>
     <color name="widget_primary">@color/md_theme_light_primary</color>
     <color name="widget_code_hidden">@color/md_theme_light_outlineVariant</color>
+    <color name="widget_card">@color/md_theme_light_surfaceContainerLowest</color>
     <color name="widget_ripple">#1F000000</color>
 </resources>

@@ -56,7 +56,7 @@ public enum ViewMode {
     }
 
     public String getFormattedAccountName(String accountName) {
-        if (this == ViewMode.TILES) {
+        if (this == ViewMode.TILES || this == ViewMode.NORMAL) {
             return accountName;
         }
 

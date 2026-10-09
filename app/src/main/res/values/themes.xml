@@ -66,6 +66,8 @@
         <!-- Intro colors -->
         <item name="dot_color">?attr/colorSurfaceVariant</item>
         <item name="dot_color_selected">?attr/colorOnSurfaceVariant</item>
+        <item name="cueCardStrokeWidth">0dp</item>
+        <item name="chipStyle">@style/Widget.Cue.Chip</item>
         <!-- Cue shape tokens: cards 16dp, chips 8dp, sheets and dialogs 28dp -->
         <item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Cue.Small</item>
         <item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Cue.Medium</item>
@@ -142,6 +144,8 @@
         <!-- Intro colors -->
         <item name="dot_color">?attr/colorSurfaceVariant</item>
         <item name="dot_color_selected">?attr/colorOnSurfaceVariant</item>
+        <item name="cueCardStrokeWidth">0dp</item>
+        <item name="chipStyle">@style/Widget.Cue.Chip</item>
         <!-- Cue shape tokens: cards 16dp, chips 8dp, sheets and dialogs 28dp -->
         <item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Cue.Small</item>
         <item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Cue.Medium</item>
@@ -173,6 +177,7 @@
         <item name="colorCode">@android:color/white</item>
         <item name="colorCodeHidden">#2F2F2F</item>
         <item name="colorProgressbar">@android:color/white</item>
+        <item name="cueCardStrokeWidth">1dp</item>
     </style>
 
     <style name="ThemeOverlay.Aegis.Dynamic.Dark" parent="ThemeOverlay.Material3.DynamicColors.Dark">
@@ -226,6 +231,8 @@
 
     <style name="Widget.Aegis.EntryCardView" parent="Widget.Material3.CardView.Elevated">
         <item name="materialThemeOverlay">@style/ThemeOverlay.Aegis.EntryCardView</item>
+        <item name="strokeWidth">?attr/cueCardStrokeWidth</item>
+        <item name="strokeColor">?attr/colorOutlineVariant</item>
     </style>
 
     <style name="Widget.Aegis.CompactEntryCardView" parent="Widget.Material3.CardView.Elevated">
@@ -303,11 +310,46 @@
 
     <!-- Cue type tokens: one-time codes are bold, tabular digits with a little tracking -->
     <style name="TextAppearance.Cue.Code" parent="TextAppearance.Material3.HeadlineMedium">
-        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:fontFamily">@font/cue_display</item>
+        <item name="fontFamily">@font/cue_display</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">?attr/colorCode</item>
-        <item name="android:letterSpacing">0.02</item>
+        <item name="android:letterSpacing">0.01</item>
         <item name="android:fontFeatureSettings">tnum</item>
+    </style>
+
+    <!-- Headings in the display face; body text stays on the system font -->
+    <style name="TextAppearance.Cue.Title" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:fontFamily">@font/cue_display</item>
+        <item name="fontFamily">@font/cue_display</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+    <style name="TextAppearance.Cue.Wordmark" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:fontFamily">@font/cue_display_extrabold</item>
+        <item name="fontFamily">@font/cue_display_extrabold</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+    <style name="TextAppearance.Cue.Wordmark.Small">
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <!-- Pill chips instead of Material filter chips -->
+    <style name="Widget.Cue.Chip" parent="Widget.Material3.Chip.Filter">
+        <item name="chipBackgroundColor">@color/cue_chip_background</item>
+        <item name="android:textColor">@color/cue_chip_text</item>
+        <item name="chipStrokeWidth">0dp</item>
+        <item name="chipCornerRadius">16dp</item>
+        <item name="chipMinHeight">32dp</item>
+        <item name="checkedIconVisible">false</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">@font/cue_display</item>
+        <item name="fontFamily">@font/cue_display</item>
+        <item name="android:textStyle">bold</item>
+        <item name="rippleColor">?attr/colorPrimary</item>
     </style>
     <style name="TextAppearance.Cue.Code.Display">
         <item name="android:textSize">@dimen/cue_code_display</item>

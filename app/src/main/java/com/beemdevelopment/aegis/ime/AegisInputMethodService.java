@@ -2,6 +2,8 @@ package com.beemdevelopment.aegis.ime;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.inputmethodservice.InputMethodService;
 import android.os.Build;
 import android.os.IBinder;
@@ -20,6 +22,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.content.res.AppCompatResources;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -143,7 +146,12 @@ public class AegisInputMethodService extends InputMethodService
         // the list grow to its full length. Pin the panel to a keyboard-like height and
         // keep it clear of the (gesture) navigation bar.
         FrameLayout wrapper = new FrameLayout(context);
-        wrapper.setBackgroundColor(MaterialColors.getColor(_root, com.google.android.material.R.attr.colorSurfaceContainerLow));
+        wrapper.setBackground(AppCompatResources.getDrawable(context, R.drawable.ime_panel_background));
+        Window window = getWindow() != null ? getWindow().getWindow() : null;
+        if (window != null) {
+            // let the rounded top of the panel show the app behind it
+            window.setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        }
         int height = getResources().getDimensionPixelSize(R.dimen.ime_panel_height);
         wrapper.addView(_root, new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, height));
         ViewCompat.setOnApplyWindowInsetsListener(wrapper, (v, insets) -> {
@@ -220,7 +228,7 @@ public class AegisInputMethodService extends InputMethodService
         }
 
         if (_vaultManager.isVaultInitNeeded()) {
-            showState(R.drawable.ic_cue_mark, R.string.ime_setup_required, R.string.ime_open_app, v -> openApp());
+            showState(R.drawable.ic_cue_logo_small, R.string.ime_setup_required, R.string.ime_open_app, v -> openApp());
             return;
         }
 
@@ -309,7 +317,8 @@ public class AegisInputMethodService extends InputMethodService
 
         _list.setVisibility(View.GONE);
         _stateView.setVisibility(View.VISIBLE);
-        _stateIcon.setImageResource(R.drawable.ic_cue_mark);
+        _stateIcon.setImageResource(R.drawable.ic_cue_logo_small);
+        _stateIcon.setImageTintList(null);
         _stateText.setText(_adapter.hasEntries() ? R.string.ime_no_matches : R.string.ime_no_entries);
         _stateButton.setVisibility(View.GONE);
     }
@@ -320,6 +329,8 @@ public class AegisInputMethodService extends InputMethodService
         _headerHint.setText("");
         _stateView.setVisibility(View.VISIBLE);
         _stateIcon.setImageResource(iconRes);
+        _stateIcon.setImageTintList(iconRes == R.drawable.ic_cue_logo_small ? null
+                : android.content.res.ColorStateList.valueOf(MaterialColors.getColor(_stateIcon, com.google.android.material.R.attr.colorOnSurfaceVariant)));
         _stateText.setText(textRes);
         _stateButton.setVisibility(View.VISIBLE);
         _stateButton.setText(buttonRes);
