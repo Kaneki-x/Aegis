@@ -135,6 +135,14 @@
         <item>@string/pref_auto_lock_type_device_lock</item>
     </string-array>
 
+    <string-array name="pref_external_grace_entries">
+        <item>@string/pref_external_grace_none</item>
+        <item>@string/pref_external_grace_30s</item>
+        <item>@string/pref_external_grace_1m</item>
+        <item>@string/pref_external_grace_5m</item>
+        <item>@string/pref_external_grace_15m</item>
+    </string-array>
+
     <string-array name="pref_search_behavior_types">
         <item>@string/pref_search_behavior_type_issuer</item>
         <item>@string/pref_search_behavior_type_name</item>

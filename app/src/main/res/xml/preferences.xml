@@ -17,6 +17,12 @@
         app:summary="@string/pref_section_behavior_summary" />
 
     <Preference
+        android:fragment="com.beemdevelopment.aegis.ui.fragments.preferences.IntegrationsPreferencesFragment"
+        app:icon="@drawable/ic_outline_keyboard_24"
+        app:title="@string/pref_section_integrations_title"
+        app:summary="@string/pref_section_integrations_summary" />
+
+    <Preference
         android:fragment="com.beemdevelopment.aegis.ui.fragments.preferences.IconPacksManagerFragment"
         android:title="@string/pref_section_icon_packs"
         android:summary="@string/pref_section_icon_packs_summary"

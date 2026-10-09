@@ -27,6 +27,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
+import java.util.Collection;
 import java.util.Set;
 import java.util.UUID;
 
@@ -238,6 +239,75 @@ public class Preferences {
 
     public int getTapToRevealTime() {
         return _prefs.getInt("pref_tap_to_reveal_time", 30);
+    }
+
+    /**
+     * How long the vault stays accessible to the input method and widget after they were
+     * last used, when auto lock on minimize is enabled. 0 means: lock immediately.
+     */
+    public long getExternalAccessGraceMillis() {
+        return _prefs.getInt("pref_external_access_grace", 0) * 1000L;
+    }
+
+    public void setExternalAccessGraceSeconds(int seconds) {
+        _prefs.edit().putInt("pref_external_access_grace", seconds).apply();
+    }
+
+    public int getExternalAccessGraceSeconds() {
+        return _prefs.getInt("pref_external_access_grace", 0);
+    }
+
+    public boolean isWidgetFavoritesMode(int widgetId) {
+        return _prefs.getBoolean(String.format(Locale.ROOT, "pref_widget_%d_favorites", widgetId), true);
+    }
+
+    public void setWidgetFavoritesMode(int widgetId, boolean favorites) {
+        _prefs.edit().putBoolean(String.format(Locale.ROOT, "pref_widget_%d_favorites", widgetId), favorites).apply();
+    }
+
+    public List<UUID> getWidgetEntries(int widgetId) {
+        List<UUID> uuids = new ArrayList<>();
+        String json = _prefs.getString(String.format(Locale.ROOT, "pref_widget_%d_entries", widgetId), "");
+        try {
+            JSONArray arr = new JSONArray(json);
+            for (int i = 0; i < arr.length(); i++) {
+                uuids.add(UUID.fromString(arr.getString(i)));
+            }
+        } catch (JSONException | IllegalArgumentException ignored) {
+        }
+        return uuids;
+    }
+
+    public void setWidgetEntries(int widgetId, Collection<UUID> uuids) {
+        JSONArray arr = new JSONArray();
+        for (UUID uuid : uuids) {
+            arr.put(uuid.toString());
+        }
+        _prefs.edit().putString(String.format(Locale.ROOT, "pref_widget_%d_entries", widgetId), arr.toString()).apply();
+    }
+
+    public void clearWidget(int widgetId) {
+        _prefs.edit()
+                .remove(String.format(Locale.ROOT, "pref_widget_%d_entries", widgetId))
+                .remove(String.format(Locale.ROOT, "pref_widget_%d_favorites", widgetId))
+                .apply();
+    }
+
+    public boolean isImeSwitchBackEnabled() {
+        return _prefs.getBoolean("pref_ime_switch_back", true);
+    }
+
+    public boolean isImeSuggestByAppEnabled() {
+        return _prefs.getBoolean("pref_ime_suggest_by_app", true);
+    }
+
+    /**
+     * Whether the input method should insert codes as a single text commit instead of
+     * individual key presses. Key presses work with most "one box per digit" forms, text
+     * commits do not.
+     */
+    public boolean isImeInsertAsTextEnabled() {
+        return _prefs.getBoolean("pref_ime_insert_as_text", false);
     }
 
     public Theme getCurrentTheme() {

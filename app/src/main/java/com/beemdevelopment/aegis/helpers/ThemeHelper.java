@@ -1,15 +1,20 @@
 package com.beemdevelopment.aegis.helpers;
 
+import android.content.Context;
 import android.content.res.Configuration;
+
+import androidx.appcompat.view.ContextThemeWrapper;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.beemdevelopment.aegis.Preferences;
 import com.beemdevelopment.aegis.R;
 import com.beemdevelopment.aegis.Theme;
+import com.beemdevelopment.aegis.ThemeMap;
 import com.google.android.material.color.DynamicColors;
 import com.google.android.material.color.DynamicColorsOptions;
 
+import java.util.Locale;
 import java.util.Map;
 
 public class ThemeHelper {
@@ -42,10 +47,18 @@ public class ThemeHelper {
     }
 
     public Theme getConfiguredTheme() {
-        Theme theme = _prefs.getCurrentTheme();
+        return getConfiguredTheme(_activity, _prefs);
+    }
+
+    /**
+     * Resolves the theme configured by the user to a concrete theme, taking the current
+     * night mode of the given context into account.
+     */
+    public static Theme getConfiguredTheme(Context context, Preferences prefs) {
+        Theme theme = prefs.getCurrentTheme();
 
         if (theme == Theme.SYSTEM || theme == Theme.SYSTEM_AMOLED) {
-            int currentNightMode = _activity.getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK;
+            int currentNightMode = context.getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK;
             if (currentNightMode == Configuration.UI_MODE_NIGHT_YES) {
                 theme = theme == Theme.SYSTEM_AMOLED ? Theme.AMOLED : Theme.DARK;
             } else {
@@ -54,5 +67,41 @@ public class ThemeHelper {
         }
 
         return theme;
+    }
+
+    /**
+     * Creates a context that carries the user's theme, dynamic colors and locale. Used by
+     * components that don't have an Activity, such as the input method.
+     */
+    public static Context createThemedContext(Context base, Preferences prefs) {
+        Locale locale = prefs.getLocale();
+        Configuration config = new Configuration(base.getResources().getConfiguration());
+        config.setLocale(locale);
+        Context context = base.createConfigurationContext(config);
+
+        Theme theme = getConfiguredTheme(context, prefs);
+        context = new ContextThemeWrapper(context, ThemeMap.DEFAULT.get(theme));
+
+        if (prefs.isDynamicColorsEnabled()) {
+            if (theme == Theme.AMOLED) {
+                context = DynamicColors.wrapContextIfAvailable(context, R.style.ThemeOverlay_Aegis_Dynamic_Amoled);
+            } else if (theme == Theme.DARK) {
+                context = DynamicColors.wrapContextIfAvailable(context, R.style.ThemeOverlay_Aegis_Dynamic_Dark);
+            } else {
+                context = DynamicColors.wrapContextIfAvailable(context);
+            }
+        }
+
+        return context;
+    }
+
+    /**
+     * Returns a string that changes whenever createThemedContext would produce a
+     * differently themed context, so that callers know when to re-inflate their views.
+     */
+    public static String getThemeKey(Context context, Preferences prefs) {
+        return getConfiguredTheme(context, prefs).name()
+                + "/" + prefs.isDynamicColorsEnabled()
+                + "/" + prefs.getLocale();
     }
 }

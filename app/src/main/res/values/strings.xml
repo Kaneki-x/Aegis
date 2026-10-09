@@ -431,6 +431,50 @@
     <string name="select_icon">Select icon</string>
     <string name="tile_open_vault" comment="label for a quick settings tile that opens the app when tapped">Open vault</string>
     <string name="tile_open_scanner" comment="label for a quick settings tile that opens the QR code scanner when tapped">Open scanner</string>
+    <string name="ime_label" comment="name of the Aegis input method as shown in the system keyboard picker">Aegis codes</string>
+    <string name="ime_hint_suggested_for" comment="shown in the keyboard header, %s is the name of the app that asks for input">Suggested for %s</string>
+    <string name="ime_vault_locked">Vault is locked</string>
+    <string name="ime_setup_required">Set up Aegis before using the keyboard</string>
+    <string name="ime_open_app">Open Aegis</string>
+    <string name="ime_switch_keyboard">Switch keyboard</string>
+    <string name="ime_no_entries">No entries in your vault yet</string>
+    <string name="ime_no_matches">No entries match this filter</string>
+    <string name="ime_filter_favorites">Favorites</string>
+    <string name="ime_own_app_hint">Switch to another keyboard to type here</string>
+    <string name="widget_label" comment="name of the home screen widget in the widget picker">Aegis codes</string>
+    <string name="widget_description">Codes of your favorite or selected entries, hidden until you tap them.</string>
+    <string name="widget_locked">Vault is locked. Tap to unlock.</string>
+    <string name="widget_no_entries">No entries to show. Tap to choose entries.</string>
+    <string name="widget_setup_required">Open Aegis to set up your vault first.</string>
+    <string name="widget_configure_title">Choose entries</string>
+    <string name="widget_configure_favorites_title">Show favorites</string>
+    <string name="widget_configure_favorites_summary">The widget follows your favorites automatically</string>
+    <string name="widget_configure_select_hint">Select the entries to show in the widget</string>
+
+    <string name="pref_section_integrations_title">Keyboard &amp; widget</string>
+    <string name="pref_section_integrations_summary">Insert codes with the Aegis keyboard and show them on your home screen.</string>
+    <string name="pref_cat_ime">Keyboard</string>
+    <string name="pref_cat_widget">Widget</string>
+    <string name="pref_ime_enable_title">Enable Aegis keyboard</string>
+    <string name="pref_ime_enable_summary_enabled">Enabled. Switch to it from your keyboard\'s keyboard picker when a code is asked for.</string>
+    <string name="pref_ime_enable_summary_disabled">Not enabled. Tap to enable it in the system keyboard settings.</string>
+    <string name="pref_ime_switch_back_title">Switch back after inserting</string>
+    <string name="pref_ime_switch_back_summary">Return to the previous keyboard once a code has been inserted</string>
+    <string name="pref_ime_suggest_by_app_title">Suggest entries for the current app</string>
+    <string name="pref_ime_suggest_by_app_summary">Show entries that match the name of the app you\'re typing in first. Doesn\'t work in browsers.</string>
+    <string name="pref_ime_insert_as_text_title">Insert codes as text</string>
+    <string name="pref_ime_insert_as_text_summary">Insert the whole code at once instead of typing it digit by digit. Try this if codes don\'t show up in some apps.</string>
+    <string name="pref_widget_add_title">Add widget to home screen</string>
+    <string name="pref_widget_add_summary">Shows the codes of your favorites or selected entries, hidden until you tap them.</string>
+    <string name="pref_widget_add_unsupported">Your launcher doesn\'t support adding widgets from here. Add it from your home screen\'s widget picker.</string>
+    <string name="pref_external_grace_title">Keep unlocked for keyboard and widget</string>
+    <string name="pref_external_grace_summary">%s. Only applies when Aegis is set to lock when minimized.</string>
+    <string name="pref_external_grace_prompt">After using the keyboard or widget, keep the vault unlocked for</string>
+    <string name="pref_external_grace_none">No extra time (lock right away)</string>
+    <string name="pref_external_grace_30s">30 seconds</string>
+    <string name="pref_external_grace_1m">1 minute</string>
+    <string name="pref_external_grace_5m">5 minutes</string>
+    <string name="pref_external_grace_15m">15 minutes</string>
 
     <string name="toggle_checkboxes">Toggle checkboxes</string>
     <string name="search">Search</string>

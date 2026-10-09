@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title="@string/pref_section_integrations_title">
+
+    <PreferenceCategory
+        android:title="@string/pref_cat_ime"
+        app:iconSpaceReserved="false">
+
+        <Preference
+            android:key="pref_ime_enable"
+            android:title="@string/pref_ime_enable_title"
+            android:persistent="false"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="pref_ime_switch_back"
+            android:title="@string/pref_ime_switch_back_title"
+            android:summary="@string/pref_ime_switch_back_summary"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="pref_ime_suggest_by_app"
+            android:title="@string/pref_ime_suggest_by_app_title"
+            android:summary="@string/pref_ime_suggest_by_app_summary"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.SwitchPreferenceCompat
+            android:defaultValue="false"
+            android:key="pref_ime_insert_as_text"
+            android:title="@string/pref_ime_insert_as_text_title"
+            android:summary="@string/pref_ime_insert_as_text_summary"
+            app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/pref_cat_widget"
+        app:iconSpaceReserved="false">
+
+        <Preference
+            android:key="pref_widget_add"
+            android:title="@string/pref_widget_add_title"
+            android:summary="@string/pref_widget_add_summary"
+            android:persistent="false"
+            app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/pref_section_security_title"
+        app:iconSpaceReserved="false">
+
+        <Preference
+            android:key="pref_external_access_grace"
+            android:title="@string/pref_external_grace_title"
+            android:persistent="false"
+            app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

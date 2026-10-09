@@ -37,6 +37,10 @@ public class TextDrawableHelper {
     }
 
     public static TextDrawable generate(String text, String fallback, View view) {
+        return generate(text, fallback, view.getLayoutParams().width, view.getLayoutParams().height);
+    }
+
+    public static TextDrawable generate(String text, String fallback, int width, int height) {
         if (text == null || text.isEmpty()) {
             if (fallback == null || fallback.isEmpty()) {
                 return null;
@@ -46,8 +50,8 @@ public class TextDrawableHelper {
 
         int color = _generator.getColor(text);
         return TextDrawable.builder().beginConfig()
-                .width(view.getLayoutParams().width)
-                .height(view.getLayoutParams().height)
+                .width(width)
+                .height(height)
                 .endConfig()
                 .buildRound(getFirstGrapheme(text).toUpperCase(), color);
     }

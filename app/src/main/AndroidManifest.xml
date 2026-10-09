@@ -100,6 +100,35 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.ExitActivity" />
+        <activity
+            android:name=".ui.WidgetConfigureActivity"
+            android:label="@string/widget_configure_title"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".widget.AegisWidgetProvider"
+            android:label="@string/widget_label"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_aegis_info" />
+        </receiver>
+
+        <receiver
+            android:name=".widget.WidgetActionReceiver"
+            android:exported="false" />
+
+        <service
+            android:name=".widget.AegisWidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS"
+            android:exported="false" />
 
         <!-- NOTE: Disabled for now. See issue: #1047
         <service android:name=".services.NotificationService" />
@@ -129,6 +158,19 @@
             </intent-filter>
             <meta-data android:name="android.service.quicksettings.ACTIVE_TILE"
                 android:value="true" />
+        </service>
+
+        <service
+            android:name=".ime.AegisInputMethodService"
+            android:label="@string/ime_label"
+            android:permission="android.permission.BIND_INPUT_METHOD"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.view.InputMethod" />
+            </intent-filter>
+            <meta-data
+                android:name="android.view.im"
+                android:resource="@xml/method" />
         </service>
 
         <receiver android:name=".receivers.VaultLockReceiver" android:exported="false">

@@ -107,7 +107,8 @@ public abstract class AegisApplicationBase extends Application {
         public void onStateChanged(@NonNull LifecycleOwner source, @NonNull Lifecycle.Event event) {
             if (event == Lifecycle.Event.ON_STOP
                     && _vaultManager.isAutoLockEnabled(Preferences.AUTO_LOCK_ON_MINIMIZE)
-                    && !_vaultManager.isAutoLockBlocked()) {
+                    && !_vaultManager.isAutoLockBlocked()
+                    && !_vaultManager.isExternalAccessHeld()) {
                 _vaultManager.lock(false);
             }
         }

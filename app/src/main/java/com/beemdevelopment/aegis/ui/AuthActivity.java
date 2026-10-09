@@ -1,6 +1,7 @@
 package com.beemdevelopment.aegis.ui;
 
 import android.content.Context;
+import android.appwidget.AppWidgetManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.InputType;
@@ -36,6 +37,7 @@ import com.beemdevelopment.aegis.vault.VaultFileCredentials;
 import com.beemdevelopment.aegis.vault.VaultRepository;
 import com.beemdevelopment.aegis.vault.VaultRepositoryException;
 import com.beemdevelopment.aegis.vault.slots.BiometricSlot;
+import com.beemdevelopment.aegis.widget.AegisWidgetProvider;
 import com.beemdevelopment.aegis.vault.slots.PasswordSlot;
 import com.beemdevelopment.aegis.vault.slots.Slot;
 import com.beemdevelopment.aegis.vault.slots.SlotException;
@@ -50,6 +52,10 @@ import javax.crypto.Cipher;
 import javax.crypto.SecretKey;
 
 public class AuthActivity extends AegisActivity {
+    public static final String EXTRA_EXTERNAL_REQUEST = "externalRequest";
+    public static final String EXTRA_WIDGET_ID = "widgetId";
+    public static final String EXTRA_WIDGET_REVEAL_UUID = "widgetRevealUuid";
+
     // Permission request codes
     private static final int CODE_PERM_NOTIFICATIONS = 0;
 
@@ -64,6 +70,12 @@ public class AuthActivity extends AegisActivity {
     private Button _decryptButton;
 
     private int _failedUnlockAttempts;
+
+    // set when this activity was launched on behalf of an external component (input method
+    // or home screen widget) instead of MainActivity
+    private boolean _externalRequest;
+    private int _widgetId = AppWidgetManager.INVALID_APPWIDGET_ID;
+    private String _widgetRevealUuid;
 
     // the first time this activity is resumed after creation, it's possible to inhibit showing the
     // biometric prompt by setting 'inhibitBioPrompt' to true through the intent
@@ -105,6 +117,9 @@ public class AuthActivity extends AegisActivity {
         Intent intent = getIntent();
         if (savedInstanceState == null) {
             _inhibitBioPrompt = intent.getBooleanExtra("inhibitBioPrompt", false);
+            _externalRequest = intent.getBooleanExtra(EXTRA_EXTERNAL_REQUEST, false);
+            _widgetId = intent.getIntExtra(EXTRA_WIDGET_ID, AppWidgetManager.INVALID_APPWIDGET_ID);
+            _widgetRevealUuid = intent.getStringExtra(EXTRA_WIDGET_REVEAL_UUID);
 
             // A persistent notification is shown to let the user know that the vault is unlocked. Permission
             // to do so is required since API 33, so for existing users, we have to request permission here
@@ -116,6 +131,9 @@ public class AuthActivity extends AegisActivity {
             }*/
         } else {
             _inhibitBioPrompt = savedInstanceState.getBoolean("inhibitBioPrompt", false);
+            _externalRequest = savedInstanceState.getBoolean(EXTRA_EXTERNAL_REQUEST, false);
+            _widgetId = savedInstanceState.getInt(EXTRA_WIDGET_ID, AppWidgetManager.INVALID_APPWIDGET_ID);
+            _widgetRevealUuid = savedInstanceState.getString(EXTRA_WIDGET_REVEAL_UUID);
         }
 
         try {
@@ -198,6 +216,9 @@ public class AuthActivity extends AegisActivity {
     protected void onSaveInstanceState(@NonNull Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putBoolean("inhibitBioPrompt", _inhibitBioPrompt);
+        outState.putBoolean(EXTRA_EXTERNAL_REQUEST, _externalRequest);
+        outState.putInt(EXTRA_WIDGET_ID, _widgetId);
+        outState.putString(EXTRA_WIDGET_REVEAL_UUID, _widgetRevealUuid);
     }
 
     private void selectPassword() {
@@ -210,6 +231,14 @@ public class AuthActivity extends AegisActivity {
     @Override
     public void onResume() {
         super.onResume();
+
+        // The vault may have been unlocked elsewhere in the meantime (through the input
+        // method or the widget) while this activity was sitting in the back stack.
+        if (_vaultManager.isVaultLoaded()) {
+            setResult(RESULT_OK);
+            finish();
+            return;
+        }
 
         boolean remindPassword = _prefs.isPasswordReminderNeeded();
         if (_bioKey == null || remindPassword) {
@@ -306,8 +335,31 @@ public class AuthActivity extends AegisActivity {
             return;
         }
 
+        if (_externalRequest) {
+            // keep the vault accessible for a moment so that the lifecycle ON_STOP event
+            // caused by this activity disappearing doesn't immediately lock it again
+            _vaultManager.armExternalHold();
+            if (_widgetId != AppWidgetManager.INVALID_APPWIDGET_ID) {
+                AegisWidgetProvider.requestReveal(this, _widgetId, _widgetRevealUuid);
+            }
+        }
+
         setResult(RESULT_OK);
         finish();
+    }
+
+    /**
+     * Creates an intent that launches this activity on behalf of an external component
+     * (input method or widget). The activity is placed in its own task, so that finishing
+     * it returns the user to the app they came from.
+     */
+    public static Intent createExternalIntent(Context context) {
+        Intent intent = new Intent(context, AuthActivity.class);
+        intent.putExtra(EXTRA_EXTERNAL_REQUEST, true);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK
+                | Intent.FLAG_ACTIVITY_MULTIPLE_TASK
+                | Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
+        return intent;
     }
 
     private void onInvalidPassword() {
