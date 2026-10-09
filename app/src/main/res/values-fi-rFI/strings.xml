@@ -28,7 +28,6 @@
     <string name="pref_section_security_title">Turvallisuus</string>
     <string name="pref_section_security_summary">Määritä salaus, biometrinen avaus, automaattilukitus ja muita suojausasetuksia.</string>
     <string name="pref_section_import_export_title">Tuonti ja vienti</string>
-    <string name="pref_section_import_export_summary">Tuo varmuuskopioita Aegisista tai muista todennussovelluksista. Luo Aegis-holvisi varmuuskopioita manuaalisesti.</string>
     <string name="pref_section_audit_log_title">Tilintarkastusloki</string>
     <string name="pref_section_audit_log_summary">Löydät listan kaikista sovelluksessa tapahtuneista tärkeistä tapahtumista.</string>
     <string name="pref_section_backups_title">Varmuuskopiot</string>
@@ -56,14 +55,14 @@
     <string name="pref_import_file_title">Tuo tiedostosta</string>
     <string name="pref_import_file_summary">Tuo todennuskoodit tiedostosta</string>
     <string name="pref_android_backups_title">Androidin pilvivarmuuskopiot</string>
-    <string name="pref_android_backups_summary">Käytä Androidin pilvivarmuuskopiointijärjestelmää Aegisin holvin varmuuskopiointiin. Tämä tukee vain salattuja holveja.</string>
+    <string name="pref_android_backups_summary">Käytä Androidin pilvivarmuuskopiointijärjestelmää Cuein holvin varmuuskopiointiin. Tämä tukee vain salattuja holveja.</string>
     <string name="pref_android_backups_hint"><i>Laitteesta - laitteeseen (D2D) -varmuuskopiot sallitaan aina, riippumatta yllä olevasta asetuksesta</i></string>
     <string name="pref_backups_title">Varmuuskopioi holvi automaattisesti</string>
     <string name="pref_backups_summary">Holvi varmuuskopioidaan ulkoiseen tallennustilaan automaattisesti, muutoksia tehdessä. Vain salatut holvit tukevat tätä.</string>
     <string name="pref_backups_reminder_title">Varmuuskopiomuistutus</string>
     <string name="pref_backups_reminder_summary">Muistuta holvisi varmuuskopioimisesta, jos viimeisimpiä muutoksiasi ei ole varmuuskopioitu.</string>
     <string name="pref_backups_reminder_dialog_title">Poista varmuuskopiomuistutus käytöstä</string>
-    <string name="pref_backups_reminder_dialog_summary">Tämän muistutuksen poistaminen käytöstä tarkoittaa, että Aegis ei kerro sinulle, onko sinulla varmuuskopioimattomia muutoksia. Tämän vaarantaa pääsysi todennuskoodeihisi. Haluatko varmasti poistaa muistutuksen käytöstä?</string>
+    <string name="pref_backups_reminder_dialog_summary">Tämän muistutuksen poistaminen käytöstä tarkoittaa, että Cue ei kerro sinulle, onko sinulla varmuuskopioimattomia muutoksia. Tämän vaarantaa pääsysi todennuskoodeihisi. Haluatko varmasti poistaa muistutuksen käytöstä?</string>
     <string name="pref_backups_versioning_strategy_title">Varmuuskopiointistrategia</string>
     <string name="pref_backups_versioning_strategy_keep_x_versions">Säilytä useita versioita</string>
     <string name="pref_backups_versioning_strategy_single_backup">Yksi varmuuskopio</string>
@@ -103,7 +102,7 @@
     <string name="pref_auto_lock_title">Automaattilukitus</string>
     <string name="pref_auto_lock_summary">Kun %s</string>
     <string name="pref_auto_lock_summary_disabled">Pois käytöstä</string>
-    <string name="pref_auto_lock_prompt">Lukitse Aegis automaattisesti kun</string>
+    <string name="pref_auto_lock_prompt">Lukitse Cue automaattisesti kun</string>
     <string name="pref_auto_lock_type_back_button">Takaisin-painiketta painetaan</string>
     <string name="pref_auto_lock_type_minimize">Sovellus on minimoitu</string>
     <string name="pref_auto_lock_type_device_lock">Laite on lukittu</string>
@@ -145,11 +144,10 @@
     <string name="today_at_time">Tänään klo %1$s</string>
     <string name="day_of_week_at_time">%1$s klo %2$s</string>
     <string name="export_encrypted">Salaa holvi</string>
-    <string name="export_help">Tämä toiminto vie holvin ulos Aegisin sisäisestä tallennustilasta. Valitse viennin tiedostomuoto:</string>
-    <string name="export_warning_unencrypted">Olet viemässä salaamattoman kopion Aegis-holvistasi. <b>Tätä ei suositella</b>.</string>
+    <string name="export_help">Tämä toiminto vie holvin ulos Cuein sisäisestä tallennustilasta. Valitse viennin tiedostomuoto:</string>
+    <string name="export_warning_unencrypted">Olet viemässä salaamattoman kopion Cue-holvistasi. <b>Tätä ei suositella</b>.</string>
     <string name="export_warning_password">Vienti on salattu käyttäen erillistä salasanaa, joka on määritetty suojausasetuksissa.</string>
     <string name="understand_risk_accept">Ymmärrän riskin</string>
-    <string name="export_format_aegis">Aegis (.JSON)</string>
     <string name="export_format_google_auth_uri">Tekstitiedosto (.TXT)</string>
     <string name="export_format_html">Verkkosivu (.HTML)</string>
     <string name="export_format_hint">Vientimuoto</string>
@@ -160,9 +158,9 @@
         <item quantity="other">%d ryhmää valittu</item>
     </plurals>
     <string name="export_no_groups_selected">Yhtään ryhmää ei ole valittu vietäväksi</string>
-    <string name="export_html_title" comment="The title of an HTML export document">Aegis Todennustiedoston Vienti</string>
+    <string name="export_html_title" comment="The title of an HTML export document">Cue Todennustiedoston Vienti</string>
     <string name="choose_authentication_method">Turvallisuus</string>
-    <string name="authentication_method_explanation">Aegis on turvallisuuteen keskittyvä 2FA-sovellus. Todennuskoodit talletetaan holviin, joka voidaan salata valitsemallasi salasanalla. Vaikka hyökkääjä kaappaisi salatun holvitiedostosi, hän ei pääse käsiksi sen sisältöön tietämättä salasanaasi.\n\nOlemme valinneet valmiiksi vaihtoehdon, joka sopii parhaiten laitteellesi.</string>
+    <string name="authentication_method_explanation">Cue on turvallisuuteen keskittyvä 2FA-sovellus. Todennuskoodit talletetaan holviin, joka voidaan salata valitsemallasi salasanalla. Vaikka hyökkääjä kaappaisi salatun holvitiedostosi, hän ei pääse käsiksi sen sisältöön tietämättä salasanaasi.\n\nOlemme valinneet valmiiksi vaihtoehdon, joka sopii parhaiten laitteellesi.</string>
     <string name="authentication_method_none">Ei mitään</string>
     <string name="authentication_method_none_description">Holvia ei salata ja sen avaaminen ei vaadi salasanaa. <b>Tätä asetusta ei suositella</b>.</string>
     <string name="authentication_method_password">Salasana</string>
@@ -178,17 +176,17 @@
     <string name="set_number">Anna numero</string>
     <string name="set_password_confirm">Vahvista salasana</string>
     <string name="invalid_password">Salasana on virheellinen</string>
-    <string name="invalidated_biometrics">Laitteesi suojausasetuksia on muutettu. Siirry kohtaan \"Aegis -&gt; Asetukset -&gt; Turvallisuus -&gt; Biometrinen lukituksen avaus\" poistaaksesi biometrisen lukituksen käytöstä ja ottaaksesi sen uudelleen käyttöön.</string>
+    <string name="invalidated_biometrics">Laitteesi suojausasetuksia on muutettu. Siirry kohtaan \"Cue -&gt; Asetukset -&gt; Turvallisuus -&gt; Biometrinen lukituksen avaus\" poistaaksesi biometrisen lukituksen käytöstä ja ottaaksesi sen uudelleen käyttöön.</string>
     <string name="password_reminder">Syötä salasanasi. Pyydämme sinua tekemään tämän silloin tällöin, jottet unohda sitä.</string>
     <string name="password_reminder_dialog_title">Biometrinen lukituksen avaus oletuksena</string>
-    <string name="password_reminder_dialog_message">Pyydämme sinua toisinaan syöttämään salasanasi varmistaaksemme, ettet ole unohtanut sitä etkä jää ulos holvistasi. Kun olet syöttänyt salasanasi kerran, Aegis palaa oletusarvoisesti takaisin käyttämään biometrista lukituksen avaamista, kunnes on aika antaa uusi salasanamuistutus.</string>
+    <string name="password_reminder_dialog_message">Pyydämme sinua toisinaan syöttämään salasanasi varmistaaksemme, ettet ole unohtanut sitä etkä jää ulos holvistasi. Kun olet syöttänyt salasanasi kerran, Cue palaa oletusarvoisesti takaisin käyttämään biometrista lukituksen avaamista, kunnes on aika antaa uusi salasanamuistutus.</string>
     <string name="password_reminder_freq_never">Ei koskaan</string>
     <string name="password_reminder_freq_weekly">Viikoittain</string>
     <string name="password_reminder_freq_biweekly">Joka toinen viikko</string>
     <string name="password_reminder_freq_monthly">Kuukausittainen</string>
     <string name="password_reminder_freq_quarterly">Neljännesvuosittain</string>
     <string name="enter_password_2fas_message">Näyttää siltä, että tämä 2FAS varmuuskopio on salattu. Syötä salasana.</string>
-    <string name="enter_password_authy_message">Näyttää siltä, että Authy-todennuskoodisi on salattu. Sulje Aegis, käynnistä Authy ja avaa sen lukitus salasanallasi. Aegis voi myös yrittää purkaa Authy-todennuskoodiesi salauksen puolestasi, jos syötät salasanasi alle.</string>
+    <string name="enter_password_authy_message">Näyttää siltä, että Authy-todennuskoodisi on salattu. Sulje Cue, käynnistä Authy ja avaa sen lukitus salasanallasi. Cue voi myös yrittää purkaa Authy-todennuskoodiesi salauksen puolestasi, jos syötät salasanasi alle.</string>
     <string name="enter_password_aegis_title">Syötä tuontisalasana</string>
     <string name="period_hint">Aikaväli (sekuntia)</string>
     <string name="algorithm_hint">Hajautusalgoritmi</string>
@@ -251,9 +249,8 @@
     <string name="saving_profile_error">Virhe profiilin tallennuksessa</string>
     <string name="saving_assign_icons_error">Virhe kuvakkeita määritettäessä</string>
     <string name="welcome">Tervetuloa</string>
-    <string name="app_description">Aegis on ilmainen, turvallinen ja avoimen lähdekoodin 2FA-sovellus</string>
     <string name="setup_completed">Määritys on valmis</string>
-    <string name="setup_completed_description">Aegis on määritetty ja valmis käytettäväksi.</string>
+    <string name="setup_completed_description">Cue on määritetty ja valmis käytettäväksi.</string>
     <string name="vault_not_found">Holvia ei löydy, aloitetaan määritys…</string>
     <string name="copied">Kopioitu</string>
     <string name="errors_copied">Virheet kopioitiin leikepöydälle</string>
@@ -265,8 +262,8 @@
     <string name="saving_error">Holvin tallentamisessa tapahtui virhe</string>
     <string name="vault_init_error">Holvin käyttöönotossa tapahtui virhe</string>
     <string name="vault_load_error">Holvin lataamisessa tapahtui virhe</string>
-    <string name="biometric_decrypt_error">Holvin salauksen purkamisessa biometrisella todennuksella tapahtui virhe. Tämä tapahtuu yleensä vain, jos laitteesi suojausasetuksia on muutettu. Avaa holvin lukitus salasanallasi ja määritä biometrinen todennus uudelleen Aegisin asetuksissa.</string>
-    <string name="biometric_init_error">Biometrisen todennuksen valmistelussa tapahtui virhe. Tämä tapahtuu yleensä vain, jos laitteesi suojausasetuksia on muutettu. Avaa holvin lukitus salasanallasi ja määritä biometrinen todennus uudelleen Aegisin asetuksissa.</string>
+    <string name="biometric_decrypt_error">Holvin salauksen purkamisessa biometrisella todennuksella tapahtui virhe. Tämä tapahtuu yleensä vain, jos laitteesi suojausasetuksia on muutettu. Avaa holvin lukitus salasanallasi ja määritä biometrinen todennus uudelleen Cuein asetuksissa.</string>
+    <string name="biometric_init_error">Biometrisen todennuksen valmistelussa tapahtui virhe. Tämä tapahtuu yleensä vain, jos laitteesi suojausasetuksia on muutettu. Avaa holvin lukitus salasanallasi ja määritä biometrinen todennus uudelleen Cuein asetuksissa.</string>
     <string name="disable_encryption">Ota salaus pois käytöstä</string>
     <string name="disable_encryption_description">Haluatko varmasti poistaa salauksen käytöstä? Holvisi tallennetaan raakatekstinä. <b>Automaattiset varmuuskopiot poistetaan myös käytöstä</b>.</string>
     <string name="enable_encryption_error">Salauksen käyttöönotossa tapahtui virhe</string>
@@ -300,7 +297,7 @@
     <string name="file_not_found">Virhe: Tiedostoa ei löydy</string>
     <string name="reading_file_error">Tiedoston lukemisessa tapahtui virhe</string>
     <string name="app_lookup_error">Virhe: Sovellusta ei ole asennettu</string>
-    <string name="app_version_error">Sovelluksen %s asennettua versiota ei tueta. Viimeaikaiset versiot ovat alkaneet salata joitakin sisäisen tallennushakemiston tiedostoja, jonka vuoksi Aegis ei pääse käsiksi tuontiin tarvittaviin tietoihin. Tuontiyritys johtaa todennäköisesti virheeseen. Haluatko silti jatkaa?</string>
+    <string name="app_version_error">Sovelluksen %s asennettua versiota ei tueta. Viimeaikaiset versiot ovat alkaneet salata joitakin sisäisen tallennushakemiston tiedostoja, jonka vuoksi Cue ei pääse käsiksi tuontiin tarvittaviin tietoihin. Tuontiyritys johtaa todennäköisesti virheeseen. Haluatko silti jatkaa?</string>
     <string name="root_error">Virhe: root-oikeuksia ei voitu saada</string>
     <plurals name="imported_entries_count">
         <item quantity="one">%d kohde tuotu</item>
@@ -318,7 +315,7 @@
     <string name="encryption_enable_biometrics_error">Biometrisen todennuksen käyttöönotossa tapahtui virhe. Biometrinen todennus on toteutettu huonosti joissain laitteissa, ja on todennäköistä, että omasi on yksi niistä. Harkitse vaihtamista vain salasanan käyttämiseen.</string>
     <string name="no_cameras_available">Kameroita ei ole saatavilla</string>
     <string name="read_qr_error">QR-koodin lukemisessa tapahtui virhe</string>
-    <string name="read_qr_error_phonefactor">Aegis ei ole yhteensopiva Microsoftin oman 2FA-algoritmin kanssa. Varmista, että valitset \"Määritä sovellus ilman ilmoituksia\", kun määrität Office 365:n kaksivaiheista tunnistautumista.</string>
+    <string name="read_qr_error_phonefactor">Cue ei ole yhteensopiva Microsoftin oman 2FA-algoritmin kanssa. Varmista, että valitset \"Määritä sovellus ilman ilmoituksia\", kun määrität Office 365:n kaksivaiheista tunnistautumista.</string>
     <string name="partial_google_auth_import">Puutteellinen Google Authenticatorin varmuuskopio havaittu</string>
     <string name="partial_google_auth_import_warning">Jotkin QR-koodit puuttuvat tuonnistasi. Seuraavia koodeja ei löytynyt:\n\n<b>%s</b>\n\nVoit jatkaa tämän osittaisen viennin tuontia, mutta suosittelemme kokeilemaan uudelleen kaikilla QR-koodeilla, jotta et menetä pääsyä todennuskoodeihin.</string>
     <string name="missing_qr_code_descriptor">• QR-koodi %d</string>
@@ -397,8 +394,8 @@
     <string name="unknown_issuer">Tuntematon myöntäjä</string>
     <string name="unknown_account_name">Tuntematon tilinimi</string>
     <plurals name="import_error_dialog">
-        <item quantity="one">Aegis ei voinut tuoda %d todennuskoodia. Nämä todennuskoodi ohitetaan. Paina \'tiedot\' nähdäksesi lisätietoa virheestä.</item>
-        <item quantity="other">Aegis ei voinut tuoda %d todennuskoodia. Nämä todennuskoodit ohitetaan. Paina \'tiedot\' nähdäksesi lisätietoa virheistä.</item>
+        <item quantity="one">Cue ei voinut tuoda %d todennuskoodia. Nämä todennuskoodi ohitetaan. Paina \'tiedot\' nähdäksesi lisätietoa virheestä.</item>
+        <item quantity="other">Cue ei voinut tuoda %d todennuskoodia. Nämä todennuskoodit ohitetaan. Paina \'tiedot\' nähdäksesi lisätietoa virheistä.</item>
     </plurals>
     <string name="unable_to_process_deeplink">Syvää linkkiä ei voitu käsitellä</string>
     <string name="unable_to_read_qrcode_file">Tiedoston %s QR-koodia ei voitu lukea ja käsitellä.</string>
@@ -412,16 +409,15 @@
     <string name="toggle_checkboxes">Kytke valintaruudut</string>
     <string name="search">Haku</string>
     <string name="channel_name_lock_status">Lukituksen tila</string>
-    <string name="channel_description_lock_status">Aegis voi luoda pysyvän ilmoituksen, joka ilmoittaa sinulle, kun holvi on lukittu</string>
+    <string name="channel_description_lock_status">Cue voi luoda pysyvän ilmoituksen, joka ilmoittaa sinulle, kun holvi on lukittu</string>
     <string name="vault_unlocked_state">Holvi on avattu. Lukitse napauttamalla.</string>
     <string name="version">Versio</string>
     <string name="changelog">Muutosloki</string>
     <string name="whats_new">Mitä uutta</string>
     <string name="github_description">Lähdekoodi, ongelmat ja tietoa</string>
     <string name="license">Lisenssi</string>
-    <string name="license_description">Aegis Authenticatorilla on GPLv3-lisenssi</string>
     <string name="third_party_licenses">Kolmannen osapuolen lisenssit</string>
-    <string name="third_party_licenses_description">Aegisin käyttämien kolmannen osapuolen kirjastojen lisenssit</string>
+    <string name="third_party_licenses_description">Cuein käyttämien kolmannen osapuolen kirjastojen lisenssit</string>
     <string name="country_netherlands">Alankomaat</string>
     <string name="email_us">Lähetä sähköpostia</string>
     <string name="visit_website">Käy verkkosivuillamme</string>
@@ -431,7 +427,7 @@
     <string name="webview_error">Tämä laite ei tue WebView:tä, joka vaaditaan muutoslokin ja lisenssitietojen katselemiseksi. Siitä puuttuu järjestelmäkomponentti.</string>
     <string name="email">Sähköposti</string>
     <string name="time_sync_warning_title">Synkronoi aika automaattisesti</string>
-    <string name="time_sync_warning_message">Aegis vaatii, että järjestelmän aika on synkronoitu oikeiden koodien luomiseksi. Vain muutaman sekunnin poikkeama voi johtaa virheellisiin koodeihin. Näyttää siltä, että laitettasi ei ole määritetty synkronoimaan aika automaattisesti. Haluatko tehdä niin nyt?</string>
+    <string name="time_sync_warning_message">Cue vaatii, että järjestelmän aika on synkronoitu oikeiden koodien luomiseksi. Vain muutaman sekunnin poikkeama voi johtaa virheellisiin koodeihin. Näyttää siltä, että laitettasi ei ole määritetty synkronoimaan aika automaattisesti. Haluatko tehdä niin nyt?</string>
     <string name="time_sync_warning_disable">Lopeta varoitus. Tiedän mitä teen.</string>
     <string name="google_qr_export_unrelated">Asiaankuulumaton QR-koodi löytyi. Yritä käynnistää skanneri uudelleen.</string>
     <plurals name="google_qr_export_scanned">
@@ -444,9 +440,9 @@
         Äskettäinen holvin varmuuskopiointiyritys %1$s käyttämällä epäonnistui, koska tapahtui virhe. Varmuuskopiointia yritettiin %2$s. Tarkista varmuuskopiointiasetukset varmistaaksesi, että varmuuskopiointi onnistuu.
     </string>
     <string name="backup_permission_error_dialog_details" comment="The first parameter is the type of backup (e.g. built-in or Android backup). The second parameter is an elapsed time in the style of 'x seconds/minutes/days ago'.">
-        Äskettäinen holvin varmuuskopiointiyritys %1$s käyttäen epäonnistui, koska Aegisilla ei ollut kirjoitusoikeutta varmuuskopiointikohteeseen. Varmuuskopiointia yritettiin %2$s. Tämä virhe voi ilmetä, jos olet siirtänyt tai nimennyt varmuuskopiointikohteen uudelleen tai jos olet hiljattain palauttanut Aegiksen varmuuskopiosta. Määritä varmuuskopiointikohde uudelleen.
+        Äskettäinen holvin varmuuskopiointiyritys %1$s käyttäen epäonnistui, koska Cueilla ei ollut kirjoitusoikeutta varmuuskopiointikohteeseen. Varmuuskopiointia yritettiin %2$s. Tämä virhe voi ilmetä, jos olet siirtänyt tai nimennyt varmuuskopiointikohteen uudelleen tai jos olet hiljattain palauttanut Aegiksen varmuuskopiosta. Määritä varmuuskopiointikohde uudelleen.
     </string>
-    <string name="backup_system_builtin">Aegisin sisäänrakennetut automaattiset varmuuskopiot</string>
+    <string name="backup_system_builtin">Cuein sisäänrakennetut automaattiset varmuuskopiot</string>
     <string name="backup_system_android">Androidin pilvivarmuuskopiointijärjestelmä</string>
     <string name="backup_reminder_bar_message_with_latest" comment="The parameter is an elapsed time in the style of 'x seconds/minutes/days ago'">
         Viimeisin varmuuskopiointi on vanhentunut (%s)
@@ -483,7 +479,7 @@
     <string name="uri_copied_to_clipboard">URI kopioitiin leikepöydälle</string>
     <string name="transfer_entry_description">Skannaa tämä QR-koodi todennussovelluksella, johon haluat siirtää tämän kohteen</string>
     <string name="transfer_entry_brightness">Napauta QR-koodia muuttaaksesi koko näytön kirkkautta</string>
-    <string name="google_auth_compatible_transfer_description">Skannaa nämä QR-koodit Aegisilla tai Google Authenticatorilla.\n\nGoogle Authenticator -sovelluksen rajoitusten vuoksi, vain SHA1-suojausta ja 6-numeroisia koodeja tuottavat TOTP- ja HOTP-todennuskoodit sisällytetään</string>
+    <string name="google_auth_compatible_transfer_description">Skannaa nämä QR-koodit Cueilla tai Google Authenticatorilla.\n\nGoogle Authenticator -sovelluksen rajoitusten vuoksi, vain SHA1-suojausta ja 6-numeroisia koodeja tuottavat TOTP- ja HOTP-todennuskoodit sisällytetään</string>
     <string name="password_strength_very_weak">Erittäin heikko</string>
     <string name="password_strength_weak">Heikko</string>
     <string name="password_strength_fair">Kohtalainen</string>
@@ -504,10 +500,9 @@
     <string name="dialog_wipe_entries_title">Tyhjennä kohteet</string>
     <string name="dialog_wipe_entries_message">Holvisi sisältää jo kohteita. Haluatko poistaa nämä kohteet ennen tämän tiedoston tuontia?\n\n<b>Tehdessäsi näin menetät pysyvästi pääsyn holvin olemassa oleviin kohteisiin.</b></string>
     <string name="dialog_wipe_entries_checkbox">Tyhjennä holvin sisältö</string>
-    <string name="panic_trigger_ignore_toast">Aegis vastaanotti paniikkilaukaisimen, mutta asetus on poistettu käytöstä, ohitetaan</string>
+    <string name="panic_trigger_ignore_toast">Cue vastaanotti paniikkilaukaisimen, mutta asetus on poistettu käytöstä, ohitetaan</string>
     <string name="pref_panic_trigger_title">Poista holvi paniikkilaukaisimella</string>
     <string name="pref_panic_trigger_summary">Poista holvi kun paniikkilaukaisin saadaan Ripplestä</string>
-    <string name="import_vault">Tuo Aegis-holvi</string>
     <string name="import_vault_hint">Haluatko tuoda toisesta 2FA-sovelluksesta? Suorita määritys ensin loppuun ja siirry sitten asetusvalikkoon.</string>
     <plurals name="import_duplicate_toast">
         <item quantity="one">%d mahdollisen kaksoiskappaleen valinta poistettiin. Tarkista kohdelista.</item>
@@ -525,7 +520,7 @@
     <string name="importer_help_freeotp">FreeOTP 2: Toimita varmuuskopiotiedosto.\nFreeOTP 1.x: Toimita kopio tiedostosta <b>/data/data/org.fedorahosted.freeotp/shared_prefs/tokens.xml</b>, joka sijaitsee FreeOTP:n sisäisessä tallennushakemistossa.</string>
     <string name="importer_help_freeotp_plus">Anna FreeOTP+:n vientitiedosto.</string>
     <string name="importer_warning_title_freeotp2">FreeOTP 2 -yhteensopivuus</string>
-    <string name="importer_warning_message_freeotp2">FreeOTP 2:ssa on useita ongelmia, jotka voivat johtaa vioittuneisiin varmuuskopioihin. Aegis yrittää pelastaa mahdollisimman monta kohdetta, mutta on mahdollista, että joidenkin tai jopa kaikkien kohteiden tuonti epäonnistuu.</string>
+    <string name="importer_warning_message_freeotp2">FreeOTP 2:ssa on useita ongelmia, jotka voivat johtaa vioittuneisiin varmuuskopioihin. Cue yrittää pelastaa mahdollisimman monta kohdetta, mutta on mahdollista, että joidenkin tai jopa kaikkien kohteiden tuonti epäonnistuu.</string>
     <string name="importer_help_google_authenticator"><b>Vain Google Authenticator v5.10 tai vanhemman tietokantatiedostoja tuetaan</b>.\n\nAnna kopio kohteesta <b>/data/data/com.google.android.apps.authenticator2/databases/databases</b>, joka sijaitsee Google Authenticatorin sisäisessä tallennushakemistossa.</string>
     <string name="importer_help_microsoft_authenticator">Anna kopio tiedostosta <b>/data/data/com.azure.authenticator/databases/PhoneFactor</b>, joka sijaitsee Microsoft Authenticatorin sisäisessä tallennushakemistossa.</string>
     <string name="importer_help_plain_text">Anna raakatekstitiedosto, joka sisältää Google Authenticatorin URIn jokaisella rivillä.</string>
@@ -536,7 +531,7 @@
     <string name="import_assign_icons_dialog_title">Määritä kuvakkeet</string>
     <string name="import_assign_icons_dialog_text">Haluatko määrittää kuvakkeet tuoduille kohteille?</string>
     <string name="importer_encrypted_exception_google_authenticator">Salattu kohde ohitettiin: %s</string>
-    <string name="importer_help_direct">Tuo %s -kohteet. Tämä edellyttää, että sovellus on asennettu laitteeseen, ja pääkäyttäjän oikeuksien myöntämistä Aegisille.</string>
+    <string name="importer_help_direct">Tuo %s -kohteet. Tämä edellyttää, että sovellus on asennettu laitteeseen, ja pääkäyttäjän oikeuksien myöntämistä Cueille.</string>
     <string name="groups">Ryhmät</string>
     <string name="pref_focus_search">Keskitä haku sovelluksen avautuessa</string>
     <string name="pref_focus_search_summary">Keskitä hakukenttä heti kun sovellus avataan.</string>

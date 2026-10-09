@@ -28,7 +28,6 @@
     <string name="pref_section_security_title">Sikkerhed</string>
     <string name="pref_section_security_summary">Opsæt kryptering, biometrisk oplåsning, auto-låsning og andre sikkerhedsindstillinger.</string>
     <string name="pref_section_import_export_title">Import &amp; Eksport</string>
-    <string name="pref_section_import_export_summary">Importér sikkerhedskopier af Aegis eller andre godkendelsesapps. Opret manuelle eksporter af din Aegis-boks.</string>
     <string name="pref_section_audit_log_title">Revisionslog</string>
     <string name="pref_section_audit_log_summary">Find en liste over alle rapporterede vigtige hændelser i appen.</string>
     <string name="pref_section_backups_title">Sikkerhedskopier</string>
@@ -56,14 +55,14 @@
     <string name="pref_import_file_title">Import fra fil</string>
     <string name="pref_import_file_summary">Importér tokens fra en fil</string>
     <string name="pref_android_backups_title">Android-sikkerhedskopier i cloud</string>
-    <string name="pref_android_backups_summary">Lad Android\'s cloud-sikkerhedskopieringssystem medtage Aegis\' boks i sine sikkerhedskopier (understøtter kun krypterede bokse).</string>
+    <string name="pref_android_backups_summary">Lad Android\'s cloud-sikkerhedskopieringssystem medtage Cue\' boks i sine sikkerhedskopier (understøtter kun krypterede bokse).</string>
     <string name="pref_android_backups_hint"><i>Enhed-til-enhed-sikkerhedskopier (D2D) er altid tilladt, uanset ovenstående indstilling</i></string>
     <string name="pref_backups_title">Sikkerhedskopiér automatisk boksen</string>
     <string name="pref_backups_summary">Opret automatisk sikkerhedskopier af boksen på et eksternt lager, når ændringer foretages (understøtter kun krypterede bokse).</string>
     <string name="pref_backups_reminder_title">Sikkerhedskopieringspåmindelse</string>
     <string name="pref_backups_reminder_summary">Vis en påmindelse om at sikkerhedskopiere Boksen, såfremt dette ikke er sket ifm. de seneste ændringer.</string>
     <string name="pref_backups_reminder_dialog_title">Deaktivér sikkerhedskopieringspåmindelse</string>
-    <string name="pref_backups_reminder_dialog_summary">Deaktiverer du denne påmindelse, fortæller Aegis dig ikke, om nogen ændringer endnu ikke er sikkerhedskopieret. Dermed risikerer du at miste adgang til dine tokens. Er du sikker på, at du vil deaktivere påmindelsen?</string>
+    <string name="pref_backups_reminder_dialog_summary">Deaktiverer du denne påmindelse, fortæller Cue dig ikke, om nogen ændringer endnu ikke er sikkerhedskopieret. Dermed risikerer du at miste adgang til dine tokens. Er du sikker på, at du vil deaktivere påmindelsen?</string>
     <string name="pref_backups_versioning_strategy_title">Sikkerhedskopieringsstrategi</string>
     <string name="pref_backups_versioning_strategy_keep_x_versions">Behold et antal versioner</string>
     <string name="pref_backups_versioning_strategy_single_backup">Enkelt sikkerhedskopi</string>
@@ -103,7 +102,7 @@
     <string name="pref_auto_lock_title">Auto-lås</string>
     <string name="pref_auto_lock_summary">Når %s</string>
     <string name="pref_auto_lock_summary_disabled">Deaktiveret</string>
-    <string name="pref_auto_lock_prompt">Lås automatisk Aegis, når</string>
+    <string name="pref_auto_lock_prompt">Lås automatisk Cue, når</string>
     <string name="pref_auto_lock_type_back_button">Der trykkes på tilbage-knappen</string>
     <string name="pref_auto_lock_type_minimize">Appen minimeres</string>
     <string name="pref_auto_lock_type_device_lock">Enheden låses</string>
@@ -145,11 +144,10 @@
     <string name="today_at_time">I dag kl. %1$s</string>
     <string name="day_of_week_at_time">%1$s kl. %2$s</string>
     <string name="export_encrypted">Kryptér boksen</string>
-    <string name="export_help">Denne handling eksporterer Boksen ud af Aegis\' interne lager. Vælg det format Boksen skal eksportere som:</string>
-    <string name="export_warning_unencrypted">Du er ved at eksportere en ukrypteret kopi af din Aegis-boks. <b>Dette er ikke anbefalet</b>.</string>
+    <string name="export_help">Denne handling eksporterer Boksen ud af Cue\' interne lager. Vælg det format Boksen skal eksportere som:</string>
+    <string name="export_warning_unencrypted">Du er ved at eksportere en ukrypteret kopi af din Cue-boks. <b>Dette er ikke anbefalet</b>.</string>
     <string name="export_warning_password">Eksporter krypteres vha. en separat adgangskode opsat i Sikkerhedsindstillinger.</string>
     <string name="understand_risk_accept">Risikoen er forstået</string>
-    <string name="export_format_aegis">Aegis (.JSON)</string>
     <string name="export_format_google_auth_uri">Tekstfil (.TXT)</string>
     <string name="export_format_html">Webside (.HTML)</string>
     <string name="export_format_hint">Eksportformat</string>
@@ -160,9 +158,9 @@
         <item quantity="other">%d grupper valgt</item>
     </plurals>
     <string name="export_no_groups_selected">Ingen grupper valgt til eksport</string>
-    <string name="export_html_title" comment="The title of an HTML export document">Aegis Authenticator Eksport</string>
+    <string name="export_html_title" comment="The title of an HTML export document">Cue Authenticator Eksport</string>
     <string name="choose_authentication_method">Sikkerhed</string>
-    <string name="authentication_method_explanation">Aegis er en sikkerhedsfokuseret 2FA-app. Tokener opbevares i en Boks, der kan krypteres med en valgfri adgangskode. Opnår en angriber adgang til den krypteret Boks-fil, vil vedkommende ikke kunne tilgå indholdet uden brug af adgangskoden.\n\nVi har på forhånd valgt den indstilling, som vi mener passer bedst til enheden.</string>
+    <string name="authentication_method_explanation">Cue er en sikkerhedsfokuseret 2FA-app. Tokener opbevares i en Boks, der kan krypteres med en valgfri adgangskode. Opnår en angriber adgang til den krypteret Boks-fil, vil vedkommende ikke kunne tilgå indholdet uden brug af adgangskoden.\n\nVi har på forhånd valgt den indstilling, som vi mener passer bedst til enheden.</string>
     <string name="authentication_method_none">Ingen</string>
     <string name="authentication_method_none_description">Ingen adgangskode er nødvendig for at låse op for boksen og den vil ikke blive krypteret. <b>Denne indstilling anbefales ikke</b>.</string>
     <string name="authentication_method_password">Adgangskode</string>
@@ -178,10 +176,10 @@
     <string name="set_number">Angiv et tal</string>
     <string name="set_password_confirm">Bekræft adgangskoden</string>
     <string name="invalid_password">Adgangskoden er forkert</string>
-    <string name="invalidated_biometrics">En ændring i enhedens sikkerhedsindstillinger er detekteret. Gå til \"Aegis -&gt; Indstillinger -&gt; Sikkerhed -&gt; Biometrisk oplåsning\" for at slå biometrisk oplåsning fra og til.</string>
+    <string name="invalidated_biometrics">En ændring i enhedens sikkerhedsindstillinger er detekteret. Gå til \"Cue -&gt; Indstillinger -&gt; Sikkerhed -&gt; Biometrisk oplåsning\" for at slå biometrisk oplåsning fra og til.</string>
     <string name="password_reminder">Angiv adgangskoden. Vi beder dig lejlighedsvis gøre dette, så du ikke glemmer den.</string>
     <string name="password_reminder_dialog_title">Biometrisk oplåsning som standard</string>
-    <string name="password_reminder_dialog_message">For at hindre, at du låses ude af din Boks, beder vi lejlighedsvis om adgangskoden, så den ikke glemmes. Efter du har angivet adgangskoden, fortsætter Aegis med biometrisk oplåsning som standard indtil den næste påmindelse.</string>
+    <string name="password_reminder_dialog_message">For at hindre, at du låses ude af din Boks, beder vi lejlighedsvis om adgangskoden, så den ikke glemmes. Efter du har angivet adgangskoden, fortsætter Cue med biometrisk oplåsning som standard indtil den næste påmindelse.</string>
     <string name="password_reminder_freq_never">Aldrig</string>
     <string name="password_reminder_freq_weekly">Ugentlig</string>
     <string name="password_reminder_freq_biweekly">14. dag</string>
@@ -189,7 +187,7 @@
     <string name="password_reminder_freq_quarterly">Kvartalsvist</string>
     <string name="enter_password_proton_message">Det lader til, at denne Proton Authenticator-sikkerhedskopi er krypteret. Angiv adgangskoden nedenfor.</string>
     <string name="enter_password_2fas_message">Det lader til, at denne 2FAS-sikkerhedskopi er krypteret. Angiv adgangskoden nedenfor.</string>
-    <string name="enter_password_authy_message">Det ser ud til at Authy-tokenerne er krypterede. Luk Aegis, åbn Authy og oplås tokener med adgangskoden. Alternativ kan Aegis forsøge at dekryptere Authy-tokenerne, hvis adgangskode angives nedenfor.</string>
+    <string name="enter_password_authy_message">Det ser ud til at Authy-tokenerne er krypterede. Luk Cue, åbn Authy og oplås tokener med adgangskoden. Alternativ kan Cue forsøge at dekryptere Authy-tokenerne, hvis adgangskode angives nedenfor.</string>
     <string name="enter_password_aegis_title">Angiv importadgangskoden</string>
     <string name="period_hint">Periode (sekunder)</string>
     <string name="algorithm_hint">Hash-funktion</string>
@@ -252,9 +250,8 @@
     <string name="saving_profile_error">Fejl under lagring af profil</string>
     <string name="saving_assign_icons_error">Fejl ved tildeling af ikoner</string>
     <string name="welcome">Velkommen</string>
-    <string name="app_description">Aegis er en gratis, sikker og open-source 2FA-app</string>
     <string name="setup_completed">Opsætning fuldført</string>
-    <string name="setup_completed_description">Aegis er blevet opsat og er klar til brug.</string>
+    <string name="setup_completed_description">Cue er blevet opsat og er klar til brug.</string>
     <string name="vault_not_found">Boks ikke fundet, starter opsætning…</string>
     <string name="copied">Kopieret</string>
     <string name="errors_copied">Fejl kopieret til udklipsholderen</string>
@@ -266,8 +263,8 @@
     <string name="saving_error">En fejl opstod under forsøget på at gemme Boksen</string>
     <string name="vault_init_error">En fejl opstod under forsøget på at initialisere Boksen</string>
     <string name="vault_load_error">En fejl opstod under forsøget på at indlæse Boksen fra lager</string>
-    <string name="biometric_decrypt_error">En fejl opstod under forsøget på at dekryptere Boksen via biometrisk godkendelse. Dette sker normalt kun, såfremt enhedens sikkerhedsindstillinger er blevet ændret. Oplås Boksen med adgangskoden, og genopsæt biometrisk godkendelse i Aegis-indstillingerne.</string>
-    <string name="biometric_init_error">En fejl opstod under klargøring til biometrisk godkendelse. Dette sker normalt kun, såfremt enhedens sikkerhedsindstillinger er blevet ændret. Oplås Boksen med adgangskoden, og genopsæt biometrisk godkendelse i Aegis-indstillingerne.</string>
+    <string name="biometric_decrypt_error">En fejl opstod under forsøget på at dekryptere Boksen via biometrisk godkendelse. Dette sker normalt kun, såfremt enhedens sikkerhedsindstillinger er blevet ændret. Oplås Boksen med adgangskoden, og genopsæt biometrisk godkendelse i Cue-indstillingerne.</string>
+    <string name="biometric_init_error">En fejl opstod under klargøring til biometrisk godkendelse. Dette sker normalt kun, såfremt enhedens sikkerhedsindstillinger er blevet ændret. Oplås Boksen med adgangskoden, og genopsæt biometrisk godkendelse i Cue-indstillingerne.</string>
     <string name="disable_encryption">Deaktivér kryptering</string>
     <string name="disable_encryption_description">Sikker på, at kryptering skal deaktiveres? Boksen gemmes i så fald som alm. tekst. <b>Automatiske sikkerhedskopier deaktiveres ligeledes</b>.</string>
     <string name="enable_encryption_error">En fejl opstod under aktivering af kryptering</string>
@@ -301,7 +298,7 @@
     <string name="file_not_found">Fejl: Fil ikke fundet</string>
     <string name="reading_file_error">En fejl opstod under forsøg på at læse filen</string>
     <string name="app_lookup_error">Fejl: App er ikke installeret</string>
-    <string name="app_version_error">Den installerede version af %s understøttes ikke. Nyere versioner er begyndt at kryptere visse filer i den interne lagermappe, hvilket gør Aegis ude af stand til at tilgå den information, den behøver til importen. Forsøg på import vil sandsynligvis resultere i en fejl. Fortsæt alligevel?</string>
+    <string name="app_version_error">Den installerede version af %s understøttes ikke. Nyere versioner er begyndt at kryptere visse filer i den interne lagermappe, hvilket gør Cue ude af stand til at tilgå den information, den behøver til importen. Forsøg på import vil sandsynligvis resultere i en fejl. Fortsæt alligevel?</string>
     <string name="root_error">Fejl: Kan ikke opnå root-adgang</string>
     <plurals name="imported_entries_count">
         <item quantity="one">Importerede %d post</item>
@@ -319,7 +316,7 @@
     <string name="encryption_enable_biometrics_error">En fejl opstod under aktivering af biometrisk oplåsning. Nogle enheder har dårlige implementeringer af biometrisk godkendelse, hvilket sandsynligvis er fejlårsagen. Overvej i stedet at skifte til en kun-adgangskode opsætning.</string>
     <string name="no_cameras_available">Ingen kameraer tilgængelige</string>
     <string name="read_qr_error">En fejl opstod under læsning af QR-koden</string>
-    <string name="read_qr_error_phonefactor">Aegis er inkompatibel med Microsofts proprietære 2FA-algoritme. Sørg for at vælge \"Opsæt applikation uden notifikationer\", når 2FA opsættes i Office 365.</string>
+    <string name="read_qr_error_phonefactor">Cue er inkompatibel med Microsofts proprietære 2FA-algoritme. Sørg for at vælge \"Opsæt applikation uden notifikationer\", når 2FA opsættes i Office 365.</string>
     <string name="partial_google_auth_import">Ufuldstændig Google Authenticator-eksport detekteret</string>
     <string name="partial_google_auth_import_warning">Nogle QR-koder mangler i importen. Flg. koder er ikke fundet:\n\n<b>%s</b>\n\nMan kan fortsætte med import af denne delvise eksport, dog anbefales det at prøve igen med alle QR-koderne, så man ikke risikerer at miste adgang til nogle tokens.</string>
     <string name="missing_qr_code_descriptor">• QR-kode %d</string>
@@ -406,8 +403,8 @@
     <string name="unknown_issuer">Ukendt udsteder</string>
     <string name="unknown_account_name">Ukendt kontonavn</string>
     <plurals name="import_error_dialog">
-        <item quantity="one">Aegis kunne ikke importere %d token. Denne token vil blive sprunget over. Tryk på \'detaljer\' for at se flere oplysninger om fejlen.</item>
-        <item quantity="other">Aegis kunne ikke importere %d tokens. Disse tokens vil blive sprunget over. Tryk på \'detaljer\' for at se flere oplysninger om fejlen.</item>
+        <item quantity="one">Cue kunne ikke importere %d token. Denne token vil blive sprunget over. Tryk på \'detaljer\' for at se flere oplysninger om fejlen.</item>
+        <item quantity="other">Cue kunne ikke importere %d tokens. Disse tokens vil blive sprunget over. Tryk på \'detaljer\' for at se flere oplysninger om fejlen.</item>
     </plurals>
     <string name="unable_to_process_deeplink">Dybt link kan ikke behandles</string>
     <string name="unable_to_read_qrcode_file">Kan ikke læse og behandle QR-koden fra filen: %s.</string>
@@ -421,16 +418,15 @@
     <string name="toggle_checkboxes">Skift afkrydsningsfelter</string>
     <string name="search">Søg</string>
     <string name="channel_name_lock_status">Låsestatus</string>
-    <string name="channel_description_lock_status">Aegis kan oprette en vedvarende notifikation for at give dig besked, når boksen er låst</string>
+    <string name="channel_description_lock_status">Cue kan oprette en vedvarende notifikation for at give dig besked, når boksen er låst</string>
     <string name="vault_unlocked_state">Boksen er låst op. Tryk her for at låse.</string>
     <string name="version">Version</string>
     <string name="changelog">Ændringslog</string>
     <string name="whats_new">Nyheder</string>
     <string name="github_description">Kildekode, problematikker og information</string>
     <string name="license">Licens</string>
-    <string name="license_description">Aegis Authenticator er licenseret under GPLv3</string>
     <string name="third_party_licenses">Tredjepartslicenser</string>
-    <string name="third_party_licenses_description">Licenser fra tredjepartsbibliotekerne Aegis bruger</string>
+    <string name="third_party_licenses_description">Licenser fra tredjepartsbibliotekerne Cue bruger</string>
     <string name="country_netherlands">Nederlandene</string>
     <string name="email_us">Skriv en e-mail</string>
     <string name="visit_website">Besøg vores websted</string>
@@ -440,7 +436,7 @@
     <string name="webview_error">Denne enhed understøtter ikke webvisning, hvilket kræves for at vise ændringslog og licens. En systemkomponent mangler.</string>
     <string name="email">E-mail</string>
     <string name="time_sync_warning_title">Automatisk tidssynkronisering</string>
-    <string name="time_sync_warning_message">Aegis er afhængig af systemtiden for at være i synk til generering af korrekte koder. En afvigelse på kun et par sekunder kan resultere i forkerte koder. Det ser ud til, at enheden ikke er opsat til auto-synk af tid. Opsæt dette nu?</string>
+    <string name="time_sync_warning_message">Cue er afhængig af systemtiden for at være i synk til generering af korrekte koder. En afvigelse på kun et par sekunder kan resultere i forkerte koder. Det ser ud til, at enheden ikke er opsat til auto-synk af tid. Opsæt dette nu?</string>
     <string name="time_sync_warning_disable">Ophør med at advare mig. Jeg ved, hvad jeg gør.</string>
     <string name="google_qr_export_unrelated">Ikke-relateret QR-kode fundet. Prøv at genstarte skanneren.</string>
     <plurals name="google_qr_export_scanned">
@@ -453,9 +449,9 @@
         Et nyligt Boks-sikkerhedskopieringsforsøg vha. %1$s mislykkedes grundet en fejl. Sikkerhedskopieringen blev forsøgt: %2$s. Tjek sikkerhedskopieringsindstillingerne for at sikre, at sikkerhedskopieringer kan fuldføres.
     </string>
     <string name="backup_permission_error_dialog_details" comment="The first parameter is the type of backup (e.g. built-in or Android backup). The second parameter is an elapsed time in the style of 'x seconds/minutes/days ago'.">
-        Et nyligt Boks-sikkerhedskopieringsforsøg vha. %1$s fejlede, da Aegis manglende skriverettighed på sikkerhedskopidestinationen. Sikkerhedskopieringen forsøgt %2$s. Fejlen kan opstå, hvis sikkerhedskopidestinationen er blevet flyttet/omdøbt, eller Aegis for nylig er gendannet fra en sikkerhedskopi. Genopsæt sikkerhedskopidestinationen.
+        Et nyligt Boks-sikkerhedskopieringsforsøg vha. %1$s fejlede, da Cue manglende skriverettighed på sikkerhedskopidestinationen. Sikkerhedskopieringen forsøgt %2$s. Fejlen kan opstå, hvis sikkerhedskopidestinationen er blevet flyttet/omdøbt, eller Cue for nylig er gendannet fra en sikkerhedskopi. Genopsæt sikkerhedskopidestinationen.
     </string>
-    <string name="backup_system_builtin">Aegis\' indbyggede automatiske sikkerhedskopieringer</string>
+    <string name="backup_system_builtin">Cue\' indbyggede automatiske sikkerhedskopieringer</string>
     <string name="backup_system_android">Android cloud-sikkerhedskopieringssystem</string>
     <string name="backup_reminder_bar_message_with_latest" comment="The parameter is an elapsed time in the style of 'x seconds/minutes/days ago'">
         Seneste sikkerhedskopi er forældet (%s)
@@ -492,7 +488,7 @@
     <string name="uri_copied_to_clipboard">URI kopieret til udklipsholder</string>
     <string name="transfer_entry_description">Scan denne QR-kode med den autentificerings-app, du gerne vil overføre denne post til</string>
     <string name="transfer_entry_brightness">Tryk på QR-koden for at skifte fuldskærmslysstyrke</string>
-    <string name="google_auth_compatible_transfer_description">Skan disse QR-koder med Aegis eller Google Authenticator.\n\nGrundet begrænsninger i Google Authenticator-appen inkluderes kun TOTP- og HOTP-tokener, som bruger SHA1 og genererer 6-cifrede koder</string>
+    <string name="google_auth_compatible_transfer_description">Skan disse QR-koder med Cue eller Google Authenticator.\n\nGrundet begrænsninger i Google Authenticator-appen inkluderes kun TOTP- og HOTP-tokener, som bruger SHA1 og genererer 6-cifrede koder</string>
     <string name="password_strength_very_weak">Meget svag</string>
     <string name="password_strength_weak">Svag</string>
     <string name="password_strength_fair">Hæderlig</string>
@@ -515,10 +511,9 @@
     <string name="dialog_wipe_entries_checkbox">Ryd boksens indhold</string>
     <string name="import_from_clipboard_title">Importér fra udklipsholder</string>
     <string name="import_from_clipboard_message">En gyldig otpauth URI er fundet i udklipsholderen.\n\n<b>Navn</b>: %1$s\n<b>Udsteder</b>: %2$s\n\nSkal den bruges til forudfyldelse af dette indlæg?</string>
-    <string name="panic_trigger_ignore_toast">Aegis modtog panikudløser, men indstilling er deaktiveret, ignorerer</string>
+    <string name="panic_trigger_ignore_toast">Cue modtog panikudløser, men indstilling er deaktiveret, ignorerer</string>
     <string name="pref_panic_trigger_title">Slet boks ved panikudløser</string>
     <string name="pref_panic_trigger_summary">Slet boks, når en panikudløser modtages fra Ripple</string>
-    <string name="import_vault">Importér Aegis-boks</string>
     <string name="import_vault_hint">Ønsker du at importere fra en anden 2FA-app? Færdiggør opsætningen først, og gå derefter til indstillingsmenuen.</string>
     <plurals name="import_duplicate_toast">
         <item quantity="one">Afmarkerede %d potentiel dublet. Revidér listen over poster.</item>
@@ -536,7 +531,7 @@
     <string name="importer_help_freeotp">FreeOTP 2: Levér en sikkerhedskopifil.\nFreeOTP 1.x: Levér en kopi af <b>/data/data/org.fedorahosted.freeotp/shared_prefs/tokens.xml</b> fra FreeOTP\' interne lagermappe.</string>
     <string name="importer_help_freeotp_plus">Levér en FreeOTP+ eksportfil.</string>
     <string name="importer_warning_title_freeotp2">FreeOTP 2-kompatibilitet</string>
-    <string name="importer_warning_message_freeotp2">Der er en række problemer i FreeOTP 2, som kan resultere i korruperede sikkerhedskopier. Aegis vil forsøge at redde så mange poster som muligt, men det er muligt, at nogle eller endda alle af dem ikke lader sig importere.</string>
+    <string name="importer_warning_message_freeotp2">Der er en række problemer i FreeOTP 2, som kan resultere i korruperede sikkerhedskopier. Cue vil forsøge at redde så mange poster som muligt, men det er muligt, at nogle eller endda alle af dem ikke lader sig importere.</string>
     <string name="importer_help_google_authenticator"><b>Kun databasefiler fra Google Authenticator v5.10 og tidligere understøttes</b>.\n\nLeverer en kopi af <b>/data/data/com. google.android.apps.authenticator2/databaser/databaser</b>, placeret i Google Authenticators interne lagermappe.</string>
     <string name="importer_help_microsoft_authenticator">Levér en kopi af <b>/data/data/com.azure.authenticator/databases/PhoneFactor</b>, der er placeret i den interne lagermappe i Microsoft Authenticator.</string>
     <string name="importer_help_plain_text">Levér en almindelig tekstfil med en Google Authenticator URI på hver linje.</string>
@@ -548,7 +543,7 @@
     <string name="import_assign_icons_dialog_title">Tildel ikoner</string>
     <string name="import_assign_icons_dialog_text">Tildel ikoner til importerede poster?</string>
     <string name="importer_encrypted_exception_google_authenticator">Krypteret post blev oversprunget: %s</string>
-    <string name="importer_help_direct">Importer poster direkte fra %s. Dette kræver at appen er installeret på denne enhed og at root-adgang gives til Aegis.</string>
+    <string name="importer_help_direct">Importer poster direkte fra %s. Dette kræver at appen er installeret på denne enhed og at root-adgang gives til Cue.</string>
     <string name="groups">Grupper</string>
     <string name="pref_focus_search">Fokusér på søgning ved app-start</string>
     <string name="pref_focus_search_summary">Bring søgningen i fokus straks efter åbning af appen.</string>

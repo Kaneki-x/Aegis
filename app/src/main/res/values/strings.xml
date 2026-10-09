@@ -1,7 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="app_name" translatable="false">Aegis</string>
-    <string name="app_name_full" translatable="false">Aegis Authenticator</string>
-    <string name="org_name_full" translatable="false">Beem Development</string>
+    <string name="app_name" translatable="false">Cue</string>
+    <string name="app_name_full" translatable="false">Cue</string>
+    <string name="org_name_full" translatable="false">Based on Aegis Authenticator by Beem Development</string>
     <string name="action_settings">Settings</string>
     <string name="action_about">About</string>
     <string name="action_delete">Delete</string>
@@ -31,7 +31,7 @@
     <string name="pref_section_security_title">Security</string>
     <string name="pref_section_security_summary">Configure encryption, biometric unlock, auto lock and other security settings.</string>
     <string name="pref_section_import_export_title">Import &amp; Export</string>
-    <string name="pref_section_import_export_summary">Import backups of Aegis or other authenticator apps. Create manual exports of your Aegis vault.</string>
+    <string name="pref_section_import_export_summary">Import backups of Aegis, Cue or other authenticator apps. Create manual exports of your Cue vault.</string>
     <string name="pref_section_audit_log_title">Audit log</string>
     <string name="pref_section_audit_log_summary">Find a list of all reported important events that happened within the app.</string>
     <string name="pref_section_backups_title">Backups</string>
@@ -59,14 +59,14 @@
     <string name="pref_import_file_title">Import from file</string>
     <string name="pref_import_file_summary">Import tokens from a file</string>
     <string name="pref_android_backups_title">Android cloud backups</string>
-    <string name="pref_android_backups_summary">Allow Android\'s cloud backup system to include Aegis\' vault in its backups. This is only supported for encrypted vaults.</string>
+    <string name="pref_android_backups_summary">Allow Android\'s cloud backup system to include Cue\'s vault in its backups. This is only supported for encrypted vaults.</string>
     <string name="pref_android_backups_hint"><i>Device-to-device (D2D) backups are always allowed, regardless of the setting above</i></string>
     <string name="pref_backups_title">Automatically back up the vault</string>
     <string name="pref_backups_summary">Automatically create backups of the vault on external storage when changes are made. This is only supported for encrypted vaults.</string>
     <string name="pref_backups_reminder_title">Backup reminder</string>
     <string name="pref_backups_reminder_summary">Show a reminder to backup your vault in case you haven\'t backed up your latest changes.</string>
     <string name="pref_backups_reminder_dialog_title">Disable backup reminder</string>
-    <string name="pref_backups_reminder_dialog_summary">Disabling this reminder means Aegis won\'t tell you whether or not you have changes that are not backed up yet. This puts you at risk of losing access to your tokens. Are you sure you want to disable the reminder?</string>
+    <string name="pref_backups_reminder_dialog_summary">Disabling this reminder means Cue won\'t tell you whether or not you have changes that are not backed up yet. This puts you at risk of losing access to your tokens. Are you sure you want to disable the reminder?</string>
     <string name="pref_backups_versioning_strategy_title">Backup strategy</string>
     <string name="pref_backups_versioning_strategy_keep_x_versions">Keep a number of versions</string>
     <string name="pref_backups_versioning_strategy_single_backup">Single backup</string>
@@ -106,7 +106,7 @@
     <string name="pref_auto_lock_title">Auto lock</string>
     <string name="pref_auto_lock_summary">When %s</string>
     <string name="pref_auto_lock_summary_disabled">Disabled</string>
-    <string name="pref_auto_lock_prompt">Automatically lock Aegis when</string>
+    <string name="pref_auto_lock_prompt">Automatically lock Cue when</string>
     <string name="pref_auto_lock_type_back_button">The back button is pressed</string>
     <string name="pref_auto_lock_type_minimize">The app is minimized</string>
     <string name="pref_auto_lock_type_device_lock">The device is locked</string>
@@ -151,11 +151,11 @@
     <string name="day_of_week_at_time">%1$s at %2$s</string>
 
     <string name="export_encrypted">Encrypt the vault</string>
-    <string name="export_help">This action will export the vault out of Aegis\' internal storage. Select the format you\'d like your export to be in:</string>
-    <string name="export_warning_unencrypted">You are about to export an unencrypted copy of your Aegis vault. <b>This is not recommended</b>.</string>
+    <string name="export_help">This action will export the vault out of Cue\'s internal storage. Select the format you\'d like your export to be in:</string>
+    <string name="export_warning_unencrypted">You are about to export an unencrypted copy of your Cue vault. <b>This is not recommended</b>.</string>
     <string name="export_warning_password">Exports are encrypted using a separate password configured in Security settings.</string>
     <string name="understand_risk_accept">I understand the risk</string>
-    <string name="export_format_aegis">Aegis (.JSON)</string>
+    <string name="export_format_aegis">Cue (.JSON, Aegis-compatible)</string>
     <string name="export_format_google_auth_uri">Text file (.TXT)</string>
     <string name="export_format_html">Web page (.HTML)</string>
     <string name="export_format_hint">Export format</string>
@@ -166,10 +166,10 @@
         <item quantity="other">%d groups selected</item>
     </plurals>
     <string name="export_no_groups_selected">No groups selected to export</string>
-    <string name="export_html_title" comment="The title of an HTML export document">Aegis Authenticator Export</string>
+    <string name="export_html_title" comment="The title of an HTML export document">Cue Authenticator Export</string>
 
     <string name="choose_authentication_method">Security</string>
-    <string name="authentication_method_explanation">Aegis is a security-focused 2FA app. Tokens are stored in a vault, that can optionally be encrypted with a password of your choosing. If an attacker obtains your encrypted vault file, they will not be able to access the contents without knowing the password.\n\nWe\'ve preselected the option that we think would fit best for your device.</string>
+    <string name="authentication_method_explanation">Cue is a security-focused 2FA app. Tokens are stored in a vault, that can optionally be encrypted with a password of your choosing. If an attacker obtains your encrypted vault file, they will not be able to access the contents without knowing the password.\n\nWe\'ve preselected the option that we think would fit best for your device.</string>
     <string name="authentication_method_none">None</string>
     <string name="authentication_method_none_description">No password is needed to unlock the vault and it will not be encrypted. <b>This option is not recommended</b>.</string>
     <string name="authentication_method_password">Password</string>
@@ -186,10 +186,10 @@
     <string name="set_number">Please enter a number</string>
     <string name="set_password_confirm">Please confirm the password</string>
     <string name="invalid_password">The password is incorrect</string>
-    <string name="invalidated_biometrics">A change in your device\'s security settings has been detected. Please go to \"Aegis -> Settings -> Security -> Biometric unlock\" to disable and re-enable biometric unlock.</string>
+    <string name="invalidated_biometrics">A change in your device\'s security settings has been detected. Please go to \"Cue -> Settings -> Security -> Biometric unlock\" to disable and re-enable biometric unlock.</string>
     <string name="password_reminder">Please enter your password. We occasionally ask you to do this so that you don\'t forget it.</string>
     <string name="password_reminder_dialog_title">Biometric unlock by default</string>
-    <string name="password_reminder_dialog_message">We occasionally prompt you to enter your password instead to ensure you haven\'t forgotten it and won\'t get locked out of your vault. After entering your password once, Aegis will default back to biometric unlock until it\'s time for another password reminder.</string>
+    <string name="password_reminder_dialog_message">We occasionally prompt you to enter your password instead to ensure you haven\'t forgotten it and won\'t get locked out of your vault. After entering your password once, Cue will default back to biometric unlock until it\'s time for another password reminder.</string>
     <string name="password_reminder_freq_never">Never</string>
     <string name="password_reminder_freq_weekly">Weekly</string>
     <string name="password_reminder_freq_biweekly">Biweekly</string>
@@ -197,7 +197,7 @@
     <string name="password_reminder_freq_quarterly">Quarterly</string>
     <string name="enter_password_proton_message">It looks like this Proton Authenticator backup is encrypted. Please enter the password below.</string>
     <string name="enter_password_2fas_message">It looks like this 2FAS backup is encrypted. Please enter the password below.</string>
-    <string name="enter_password_authy_message">It looks like your Authy tokens are encrypted. Please close Aegis, open Authy and unlock the tokens with your password. Instead, Aegis can also attempt to decrypt your Authy tokens for you, if you enter your password below.</string>
+    <string name="enter_password_authy_message">It looks like your Authy tokens are encrypted. Please close Cue, open Authy and unlock the tokens with your password. Instead, Cue can also attempt to decrypt your Authy tokens for you, if you enter your password below.</string>
     <string name="enter_password_aegis_title">Please enter the import password</string>
 
     <string name="period_hint">Period (seconds)</string>
@@ -261,9 +261,9 @@
     <string name="saving_profile_error">Error saving profile</string>
     <string name="saving_assign_icons_error">Error assigning icons</string>
     <string name="welcome">Welcome</string>
-    <string name="app_description">Aegis is a free, secure and open source 2FA app</string>
+    <string name="app_description">Cue is a free, secure and open source 2FA app</string>
     <string name="setup_completed">Setup completed</string>
-    <string name="setup_completed_description">Aegis has been set up and is ready to go.</string>
+    <string name="setup_completed_description">Cue has been set up and is ready to go.</string>
     <string name="vault_not_found">Vault not found, starting setup…</string>
     <string name="copied">Copied</string>
     <string name="errors_copied">Errors copied to the clipboard</string>
@@ -275,8 +275,8 @@
     <string name="saving_error">An error occurred while trying to save the vault</string>
     <string name="vault_init_error">An error occurred while trying to initialize the vault</string>
     <string name="vault_load_error">An error occurred while trying to load the vault from storage</string>
-    <string name="biometric_decrypt_error">An error occurred while trying to decrypt the vault with biometric authentication. This usually only happens if the security settings of your device were changed. Please unlock the vault with your password and reconfigure biometric authentication in the settings of Aegis.</string>
-    <string name="biometric_init_error">An error occurred while trying to prepare biometric authentication. This usually only happens if the security settings of your device were changed. Please unlock the vault with your password and reconfigure biometric authentication in the settings of Aegis.</string>
+    <string name="biometric_decrypt_error">An error occurred while trying to decrypt the vault with biometric authentication. This usually only happens if the security settings of your device were changed. Please unlock the vault with your password and reconfigure biometric authentication in the settings of Cue.</string>
+    <string name="biometric_init_error">An error occurred while trying to prepare biometric authentication. This usually only happens if the security settings of your device were changed. Please unlock the vault with your password and reconfigure biometric authentication in the settings of Cue.</string>
     <string name="disable_encryption">Disable encryption</string>
     <string name="disable_encryption_description">Are you sure you want to disable encryption? This will cause the vault to be stored in plain text. <b>Automatic backups will also be disabled</b>.</string>
     <string name="enable_encryption_error">An error occurred while enabling encryption</string>
@@ -310,7 +310,7 @@
     <string name="file_not_found">Error: File not found</string>
     <string name="reading_file_error">An error occurred while trying to read the file</string>
     <string name="app_lookup_error">Error: App is not installed</string>
-    <string name="app_version_error">The version of %s that\'s installed is not supported. Recent versions have started encrypting some of the files in the internal storage directory, making Aegis unable to access the information it needs for the import. Attempting to import is likely to result in an error. Would you like to continue anyway?</string>
+    <string name="app_version_error">The version of %s that\'s installed is not supported. Recent versions have started encrypting some of the files in the internal storage directory, making Cue unable to access the information it needs for the import. Attempting to import is likely to result in an error. Would you like to continue anyway?</string>
     <string name="root_error">Error: Unable to obtain root access</string>
     <plurals name="imported_entries_count">
         <item quantity="one">Imported %d entry</item>
@@ -328,7 +328,7 @@
     <string name="encryption_enable_biometrics_error">An error occurred while trying to enable biometric unlock. Some devices have poor implementations of biometric authentication and it is likely that yours is one of them. Consider switching to a password-only configuration instead.</string>
     <string name="no_cameras_available">No cameras available</string>
     <string name="read_qr_error">An error occurred while trying to read the QR code</string>
-    <string name="read_qr_error_phonefactor">Aegis is not compatible with Microsoft\'s proprietary 2FA algorithm. Please make sure to select \"Setup application without notifications\" when configuring 2FA in Office 365.</string>
+    <string name="read_qr_error_phonefactor">Cue is not compatible with Microsoft\'s proprietary 2FA algorithm. Please make sure to select \"Setup application without notifications\" when configuring 2FA in Office 365.</string>
     <string name="partial_google_auth_import">Incomplete Google Authenticator export detected</string>
     <string name="partial_google_auth_import_warning">Some QR codes are missing from your import. The following codes were not found:\n\n<b>%s</b>\n\nYou may continue importing this partial export but we recommend retrying with all of the QR codes so you don\'t risk losing access to any tokens.</string>
     <string name="missing_qr_code_descriptor">• QR code %d</string>
@@ -419,8 +419,8 @@
     <string name="unknown_issuer">Unknown issuer</string>
     <string name="unknown_account_name">Unknown account name</string>
     <plurals name="import_error_dialog">
-        <item quantity="one">Aegis could not import %d token. This token will be skipped. Press \'details\' to see more information about the error.</item>
-        <item quantity="other">Aegis could not import %d tokens. These tokens will be skipped. Press \'details\' to see more information about the errors.</item>
+        <item quantity="one">Cue could not import %d token. This token will be skipped. Press \'details\' to see more information about the error.</item>
+        <item quantity="other">Cue could not import %d tokens. These tokens will be skipped. Press \'details\' to see more information about the errors.</item>
     </plurals>
     <string name="unable_to_process_deeplink">Unable to process deep link</string>
     <string name="unable_to_read_qrcode_file">Unable to read and process QR code from file: %s.</string>
@@ -431,31 +431,31 @@
     <string name="select_icon">Select icon</string>
     <string name="tile_open_vault" comment="label for a quick settings tile that opens the app when tapped">Open vault</string>
     <string name="tile_open_scanner" comment="label for a quick settings tile that opens the QR code scanner when tapped">Open scanner</string>
-    <string name="ime_label" comment="name of the Aegis input method as shown in the system keyboard picker">Aegis codes</string>
+    <string name="ime_label" comment="name of the Cue input method as shown in the system keyboard picker">Cue</string>
     <string name="ime_hint_suggested_for" comment="shown in the keyboard header, %s is the name of the app that asks for input">Suggested for %s</string>
     <string name="ime_vault_locked">Vault is locked</string>
-    <string name="ime_setup_required">Set up Aegis before using the keyboard</string>
-    <string name="ime_open_app">Open Aegis</string>
+    <string name="ime_setup_required">Set up Cue before using the keyboard</string>
+    <string name="ime_open_app">Open Cue</string>
     <string name="ime_switch_keyboard">Switch keyboard</string>
     <string name="ime_no_entries">No entries in your vault yet</string>
     <string name="ime_no_matches">No entries match this filter</string>
     <string name="ime_filter_favorites">Favorites</string>
     <string name="ime_own_app_hint">Switch to another keyboard to type here</string>
-    <string name="widget_label" comment="name of the home screen widget in the widget picker">Aegis codes</string>
+    <string name="widget_label" comment="name of the home screen widget in the widget picker">Cue</string>
     <string name="widget_description">Codes of your favorite or selected entries, hidden until you tap them.</string>
     <string name="widget_locked">Vault is locked. Tap to unlock.</string>
     <string name="widget_no_entries">No entries to show. Tap to choose entries.</string>
-    <string name="widget_setup_required">Open Aegis to set up your vault first.</string>
+    <string name="widget_setup_required">Open Cue to set up your vault first.</string>
     <string name="widget_configure_title">Choose entries</string>
     <string name="widget_configure_favorites_title">Show favorites</string>
     <string name="widget_configure_favorites_summary">The widget follows your favorites automatically</string>
     <string name="widget_configure_select_hint">Select the entries to show in the widget</string>
 
     <string name="pref_section_integrations_title">Keyboard &amp; widget</string>
-    <string name="pref_section_integrations_summary">Insert codes with the Aegis keyboard and show them on your home screen.</string>
+    <string name="pref_section_integrations_summary">Insert codes with the Cue keyboard and show them on your home screen.</string>
     <string name="pref_cat_ime">Keyboard</string>
     <string name="pref_cat_widget">Widget</string>
-    <string name="pref_ime_enable_title">Enable Aegis keyboard</string>
+    <string name="pref_ime_enable_title">Enable Cue keyboard</string>
     <string name="pref_ime_enable_summary_enabled">Enabled. Switch to it from your keyboard\'s keyboard picker when a code is asked for.</string>
     <string name="pref_ime_enable_summary_disabled">Not enabled. Tap to enable it in the system keyboard settings.</string>
     <string name="pref_ime_switch_back_title">Switch back after inserting</string>
@@ -468,7 +468,7 @@
     <string name="pref_widget_add_summary">Shows the codes of your favorites or selected entries, hidden until you tap them.</string>
     <string name="pref_widget_add_unsupported">Your launcher doesn\'t support adding widgets from here. Add it from your home screen\'s widget picker.</string>
     <string name="pref_external_grace_title">Keep unlocked for keyboard and widget</string>
-    <string name="pref_external_grace_summary">%s. Only applies when Aegis is set to lock when minimized.</string>
+    <string name="pref_external_grace_summary">%s. Only applies when Cue is set to lock when minimized.</string>
     <string name="pref_external_grace_prompt">After using the keyboard or widget, keep the vault unlocked for</string>
     <string name="pref_external_grace_none">No extra time (lock right away)</string>
     <string name="pref_external_grace_30s">30 seconds</string>
@@ -479,7 +479,7 @@
     <string name="toggle_checkboxes">Toggle checkboxes</string>
     <string name="search">Search</string>
     <string name="channel_name_lock_status">Lock status</string>
-    <string name="channel_description_lock_status">Aegis can create a persistent notification to notify you when the vault is locked</string>
+    <string name="channel_description_lock_status">Cue can create a persistent notification to notify you when the vault is locked</string>
     <string name="vault_unlocked_state">Vault is unlocked. Tap here to lock.</string>
     <string name="version">Version</string>
     <string name="changelog">Changelog</string>
@@ -487,9 +487,9 @@
     <string name="github" translatable="false">GitHub</string>
     <string name="github_description">Source code, issues and information</string>
     <string name="license">License</string>
-    <string name="license_description">Aegis Authenticator is licensed under GPLv3</string>
+    <string name="license_description">Cue is licensed under GPLv3</string>
     <string name="third_party_licenses">Third-party licenses</string>
-    <string name="third_party_licenses_description">Licenses of the third-party libraries Aegis uses</string>
+    <string name="third_party_licenses_description">Licenses of the third-party libraries Cue uses</string>
     <string name="author_alex" translatable="false">Alexander Bakker</string>
     <string name="country_netherlands">Netherlands</string>
     <string name="author_michael" translatable="false">Michael Schättgen</string>
@@ -501,7 +501,7 @@
     <string name="webview_error">This device doesn\'t support web view, which is necessary to view the changelog and the license. It is missing a system component.</string>
     <string name="email">Email</string>
     <string name="time_sync_warning_title">Automatic time synchronization</string>
-    <string name="time_sync_warning_message">Aegis relies on the system time to be in sync to generate correct codes. A deviation of only a few seconds could result in incorrect codes. It looks like your device is not configured to automatically synchronize the time. Would you like to do so now?</string>
+    <string name="time_sync_warning_message">Cue relies on the system time to be in sync to generate correct codes. A deviation of only a few seconds could result in incorrect codes. It looks like your device is not configured to automatically synchronize the time. Would you like to do so now?</string>
     <string name="time_sync_warning_disable">Stop warning me. I know what I\'m doing.</string>
     <string name="google_qr_export_unrelated">Unrelated QR code found. Try restarting the scanner.</string>
     <plurals name="google_qr_export_scanned">
@@ -518,9 +518,9 @@
     <string
         name="backup_permission_error_dialog_details"
         comment="The first parameter is the type of backup (e.g. built-in or Android backup). The second parameter is an elapsed time in the style of 'x seconds/minutes/days ago'.">
-        A recent vault backup attempt using %1$s failed because Aegis did not have permission to write to the backup destination. The backup was attempted %2$s. This error can occur if you moved/renamed the backup destination or if you recently restored Aegis from a backup. Please reconfigure the backup destination.
+        A recent vault backup attempt using %1$s failed because Cue did not have permission to write to the backup destination. The backup was attempted %2$s. This error can occur if you moved/renamed the backup destination or if you recently restored Aegis from a backup. Please reconfigure the backup destination.
     </string>
-    <string name="backup_system_builtin">Aegis\' built-in automatic backups</string>
+    <string name="backup_system_builtin">Cue\'s built-in automatic backups</string>
     <string name="backup_system_android">Android\'s cloud backup system</string>
     <string
         name="backup_reminder_bar_message_with_latest"
@@ -560,7 +560,7 @@
     <string name="uri_copied_to_clipboard">URI copied to clipboard</string>
     <string name="transfer_entry_description">Scan this QR code with the authenticator app you would like to transfer this entry to</string>
     <string name="transfer_entry_brightness">Tap the QR code to toggle full screen brightness</string>
-    <string name="google_auth_compatible_transfer_description">Scan these QR codes with Aegis or Google Authenticator.\n\nDue to limitations of the Google Authenticator app, only TOTP &amp; HOTP tokens that use SHA1 and produce 6-digit codes are included</string>
+    <string name="google_auth_compatible_transfer_description">Scan these QR codes with Cue or Google Authenticator.\n\nDue to limitations of the Google Authenticator app, only TOTP &amp; HOTP tokens that use SHA1 and produce 6-digit codes are included</string>
 
     <string name="password_strength_very_weak">Very weak</string>
     <string name="password_strength_weak">Weak</string>
@@ -588,11 +588,11 @@
 
     <string name="import_from_clipboard_message">We found a valid otpauth uri on your clipboard.\n\n<b>Name</b>: %1$s\n<b>Issuer</b>: %2$s\n\nDo you want to use it to prefill this entry?</string>
 
-    <string name="panic_trigger_ignore_toast">Aegis received panic trigger but setting is disabled, ignoring</string>
+    <string name="panic_trigger_ignore_toast">Cue received panic trigger but setting is disabled, ignoring</string>
     <string name="pref_panic_trigger_title">Delete vault on panic trigger</string>
     <string name="pref_panic_trigger_summary">Delete vault when a panic trigger is received from Ripple</string>
 
-    <string name="import_vault">Import Aegis vault</string>
+    <string name="import_vault">Import Cue or Aegis vault</string>
     <string name="import_vault_hint">Want to import from a different 2FA app? Complete the setup first and then head over to the settings menu.</string>
     <plurals name="import_duplicate_toast">
         <item quantity="one">Unchecked %d potential duplicate. Please review the list of entries.</item>
@@ -610,7 +610,7 @@
     <string name="importer_help_freeotp">FreeOTP 2: Supply a backup file.\nFreeOTP 1.x: Supply a copy of <b>/data/data/org.fedorahosted.freeotp/shared_prefs/tokens.xml</b>, located in the internal storage directory of FreeOTP.</string>
     <string name="importer_help_freeotp_plus">Supply a FreeOTP+ export file.</string>
     <string name="importer_warning_title_freeotp2">FreeOTP 2 compatibility</string>
-    <string name="importer_warning_message_freeotp2">There are a number of issues in FreeOTP 2 that can result in corrupt backups. Aegis will try to salvage as many entries as possible, but it\'s possible that some or even all of them fail to import.</string>
+    <string name="importer_warning_message_freeotp2">There are a number of issues in FreeOTP 2 that can result in corrupt backups. Cue will try to salvage as many entries as possible, but it\'s possible that some or even all of them fail to import.</string>
     <string name="importer_help_google_authenticator"><b>Only database files from Google Authenticator v5.10 and prior are supported</b>.\n\nSupply a copy of <b>/data/data/com.google.android.apps.authenticator2/databases/databases</b>, located in the internal storage directory of Google Authenticator.</string>
     <string name="importer_help_microsoft_authenticator">Supply a copy of <b>/data/data/com.azure.authenticator/databases/PhoneFactor</b>, located in the internal storage directory of Microsoft Authenticator.</string>
     <string name="importer_help_plain_text">Supply a plain text file with a Google Authenticator URI on each line.</string>
@@ -624,7 +624,7 @@
 
     <string name="importer_encrypted_exception_google_authenticator">Encrypted entry was skipped: %s</string>
 
-    <string name="importer_help_direct">Import entries directly from %s. This requires the app to be installed on this device and for root access to be granted to Aegis.</string>
+    <string name="importer_help_direct">Import entries directly from %s. This requires the app to be installed on this device and for root access to be granted to Cue.</string>
     <string name="groups">Groups</string>
     <string name="pref_focus_search">Focus search on app start</string>
     <string name="pref_focus_search_summary">Focus the search immediately after opening the app.</string>

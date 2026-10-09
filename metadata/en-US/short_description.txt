@@ -1,1 +1,1 @@
-Free, secure and open source 2FA app to manage tokens for your online services
+Secure 2FA codes, with a keyboard and widget that put them where you need them

@@ -220,7 +220,7 @@ public class AegisInputMethodService extends InputMethodService
         }
 
         if (_vaultManager.isVaultInitNeeded()) {
-            showState(R.drawable.ic_aegis_quicksettings, R.string.ime_setup_required, R.string.ime_open_app, v -> openApp());
+            showState(R.drawable.ic_cue_mark, R.string.ime_setup_required, R.string.ime_open_app, v -> openApp());
             return;
         }
 
@@ -309,7 +309,7 @@ public class AegisInputMethodService extends InputMethodService
 
         _list.setVisibility(View.GONE);
         _stateView.setVisibility(View.VISIBLE);
-        _stateIcon.setImageResource(R.drawable.ic_aegis_quicksettings);
+        _stateIcon.setImageResource(R.drawable.ic_cue_mark);
         _stateText.setText(_adapter.hasEntries() ? R.string.ime_no_matches : R.string.ime_no_entries);
         _stateButton.setVisibility(View.GONE);
     }

@@ -28,7 +28,6 @@
     <string name="pref_section_security_title">Bezpieczeństwo</string>
     <string name="pref_section_security_summary">Skonfiguruj szyfrowanie, autoryzację biometryczną, automatyczną blokadę i inne ustawienia bezpieczeństwa.</string>
     <string name="pref_section_import_export_title">Import i eksport</string>
-    <string name="pref_section_import_export_summary">Importuj kopie zapasowe aplikacji Aegis lub innych aplikacji uwierzytelniających. Utwórz ręczne kopie zapasowe sejfu Aegis.</string>
     <string name="pref_section_audit_log_title">Dziennik zdarzeń</string>
     <string name="pref_section_audit_log_summary">Znajdź listę wszystkich zgłoszonych ważnych zdarzeń, które miały miejsce w aplikacji.</string>
     <string name="pref_section_backups_title">Kopie zapasowe</string>
@@ -56,14 +55,14 @@
     <string name="pref_import_file_title">Importuj z pliku</string>
     <string name="pref_import_file_summary">Importuj tokeny z aplikacji</string>
     <string name="pref_android_backups_title">Kopia zapasowa Android w chmurze</string>
-    <string name="pref_android_backups_summary">Zezwalaj systemowi kopii zapasowej w chmurze Androida na zawarcie sejfu Aegis do jego kopii zapasowej. Jest to obsługiwane tylko dla szyfrowanych sejfów.</string>
+    <string name="pref_android_backups_summary">Zezwalaj systemowi kopii zapasowej w chmurze Androida na zawarcie sejfu Cue do jego kopii zapasowej. Jest to obsługiwane tylko dla szyfrowanych sejfów.</string>
     <string name="pref_android_backups_hint"><i>Kopie zapasowe urządzenia-do-urządzenia (D2D) są zawsze dozwolone, niezależnie od powyższych ustawień</i></string>
     <string name="pref_backups_title">Automatycznie utwórz kopię zapasową sejfu</string>
     <string name="pref_backups_summary">Automatycznie utwórz kopie zapasowe sejfu w pamięci zewnętrznej. Funkcja ta wspiera tylko zaszyfrowane sejfy.</string>
     <string name="pref_backups_reminder_title">Przypomnienia o kopii zapasowej</string>
     <string name="pref_backups_reminder_summary">Pokaż przypomnienie o kopii zapasowej twojego sejfu na wypadek, gdybyś nie zrobił kopii zapasowej najnowszych zmian.</string>
     <string name="pref_backups_reminder_dialog_title">Wyłącz przypomnienia o kopii zapasowej</string>
-    <string name="pref_backups_reminder_dialog_summary">Wyłączenie tych powiadomień, oznacza że Aegis nie powie, czy masz zmiany, które nie są jeszcze zapisane w kopii zapasowej. To naraża cię na ryzyko utraty dostępu do twoich tokenów. Czy na pewno chcesz wyłączyć te powiadomienia?</string>
+    <string name="pref_backups_reminder_dialog_summary">Wyłączenie tych powiadomień, oznacza że Cue nie powie, czy masz zmiany, które nie są jeszcze zapisane w kopii zapasowej. To naraża cię na ryzyko utraty dostępu do twoich tokenów. Czy na pewno chcesz wyłączyć te powiadomienia?</string>
     <string name="pref_backups_versioning_strategy_title">Strategia tworzenia kopii zapasowych</string>
     <string name="pref_backups_versioning_strategy_keep_x_versions">Zachowuj wiele wersji</string>
     <string name="pref_backups_versioning_strategy_single_backup">Pojedyncza kopia zapasowa</string>
@@ -107,7 +106,7 @@
     <string name="pref_auto_lock_title">Automatyczna blokada</string>
     <string name="pref_auto_lock_summary">Kiedy %s</string>
     <string name="pref_auto_lock_summary_disabled">Wyłączona</string>
-    <string name="pref_auto_lock_prompt">Automatycznie zablokuj aplikację Aegis kiedy</string>
+    <string name="pref_auto_lock_prompt">Automatycznie zablokuj aplikację Cue kiedy</string>
     <string name="pref_auto_lock_type_back_button">Przycisk wstecz jest naciśnięty</string>
     <string name="pref_auto_lock_type_minimize">Aplikacja jest zminimalizowana</string>
     <string name="pref_auto_lock_type_device_lock">Urządzenie jest zablokowane</string>
@@ -149,11 +148,10 @@
     <string name="today_at_time">Dzisiaj o %1$s</string>
     <string name="day_of_week_at_time">%1$s o %2$s</string>
     <string name="export_encrypted">Zaszyfruj sejf</string>
-    <string name="export_help">Ta czynność wyeksportuje sejf z wewnętrznej przestrzeni dyskowej aplikacji Aegis. Wybierz format eksportowanego pliku:</string>
-    <string name="export_warning_unencrypted">Wyeksportujesz sejf aplikacji Aegis w niezaszyfrowanym formacie. <b>Ta opcja nie jest zalecana</b>.</string>
+    <string name="export_help">Ta czynność wyeksportuje sejf z wewnętrznej przestrzeni dyskowej aplikacji Cue. Wybierz format eksportowanego pliku:</string>
+    <string name="export_warning_unencrypted">Wyeksportujesz sejf aplikacji Cue w niezaszyfrowanym formacie. <b>Ta opcja nie jest zalecana</b>.</string>
     <string name="export_warning_password">Eksport jest szyfrowany przy użyciu osobnego hasła skonfigurowanego w ustawieniach bezpieczeństwa.</string>
     <string name="understand_risk_accept">Rozumiem ryzyko</string>
-    <string name="export_format_aegis">Aegis (.JSON)</string>
     <string name="export_format_google_auth_uri">Plik tekstowy (.TXT)</string>
     <string name="export_format_html">Strona internetowa (.HTML)</string>
     <string name="export_format_hint">Format eksportu</string>
@@ -166,9 +164,9 @@
         <item quantity="other">%d zaznaczonych grup</item>
     </plurals>
     <string name="export_no_groups_selected">Nie wybrano grup do eksportu</string>
-    <string name="export_html_title" comment="The title of an HTML export document">Eksport Aegis Authenticator</string>
+    <string name="export_html_title" comment="The title of an HTML export document">Eksport Cue Authenticator</string>
     <string name="choose_authentication_method">Bezpieczeństwo</string>
-    <string name="authentication_method_explanation">Aegis to aplikacja uwierzytelniająca zorientowana na bezpieczeństwo. Tokeny są przechowywane w sejfie, który może zostać opcjonalnie zaszyfrowany przy użyciu wybranego przez Ciebie hasła. Jeśli atakujący uzyska zaszyfrowany plik sejfu, nie będzie mógł uzyskać dostępu do zawartości bez znajomości hasła.\n\nZaznaczyliśmy opcję, która najlepiej powinna pasować do Twojego urządzenia.</string>
+    <string name="authentication_method_explanation">Cue to aplikacja uwierzytelniająca zorientowana na bezpieczeństwo. Tokeny są przechowywane w sejfie, który może zostać opcjonalnie zaszyfrowany przy użyciu wybranego przez Ciebie hasła. Jeśli atakujący uzyska zaszyfrowany plik sejfu, nie będzie mógł uzyskać dostępu do zawartości bez znajomości hasła.\n\nZaznaczyliśmy opcję, która najlepiej powinna pasować do Twojego urządzenia.</string>
     <string name="authentication_method_none">Brak</string>
     <string name="authentication_method_none_description">Hasło nie jest wymagane, aby odblokować sejf i dane nie zostaną zaszyfrowane. <b>Ta opcja nie jest zalecana</b>.</string>
     <string name="authentication_method_password">Hasło</string>
@@ -184,10 +182,10 @@
     <string name="set_number">Wpisz numer</string>
     <string name="set_password_confirm">Potwierdź hasło</string>
     <string name="invalid_password">Hasło jest nieprawidłowe</string>
-    <string name="invalidated_biometrics">Ustawienia zabezpieczeń urządzenia zostały zmienione. Przejdź do \"Aegis -&gt; Ustawienia -&gt; Bezpieczeństwo -&gt; Autoryzacja biometryczna\" i włącz ponownie tę funkcję.</string>
+    <string name="invalidated_biometrics">Ustawienia zabezpieczeń urządzenia zostały zmienione. Przejdź do \"Cue -&gt; Ustawienia -&gt; Bezpieczeństwo -&gt; Autoryzacja biometryczna\" i włącz ponownie tę funkcję.</string>
     <string name="password_reminder">Wpisz hasło. Co pewien czas zostaniesz o nie zapytany, aby nie zapomnieć hasła.</string>
     <string name="password_reminder_dialog_title">Domyślne odblokowanie biometryczne</string>
-    <string name="password_reminder_dialog_message">Czasami prosimy, abyś wprowadził swoje hasło, aby upewnić się, że nie zapomniałeś o nim i nie zostaniesz zablokowany z Twojego sejfu. Po wprowadzeniu hasła Aegis powróci do odblokowania biometrycznego, dopóki nie nadszedł czas na przypomnienie hasła.</string>
+    <string name="password_reminder_dialog_message">Czasami prosimy, abyś wprowadził swoje hasło, aby upewnić się, że nie zapomniałeś o nim i nie zostaniesz zablokowany z Twojego sejfu. Po wprowadzeniu hasła Cue powróci do odblokowania biometrycznego, dopóki nie nadszedł czas na przypomnienie hasła.</string>
     <string name="password_reminder_freq_never">Nigdy</string>
     <string name="password_reminder_freq_weekly">Co tydzień</string>
     <string name="password_reminder_freq_biweekly">Co dwa tygodnie</string>
@@ -195,7 +193,7 @@
     <string name="password_reminder_freq_quarterly">Co kwartał</string>
     <string name="enter_password_proton_message">Wygląda na to, że ta kopia zapasowa Proton Authenticator jest zaszyfrowana. Wprowadź hasło poniżej.</string>
     <string name="enter_password_2fas_message">Wygląda na to, że ta kopia zapasowa 2FA jest zaszyfrowana. Wprowadź hasło poniżej.</string>
-    <string name="enter_password_authy_message">Wygląda na to, że Twoje tokeny Authy są zaszyfrowane. Zamknij aplikację Aegis, otwórz Authy i odblokuj tokeny za pomocą hasła. Możesz również wpisać poniżej te hasło i aplikacja Aegis spróbuje odszyfrować tokeny Authy.</string>
+    <string name="enter_password_authy_message">Wygląda na to, że Twoje tokeny Authy są zaszyfrowane. Zamknij aplikację Cue, otwórz Authy i odblokuj tokeny za pomocą hasła. Możesz również wpisać poniżej te hasło i aplikacja Cue spróbuje odszyfrować tokeny Authy.</string>
     <string name="enter_password_aegis_title">Wprowadź hasło importu</string>
     <string name="period_hint">Okres (w sekundach)</string>
     <string name="algorithm_hint">Funkcja skrótu kryptograficznego</string>
@@ -262,9 +260,8 @@
     <string name="saving_profile_error">Wystąpił błąd podczas zapisywania profilu</string>
     <string name="saving_assign_icons_error">Błąd podczas przypisywania ikon</string>
     <string name="welcome">Witaj</string>
-    <string name="app_description">Aegis jest darmową, bezpieczną i otwartoźródłową aplikacją uwierzytelniającą</string>
     <string name="setup_completed">Konfiguracja została zakończona</string>
-    <string name="setup_completed_description">Aplikacja Aegis została skonfigurowana i jest gotowa do użycia.</string>
+    <string name="setup_completed_description">Aplikacja Cue została skonfigurowana i jest gotowa do użycia.</string>
     <string name="vault_not_found">Sejf nie został znaleziony. Rozpoczynam konfigurację…</string>
     <string name="copied">Skopiowano</string>
     <string name="errors_copied">Błędy zostały skopiowane do schowka</string>
@@ -276,8 +273,8 @@
     <string name="saving_error">Wystąpił błąd podczas zapisywania sejfu</string>
     <string name="vault_init_error">Wystąpił błąd podczas uruchamiania sejfu</string>
     <string name="vault_load_error">Wystąpił błąd podczas ładowania sejfu z pamięci zewnętrznej</string>
-    <string name="biometric_decrypt_error">Wystąpił błąd podczas odszyfrowywania sejfu za pomocą autoryzacji biometrycznej. Zazwyczaj dzieje się tak tylko wtedy, kiedy ustawienia zabezpieczeń urządzenia zostały zmienione. Odblokuj sejf za pomocą hasła i ponownie skonfiguruj autoryzację biometryczną w ustawieniach aplikacji Aegis.</string>
-    <string name="biometric_init_error">Wystąpił błąd podczas autoryzacji biometrycznej. Zazwyczaj dzieje się tak tylko wtedy, kiedy ustawienia zabezpieczeń urządzenia zostały zmienione. Odblokuj sejf za pomocą hasła i ponownie skonfiguruj autoryzację biometryczną w ustawieniach aplikacji Aegis.</string>
+    <string name="biometric_decrypt_error">Wystąpił błąd podczas odszyfrowywania sejfu za pomocą autoryzacji biometrycznej. Zazwyczaj dzieje się tak tylko wtedy, kiedy ustawienia zabezpieczeń urządzenia zostały zmienione. Odblokuj sejf za pomocą hasła i ponownie skonfiguruj autoryzację biometryczną w ustawieniach aplikacji Cue.</string>
+    <string name="biometric_init_error">Wystąpił błąd podczas autoryzacji biometrycznej. Zazwyczaj dzieje się tak tylko wtedy, kiedy ustawienia zabezpieczeń urządzenia zostały zmienione. Odblokuj sejf za pomocą hasła i ponownie skonfiguruj autoryzację biometryczną w ustawieniach aplikacji Cue.</string>
     <string name="disable_encryption">Wyłącz szyfrowanie</string>
     <string name="disable_encryption_description">Czy na pewno chcesz wyłączyć szyfrowanie? Spowoduje to przechowywanie sejfu w zwykłym tekście. <b>Automatyczne kopie zapasowe zostaną wyłączone</b>.</string>
     <string name="enable_encryption_error">Wystąpił błąd podczas włączania szyfrowania</string>
@@ -313,7 +310,7 @@
     <string name="file_not_found">Błąd: Nie znaleziono pliku</string>
     <string name="reading_file_error">Wystąpił błąd podczas odczytywania pliku</string>
     <string name="app_lookup_error">Błąd: Aplikacja nie jest zainstalowana</string>
-    <string name="app_version_error">Zainstalowana wersja %s nie jest obsługiwana. Ostatnie wersje zaczęły szyfrować niektóre pliki w katalogu pamięci wewnętrznej, przez co Aegis nie może uzyskać dostępu do informacji potrzebnych do importu. Próba importu prawdopodobnie zakończy się błędem. Czy mimo to chcesz kontynuować?</string>
+    <string name="app_version_error">Zainstalowana wersja %s nie jest obsługiwana. Ostatnie wersje zaczęły szyfrować niektóre pliki w katalogu pamięci wewnętrznej, przez co Cue nie może uzyskać dostępu do informacji potrzebnych do importu. Próba importu prawdopodobnie zakończy się błędem. Czy mimo to chcesz kontynuować?</string>
     <string name="root_error">Błąd: Nie można uzyskać dostępu do konta root</string>
     <plurals name="imported_entries_count">
         <item quantity="one">%d wpis został zaimportowany</item>
@@ -335,7 +332,7 @@
     <string name="encryption_enable_biometrics_error">Wystąpił błąd podczas włączania autoryzacji biometrycznej. Niektóre urządzenia posiadają słabe wsparcie dla tej funkcji i jest prawdopodobne, że Twoje urządzenie jest jednym z nich. Rozważ zmianę konfiguracji za pomocą hasła.</string>
     <string name="no_cameras_available">Aparat jest niedostępny</string>
     <string name="read_qr_error">Wystąpił błąd podczas odczytywania kodu QR</string>
-    <string name="read_qr_error_phonefactor">Aplikacja Aegis nie jest kompatybilna z algorytmem uwierzytelniającym firmy Microsoft. Podczas konfigurowania uwierzytelniania w aplikacji Office 365 wybierz opcję \"Skonfiguruj aplikację bez powiadomień\".</string>
+    <string name="read_qr_error_phonefactor">Aplikacja Cue nie jest kompatybilna z algorytmem uwierzytelniającym firmy Microsoft. Podczas konfigurowania uwierzytelniania w aplikacji Office 365 wybierz opcję \"Skonfiguruj aplikację bez powiadomień\".</string>
     <string name="partial_google_auth_import">Wykryto niekompletny eksport z Google Authenticator</string>
     <string name="partial_google_auth_import_warning">W imporcie brakuje niektórych kodów QR. Następujące kody nie zostały znalezione:\n\n<b>%s</b>\n\nMożesz kontynuować importowanie tego częściowego eksportu, ale zalecamy ponowną próbę z wszystkimi kodami QR, aby nie ryzykować utraty dostępu do tokenów.</string>
     <string name="missing_qr_code_descriptor">• Kod QR %d</string>
@@ -426,10 +423,10 @@
     <string name="unknown_issuer">Nieznany wydawca</string>
     <string name="unknown_account_name">Nieznana nazwa konta</string>
     <plurals name="import_error_dialog">
-        <item quantity="one">Aplikacja Aegis nie może zaimportować %d token. Ten token zostanie pominięty. Kliknij \'szczegóły\', aby zobaczyć więcej informacji o błędzie.</item>
-        <item quantity="few">Aplikacja Aegis nie może zaimportować %d tokenów. Te tokeny zostaną pominięte. Kliknij \'szczegóły\', aby zobaczyć więcej informacji o błędach.</item>
-        <item quantity="many">Aplikacja Aegis nie może zaimportować %d tokenów. Te tokeny zostaną pominięte. Kliknij \'szczegóły\', aby zobaczyć więcej informacji o błędach.</item>
-        <item quantity="other">Aplikacja Aegis nie może zaimportować %d tokenów. Te tokeny zostaną pominięte. Kliknij \'szczegóły\', aby zobaczyć więcej informacji o błędach.</item>
+        <item quantity="one">Aplikacja Cue nie może zaimportować %d token. Ten token zostanie pominięty. Kliknij \'szczegóły\', aby zobaczyć więcej informacji o błędzie.</item>
+        <item quantity="few">Aplikacja Cue nie może zaimportować %d tokenów. Te tokeny zostaną pominięte. Kliknij \'szczegóły\', aby zobaczyć więcej informacji o błędach.</item>
+        <item quantity="many">Aplikacja Cue nie może zaimportować %d tokenów. Te tokeny zostaną pominięte. Kliknij \'szczegóły\', aby zobaczyć więcej informacji o błędach.</item>
+        <item quantity="other">Aplikacja Cue nie może zaimportować %d tokenów. Te tokeny zostaną pominięte. Kliknij \'szczegóły\', aby zobaczyć więcej informacji o błędach.</item>
     </plurals>
     <string name="unable_to_process_deeplink">Nie można przetworzyć głębokiego linku</string>
     <string name="unable_to_read_qrcode_file">Nie można odczytać i przetworzyć kodu QR z pliku: %s.</string>
@@ -443,16 +440,15 @@
     <string name="toggle_checkboxes">Przełącz pola wyboru</string>
     <string name="search">Szukaj</string>
     <string name="channel_name_lock_status">Status blokady</string>
-    <string name="channel_description_lock_status">Aplikacja Aegis może utworzyć stałe powiadomienie, aby powiadomić Cię, gdy sejf jest zamknięty</string>
+    <string name="channel_description_lock_status">Aplikacja Cue może utworzyć stałe powiadomienie, aby powiadomić Cię, gdy sejf jest zamknięty</string>
     <string name="vault_unlocked_state">Sejf jest odblokowany. Kliknij, aby zablokować.</string>
     <string name="version">Wersja</string>
     <string name="changelog">Lista zmian</string>
     <string name="whats_new">Co nowego</string>
     <string name="github_description">Kod źródłowy, problemy i informacje</string>
     <string name="license">Licencja</string>
-    <string name="license_description">Aplikacja Aegis Authenticator jest oparta na licencji GPLv3</string>
     <string name="third_party_licenses">Licencje innych firm</string>
-    <string name="third_party_licenses_description">Licencje bibliotek zewnętrznych, z których korzysta aplikacja Aegis</string>
+    <string name="third_party_licenses_description">Licencje bibliotek zewnętrznych, z których korzysta aplikacja Cue</string>
     <string name="country_netherlands">Holandia</string>
     <string name="email_us">Napisz wiadomość e-mail</string>
     <string name="visit_website">Odwiedź naszą stronę</string>
@@ -462,7 +458,7 @@
     <string name="webview_error">To urządzenie nie wspiera widoku internetowego, który jest niezbędny do wyświetlenia listy zmian i licencji. To brakujący element systemu operacyjnego.</string>
     <string name="email">Adres e-mail</string>
     <string name="time_sync_warning_title">Automatyczna synchronizacja czasu</string>
-    <string name="time_sync_warning_message">Aby wygenerować poprawne kody, aplikacja Aegis korzysta z synchronizacji czasu systemowego. Różnica czasu zaledwie kilku sekund może spowodować nieprawidłowe kody. Wygląda na to, że Twoje urządzenie nie jest skonfigurowane do automatycznej synchronizacji czasu. Czy chcesz skorzystać z tej funkcji?</string>
+    <string name="time_sync_warning_message">Aby wygenerować poprawne kody, aplikacja Cue korzysta z synchronizacji czasu systemowego. Różnica czasu zaledwie kilku sekund może spowodować nieprawidłowe kody. Wygląda na to, że Twoje urządzenie nie jest skonfigurowane do automatycznej synchronizacji czasu. Czy chcesz skorzystać z tej funkcji?</string>
     <string name="time_sync_warning_disable">Nie ostrzegaj mnie. Wiem co robię.</string>
     <string name="google_qr_export_unrelated">Znaleziono niepowiązany kod QR. Spróbuj ponownie uruchomić skaner.</string>
     <plurals name="google_qr_export_scanned">
@@ -476,9 +472,9 @@
     <string name="backup_error_dialog_details" comment="The first parameter is the type of backup (e.g. built-in or Android backup). The second parameter is an elapsed time in the style of 'x seconds/minutes/days ago'.">
 Ostatnia próba wykonania kopii zapasowej sejfu z użyciem %1$s nie powiodła się, ponieważ wystąpił błąd. Kopia zapasowa została wykonana w: %2$s. Sprawdź ustawienia kopii zapasowej, aby upewnić się, że wykonywanie kopii zapasowych może się pomyślnie zakończyć.    </string>
     <string name="backup_permission_error_dialog_details" comment="The first parameter is the type of backup (e.g. built-in or Android backup). The second parameter is an elapsed time in the style of 'x seconds/minutes/days ago'.">
-Niedawna próba wykonania kopii zapasowej używając %1$s nie powiodła się, ponieważ Aegis nie miał uprawnienia do zapisu w wybranym folderze. Próba zapisu była wykonana %2$s. Teb błąd może wystąpić po przeniesieniu/zmianie nazwy wybranego folderu lub po niedawnym przywróceniu Aegis z kopii zapasowej. Proszę wybrać poprawny folder.
+Niedawna próba wykonania kopii zapasowej używając %1$s nie powiodła się, ponieważ Cue nie miał uprawnienia do zapisu w wybranym folderze. Próba zapisu była wykonana %2$s. Teb błąd może wystąpić po przeniesieniu/zmianie nazwy wybranego folderu lub po niedawnym przywróceniu Cue z kopii zapasowej. Proszę wybrać poprawny folder.
     </string>
-    <string name="backup_system_builtin">Wbudowane automatyczne kopie zapasowe Aegis</string>
+    <string name="backup_system_builtin">Wbudowane automatyczne kopie zapasowe Cue</string>
     <string name="backup_system_android">System kopii zapasowej w chmurze Android</string>
     <string name="backup_reminder_bar_message_with_latest" comment="The parameter is an elapsed time in the style of 'x seconds/minutes/days ago'">
         Najnowsza kopia zapasowa jest nieaktualna (%s)
@@ -517,7 +513,7 @@ Zmiany nie są zapisane w kopii zapasowej
     <string name="uri_copied_to_clipboard">Skopiowano URI do schowka</string>
     <string name="transfer_entry_description">Zeskanuj kod QR za pomocą aplikacji uwierzytelniającej, do której chcesz przenieść ten wpis</string>
     <string name="transfer_entry_brightness">Stuknij kod QR, aby przełączyć pełną jasność ekranu</string>
-    <string name="google_auth_compatible_transfer_description">Zeskanuj te kody QR za pomocą Aegis lub Google Authenticator.\n\nZ powodu ograniczeń w aplikacji Google Authenticator, tylko tokeny TOTP &amp; HOTP, które używają SHA1 i generują 6 cyfrowe kody są uwzględniane</string>
+    <string name="google_auth_compatible_transfer_description">Zeskanuj te kody QR za pomocą Cue lub Google Authenticator.\n\nZ powodu ograniczeń w aplikacji Google Authenticator, tylko tokeny TOTP &amp; HOTP, które używają SHA1 i generują 6 cyfrowe kody są uwzględniane</string>
     <string name="password_strength_very_weak">Bardzo słabe</string>
     <string name="password_strength_weak">Słabe</string>
     <string name="password_strength_fair">Przyzwoite</string>
@@ -540,10 +536,9 @@ Zmiany nie są zapisane w kopii zapasowej
     <string name="dialog_wipe_entries_checkbox">Wyczyść zawartość sejfu</string>
     <string name="import_from_clipboard_title">Importuj ze schowka</string>
     <string name="import_from_clipboard_message">Znaleźliśmy prawidłowy identyfikator URI otpauth w schowku.\n\n<b>Nazwa</b>: %1$s\n<b>Wydawca</b>: %2$s\n\nCzy chcesz go użyć do wstępnego wypełnienia tego wpisu?</string>
-    <string name="panic_trigger_ignore_toast">Aegis otrzymał wyzwalacz paniki, ale ustawienie jest wyłączone, ignorowanie</string>
+    <string name="panic_trigger_ignore_toast">Cue otrzymał wyzwalacz paniki, ale ustawienie jest wyłączone, ignorowanie</string>
     <string name="pref_panic_trigger_title">Usuń sejf przy wyzwalaczu paniki</string>
     <string name="pref_panic_trigger_summary">Usuń sejf po otrzymaniu wyzwalacza paniki z Ripple</string>
-    <string name="import_vault">Zaimportuj sejf Aegis</string>
     <string name="import_vault_hint">Chcesz zaimportować z innej aplikacji 2FA? Ukończ konfigurację, a następnie przejdź do menu ustawień.</string>
     <plurals name="import_duplicate_toast">
         <item quantity="one">Odznaczono %d potencjalny duplikat. Sprawdź listę.</item>
@@ -564,7 +559,7 @@ Zmiany nie są zapisane w kopii zapasowej
     <string name="importer_help_freeotp">FreeOTP 2: Dostarcz plik kopii zapasowej.\nFreeOTP 1.x: Dostarcz kopię pliku <b>/data/data/org.fedorahosted.freeotp/shared_prefs/tokens.xml</b> znajdującego się w katalogu FreeOTP pamięci wewnętrznej.</string>
     <string name="importer_help_freeotp_plus">Dostarcz plik eksportu FreeOTP+.</string>
     <string name="importer_warning_title_freeotp2">Zgodność z FreeOTP 2</string>
-    <string name="importer_warning_message_freeotp2">Istnieje szereg problemów w FreeOTP 2, które mogą skutkować uszkodzonymi kopiami zapasowymi. Aegis spróbuje odzyskać jak najwięcej wpisów, ale możliwe, że niektóre lub nawet wszystkie z nich nie zostaną zaimportowane.</string>
+    <string name="importer_warning_message_freeotp2">Istnieje szereg problemów w FreeOTP 2, które mogą skutkować uszkodzonymi kopiami zapasowymi. Cue spróbuje odzyskać jak najwięcej wpisów, ale możliwe, że niektóre lub nawet wszystkie z nich nie zostaną zaimportowane.</string>
     <string name="importer_help_google_authenticator"><b>Obsługiwane są tylko pliki bazy danych z Google Authenticator v5.10 i wcześniej</b>.\n\nDostarcz kopię <b>/data/com.google.android.apps.authenticator2/databases/databases</b>, zlokalizowane w wewnętrznym katalogu pamięci Google Authenticator.</string>
     <string name="importer_help_microsoft_authenticator">Dostarcz kopię <b>/data/data/com.azure.authenticator/databases/PhoneFactor</b>, znajdującą się w wewnętrznym katalogu pamięci Microsoft Authenticator.</string>
     <string name="importer_help_plain_text">Dostarcz plik tekstowy z URI Google Authenticator w każdej linii.</string>
@@ -578,7 +573,7 @@ zlokalizowanego w wewnętrznym katalogu Steam.</string>
     <string name="import_assign_icons_dialog_title">Przypisz ikony</string>
     <string name="import_assign_icons_dialog_text">Czy chcesz przypisać ikony do zaimportowanych wpisów?</string>
     <string name="importer_encrypted_exception_google_authenticator">Zaszyfrowany wpis został pominięty: %s</string>
-    <string name="importer_help_direct">Importuj wpisy bezpośrednio z %s. Wymaga to zainstalowania aplikacji na tym urządzeniu i dostępu roota dla Aegis.</string>
+    <string name="importer_help_direct">Importuj wpisy bezpośrednio z %s. Wymaga to zainstalowania aplikacji na tym urządzeniu i dostępu roota dla Cue.</string>
     <string name="groups">Grupy</string>
     <string name="pref_focus_search">Podświetl wyszukiwanie na starcie aplikacji</string>
     <string name="pref_focus_search_summary">Przejdź do wyszukiwania natychmiast po otwarciu aplikacji.</string>

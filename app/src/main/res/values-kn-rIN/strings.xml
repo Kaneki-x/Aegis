@@ -47,7 +47,7 @@
     <string name="pref_backups_reminder_title">ಬ್ಯಾಕಪ್ ಜ್ಞಾಪನೆ</string>
     <string name="pref_backups_reminder_summary">ನಿಮ್ಮ ಇತ್ತೀಚಿನ ಬದಲಾವಣೆಗಳನ್ನು ನೀವು ಬ್ಯಾಕಪ್ ಮಾಡದಿದ್ದಲ್ಲಿ ನಿಮ್ಮ ವಾಲ್ಟ್ ಅನ್ನು ಬ್ಯಾಕಪ್ ಮಾಡಲು ಜ್ಞಾಪನೆಯನ್ನು ತೋರಿಸಲಾಗುವುದು.</string>
     <string name="pref_backups_reminder_dialog_title">ಬ್ಯಾಕಪ್ ಜ್ಞಾಪನೆಯನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ</string>
-    <string name="pref_backups_reminder_dialog_summary">ಈ ಜ್ಞಾಪನೆಯನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸುವುದು ಎಂದರೆ ನೀವು ಇನ್ನೂ ಬ್ಯಾಕಪ್ ಮಾಡದ ಬದಲಾವಣೆಗಳನ್ನು ಹೊಂದಿದ್ದೀರಾ ಅಥವಾ ಇಲ್ಲವೇ ಎಂಬುದನ್ನು Aegis ನಿಮಗೆ ತಿಳಿಸುವುದಿಲ್ಲ. ಇದರಿಂದ ನಿಮ್ಮ ಟೋಕನ್ಗಳನ್ನೂ ಕಳೆದುಕೊಳ್ಳುವ ಸಂಭವವಿರುತ್ತದೆ. ಜ್ಞಾಪನೆಯನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲು ನೀವು ಖಚಿತವಾಗಿ ಬಯಸುವಿರಾ?</string>
+    <string name="pref_backups_reminder_dialog_summary">ಈ ಜ್ಞಾಪನೆಯನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸುವುದು ಎಂದರೆ ನೀವು ಇನ್ನೂ ಬ್ಯಾಕಪ್ ಮಾಡದ ಬದಲಾವಣೆಗಳನ್ನು ಹೊಂದಿದ್ದೀರಾ ಅಥವಾ ಇಲ್ಲವೇ ಎಂಬುದನ್ನು Cue ನಿಮಗೆ ತಿಳಿಸುವುದಿಲ್ಲ. ಇದರಿಂದ ನಿಮ್ಮ ಟೋಕನ್ಗಳನ್ನೂ ಕಳೆದುಕೊಳ್ಳುವ ಸಂಭವವಿರುತ್ತದೆ. ಜ್ಞಾಪನೆಯನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲು ನೀವು ಖಚಿತವಾಗಿ ಬಯಸುವಿರಾ?</string>
     <string name="pref_backups_location_summary">ಬ್ಯಾಕಪ್‌ಗಳನ್ನು ಇಲ್ಲಿ ಸಂಗ್ರಹಿಸಲಾಗುತ್ತದೆ</string>
     <string name="pref_backups_trigger_title">ಬ್ಯಾಕಪ್ ಮಾಡು</string>
     <string name="pref_backups_trigger_summary">ಈಗಲೇ ಬ್ಯಾಕಪ್ ಮಾಡಲು ಇಲ್ಲಿ ಒತ್ತಿ</string>
@@ -124,7 +124,6 @@
     <string name="discard_changes_description">ನಿಮ್ಮ ಬದಲಾವಣೆಗಳು ಉಳಿಸಲಾಗಿಲ್ಲ</string>
     <string name="saving_profile_error">ಪ್ರೊಫೈಲನ್ನು ಉಳಿಸಲು ದೋಷವಾಯಿತು</string>
     <string name="welcome">ಸ್ವಾಗತ</string>
-    <string name="app_description">Aegis ಒಂದು ಉಚಿತ, ಸುರಕ್ಷಿತ, ಹಾಗು ಮುಕ್ತ ಸಂಪನ್ಮೂಲ 2FA ಅಪ್ಲಿಕೇಶನ್</string>
     <string name="setup_completed">ತಯಾರಿ ಪೂರ್ಣಗೊಂಡಿದೆ</string>
     <string name="vault_not_found">ವೌಲ್ಟ್ ಸಿಗಲಿಲ್ಲ, ತಯಾರಿಯನ್ನು ಪ್ರಾರಂಭಿಸಲಾಗುತ್ತಿದೆ…</string>
     <string name="errors_copied">ದೋಷಗಳು ಕ್ಲಿಪ್ಬೋರ್ಡಿಗೆ ನಕಲಿಸಲಾಗಿದೆ</string>
@@ -181,7 +180,7 @@
     <string name="toggle_checkboxes">ಚೆಕ್ಬಾಕ್ಸ್ಗಳನ್ನು ಟಾಗಲ್ ಮಾಡು</string>
     <string name="search">ಹುಡುಕು</string>
     <string name="channel_name_lock_status">ಬೀಗ ಹಾಕಿರುವ ಸ್ಥಿತಿ</string>
-    <string name="channel_description_lock_status">Aegis ವೌಲ್ಟಿನ ಬೀಗ ಹಾಕಿದೆ ಎಂದು ನಿನಗೆ ತಿಳಿಸಲು ಒಂದು ಶಾಶ್ವತ ಅಧಿಸೂಚನೆಯನ್ನು ರಚಿಸಬುಹುದು</string>
+    <string name="channel_description_lock_status">Cue ವೌಲ್ಟಿನ ಬೀಗ ಹಾಕಿದೆ ಎಂದು ನಿನಗೆ ತಿಳಿಸಲು ಒಂದು ಶಾಶ್ವತ ಅಧಿಸೂಚನೆಯನ್ನು ರಚಿಸಬುಹುದು</string>
     <string name="vault_unlocked_state">ವೌಲ್ಟಿನ ಬೀಗ ಹಾಕಿಲ್ಲ. ಬೀಗವನ್ನು ಹಾಕುವುದಕ್ಕೆ ಇಲ್ಲಿ ಒತ್ತಿ.</string>
     <string name="version">ಆವೃತ್ತಿ</string>
     <string name="changelog">ಬದಲಾವಣೆ ಲಾಗ್</string>

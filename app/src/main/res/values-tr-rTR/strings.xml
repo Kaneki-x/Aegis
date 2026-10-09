@@ -28,7 +28,6 @@
     <string name="pref_section_security_title">Güvenlik</string>
     <string name="pref_section_security_summary">Şifrelemeyi, biyometrik kilit açmayı, otomatik kilitlemeyi ve diğer güvenlik ayarlarını düzenle.</string>
     <string name="pref_section_import_export_title">İçe Aktar &amp; Dışa Aktar</string>
-    <string name="pref_section_import_export_summary">Aegis ya da diğer doğrulayıcı uygulamaların yedeklerini içe aktar. Aegis deponu elle dışa aktar.</string>
     <string name="pref_section_audit_log_title">Denetim kaydı</string>
     <string name="pref_section_audit_log_summary">Uygulamadaki bütün raporlanmış önemli olayların listesini bul.</string>
     <string name="pref_section_backups_title">Yedekler</string>
@@ -56,14 +55,14 @@
     <string name="pref_import_file_title">Dosyadan içeriye aktar</string>
     <string name="pref_import_file_summary">Veritabanını dosyadan içeriye aktar</string>
     <string name="pref_android_backups_title">Android bulut yedekleme</string>
-    <string name="pref_android_backups_summary">Android yedekleme sisteminin Aegis deposunu dahil etmesine izin ver. Bu yalnızca şifreli depolar için desteklidir.</string>
+    <string name="pref_android_backups_summary">Android yedekleme sisteminin Cue deposunu dahil etmesine izin ver. Bu yalnızca şifreli depolar için desteklidir.</string>
     <string name="pref_android_backups_hint"><i>Yukarıdaki ayardan bağımsız olarak, cihazdan cihaza (D2D) yedeklemelere her zaman izin verilir.</i></string>
     <string name="pref_backups_title">Otomatik olarak kasayı yedekle</string>
     <string name="pref_backups_summary">Kasanın yedeğini harici depolamaya kaydet. Sadece şifrelenmiş kasalarda desteklenir.</string>
     <string name="pref_backups_reminder_title">Yedekleme hatırlatıcı</string>
     <string name="pref_backups_reminder_summary">En son değişikliklerinizi yedeklemediyseniz kasanızı yedeklemeniz için bir hatırlatıcı gösterir.</string>
     <string name="pref_backups_reminder_dialog_title">Yedekleme hatırlatıcıyı devre dışı bırak</string>
-    <string name="pref_backups_reminder_dialog_summary">Bu hatırlatıcıyı devre dışı bırakmak, Aegis\'in henüz yedeklenmemiş değişiklikleriniz olup olmadığını size söylemeyeceği anlamına gelir. Bu sizi kodlarınıza erişimi kaybetme riskiyle karşı karşıya bırakır. Hatırlatıcıyı devre dışı bırakmak istediğinizden emin misiniz?</string>
+    <string name="pref_backups_reminder_dialog_summary">Bu hatırlatıcıyı devre dışı bırakmak, Cue\'in henüz yedeklenmemiş değişiklikleriniz olup olmadığını size söylemeyeceği anlamına gelir. Bu sizi kodlarınıza erişimi kaybetme riskiyle karşı karşıya bırakır. Hatırlatıcıyı devre dışı bırakmak istediğinizden emin misiniz?</string>
     <string name="pref_backups_versioning_strategy_title">Yedekleme yöntemi</string>
     <string name="pref_backups_versioning_strategy_keep_x_versions">Şu sayıda versiyon tut</string>
     <string name="pref_backups_versioning_strategy_single_backup">Tek yedekleme</string>
@@ -103,7 +102,7 @@
     <string name="pref_auto_lock_title">Otomatik kilitleme</string>
     <string name="pref_auto_lock_summary">Ne zaman %s</string>
     <string name="pref_auto_lock_summary_disabled">Devre dışı</string>
-    <string name="pref_auto_lock_prompt">Otomatik olarak Aegis\'i kilitle</string>
+    <string name="pref_auto_lock_prompt">Otomatik olarak Cue\'i kilitle</string>
     <string name="pref_auto_lock_type_back_button">Geri tuşuna basıldığında</string>
     <string name="pref_auto_lock_type_minimize">Uygulama küçültüldüğünde</string>
     <string name="pref_auto_lock_type_device_lock">Cihaz kilitlendiğinde</string>
@@ -145,11 +144,10 @@
     <string name="today_at_time">Bugün saat %1$s</string>
     <string name="day_of_week_at_time">%2$s günü saat %1$s</string>
     <string name="export_encrypted">Kasayı şifrele</string>
-    <string name="export_help">Bu işlem kasayı Aegis\'in dahili deposundan dışarı aktaracaktır. Lütfen dışa aktarmak istediğiniz biçimi seçiniz:</string>
-    <string name="export_warning_unencrypted">Aegis kasanızın şifrelenmemiş bir kopyasını dışa aktarmak üzeresiniz. <b>Bu işlem tavsiye edilmez</b>.</string>
+    <string name="export_help">Bu işlem kasayı Cue\'in dahili deposundan dışarı aktaracaktır. Lütfen dışa aktarmak istediğiniz biçimi seçiniz:</string>
+    <string name="export_warning_unencrypted">Cue kasanızın şifrelenmemiş bir kopyasını dışa aktarmak üzeresiniz. <b>Bu işlem tavsiye edilmez</b>.</string>
     <string name="export_warning_password">Dışa aktarmalar, Güvenlik ayarlarında yapılandırılan ayrı bir parola kullanılarak şifrelenir.</string>
     <string name="understand_risk_accept">Riski göze alıyorum</string>
-    <string name="export_format_aegis">Aegis (.JSON)</string>
     <string name="export_format_google_auth_uri">Metin belgesi (.TXT)</string>
     <string name="export_format_html">Web sayfası (.HTML)</string>
     <string name="export_format_hint">Dışa Aktarma Biçimi</string>
@@ -160,9 +158,9 @@
         <item quantity="other">%d grup seçildi</item>
     </plurals>
     <string name="export_no_groups_selected">Dışa aktarılacak grup seçilmedi</string>
-    <string name="export_html_title" comment="The title of an HTML export document">Aegis Authenticator Dışa Aktarma</string>
+    <string name="export_html_title" comment="The title of an HTML export document">Cue Authenticator Dışa Aktarma</string>
     <string name="choose_authentication_method">Güvenlik</string>
-    <string name="authentication_method_explanation">Aegis güvenlik odaklı bir 2FA uygulamasıdır. Kodlar isteğiniz üzerine parolayla şifreleyebileceğiniz bir kasada saklanabilir. Eğer bir saldırgan şifrelenmiş kasa dosyanızı elde ederse parolayı bilmeden içeriğine erişemeyecektir.\n\nCihazınız için en iyi olduğunu düşündüğümüz seçeneği seçtik.</string>
+    <string name="authentication_method_explanation">Cue güvenlik odaklı bir 2FA uygulamasıdır. Kodlar isteğiniz üzerine parolayla şifreleyebileceğiniz bir kasada saklanabilir. Eğer bir saldırgan şifrelenmiş kasa dosyanızı elde ederse parolayı bilmeden içeriğine erişemeyecektir.\n\nCihazınız için en iyi olduğunu düşündüğümüz seçeneği seçtik.</string>
     <string name="authentication_method_none">Hiçbiri</string>
     <string name="authentication_method_none_description">Kasayı açmak için parola gerektirme ve kasayı şifreleme. <b>Bu seçenek tavsiye edilmez</b>.</string>
     <string name="authentication_method_password">Parola</string>
@@ -178,17 +176,17 @@
     <string name="set_number">Lütfen bir sayı girin</string>
     <string name="set_password_confirm">Lütfen parolayı doğrulayın</string>
     <string name="invalid_password">Parola hatalı</string>
-    <string name="invalidated_biometrics">Cihazınızın güvenlik ayarlarında bir değişim tespit edildi. Lütfen \"Aegis -&gt; Ayarlar -&gt; Güvenlik &gt; Biyometrik kilit açma\" menüsüne gidip biyometrik kilit açmayı devre dışı bırakın ve tekrardan aktifleştirin.</string>
+    <string name="invalidated_biometrics">Cihazınızın güvenlik ayarlarında bir değişim tespit edildi. Lütfen \"Cue -&gt; Ayarlar -&gt; Güvenlik &gt; Biyometrik kilit açma\" menüsüne gidip biyometrik kilit açmayı devre dışı bırakın ve tekrardan aktifleştirin.</string>
     <string name="password_reminder">Lütfen şifrenizi giriniz. Unutmamanız için ara sıra sizden bunu yapmanızı istiyoruz.</string>
     <string name="password_reminder_dialog_title">Varsayılan olarak biyometrik kilit açma</string>
-    <string name="password_reminder_dialog_message">Unutmadığınızdan ve kasanızın dışında kalmadığınızdan emin olmak için ara sıra şifrenizi girmenizi isteriz. Şifrenizi bir kez girdikten sonra Aegis, başka bir şifre hatırlatma zamanı gelene kadar varsayılan olarak biyometrik kilit açma moduna geri dönecektir.</string>
+    <string name="password_reminder_dialog_message">Unutmadığınızdan ve kasanızın dışında kalmadığınızdan emin olmak için ara sıra şifrenizi girmenizi isteriz. Şifrenizi bir kez girdikten sonra Cue, başka bir şifre hatırlatma zamanı gelene kadar varsayılan olarak biyometrik kilit açma moduna geri dönecektir.</string>
     <string name="password_reminder_freq_never">Asla</string>
     <string name="password_reminder_freq_weekly">Haftada bir</string>
     <string name="password_reminder_freq_biweekly">İki haftada bir</string>
     <string name="password_reminder_freq_monthly">Ayda bir</string>
     <string name="password_reminder_freq_quarterly">Üç ayda bir</string>
     <string name="enter_password_2fas_message">Görünüşe göre bu 2FAS yedekleme şifrelenmiş. Lütfen aşağıya parolayı girin.</string>
-    <string name="enter_password_authy_message">Görünüşe göre Authy kodlarınız şifreli. Lütfen Aegis\'i kapatın Authy\'i açın ve parolanızla kodlarınızın kilidini açın. Bunun yerine aşağıya parolanızı girerseniz Aegis, Authy kodlarınızı sizin için deşifre etmeyi deneyebilir.</string>
+    <string name="enter_password_authy_message">Görünüşe göre Authy kodlarınız şifreli. Lütfen Cue\'i kapatın Authy\'i açın ve parolanızla kodlarınızın kilidini açın. Bunun yerine aşağıya parolanızı girerseniz Cue, Authy kodlarınızı sizin için deşifre etmeyi deneyebilir.</string>
     <string name="enter_password_aegis_title">Lütfen içe aktarma şifresini girin</string>
     <string name="period_hint">Süre (Saniye)</string>
     <string name="algorithm_hint">Hash fonksiyonu</string>
@@ -251,9 +249,8 @@
     <string name="saving_profile_error">Profil kaydı sırasında hata</string>
     <string name="saving_assign_icons_error">Simgeler atanırken hata oluştu</string>
     <string name="welcome">Hoşgeldiniz</string>
-    <string name="app_description">Aegis özgür, güvenli ve açık kaynak 2FA uygulamasıdır</string>
     <string name="setup_completed">Kurulum Tamamlandı</string>
-    <string name="setup_completed_description">Aegis kuruldu ve kullanılmaya hazır.</string>
+    <string name="setup_completed_description">Cue kuruldu ve kullanılmaya hazır.</string>
     <string name="vault_not_found">Kasa bulunmadı, kurulum başlatılıyor...</string>
     <string name="copied">Kopyalandı</string>
     <string name="errors_copied">Hatalar panoya kopyalandı</string>
@@ -265,8 +262,8 @@
     <string name="saving_error">Kasayı kaydetmeye çalışırken bir hata meydana geldi</string>
     <string name="vault_init_error">Kasayı oluşturmaya çalışırken bir hata meydana geldi</string>
     <string name="vault_load_error">Kasayı depolama alanından yüklemeye çalışırken bir hata meydana geldi</string>
-    <string name="biometric_decrypt_error">Kasayı biyometrik doğrulama ile açmaya çalışırken bir hata meydana geldi. Bu genellikle cihazınızın güvenlik ayarları değiştğinde olur. Lütfen kasanızı parolanızla açın ve biyometrik doğrulamayı Aegis\'in ayar menüsünden yeniden yapılandırın.</string>
-    <string name="biometric_init_error">Biyometrik doğrulamaya hazırlanırken bir hata meydana geldi. Bu genellikle cihazınızın güvenlik ayarları değiştğinde olur. Lütfen kasanızı parolanızla açın ve biyometrik doğrulamayı Aegis\'in ayar menüsünden yeniden yapılandırın.</string>
+    <string name="biometric_decrypt_error">Kasayı biyometrik doğrulama ile açmaya çalışırken bir hata meydana geldi. Bu genellikle cihazınızın güvenlik ayarları değiştğinde olur. Lütfen kasanızı parolanızla açın ve biyometrik doğrulamayı Cue\'in ayar menüsünden yeniden yapılandırın.</string>
+    <string name="biometric_init_error">Biyometrik doğrulamaya hazırlanırken bir hata meydana geldi. Bu genellikle cihazınızın güvenlik ayarları değiştğinde olur. Lütfen kasanızı parolanızla açın ve biyometrik doğrulamayı Cue\'in ayar menüsünden yeniden yapılandırın.</string>
     <string name="disable_encryption">Şifrelemeyi devre dışı bırak</string>
     <string name="disable_encryption_description">Şifrelemeyi devre dışı bırakmak istediğinize emin misiniz? Bu deponun düz metin şeklinde depolanmasına sebep olacak. <b>Otomatik yedeklemeler de devre dışı bırakılacaktır</b>.</string>
     <string name="enable_encryption_error">Şifrelemeyi aktifleştirirken bir hata meydana geldi</string>
@@ -300,7 +297,7 @@
     <string name="file_not_found">Hata: Dosya bulunamadı</string>
     <string name="reading_file_error">Dosyayı okumaya çalışırken bir hata meydana geldi</string>
     <string name="app_lookup_error">Hata: Uygulama yüklenmemiş</string>
-    <string name="app_version_error">Yüklü %s sürümü desteklenmiyor. Son sürümlerde diskteki bazı dosyaların şifrelenmesinden ötürü Aegis içeri aktaracak bilgilere erişemiyor. İçe aktarmayı denemek hata ile sonuçlanabilir, yine de devam etmek ister misiniz?</string>
+    <string name="app_version_error">Yüklü %s sürümü desteklenmiyor. Son sürümlerde diskteki bazı dosyaların şifrelenmesinden ötürü Cue içeri aktaracak bilgilere erişemiyor. İçe aktarmayı denemek hata ile sonuçlanabilir, yine de devam etmek ister misiniz?</string>
     <string name="root_error">Hata: root erişimi elde edilemedi</string>
     <plurals name="imported_entries_count">
         <item quantity="one">%d girdi içe aktarıldı</item>
@@ -318,7 +315,7 @@
     <string name="encryption_enable_biometrics_error">Biyometrik kilit açmayı aktifleştirirken bir hata meydana geldi. Bazı cihazlarda biyometrik kimlik doğrulama kötü uygulanmış olabilir ve görünüşe göre cihazınız bu cihazlardan biri. Bunun yerine sadece parola ile doğrulama ayarına geçiş yapın.</string>
     <string name="no_cameras_available">Hiçbir kamera kullanılabilir değil</string>
     <string name="read_qr_error">QR kodu okumaya çalışırken bir hata meydana geldi</string>
-    <string name="read_qr_error_phonefactor">Aegis Microsoft\'un özel çift faktörlü doğrulama algoritmasıyla uyumlu değildir. Office 365\' te çift faktörlü doğrulamayı yapılandırırken \"Uygulamayı bildirim olmadan kur\" u seçtiğinizden emin olun.</string>
+    <string name="read_qr_error_phonefactor">Cue Microsoft\'un özel çift faktörlü doğrulama algoritmasıyla uyumlu değildir. Office 365\' te çift faktörlü doğrulamayı yapılandırırken \"Uygulamayı bildirim olmadan kur\" u seçtiğinizden emin olun.</string>
     <string name="partial_google_auth_import">Eksik Google Authenticator dışa aktarımı algılandı</string>
     <string name="partial_google_auth_import_warning">İçe aktarma işleminizde bazı QR kodları eksik. aşağıdaki kodlar bulunamadı:\n\n<b>%s</b>\n\nBu kısmi dışa aktarmayı içe aktarmaya devam edebilirsiniz, ancak herhangi bir tokena erişimi kaybetme riskine girmemek için tüm QR kodlarıyla yeniden denemenizi öneririz.</string>
     <string name="missing_qr_code_descriptor">• QR kodu %d</string>
@@ -405,8 +402,8 @@
     <string name="unknown_issuer">Bilinmeyen sağlayıcı</string>
     <string name="unknown_account_name">Bilinmeyen hesap adı</string>
     <plurals name="import_error_dialog">
-        <item quantity="one">Aegis %d tokenı içe aktaramadı. Bu token atlanacak. Hata hakkında daha fazla bilgi görmek için \'ayrıntılar\'a basın.</item>
-        <item quantity="other">Aegis %d tokenı içe aktaramadı. Bu tokenlar atlanacak. Hata hakkında daha fazla bilgi görmek için \'ayrıntılar\'a basın.</item>
+        <item quantity="one">Cue %d tokenı içe aktaramadı. Bu token atlanacak. Hata hakkında daha fazla bilgi görmek için \'ayrıntılar\'a basın.</item>
+        <item quantity="other">Cue %d tokenı içe aktaramadı. Bu tokenlar atlanacak. Hata hakkında daha fazla bilgi görmek için \'ayrıntılar\'a basın.</item>
     </plurals>
     <string name="unable_to_process_deeplink">Derin bağlantı işlenemiyor</string>
     <string name="unable_to_read_qrcode_file">Dosyadan QR kodu okunamıyor ve işlenemiyor: %s.</string>
@@ -420,16 +417,15 @@
     <string name="toggle_checkboxes">Kutucukları işaretleyin</string>
     <string name="search">Ara</string>
     <string name="channel_name_lock_status">Kilit durumu</string>
-    <string name="channel_description_lock_status">Aegis kasa kilidinin açık olduğunu bildirmek üzere kalıcı bir bildirim gösterebilir.</string>
+    <string name="channel_description_lock_status">Cue kasa kilidinin açık olduğunu bildirmek üzere kalıcı bir bildirim gösterebilir.</string>
     <string name="vault_unlocked_state">Kasa kilidi açık. Kilitlemek için buraya dokunun.</string>
     <string name="version">Sürüm</string>
     <string name="changelog">Değişiklik Günlüğü</string>
     <string name="whats_new">Yeni ne var?</string>
     <string name="github_description">Kaynak kod, sorunlar ve bilgiler</string>
     <string name="license">Lisans</string>
-    <string name="license_description">Aegis Doğrulayıcı GPLv3 lisansına sahiptir</string>
     <string name="third_party_licenses">Üçüncü taraf lisanslar</string>
-    <string name="third_party_licenses_description">Aegis\'in kullandığı üçüncü-parti kütüphanelerin lisansları</string>
+    <string name="third_party_licenses_description">Cue\'in kullandığı üçüncü-parti kütüphanelerin lisansları</string>
     <string name="country_netherlands">Hollanda</string>
     <string name="email_us">Bir e-posta yazın</string>
     <string name="visit_website">Sitemizi ziyaret edin</string>
@@ -439,7 +435,7 @@
     <string name="webview_error">Bu cihazda değişiklik günlüğünü ve lisansı görüntülemek için gerekli olan \"web view\" desteklenmiyor. Bu sistem bileşeni yerinde yok.</string>
     <string name="email">E-posta</string>
     <string name="time_sync_warning_title">Otomatik zaman senkronizasyonu</string>
-    <string name="time_sync_warning_message">Aegis doğru kodları oluşturmak üzere sistem zamanın senkron olmasına ihtiyaç duyar. Birkaç saniyelik sapma hatalı kod oluşumuna neden olabilir. Görünüşe göre cihazınız zamanı otomatik senkronize etmeye ayarlanmamış. Şimdi ayarlamak ister misiniz?</string>
+    <string name="time_sync_warning_message">Cue doğru kodları oluşturmak üzere sistem zamanın senkron olmasına ihtiyaç duyar. Birkaç saniyelik sapma hatalı kod oluşumuna neden olabilir. Görünüşe göre cihazınız zamanı otomatik senkronize etmeye ayarlanmamış. Şimdi ayarlamak ister misiniz?</string>
     <string name="time_sync_warning_disable">Beni uyarmayı bırak. Ne yaptığımı biliyorum.</string>
     <string name="google_qr_export_unrelated">Alakasız QR kod bulundu. Tarayıcıyı yeniden başlatmayı deneyin.</string>
     <plurals name="google_qr_export_scanned">
@@ -450,9 +446,9 @@
     <string name="backup_error_bar_message"><b>Kasa yedeklenmesi başarısız oldu</b></string>
     <string name="backup_error_dialog_details" comment="The first parameter is the type of backup (e.g. built-in or Android backup). The second parameter is an elapsed time in the style of 'x seconds/minutes/days ago'.">%1$s kullanılarak denenen kasa yedeklemesi oluşan bir hata sonucu başarısız oldu. Yedek %2$s kullanmaya çalıştı. Lütfen yedeklemelerin başarılı olabilmesi için yedekleme ayarlarınızı kontrol edin.
     </string>
-    <string name="backup_permission_error_dialog_details" comment="The first parameter is the type of backup (e.g. built-in or Android backup). The second parameter is an elapsed time in the style of 'x seconds/minutes/days ago'.">%1$s kullanılarak denenen kasa yedeklemesi Aegis\'in hedef yedekleme konumuna yazma erişimi olmaması sonucu başarısız oldu. Yedek %2$s kullanmaya çalıştı. Bu hata, yedekleme hedefini taşıdıysanız/yeniden isimlendirdiyseniz veya yakın zamanda Aegis\'i bir yedeklemeden geri yüklediyseniz oluşabilir. Lütfen yedekleme konumunu yeniden ayarlayın.
+    <string name="backup_permission_error_dialog_details" comment="The first parameter is the type of backup (e.g. built-in or Android backup). The second parameter is an elapsed time in the style of 'x seconds/minutes/days ago'.">%1$s kullanılarak denenen kasa yedeklemesi Cue\'in hedef yedekleme konumuna yazma erişimi olmaması sonucu başarısız oldu. Yedek %2$s kullanmaya çalıştı. Bu hata, yedekleme hedefini taşıdıysanız/yeniden isimlendirdiyseniz veya yakın zamanda Cue\'i bir yedeklemeden geri yüklediyseniz oluşabilir. Lütfen yedekleme konumunu yeniden ayarlayın.
     </string>
-    <string name="backup_system_builtin">Aegis dahili otomatik yedekleri</string>
+    <string name="backup_system_builtin">Cue dahili otomatik yedekleri</string>
     <string name="backup_system_android">Android\'in bulut yedekleme sistemi</string>
     <string name="backup_reminder_bar_message_with_latest" comment="The parameter is an elapsed time in the style of 'x seconds/minutes/days ago'">
         Son yedek güncel değil (%s)
@@ -489,7 +485,7 @@
     <string name="uri_copied_to_clipboard">URI panoya kopyalandı</string>
     <string name="transfer_entry_description">Bu kare kodu aktarmak istediğiniz doğrulayıcı uygulamasıyla okutun</string>
     <string name="transfer_entry_brightness">Tam ekran parlaklığı için kare koda dokunun</string>
-    <string name="google_auth_compatible_transfer_description">Bu QR kodlarını Aegis veya Google Authenticator ile tarayın.\in\Google Authenticator uygulamasının sınırlamaları nedeniyle, yalnızca TOTP &amp; SHA1 kullanan ve 6 basamaklı kodlar üreten TOTP belirteçleri dahildir</string>
+    <string name="google_auth_compatible_transfer_description">Bu QR kodlarını Cue veya Google Authenticator ile tarayın.\in\Google Authenticator uygulamasının sınırlamaları nedeniyle, yalnızca TOTP &amp; SHA1 kullanan ve 6 basamaklı kodlar üreten TOTP belirteçleri dahildir</string>
     <string name="password_strength_very_weak">Çok zayıf</string>
     <string name="password_strength_weak">Zayıf</string>
     <string name="password_strength_fair">İdare Eder</string>
@@ -511,10 +507,9 @@
     <string name="dialog_wipe_entries_message">Kasanızda zaten girdiler bulunmaktadır. İçe aktarmadan önce bu girdileri silmek istediğinize emin misiniz?\n\n<b>Deponun içinde bulunan girdilere erişiminizi sonsuza dek kaybedeceksiniz.</b></string>
     <string name="dialog_wipe_entries_checkbox">Kasa içeriklerini temizle</string>
     <string name="import_from_clipboard_title">Panodan içe aktar</string>
-    <string name="panic_trigger_ignore_toast">Aegis panik tetiği algıladı, ancak bu ayar devre dışı, göz ardı ediliyor</string>
+    <string name="panic_trigger_ignore_toast">Cue panik tetiği algıladı, ancak bu ayar devre dışı, göz ardı ediliyor</string>
     <string name="pref_panic_trigger_title">Panik tetiklendiğinde kasayı sil</string>
     <string name="pref_panic_trigger_summary">Ripple\'dan panik tetiklenmesi alınca kasayı sil</string>
-    <string name="import_vault">Aegis kasasını içe aktar</string>
     <string name="import_vault_hint">Farklı bir 2FA uygulamasından içe aktarmak mı istiyorsunuz? Önce kurulumu tamamlayın ve ardından ayarlar menüsüne gidin.</string>
     <plurals name="import_duplicate_toast">
         <item quantity="one">%d potansiyel kopyanın işareti kaldırıldı. Lütfen giriş listesini inceleyin.</item>
@@ -532,7 +527,7 @@
     <string name="importer_help_freeotp">FreeOTP 2: Bir yedek dosyası sağlayın.\nFreeOTP 1.x: Dahili depolamada FreeOTP dizininde bulunan <b>/data/data/org.fedorahosted.freeotp/shared_prefs/tokens.xml</b> dosyasının kopyasını sağlayın.</string>
     <string name="importer_help_freeotp_plus">FreeOTP+ dışa aktarım dosyasını sağlayın.</string>
     <string name="importer_warning_title_freeotp2">FreeOTP 2 uyumluluğu</string>
-    <string name="importer_warning_message_freeotp2">FreeOTP 2\'de bozuk yedeğe yol açabilecek bir dizi sorun bulunmaktadır. Aegis olabildiğince fazla sayıda girdiyi kurtarmaya çalışacaktır fakat bazılarının hatta hepsinin içeri aktarılması başarısız olabilir.</string>
+    <string name="importer_warning_message_freeotp2">FreeOTP 2\'de bozuk yedeğe yol açabilecek bir dizi sorun bulunmaktadır. Cue olabildiğince fazla sayıda girdiyi kurtarmaya çalışacaktır fakat bazılarının hatta hepsinin içeri aktarılması başarısız olabilir.</string>
     <string name="importer_help_google_authenticator"><b>Yalnızca Google Authenticator v5.10 ve önceki sürümlerdeki veritabanı dosyaları desteklenir</b>.\n\nGoogle Authenticator\'ın dahili depolama dizininde bulunan<b>/data/data/com.google.android.apps.authenticator2/databases/databases</b>dosyasının bir kopyasını temin edin.</string>
     <string name="importer_help_microsoft_authenticator"><b>/data/data/com.azure.authenticator/databases/PhoneFactor</b>dosyasını sağlayın, Microsoft Authenticator\'ın dahili depolama konumunda bulunabilir.</string>
     <string name="importer_help_plain_text">Her bir satırında Google Authenticator URL\'leri bulunan bir düz metin belgesi sağlayın.</string>
@@ -544,7 +539,7 @@
     <string name="import_assign_icons_dialog_title">Simgeleri ata</string>
     <string name="import_assign_icons_dialog_text">İçe aktarılan girişlere simgeler atamak istiyor musunuz?</string>
     <string name="importer_encrypted_exception_google_authenticator">Şifrelenmiş giriş geçildi: %s</string>
-    <string name="importer_help_direct">Girdileri doğrudan %s\'dan içeri aktar. Bunu yapabilmek için uygulamanın cihazınızda yüklü olması ve Aegis\'in kök erişim iznine sahip olması gerekir.</string>
+    <string name="importer_help_direct">Girdileri doğrudan %s\'dan içeri aktar. Bunu yapabilmek için uygulamanın cihazınızda yüklü olması ve Cue\'in kök erişim iznine sahip olması gerekir.</string>
     <string name="groups">Gruplar</string>
     <string name="pref_focus_search">Uygulama başladığında arama bölümüne odaklan</string>
     <string name="pref_focus_search_summary">Uygulama açılır açılmaz arama menüsüne odaklan.</string>

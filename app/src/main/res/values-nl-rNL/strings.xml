@@ -28,7 +28,6 @@
     <string name="pref_section_security_title">Beveiliging</string>
     <string name="pref_section_security_summary">Instellen van versleuteling, biometrische ontgrendeling, automatische vergrendeling en andere beveiligingsinstellingen.</string>
     <string name="pref_section_import_export_title">Importeren &amp; Exporteren</string>
-    <string name="pref_section_import_export_summary">Back-ups van Aegis of andere authenticator-apps importeren. Maak handmatige export van je Aegis-kluis aan.</string>
     <string name="pref_section_audit_log_title">Auditlogboek</string>
     <string name="pref_section_audit_log_summary">Lijst met alle gerapporteerde belangrijke gebeurtenissen in de app bekijken.</string>
     <string name="pref_section_backups_title">Back-ups</string>
@@ -56,14 +55,14 @@
     <string name="pref_import_file_title">Importeren vanuit een bestand</string>
     <string name="pref_import_file_summary">Importeer tokens vanuit een bestand</string>
     <string name="pref_android_backups_title">Android-cloudback-ups</string>
-    <string name="pref_android_backups_summary">Laat de kluis van Aegis opnemen in Androids cloudback-upsysteem. Dit wordt alleen ondersteund voor versleutelde kluizen.</string>
+    <string name="pref_android_backups_summary">Laat de kluis van Cue opnemen in Androids cloudback-upsysteem. Dit wordt alleen ondersteund voor versleutelde kluizen.</string>
     <string name="pref_android_backups_hint"><i>Device-to-device (D2D) back-ups zijn altijd toegestaan, ongeacht de instelling hierboven</i></string>
     <string name="pref_backups_title">Automatisch kluisback-up maken</string>
     <string name="pref_backups_summary">Automatisch back-ups maken van de kluis op externe opslag wanneer er wijzigingen zijn. Alleen ondersteund voor versleutelde kluizen.</string>
     <string name="pref_backups_reminder_title">Back-up herinnering</string>
     <string name="pref_backups_reminder_summary">Toon een herinnering om een back-up van je kluis te maken, als je nog geen back-up hebt van de laatste wijzigingen.</string>
     <string name="pref_backups_reminder_dialog_title">Back-up herinnering uitschakelen</string>
-    <string name="pref_backups_reminder_dialog_summary">Uitschakelen van deze herinnering betekent dat Aegis je niet zal vertellen of je wijzigingen hebt die nog niet zijn geback-upt. Hiermee loop je het risico om de toegang tot tokens te verliezen. Weet je zeker dat je deze herinnering wil uitschakelen?</string>
+    <string name="pref_backups_reminder_dialog_summary">Uitschakelen van deze herinnering betekent dat Cue je niet zal vertellen of je wijzigingen hebt die nog niet zijn geback-upt. Hiermee loop je het risico om de toegang tot tokens te verliezen. Weet je zeker dat je deze herinnering wil uitschakelen?</string>
     <string name="pref_backups_versioning_strategy_title">Back-upstrategie</string>
     <string name="pref_backups_versioning_strategy_keep_x_versions">Een aantal versies behouden</string>
     <string name="pref_backups_versioning_strategy_single_backup">Een enkele back-up</string>
@@ -103,7 +102,7 @@
     <string name="pref_auto_lock_title">Automatisch vergrendelen</string>
     <string name="pref_auto_lock_summary">Wanneer %s</string>
     <string name="pref_auto_lock_summary_disabled">Uitgeschakeld</string>
-    <string name="pref_auto_lock_prompt">Aegis automatisch vergrendelen wanneer</string>
+    <string name="pref_auto_lock_prompt">Cue automatisch vergrendelen wanneer</string>
     <string name="pref_auto_lock_type_back_button">De terugknop is ingedrukt</string>
     <string name="pref_auto_lock_type_minimize">De app is geminimaliseerd</string>
     <string name="pref_auto_lock_type_device_lock">Het apparaat is vergrendeld</string>
@@ -145,11 +144,10 @@
     <string name="today_at_time">Vandaag om %1$s</string>
     <string name="day_of_week_at_time">%1$s om %2$s</string>
     <string name="export_encrypted">Kluis versleutelen</string>
-    <string name="export_help">Deze actie zal de kluis exporteren uit de interne opslag van Aegis. Selecteer het formaat waarin je de export wilt:</string>
-    <string name="export_warning_unencrypted">Je staat op het punt een onversleutelde kopie van de Aegis-kluis te exporteren. <b>Dit wordt niet aanbevolen</b>.</string>
+    <string name="export_help">Deze actie zal de kluis exporteren uit de interne opslag van Cue. Selecteer het formaat waarin je de export wilt:</string>
+    <string name="export_warning_unencrypted">Je staat op het punt een onversleutelde kopie van de Cue-kluis te exporteren. <b>Dit wordt niet aanbevolen</b>.</string>
     <string name="export_warning_password">Exporten worden versleuteld met een apart wachtwoord ingesteld in de beveiligingsinstellingen.</string>
     <string name="understand_risk_accept">Ik begrijp het risico</string>
-    <string name="export_format_aegis">Aegis (.JSON)</string>
     <string name="export_format_google_auth_uri">Tekstbestand (.TXT)</string>
     <string name="export_format_html">Webpagina (.HTML)</string>
     <string name="export_format_hint">Bestandsformaat</string>
@@ -160,9 +158,9 @@
         <item quantity="other">%d groepen geselecteerd</item>
     </plurals>
     <string name="export_no_groups_selected">Geen groepen gekozen om te exporteren</string>
-    <string name="export_html_title" comment="The title of an HTML export document">Aegis Authenticator Export</string>
+    <string name="export_html_title" comment="The title of an HTML export document">Cue Authenticator Export</string>
     <string name="choose_authentication_method">Beveiliging</string>
-    <string name="authentication_method_explanation">Aegis is een op veiligheid gerichte 2FA-applicatie. Tokens worden opgeslagen in een kluis, die optioneel kan worden versleuteld met een wachtwoord naar keuze. Als een aanvaller je versleutelde kluisbestand in handen krijgt, zal deze geen toegang hebben tot de inhoud zonder het wachtwoord te kennen.\n\nWij hebben de optie gekozen die volgens ons het beste past bij jouw apparaat.</string>
+    <string name="authentication_method_explanation">Cue is een op veiligheid gerichte 2FA-applicatie. Tokens worden opgeslagen in een kluis, die optioneel kan worden versleuteld met een wachtwoord naar keuze. Als een aanvaller je versleutelde kluisbestand in handen krijgt, zal deze geen toegang hebben tot de inhoud zonder het wachtwoord te kennen.\n\nWij hebben de optie gekozen die volgens ons het beste past bij jouw apparaat.</string>
     <string name="authentication_method_none">Geen</string>
     <string name="authentication_method_none_description">Je hebt geen wachtwoord nodig om de kluis te ontgrendelen en de kluis zal niet worden versleuteld. <b>Deze optie wordt niet aanbevolen</b>.</string>
     <string name="authentication_method_password">Wachtwoord</string>
@@ -178,10 +176,10 @@
     <string name="set_number">Kies een getal</string>
     <string name="set_password_confirm">Bevestig het wachtwoord</string>
     <string name="invalid_password">Het wachtwoord is onjuist</string>
-    <string name="invalidated_biometrics">Er is een verandering in de beveiligingsinstellingen van je toestel gedetecteerd. Ga naar \"Aegis -&gt; Instellingen -&gt; Beveiliging -&gt; Ontgrendelen met biometrie\" om biometrische verificatie weer in te schakelen.</string>
+    <string name="invalidated_biometrics">Er is een verandering in de beveiligingsinstellingen van je toestel gedetecteerd. Ga naar \"Cue -&gt; Instellingen -&gt; Beveiliging -&gt; Ontgrendelen met biometrie\" om biometrische verificatie weer in te schakelen.</string>
     <string name="password_reminder">Voer je wachtwoord in. We vragen je af en toe om dit te doen, zodat je het niet vergeet.</string>
     <string name="password_reminder_dialog_title">Standaard biometrisch ontgrendelen</string>
-    <string name="password_reminder_dialog_message">We vragen je af en toe om je wachtwoord in te voeren zodat je het niet vergeet en je de toegang tot je kluis verliest. Nadat je het wachtwoord hebt ingevoerd, zal Aegis teruggaan naar standaard biometrisch ontgrendelen, totdat het tijd is voor de volgende herinnering.</string>
+    <string name="password_reminder_dialog_message">We vragen je af en toe om je wachtwoord in te voeren zodat je het niet vergeet en je de toegang tot je kluis verliest. Nadat je het wachtwoord hebt ingevoerd, zal Cue teruggaan naar standaard biometrisch ontgrendelen, totdat het tijd is voor de volgende herinnering.</string>
     <string name="password_reminder_freq_never">Nooit</string>
     <string name="password_reminder_freq_weekly">Wekelijks</string>
     <string name="password_reminder_freq_biweekly">Tweewekelijks</string>
@@ -189,7 +187,7 @@
     <string name="password_reminder_freq_quarterly">Driemaandelijks</string>
     <string name="enter_password_proton_message">Het lijkt erop dat deze Proton Authenticator-back-up is versleuteld. Voer het wachtwoord hieronder in.</string>
     <string name="enter_password_2fas_message">Het lijkt erop dat deze 2FAS-back-up is versleuteld. Voer het wachtwoord hieronder in.</string>
-    <string name="enter_password_authy_message">Het lijkt erop dat je Authy-tokens zijn versleuteld. Sluit Aegis, open Authy en ontgrendel de tokens met je wachtwoord. In plaats daarvan kan Aegis ook proberen om je Authy-tokens te decoderen als je hieronder je wachtwoord invult.</string>
+    <string name="enter_password_authy_message">Het lijkt erop dat je Authy-tokens zijn versleuteld. Sluit Cue, open Authy en ontgrendel de tokens met je wachtwoord. In plaats daarvan kan Cue ook proberen om je Authy-tokens te decoderen als je hieronder je wachtwoord invult.</string>
     <string name="enter_password_aegis_title">Voer het importwachtwoord in</string>
     <string name="period_hint">Tijd (seconden)</string>
     <string name="algorithm_hint">Hash-functie</string>
@@ -252,9 +250,8 @@
     <string name="saving_profile_error">Fout bij opslaan profiel</string>
     <string name="saving_assign_icons_error">Fout bij toewijzen pictogrammen</string>
     <string name="welcome">Welkom</string>
-    <string name="app_description">Aegis is een gratis en veilige open-source 2FA-app.</string>
     <string name="setup_completed">Configuratie voltooid</string>
-    <string name="setup_completed_description">Aegis is geconfigureerd en is klaar voor gebruik.</string>
+    <string name="setup_completed_description">Cue is geconfigureerd en is klaar voor gebruik.</string>
     <string name="vault_not_found">Kluis niet gevonden, configuratie wordt gestart…</string>
     <string name="copied">Gekopieerd</string>
     <string name="errors_copied">Fouten zijn naar klembord gekopieerd</string>
@@ -266,8 +263,8 @@
     <string name="saving_error">Er is een fout opgetreden tijdens het opslaan van de kluis</string>
     <string name="vault_init_error">Er is een fout opgetreden bij het initialiseren van de kluis</string>
     <string name="vault_load_error">Er is een fout opgetreden tijdens het inladen van de kluis vanuit de opslag</string>
-    <string name="biometric_decrypt_error">Er is een fout opgetreden tijdens het decoderen van de kluis met biometrische verificatie. Dit gebeurt meestal alleen als de beveiligingsinstellingen van je apparaat zijn gewijzigd. Ontgrendel de kluis met je wachtwoord en configureer biometrische authenticatie opnieuw in de instellingen van Aegis.</string>
-    <string name="biometric_init_error">Er is een fout opgetreden tijdens het instellen van biometrische verificatie. Dit gebeurt meestal alleen als de beveiligingsinstellingen van je apparaat zijn gewijzigd. Ontgrendel de kluis met je wachtwoord en configureer biometrische authenticatie opnieuw in de instellingen van Aegis.</string>
+    <string name="biometric_decrypt_error">Er is een fout opgetreden tijdens het decoderen van de kluis met biometrische verificatie. Dit gebeurt meestal alleen als de beveiligingsinstellingen van je apparaat zijn gewijzigd. Ontgrendel de kluis met je wachtwoord en configureer biometrische authenticatie opnieuw in de instellingen van Cue.</string>
+    <string name="biometric_init_error">Er is een fout opgetreden tijdens het instellen van biometrische verificatie. Dit gebeurt meestal alleen als de beveiligingsinstellingen van je apparaat zijn gewijzigd. Ontgrendel de kluis met je wachtwoord en configureer biometrische authenticatie opnieuw in de instellingen van Cue.</string>
     <string name="disable_encryption">Versleuteling uitschakelen</string>
     <string name="disable_encryption_description">Weet je zeker dat je versleuteling wil uitschakelen? Hierdoor zal de kluis in platte tekst worden opgeslagen. <b>Automatische back-ups worden ook uitgeschakeld</b>.</string>
     <string name="enable_encryption_error">Er is een fout opgetreden bij het inschakelen van versleuteling</string>
@@ -301,7 +298,7 @@
     <string name="file_not_found">Fout: Bestand niet gevonden</string>
     <string name="reading_file_error">Er is een fout opgetreden tijdens het lezen van het bestand</string>
     <string name="app_lookup_error">Fout: App is niet geïnstalleerd</string>
-    <string name="app_version_error">De geïnstalleerde versie van %s wordt niet ondersteund. Recente versies zijn begonnen met het versleutelen van enkele bestanden in de interne opslagmap. Hierdoor heeft Aegis geen toegang tot de informatie die nodig is om te importeren. Importeren zal waarschijnlijk een fout opleveren. Wil je toch doorgaan?</string>
+    <string name="app_version_error">De geïnstalleerde versie van %s wordt niet ondersteund. Recente versies zijn begonnen met het versleutelen van enkele bestanden in de interne opslagmap. Hierdoor heeft Cue geen toegang tot de informatie die nodig is om te importeren. Importeren zal waarschijnlijk een fout opleveren. Wil je toch doorgaan?</string>
     <string name="root_error">Fout: Kan geen root-toegang verkrijgen</string>
     <plurals name="imported_entries_count">
         <item quantity="one">%d item geïmporteerd</item>
@@ -319,7 +316,7 @@
     <string name="encryption_enable_biometrics_error">Er is een fout opgetreden bij het aanzetten van biometrisch ontgrendelen. Sommige apparaten hebben een slechte implementatie van biometrische authenticatie, die van jou is er waarschijnlijk een van. Overweeg om alleen een wachtwoord te gebruiken.</string>
     <string name="no_cameras_available">Geen camera’s beschikbaar</string>
     <string name="read_qr_error">Er is een fout opgetreden tijdens het lezen van de QR-code</string>
-    <string name="read_qr_error_phonefactor">Aegis is niet compatibel met het eigen 2FA-algoritme van Microsoft. Zorg ervoor dat je ‘Setup applicatie zonder meldingen’ selecteert bij het configureren van 2FA in Office 365.</string>
+    <string name="read_qr_error_phonefactor">Cue is niet compatibel met het eigen 2FA-algoritme van Microsoft. Zorg ervoor dat je ‘Setup applicatie zonder meldingen’ selecteert bij het configureren van 2FA in Office 365.</string>
     <string name="partial_google_auth_import">Onvolledige Google Authenticator-export gedetecteerd</string>
     <string name="partial_google_auth_import_warning">Enkele QR-codes ontbreken in de import. De volgende codes zijn niet gevonden:\n\n<b>%s</b>\n\nJe kan doorgaan met het importeren van deze gedeeltelijke export, maar we raden aan het opnieuw te proberen met alle QR-codes, zodat je niet het risico loopt de toegang tot tokens te verliezen.</string>
     <string name="missing_qr_code_descriptor">• QR-code %d</string>
@@ -406,8 +403,8 @@
     <string name="unknown_issuer">Onbekende uitgever</string>
     <string name="unknown_account_name">Onbekende accountnaam</string>
     <plurals name="import_error_dialog">
-        <item quantity="one">Aegis kan %d token niet importeren. Dit token zal worden overgeslagen. Druk op ‘details’ voor meer informatie over de fouten.</item>
-        <item quantity="other">Aegis kan %d tokens niet importeren. Deze tokens zullen worden overgeslagen. Druk op ‘details’ voor meer informatie over de fouten.</item>
+        <item quantity="one">Cue kan %d token niet importeren. Dit token zal worden overgeslagen. Druk op ‘details’ voor meer informatie over de fouten.</item>
+        <item quantity="other">Cue kan %d tokens niet importeren. Deze tokens zullen worden overgeslagen. Druk op ‘details’ voor meer informatie over de fouten.</item>
     </plurals>
     <string name="unable_to_process_deeplink">Kan de deeplink niet verwerken</string>
     <string name="unable_to_read_qrcode_file">Kan de QR-code van bestand niet lezen en verwerken: %s.</string>
@@ -421,16 +418,15 @@
     <string name="toggle_checkboxes">Selectie omdraaien</string>
     <string name="search">Zoeken</string>
     <string name="channel_name_lock_status">Vergrendelstatus</string>
-    <string name="channel_description_lock_status">Aegis kan een permanente melding tonen wanneer de kluis is vergrendeld</string>
+    <string name="channel_description_lock_status">Cue kan een permanente melding tonen wanneer de kluis is vergrendeld</string>
     <string name="vault_unlocked_state">Kluis is ontgrendeld. Tik hier om te vergrendelen.</string>
     <string name="version">Versie</string>
     <string name="changelog">Wijzigingen</string>
     <string name="whats_new">Vernieuwingen</string>
     <string name="github_description">Broncode, problemen en informatie</string>
     <string name="license">Licentie</string>
-    <string name="license_description">Aegis Authenticator is gelicenseerd onder de GPLv3</string>
     <string name="third_party_licenses">Licenties van derden</string>
-    <string name="third_party_licenses_description">Licenties van bibliotheken van derden gebruikt door Aegis</string>
+    <string name="third_party_licenses_description">Licenties van bibliotheken van derden gebruikt door Cue</string>
     <string name="country_netherlands">Nederland</string>
     <string name="email_us">Schrijf een e-mailbericht</string>
     <string name="visit_website">Bekijk de website</string>
@@ -440,7 +436,7 @@
     <string name="webview_error">Dit apparaat ondersteunt geen webview, welke nodig is om de wijzigingen te bekijken. Het mist een systeemcomponent.</string>
     <string name="email">E-mailadres</string>
     <string name="time_sync_warning_title">Automatische tijdsynchronisatie</string>
-    <string name="time_sync_warning_message">Aegis is afhankelijk van gesynchroniseerde systeemtijd om juiste codes te genereren. Een afwijking van slechts enkele seconden kan leiden tot onjuiste codes. Het lijkt erop dat je apparaat niet is ingesteld om de tijd automatisch te synchroniseren. Wil je dit nu doen?</string>
+    <string name="time_sync_warning_message">Cue is afhankelijk van gesynchroniseerde systeemtijd om juiste codes te genereren. Een afwijking van slechts enkele seconden kan leiden tot onjuiste codes. Het lijkt erop dat je apparaat niet is ingesteld om de tijd automatisch te synchroniseren. Wil je dit nu doen?</string>
     <string name="time_sync_warning_disable">Stop met me te waarschuwen. Ik weet wat ik doe.</string>
     <string name="google_qr_export_unrelated">Ongerelateerde QR-code gevonden. Probeer de scanner opnieuw te starten.</string>
     <plurals name="google_qr_export_scanned">
@@ -453,9 +449,9 @@
         Een recente back-up van de kluis met %1$s mislukte omdat er iets misging. De back-uppoging was %2$s. Controleer de back-upinstellingen om zeker te zijn dat back-ups met succes kunnen worden voltooid.
     </string>
     <string name="backup_permission_error_dialog_details" comment="The first parameter is the type of backup (e.g. built-in or Android backup). The second parameter is an elapsed time in the style of 'x seconds/minutes/days ago'.">
-        Een recente poging een reservekopie van de kluis te maken met %1$s is mislukt. Aegis heeft geen toestemming om te schrijven naar de back-uplocatie. De De back-uppoging was %2$s. Deze fout kan optreden als je de back-uplocatie hebt verplaatst/hernoemd of als je onlangs een Aegis hebt hersteld met een back-up. Configureer de back-uplocatie opnieuw.
+        Een recente poging een reservekopie van de kluis te maken met %1$s is mislukt. Cue heeft geen toestemming om te schrijven naar de back-uplocatie. De De back-uppoging was %2$s. Deze fout kan optreden als je de back-uplocatie hebt verplaatst/hernoemd of als je onlangs een Cue hebt hersteld met een back-up. Configureer de back-uplocatie opnieuw.
     </string>
-    <string name="backup_system_builtin">het ingebouwde automatische back-ups van Aegis</string>
+    <string name="backup_system_builtin">het ingebouwde automatische back-ups van Cue</string>
     <string name="backup_system_android">het cloud back-upsysteem van Android</string>
     <string name="backup_reminder_bar_message_with_latest" comment="The parameter is an elapsed time in the style of 'x seconds/minutes/days ago'">
         De meest recente back-up is verouderd (%s)
@@ -492,7 +488,7 @@
     <string name="uri_copied_to_clipboard">URI naar klembord gekopieerd</string>
     <string name="transfer_entry_description">Scan deze QR-code met de authenticator-app waar je dit item naar wilt overzetten</string>
     <string name="transfer_entry_brightness">QR-code aantikken om helderheid op volledig scherm te schakelen</string>
-    <string name="google_auth_compatible_transfer_description">Scan deze QR-codes met Aegis of Google Authenticator.\n\nVanwege beperkingen van de Google Authenticator app, zijn alleen TOTP- &amp; HOTP-tokens die SHA1 gebruiken en 6-cijferige codes produceren opgenomen</string>
+    <string name="google_auth_compatible_transfer_description">Scan deze QR-codes met Cue of Google Authenticator.\n\nVanwege beperkingen van de Google Authenticator app, zijn alleen TOTP- &amp; HOTP-tokens die SHA1 gebruiken en 6-cijferige codes produceren opgenomen</string>
     <string name="password_strength_very_weak">Zeer zwak</string>
     <string name="password_strength_weak">Zwak</string>
     <string name="password_strength_fair">Redelijk</string>
@@ -515,10 +511,9 @@
     <string name="dialog_wipe_entries_checkbox">Inhoud van kluis wissen</string>
     <string name="import_from_clipboard_title">Van klembord importeren</string>
     <string name="import_from_clipboard_message">We vonden een geldige otpauth-uri op je klembord.\n\n<b>Naam</b>: %1$s\n<b>Uitgever</b>: %2$s\n\nWil je dit gebruiken om dit item te vullen?</string>
-    <string name="panic_trigger_ignore_toast">Aegis heeft paniektrigger ontvangen, maar instelling is uitgeschakeld, wordt genegeerd</string>
+    <string name="panic_trigger_ignore_toast">Cue heeft paniektrigger ontvangen, maar instelling is uitgeschakeld, wordt genegeerd</string>
     <string name="pref_panic_trigger_title">Kluis bij paniektrigger verwijderen</string>
     <string name="pref_panic_trigger_summary">Kluis bij ontvangen van Ripple-paniektrigger verwijderen</string>
-    <string name="import_vault">Aegis-kluis importeren</string>
     <string name="import_vault_hint">Wil je uit een andere 2FA-app importeren? Voltooi eerst de configuratie en ga dan naar het instellingenmenu.</string>
     <plurals name="import_duplicate_toast">
         <item quantity="one">%d potentiële dubbeling niet aangevinkt. Controleer de lijst met items.</item>
@@ -536,7 +531,7 @@
     <string name="importer_help_freeotp">FreeOTP 2: Lever een back-upbestand.\nFreeOTP 1.x: Lever een kopie aan van <b>/data/data/org.fedorahosted.freeotp/shared_prefs/tokens.xml</b>, geplaatst in de interne opslagmap van FreeOTP.</string>
     <string name="importer_help_freeotp_plus">Lever een FreeOTP+-exportbestand aan.</string>
     <string name="importer_warning_title_freeotp2">Compatibiliteit met FreeOTP 2</string>
-    <string name="importer_warning_message_freeotp2">Er zijn een aantal problemen in FreeOTP 2 die tot beschadigde back-ups kunnen leiden. Aegis zal proberen zoveel mogelijk items te redden, maar mogelijk kunnen sommige items of zelfs alles niet worden geïmporteerd.</string>
+    <string name="importer_warning_message_freeotp2">Er zijn een aantal problemen in FreeOTP 2 die tot beschadigde back-ups kunnen leiden. Cue zal proberen zoveel mogelijk items te redden, maar mogelijk kunnen sommige items of zelfs alles niet worden geïmporteerd.</string>
     <string name="importer_help_google_authenticator"><b>Alleen database-bestanden van Google Authenticator v5.10 en eerder worden ondersteund</b>.\n\nLever een kopie aan van <b>/data/data/com.google.android.apps.authenticator2/databases/databases</b>, geplaatst in de interne opslagmap van Google Authenticator.</string>
     <string name="importer_help_microsoft_authenticator">Lever een kopie aan van <b>/data/data/com.azure.authenticator/databases/PhoneFactor</b>, geplaatst in de interne opslagmap van Microsoft Authenticator.</string>
     <string name="importer_help_plain_text">Lever een tekstbestand aan met een Google Authenticator URI op elke regel.</string>
@@ -548,7 +543,7 @@
     <string name="import_assign_icons_dialog_title">Pictogrammen toewijzen</string>
     <string name="import_assign_icons_dialog_text">Wil je pictogrammen aan de geïmporteerde items toewijzen?</string>
     <string name="importer_encrypted_exception_google_authenticator">Versleuteld item is overgeslagen: %s</string>
-    <string name="importer_help_direct">Importeer items rechtstreeks van %s. Dit vereist dat de app op dit apparaat staat en dat root-toegang aan Aegis wordt verleend.</string>
+    <string name="importer_help_direct">Importeer items rechtstreeks van %s. Dit vereist dat de app op dit apparaat staat en dat root-toegang aan Cue wordt verleend.</string>
     <string name="groups">Groepen</string>
     <string name="pref_focus_search">Focus zoekveld na starten app</string>
     <string name="pref_focus_search_summary">Focus het zoekveld direct na het openen van de app.</string>

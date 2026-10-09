@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
     <string name="action_settings">設定</string>
-    <string name="action_about">Aegis について</string>
+    <string name="action_about">Cue について</string>
     <string name="action_delete">削除</string>
     <string name="action_transfer">転送</string>
     <string name="action_edit_icon">アイコンを編集</string>
@@ -28,7 +28,6 @@
     <string name="pref_section_security_title">セキュリティ</string>
     <string name="pref_section_security_summary">暗号化、生体認証ロック解除、自動ロック、その他のセキュリティの設定をします。</string>
     <string name="pref_section_import_export_title">インポートとエクスポート</string>
-    <string name="pref_section_import_export_summary">Aegisまたは他の認証アプリのバックアップをインポートします。Aegis保管庫の手動エクスポートを作成します。</string>
     <string name="pref_section_audit_log_title">監査ログ</string>
     <string name="pref_section_audit_log_summary">アプリ内で発生した重要なイベントの一覧を表示します。</string>
     <string name="pref_section_backups_title">バックアップ</string>
@@ -56,14 +55,14 @@
     <string name="pref_import_file_title">ファイルからインポート</string>
     <string name="pref_import_file_summary">ファイルからトークンをインポート</string>
     <string name="pref_android_backups_title">Androidクラウドバックアップ</string>
-    <string name="pref_android_backups_summary">AndroidのクラウドバックアップシステムにAegisの保管庫を含めることを許可します。これは暗号化された保管庫でのみサポートされています。</string>
+    <string name="pref_android_backups_summary">AndroidのクラウドバックアップシステムにCueの保管庫を含めることを許可します。これは暗号化された保管庫でのみサポートされています。</string>
     <string name="pref_android_backups_hint"><i>上記の設定に関係なく、デバイス間(D2D) バックアップは常に許可されます</i></string>
     <string name="pref_backups_title">保管庫を自動的にバックアップする</string>
     <string name="pref_backups_summary">変更が行われると、自動的に保管庫のバックアップを外部ストレージに作成します。これは暗号化された保管庫でのみサポートされています。</string>
     <string name="pref_backups_reminder_title">バックアップのリマインダー</string>
     <string name="pref_backups_reminder_summary">最近の変更をバックアップしていない場合に、保管庫をバックアップするよう通知を表示します。</string>
     <string name="pref_backups_reminder_dialog_title">バックアップリマインダーを無効化</string>
-    <string name="pref_backups_reminder_dialog_summary">このリマインダーを無効にすると、Aegisはバックアップしていない変更があるかどうかを知らせません。これにより、トークンにアクセスできなくなる危険性があります。本当にリマインダーを無効にしてもよろしいですか？</string>
+    <string name="pref_backups_reminder_dialog_summary">このリマインダーを無効にすると、Cueはバックアップしていない変更があるかどうかを知らせません。これにより、トークンにアクセスできなくなる危険性があります。本当にリマインダーを無効にしてもよろしいですか？</string>
     <string name="pref_backups_versioning_strategy_title">バックアップ戦略</string>
     <string name="pref_backups_versioning_strategy_keep_x_versions">複数のバージョンを保持</string>
     <string name="pref_backups_versioning_strategy_single_backup">単一バックアップ</string>
@@ -96,7 +95,7 @@
     <string name="pref_auto_lock_title">オートロック</string>
     <string name="pref_auto_lock_summary">次の場合: %s</string>
     <string name="pref_auto_lock_summary_disabled">無効</string>
-    <string name="pref_auto_lock_prompt">Aegisを自動的にロックする</string>
+    <string name="pref_auto_lock_prompt">Cueを自動的にロックする</string>
     <string name="pref_auto_lock_type_back_button">戻るボタンが押されたとき</string>
     <string name="pref_auto_lock_type_minimize">アプリが最小化されたとき</string>
     <string name="pref_auto_lock_type_device_lock">端末がロックされたとき</string>
@@ -112,11 +111,10 @@
     <string name="pref_set_password_title">パスワードの変更</string>
     <string name="pref_set_password_summary">保管庫のロックを解除する新しいパスワードを設定する</string>
     <string name="export_encrypted">保管庫を暗号化</string>
-    <string name="export_help">保管庫をAegisの内部ストレージからエクスポートします。エクスポートしたいフォーマットを選択してください:</string>
-    <string name="export_warning_unencrypted">暗号化されていないAegis保管庫のコピーをエクスポートしようとしています。 <b>これは推奨されません</b>。</string>
+    <string name="export_help">保管庫をCueの内部ストレージからエクスポートします。エクスポートしたいフォーマットを選択してください:</string>
+    <string name="export_warning_unencrypted">暗号化されていないCue保管庫のコピーをエクスポートしようとしています。 <b>これは推奨されません</b>。</string>
     <string name="export_warning_password">エクスポートは、セキュリティ設定で構成された個別のパスワードを使用して暗号化されます。</string>
     <string name="understand_risk_accept">危険性を承知しました</string>
-    <string name="export_format_aegis">Aegis (.JSON)</string>
     <string name="export_format_google_auth_uri">テキストファイル (.TXT)</string>
     <string name="export_format_html">ウェブページ (.HTML)</string>
     <string name="export_format_hint">エクスポートフォーマット</string>
@@ -126,9 +124,9 @@
         <item quantity="other">%d グループを選択しました</item>
     </plurals>
     <string name="export_no_groups_selected">エクスポートするグループが選択されていません</string>
-    <string name="export_html_title" comment="The title of an HTML export document">Aegis Authenticator のエクスポート</string>
+    <string name="export_html_title" comment="The title of an HTML export document">Cue Authenticator のエクスポート</string>
     <string name="choose_authentication_method">セキュリティ</string>
-    <string name="authentication_method_explanation">Aegisはセキュリティに重点を置いた2FAアプリです。トークンは保管庫に保存され、必要に応じて選択したパスワードで暗号化できます。 攻撃者が暗号化された保管庫ファイルを取得した場合、パスワードを知らずにアクセスすることはできません。\n\nお使いのデバイスに最適なオプションを事前に選択しました。</string>
+    <string name="authentication_method_explanation">Cueはセキュリティに重点を置いた2FAアプリです。トークンは保管庫に保存され、必要に応じて選択したパスワードで暗号化できます。 攻撃者が暗号化された保管庫ファイルを取得した場合、パスワードを知らずにアクセスすることはできません。\n\nお使いのデバイスに最適なオプションを事前に選択しました。</string>
     <string name="authentication_method_none">なし</string>
     <string name="authentication_method_none_description">保管庫のロックの解除にパスワードは必要ありません。暗号化されません。 <b>このオプションは推奨されません</b>。</string>
     <string name="authentication_method_password">パスワード</string>
@@ -144,7 +142,7 @@
     <string name="set_number">数字を入力してください</string>
     <string name="set_password_confirm">パスワードを確認してください</string>
     <string name="invalid_password">パスワードが違います</string>
-    <string name="invalidated_biometrics">デバイスのセキュリティ設定の変更が検出されました。 「Aegis -&gt; 設定 -&gt; セキュリティ -&gt; 生体認証ロック解除」にアクセスして、生体認証ロックを無効にして再度有効にしてください。</string>
+    <string name="invalidated_biometrics">デバイスのセキュリティ設定の変更が検出されました。 「Cue -&gt; 設定 -&gt; セキュリティ -&gt; 生体認証ロック解除」にアクセスして、生体認証ロックを無効にして再度有効にしてください。</string>
     <string name="password_reminder">パスワードを入力してください。パスワードを忘れないようにするために、時々確認します。</string>
     <string name="password_reminder_dialog_title">生体認証によるロック解除</string>
     <string name="password_reminder_dialog_message">パスワードを忘れて保管庫からロックされないようにするため、時々パスワードの入力を求めます。 パスワードを確認できたら、次の確認時まではデフォルト動作を生体認証でのロック解除に戻します。</string>
@@ -154,7 +152,7 @@
     <string name="password_reminder_freq_monthly">1ヶ月ごと</string>
     <string name="password_reminder_freq_quarterly">3ヶ月ごと</string>
     <string name="enter_password_2fas_message">この2FASバックアップは暗号化されています。以下にパスワードを入力してください。</string>
-    <string name="enter_password_authy_message">認証トークンが暗号化されているようです。Aegisを閉じて、Authyを開いてパスワードでトークンをロック解除してください。 または、パスワードを以下に入力して、AegisがAuthyトークンの復元を試みます。</string>
+    <string name="enter_password_authy_message">認証トークンが暗号化されているようです。Cueを閉じて、Authyを開いてパスワードでトークンをロック解除してください。 または、パスワードを以下に入力して、CueがAuthyトークンの復元を試みます。</string>
     <string name="enter_password_aegis_title">インポートパスワードを入力してください</string>
     <string name="period_hint">期間 (秒)</string>
     <string name="algorithm_hint">ハッシュ関数</string>
@@ -209,9 +207,8 @@
     <string name="saving_profile_error">プロファイルの保存中にエラーが発生しました</string>
     <string name="saving_assign_icons_error">アイコンの割り当てエラー</string>
     <string name="welcome">ようこそ</string>
-    <string name="app_description">Aegisは、無料で安全なオープンソースの2FAアプリです</string>
     <string name="setup_completed">セットアップが完了しました</string>
-    <string name="setup_completed_description">Aegisのセットアップが完了し、準備が整いました。</string>
+    <string name="setup_completed_description">Cueのセットアップが完了し、準備が整いました。</string>
     <string name="vault_not_found">保管庫が見つかりません。セットアップを開始してください…</string>
     <string name="copied">コピーしました</string>
     <string name="errors_copied">エラーをクリップボードにコピーしました</string>
@@ -222,8 +219,8 @@
     <string name="saving_error">保管庫の保存中にエラーが発生しました</string>
     <string name="vault_init_error">保管庫の初期化中にエラーが発生しました</string>
     <string name="vault_load_error">保管庫の読み込み中にエラーが発生しました</string>
-    <string name="biometric_decrypt_error">生体認証で保管庫の復号中にエラーが発生しました。これは通常、デバイスのセキュリティ設定が変更された場合にのみ発生します。 パスワードで保管庫のロックを解除し、Aegisの設定で生体認証を再設定してください。</string>
-    <string name="biometric_init_error">生体認証の準備中にエラーが発生しました。これは通常、デバイスのセキュリティ設定が変更された場合にのみ発生します。 パスワードで保管庫のロックを解除し、Aegisの設定で生体認証を再設定してください。</string>
+    <string name="biometric_decrypt_error">生体認証で保管庫の復号中にエラーが発生しました。これは通常、デバイスのセキュリティ設定が変更された場合にのみ発生します。 パスワードで保管庫のロックを解除し、Cueの設定で生体認証を再設定してください。</string>
+    <string name="biometric_init_error">生体認証の準備中にエラーが発生しました。これは通常、デバイスのセキュリティ設定が変更された場合にのみ発生します。 パスワードで保管庫のロックを解除し、Cueの設定で生体認証を再設定してください。</string>
     <string name="disable_encryption">暗号化を無効化</string>
     <string name="disable_encryption_description">暗号化を無効にしてもよろしいですか？これにより、保管庫は平文で保存されます。 <b>自動バックアップも無効になります</b>.</string>
     <string name="enable_encryption_error">暗号化の有効化中にエラーが発生しました</string>
@@ -256,7 +253,7 @@
     <string name="file_not_found">エラー: ファイルが見つかりません</string>
     <string name="reading_file_error">ファイルの読み取り中にエラーが発生しました</string>
     <string name="app_lookup_error">エラー: アプリがインストールされていません</string>
-    <string name="app_version_error">インストールされた %s のバージョンはサポートされていません。 最近のバージョンでは、内部ストレージディレクトリ内のファイルの一部を暗号化し始めています。 Aegisがインポートに必要な情報にアクセスできなくなります。 インポートしようとしてエラーが発生する可能性があります。続行しますか？</string>
+    <string name="app_version_error">インストールされた %s のバージョンはサポートされていません。 最近のバージョンでは、内部ストレージディレクトリ内のファイルの一部を暗号化し始めています。 Cueがインポートに必要な情報にアクセスできなくなります。 インポートしようとしてエラーが発生する可能性があります。続行しますか？</string>
     <string name="root_error">エラー: root権限を取得できません</string>
     <plurals name="imported_entries_count">
         <item quantity="other">%d 個のエントリーをインポートしました</item>
@@ -272,7 +269,7 @@
     <string name="encryption_enable_biometrics_error">生体認証ロック解除の設定中にエラーが発生しました。 一部のデバイスは生体認証の実装が不十分であり、あなたのデバイスはその1つである可能性があります。 代わりにパスワードのみの設定に切り替えることを検討してください。</string>
     <string name="no_cameras_available">利用可能なカメラがありません</string>
     <string name="read_qr_error">QRコードの読み取り中にエラーが発生しました</string>
-    <string name="read_qr_error_phonefactor">AegisはMicrosoft独自の2FAアルゴリズムと互換性がありません。Office 365で2FAを設定する場合は、必ず「通知なしでアプリケーションを設定する」を選択してください。</string>
+    <string name="read_qr_error_phonefactor">CueはMicrosoft独自の2FAアルゴリズムと互換性がありません。Office 365で2FAを設定する場合は、必ず「通知なしでアプリケーションを設定する」を選択してください。</string>
     <string name="partial_google_auth_import">不完全な Google Authenticator のエクスポートが検出されました</string>
     <string name="partial_google_auth_import_warning">インポート内の一部のQRコードが見つかりません。以下のコードが見つかりませんでした:\n\n<b>%s</b>\n\n正常な部分のみでインポートを継続することはできますが、トークンへのアクセス方法を失う危険性があるため、すべてのQRコードを再試行することをお勧めします。</string>
     <string name="missing_qr_code_descriptor">• QRコード %d</string>
@@ -332,7 +329,7 @@
     <string name="unknown_issuer">不明な発行者</string>
     <string name="unknown_account_name">不明なアカウント名</string>
     <plurals name="import_error_dialog">
-        <item quantity="other">Aegisは %d 個のトークンをインポートできませんでした。これらのトークンはスキップされます。エラーの詳細を確認するには「詳細」をタップします。</item>
+        <item quantity="other">Cueは %d 個のトークンをインポートできませんでした。これらのトークンはスキップされます。エラーの詳細を確認するには「詳細」をタップします。</item>
     </plurals>
     <string name="unable_to_process_deeplink">ディープリンクを処理できません</string>
     <string name="unable_to_read_qrcode_file">ファイル %s からQRコードを読み取り処理できません。</string>
@@ -352,9 +349,8 @@
     <string name="whats_new">新着情報</string>
     <string name="github_description">ソースコード、問題および情報</string>
     <string name="license">ライセンス</string>
-    <string name="license_description">Aegis Authenticator は GPLv3 の下でライセンスされています</string>
     <string name="third_party_licenses">サードパーティ ライセンス</string>
-    <string name="third_party_licenses_description">Aegisが使用するサードパーティライブラリのライセンス</string>
+    <string name="third_party_licenses_description">Cueが使用するサードパーティライブラリのライセンス</string>
     <string name="country_netherlands">オランダ</string>
     <string name="email_us">メールを書く</string>
     <string name="visit_website">ウェブサイトを表示</string>
@@ -365,11 +361,11 @@
 このデバイスは、更新履歴やライセンスを表示するために必要なWebビューをサポートしていません。システムコンポーネントが不足しています。</string>
     <string name="email">メール</string>
     <string name="time_sync_warning_title">自動時刻同期</string>
-    <string name="time_sync_warning_message">Aegisが正しいコードを生成するためには、システム時刻が正しく同期されている必要があります。 わずか数秒のずれでも誤ったコードを生成する可能性があります。このデバイスは時刻を自動的に同期するように設定されていないようです。今すぐ同期しますか？</string>
+    <string name="time_sync_warning_message">Cueが正しいコードを生成するためには、システム時刻が正しく同期されている必要があります。 わずか数秒のずれでも誤ったコードを生成する可能性があります。このデバイスは時刻を自動的に同期するように設定されていないようです。今すぐ同期しますか？</string>
     <string name="time_sync_warning_disable">警告は不要です。</string>
     <string name="google_qr_export_unrelated">関連のないQRコードが見つかりました。スキャナーを再起動してみてください。</string>
     <string name="backup_error_bar_message"><b>保管庫のバックアップが失敗しました</b></string>
-    <string name="backup_system_builtin">Aegisの内蔵自動バックアップ</string>
+    <string name="backup_system_builtin">Cueの内蔵自動バックアップ</string>
     <string name="backup_system_android">Androidのクラウドバックアップシステム</string>
     <string name="backup_reminder_bar_message_with_latest" comment="The parameter is an elapsed time in the style of 'x seconds/minutes/days ago'">
         最新のバックアップが古くなっています (%s)
@@ -404,7 +400,7 @@
     <string name="unable_to_copy_uri_to_clipboard">URIをクリップボードにコピーできません</string>
     <string name="uri_copied_to_clipboard">URI をクリップボードにコピーしました</string>
     <string name="transfer_entry_description">このエントリーを別の認証アプリに転送するには、このQRコードをスキャンしてください</string>
-    <string name="google_auth_compatible_transfer_description">QRコードを Aegis または Google Authenticator でスキャンしてください。\n\nGoogle Authenticator アプリの制限のため、SHA1 を使用し6桁のコードを生成する TOTP と HOTP トークンのみが含まれます。</string>
+    <string name="google_auth_compatible_transfer_description">QRコードを Cue または Google Authenticator でスキャンしてください。\n\nGoogle Authenticator アプリの制限のため、SHA1 を使用し6桁のコードを生成する TOTP と HOTP トークンのみが含まれます。</string>
     <string name="password_strength_very_weak">非常に弱い</string>
     <string name="password_strength_weak">弱い</string>
     <string name="password_strength_fair">普通</string>
@@ -426,7 +422,6 @@
     <string name="panic_trigger_ignore_toast">イージスはパニックトリガーを受信しましたが、設定は無効になっています。</string>
     <string name="pref_panic_trigger_title">パニックトリガー時に保管庫を削除</string>
     <string name="pref_panic_trigger_summary">Rippleからパニックトリガーを受信したときに保管庫を削除する</string>
-    <string name="import_vault">Aegis 保管庫をインポート</string>
     <string name="import_vault_hint">別の2FAアプリからインポートしたい場合は、まずセットアップを完了してから、設定メニューに進みます。</string>
     <plurals name="import_duplicate_toast">
         <item quantity="other">%d 個の重複が見つかりました。エントリーのリストを確認してください。</item>
@@ -448,7 +443,7 @@
     <string name="import_assign_icons_dialog_title">アイコンを割り当てる</string>
     <string name="import_assign_icons_dialog_text">インポートされたエントリーにアイコンを割り当てますか？</string>
     <string name="importer_encrypted_exception_google_authenticator">暗号化されたエントリーがスキップされました: %s</string>
-    <string name="importer_help_direct">%sからエントリーを直接インポートします。これにはアプリをデバイスにインストールし、root権限をAegisに許可する必要があります。</string>
+    <string name="importer_help_direct">%sからエントリーを直接インポートします。これにはアプリをデバイスにインストールし、root権限をCueに許可する必要があります。</string>
     <string name="groups">グループ</string>
     <string name="pref_focus_search">アプリ起動時に検索にフォーカス</string>
     <string name="pref_focus_search_summary">アプリ起動直後、検索にフォーカスする。</string>

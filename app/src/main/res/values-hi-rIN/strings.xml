@@ -80,7 +80,7 @@
     <string name="pref_auto_lock_title">स्वतः लॉक</string>
     <string name="pref_auto_lock_summary">जब %s</string>
     <string name="pref_auto_lock_summary_disabled">बंद है</string>
-    <string name="pref_auto_lock_prompt">Aegis को स्वतः ही लॉक करें जब</string>
+    <string name="pref_auto_lock_prompt">Cue को स्वतः ही लॉक करें जब</string>
     <string name="pref_auto_lock_type_back_button">पीछे जाने वाली बटन दबाई जाए</string>
     <string name="pref_auto_lock_type_minimize">ऐप को मिनीमाइज किया जाए</string>
     <string name="pref_auto_lock_type_device_lock">डिवाइस को लॉक किया जाए</string>
@@ -113,7 +113,7 @@
     <string name="export_no_groups_selected">एक्सपोर्ट करने के लिए किसी भी ग्रुप का चयन नही किया गया</string>
     <string name="export_html_title" comment="The title of an HTML export document">एजिस ऑथेंटिकेटर एक्सपोर्ट</string>
     <string name="choose_authentication_method">सुरक्षा</string>
-    <string name="authentication_method_explanation">Aegis एक सुरक्षा-केंद्रित 2FA ऐप है। टोकनों को एक वॉल्ट में संग्रहीत किया जाता है, जिसे वैकल्पिक रूप से आपके चुने पासवर्ड के साथ एन्क्रिप्ट किया जा सकता है। यदि कोई हमलावर आपकी एन्क्रिप्टेड वॉल्ट फ़ाइल प्राप्त करता है, तो वे पासवर्ड को जाने बिना सामग्री तक नहीं पहुँच पाएंगे। \n\nहमने उन विकल्पों पहले से सेट कर रखा है जो हमें लगता है कि आपके डिवाइस के लिए सबसे उपयुक्त होगा।</string>
+    <string name="authentication_method_explanation">Cue एक सुरक्षा-केंद्रित 2FA ऐप है। टोकनों को एक वॉल्ट में संग्रहीत किया जाता है, जिसे वैकल्पिक रूप से आपके चुने पासवर्ड के साथ एन्क्रिप्ट किया जा सकता है। यदि कोई हमलावर आपकी एन्क्रिप्टेड वॉल्ट फ़ाइल प्राप्त करता है, तो वे पासवर्ड को जाने बिना सामग्री तक नहीं पहुँच पाएंगे। \n\nहमने उन विकल्पों पहले से सेट कर रखा है जो हमें लगता है कि आपके डिवाइस के लिए सबसे उपयुक्त होगा।</string>
     <string name="authentication_method_none">कोई नहीं</string>
     <string name="authentication_method_none_description">वॉल्ट को खोलने के लिए किसी पासवर्ड की आवश्यकता नहीं है और इसे एन्क्रिप्ट नहीं किया जाएगा। <b> यह विकल्प अनुशंसित नहीं है </b>।</string>
     <string name="authentication_method_password">पासवर्ड</string>
@@ -136,7 +136,7 @@
     <string name="password_reminder_freq_monthly">मासिक</string>
     <string name="password_reminder_freq_quarterly">तिमाही</string>
     <string name="enter_password_2fas_message">ऐसा लगता है कि यह 2FAS बैकअप एन्क्रिप्टेड है। कृपया नीचे पासवर्ड दर्ज करें।</string>
-    <string name="enter_password_authy_message">ऐसा लगता है कि आपके Authy टोकनों को एन्क्रिप्ट किया गया है। कृपया Aegis को बंद करें, Authy को खोलें और अपने पासवर्ड से टोकनों को अनलॉक करें। इसके बजाय, यदि आप अपना पासवर्ड नीचे दर्ज करते हैं, तो Aegis आपके लिए आपके Authy टोकनों को डिक्रिप्ट करने का भी प्रयास कर सकता है।</string>
+    <string name="enter_password_authy_message">ऐसा लगता है कि आपके Authy टोकनों को एन्क्रिप्ट किया गया है। कृपया Cue को बंद करें, Authy को खोलें और अपने पासवर्ड से टोकनों को अनलॉक करें। इसके बजाय, यदि आप अपना पासवर्ड नीचे दर्ज करते हैं, तो Cue आपके लिए आपके Authy टोकनों को डिक्रिप्ट करने का भी प्रयास कर सकता है।</string>
     <string name="enter_password_aegis_title">कृपया आयात पासवर्ड दर्ज करें</string>
     <string name="period_hint">अवधि (सेकंड)</string>
     <string name="algorithm_hint">हैश फंकशन</string>
@@ -189,9 +189,8 @@
     <string name="discard_changes_description">आपके परिवर्तन सहेजे नहीं गए हैं</string>
     <string name="saving_profile_error">प्रोफाइल सहेजने में त्रुटि</string>
     <string name="welcome">स्वागत है</string>
-    <string name="app_description">Aegis एक मुफ्त, सुरक्षित और ओपन सोर्स 2FA ऐप है</string>
     <string name="setup_completed">सेटअप समाप्त हुआ</string>
-    <string name="setup_completed_description">Aegis का सेटअप हो चुका है और अब तैयार है</string>
+    <string name="setup_completed_description">Cue का सेटअप हो चुका है और अब तैयार है</string>
     <string name="vault_not_found">वॉल्ट नहीं मिला, सेटअप शुरू हो रहा है...</string>
     <string name="copied">कॉपी किया गया</string>
     <string name="errors_copied">त्रुटियों को क्लिपबोर्ड में कॉपी किया गया</string>
@@ -202,8 +201,8 @@
     <string name="saving_error">वॉल्ट सहेजने का प्रयास करते समय कोई त्रुटि उत्पन्न हुई</string>
     <string name="vault_init_error">वॉल्ट को शुरू करने की कोशिश करते समय एक त्रुटि हुई</string>
     <string name="vault_load_error">स्टोरेज से वॉल्ट को लोड करने की कोशिश करते समय एक त्रुटि हुई</string>
-    <string name="biometric_decrypt_error">बायोमेट्रिक प्रमाणीकरण के साथ वॉल्ट को डिक्रिप्ट करने की कोशिश करते समय एक त्रुटि हुई। यह आमतौर पर केवल तब होता है जब आपके डिवाइस की सुरक्षा सेटिंग्स बदल गई हो। कृपया अपने पासवर्ड के साथ वॉल्ट को अनलॉक करें और Aegis की सेटिंग में बायोमेट्रिक प्रमाणीकरण को फिर से कॉन्फ़िगर करें।</string>
-    <string name="biometric_init_error">बायोमेट्रिक प्रमाणीकरण तैयार करने की कोशिश करते समय एक त्रुटि हुई। यह आमतौर पर केवल तब होता है जब आपके डिवाइस की सुरक्षा सेटिंग्स बदली गईं हों। कृपया अपने पासवर्ड के साथ वॉल्ट को अनलॉक करें और Aegis की सेटिंग में बायोमेट्रिक प्रमाणीकरण को फिर से कॉन्फ़िगर करें।</string>
+    <string name="biometric_decrypt_error">बायोमेट्रिक प्रमाणीकरण के साथ वॉल्ट को डिक्रिप्ट करने की कोशिश करते समय एक त्रुटि हुई। यह आमतौर पर केवल तब होता है जब आपके डिवाइस की सुरक्षा सेटिंग्स बदल गई हो। कृपया अपने पासवर्ड के साथ वॉल्ट को अनलॉक करें और Cue की सेटिंग में बायोमेट्रिक प्रमाणीकरण को फिर से कॉन्फ़िगर करें।</string>
+    <string name="biometric_init_error">बायोमेट्रिक प्रमाणीकरण तैयार करने की कोशिश करते समय एक त्रुटि हुई। यह आमतौर पर केवल तब होता है जब आपके डिवाइस की सुरक्षा सेटिंग्स बदली गईं हों। कृपया अपने पासवर्ड के साथ वॉल्ट को अनलॉक करें और Cue की सेटिंग में बायोमेट्रिक प्रमाणीकरण को फिर से कॉन्फ़िगर करें।</string>
     <string name="disable_encryption">एन्क्रिप्शन अक्षम करें</string>
     <string name="disable_encryption_description">क्या आप वाकई एन्क्रिप्शन को अक्षम करना चाहते हैं? यह वॉल्ट को सादे पाठ में संग्रहीत करने का कारण बनेगा। <b>स्वचालित बैकअप भी अक्षम कर दिए जाएंगे</b>।</string>
     <string name="enable_encryption_error">एन्क्रिप्शन सक्षम करते समय एक त्रुटि हुई</string>
@@ -319,7 +318,7 @@
     <string name="toggle_checkboxes">चेकबॉक्स टॉगल करें</string>
     <string name="search">खोजें</string>
     <string name="channel_name_lock_status">लॉक स्तिथि</string>
-    <string name="channel_description_lock_status">वॉल्ट लॉक हो जाने पर Aegis आपको सूचित करने के लिए एक सतत अधिसूचना दिखा सकता है</string>
+    <string name="channel_description_lock_status">वॉल्ट लॉक हो जाने पर Cue आपको सूचित करने के लिए एक सतत अधिसूचना दिखा सकता है</string>
     <string name="vault_unlocked_state">वॉल्ट अनलॉक है। लॉक करने के लिए टैप करें।</string>
     <string name="version">संस्करण</string>
     <string name="changelog">परिवर्तन लॉग</string>
@@ -338,7 +337,7 @@
     <string name="webview_error">यह उपकरण वेब दृश्य का समर्थन नहीं करता है, जो चैंज और लाइसेंस देखने के लिए आवश्यक है। इसमें एक सिस्टम घटक गायब है।</string>
     <string name="email">ईमेल</string>
     <string name="time_sync_warning_title">स्वचालित समय सिंक</string>
-    <string name="time_sync_warning_message">Aegis सही कोड उत्पन्न करने के लिए सिस्टम समय पर निर्भर करता है। केवल कुछ सेकंड के विचलन से गलत कोड हो सकते हैं। ऐसा लगता है कि आपका डिवाइस समय को स्वचालित रूप से सिंक्रनाइज़ करने के लिए कॉन्फ़िगर नहीं किया गया है। क्या आप अब ऐसा करना चाहेंगे?</string>
+    <string name="time_sync_warning_message">Cue सही कोड उत्पन्न करने के लिए सिस्टम समय पर निर्भर करता है। केवल कुछ सेकंड के विचलन से गलत कोड हो सकते हैं। ऐसा लगता है कि आपका डिवाइस समय को स्वचालित रूप से सिंक्रनाइज़ करने के लिए कॉन्फ़िगर नहीं किया गया है। क्या आप अब ऐसा करना चाहेंगे?</string>
     <string name="time_sync_warning_disable">मुझे चेतावनी देना बंद करें। मैं जानता हूँ मैं क्या कर रहा हूँ</string>
     <string name="google_qr_export_unrelated">असंबंधित क्यूआर कोड मिला। स्कैनर को पुनरारंभ करने का प्रयास करें।</string>
     <string name="backup_error_bar_message"><b>हाल ही में वॉल्ट बैकअप विफल रहा</b></string>

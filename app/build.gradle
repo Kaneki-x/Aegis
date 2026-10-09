@@ -15,9 +15,12 @@ def getCmdOutput = { cmd ->
 def getGitHash = { -> return getCmdOutput(["git", "rev-parse", "--short", "HEAD"]) }
 def getGitBranch = { -> return getCmdOutput(["git", "rev-parse", "--abbrev-ref", "HEAD"]) }
 
+// Java/resource namespace. Kept as-is so that fixes from upstream Aegis can still be cherry-picked.
 def packageName = "com.beemdevelopment.aegis"
-def fileProviderAuthority = "${packageName}.fileprovider"
-def fileProviderAuthorityDebug = "${packageName}.debug.fileprovider"
+// Application id (what Android and the stores identify the app by).
+def appId = "io.cueapp.android"
+def fileProviderAuthority = "${appId}.fileprovider"
+def fileProviderAuthorityDebug = "${appId}.debug.fileprovider"
 
 android {
     compileSdk 36
@@ -25,7 +28,7 @@ android {
     namespace packageName
 
     defaultConfig {
-        applicationId "${packageName}"
+        applicationId appId
         minSdkVersion 23
         targetSdkVersion 36
         versionCode 82
@@ -71,7 +74,7 @@ android {
         debug {
             applicationIdSuffix ".debug"
             manifestPlaceholders = [
-                title: "AegisDev",
+                title: "Cue Dev",
                 iconName: "ic_launcher_debug",
                 fileProviderAuthority: "${fileProviderAuthorityDebug}"
             ]
@@ -80,7 +83,7 @@ android {
         }
         release {
             manifestPlaceholders = [
-                title: "Aegis",
+                title: "Cue",
                 iconName: "ic_launcher",
                 fileProviderAuthority: "${fileProviderAuthority}"
             ]

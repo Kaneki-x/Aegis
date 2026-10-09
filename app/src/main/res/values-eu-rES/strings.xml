@@ -28,7 +28,6 @@
     <string name="pref_section_security_title">Segurtasuna</string>
     <string name="pref_section_security_summary">Zifratzea, desblokeatzeko elementu biometrikoak erabiltzea, automatikoki blokeatzea eta beste segurtasun ezarpen batzuk kudeatu.</string>
     <string name="pref_section_import_export_title">Inportatu eta esportatu</string>
-    <string name="pref_section_import_export_summary">Aegis edo beste aplikazio batzuen segurtasun-kopiak inportatu. Zure Aegis biltegiaren eskuzko esportazioak sortu.</string>
     <string name="pref_section_audit_log_title">Erregistroa</string>
     <string name="pref_section_audit_log_summary">Appean gertatutako gertaeren zerrenda agertuko da.</string>
     <string name="pref_section_backups_title">Segurtasun-kopiak</string>
@@ -56,14 +55,14 @@
     <string name="pref_import_file_title">Inportatu fitxategi batetik</string>
     <string name="pref_import_file_summary">Inportatu marka-ikurrak fitxategi batetik</string>
     <string name="pref_android_backups_title">Androiden lainoko segurtasun kopiak</string>
-    <string name="pref_android_backups_summary">Androiden segurtasun kopien sistemari Aegisen biltegiaren kopia egiten utzi. Hau zifratutako biltegiekin bakarrik erabili daiteke.</string>
+    <string name="pref_android_backups_summary">Androiden segurtasun kopien sistemari Cueen biltegiaren kopia egiten utzi. Hau zifratutako biltegiekin bakarrik erabili daiteke.</string>
     <string name="pref_android_backups_hint"><i>Gailutik gailurako (D2D) segurtasun kopiak beti egin ditzakezu, berdin delarik goian egindako aukera</i></string>
     <string name="pref_backups_title">Biltegiaren segurtasun kopia automatikoki egin</string>
     <string name="pref_backups_summary">Aldaketak egiten direnean, sortu automatikoki biltegiaren segurtasun-kopiak kanpoko biltegiratze unitatean. Hori biltegi zifratuek bakarrik onartzen dute.</string>
     <string name="pref_backups_reminder_title">Segurtasun kopiaren gogorarazpena</string>
     <string name="pref_backups_reminder_summary">Erakutsi segurtasun kopia egiteko gogorarazpena zure azken aldaketen kopiarik ez bada egin.</string>
     <string name="pref_backups_reminder_dialog_title">Desaktibatu segurtasun kopiaren gogorarazpena</string>
-    <string name="pref_backups_reminder_dialog_summary">Gogorarazpena desaktibatzean Aegisek ez dizu kopien inguruko abisurik emango. Honek zure gakoak galtzea ekar dezake. Gogorarazpena desaktibatu egin nahi duzu?</string>
+    <string name="pref_backups_reminder_dialog_summary">Gogorarazpena desaktibatzean Cueek ez dizu kopien inguruko abisurik emango. Honek zure gakoak galtzea ekar dezake. Gogorarazpena desaktibatu egin nahi duzu?</string>
     <string name="pref_backups_versioning_strategy_title">Segurtasun kopien estrategia</string>
     <string name="pref_backups_versioning_strategy_keep_x_versions">Bertsio kopuru bat mantendu</string>
     <string name="pref_backups_versioning_strategy_single_backup">Segurtasun kopia bakarra</string>
@@ -103,7 +102,7 @@
     <string name="pref_auto_lock_title">Blokeatu automatikoki</string>
     <string name="pref_auto_lock_summary">Noiz %s</string>
     <string name="pref_auto_lock_summary_disabled">Ezgaituta</string>
-    <string name="pref_auto_lock_prompt">Blokeatu automatikoki Aegis kasu hauetan</string>
+    <string name="pref_auto_lock_prompt">Blokeatu automatikoki Cue kasu hauetan</string>
     <string name="pref_auto_lock_type_back_button">Atzera egiteko botoia sakatuta dago</string>
     <string name="pref_auto_lock_type_minimize">Aplikazioa minimizatuta dago</string>
     <string name="pref_auto_lock_type_device_lock">Gailua blokeatuta dago</string>
@@ -145,11 +144,10 @@
     <string name="today_at_time">Gaur %1$s</string>
     <string name="day_of_week_at_time">%1$s %2$s</string>
     <string name="export_encrypted">Zifratu biltegia</string>
-    <string name="export_help">Akzio honek zure biltegia Aegisen barne-biltegiratzetik kanpo esportatuko du. Aukeratu zein formatutan esportatu nahi duzun:</string>
-    <string name="export_warning_unencrypted">Zure Aegis biltegiaren zifratu gabeko kopia esportatzera zoaz. <b>Ez dizugu hau egitea gomendatzen</b>.</string>
+    <string name="export_help">Akzio honek zure biltegia Cueen barne-biltegiratzetik kanpo esportatuko du. Aukeratu zein formatutan esportatu nahi duzun:</string>
+    <string name="export_warning_unencrypted">Zure Cue biltegiaren zifratu gabeko kopia esportatzera zoaz. <b>Ez dizugu hau egitea gomendatzen</b>.</string>
     <string name="export_warning_password">Esportazioak Segurtasun ezarpenetan zehazten den bestelako pasahitz batekin zifratuta daude.</string>
     <string name="understand_risk_accept">Arriskua ulertzen dut</string>
-    <string name="export_format_aegis">Aegis (.JSON)</string>
     <string name="export_format_google_auth_uri">Testu fitxategia (.TXT)</string>
     <string name="export_format_html">Web orrialdea (.HTML)</string>
     <string name="export_format_hint">Esportazio formatua</string>
@@ -160,9 +158,9 @@
         <item quantity="other">%d talde aukeratuta</item>
     </plurals>
     <string name="export_no_groups_selected">Ez duzu talderik aukeratu esportatzeko</string>
-    <string name="export_html_title" comment="The title of an HTML export document">Aegis Authenticator Esportazioa</string>
+    <string name="export_html_title" comment="The title of an HTML export document">Cue Authenticator Esportazioa</string>
     <string name="choose_authentication_method">Segurtasuna</string>
-    <string name="authentication_method_explanation">Aegis segurtasunean oinarritutako 2FA aplikazioa da. Tokenak biltegi batean gordetzen dira. Biltegi hori nahi izanez gero, aukeratu duzun pasahitzarekin zifratu daiteke. Erasotzaile batek biltegi enkriptatuko fitxategia lortzen badu, ezingo du edukira sartu pasahitza jakin gabe.\n\nZure gailuarentzat hobeto egokituko litzatekeela uste dugun aukera hautatu dugu.</string>
+    <string name="authentication_method_explanation">Cue segurtasunean oinarritutako 2FA aplikazioa da. Tokenak biltegi batean gordetzen dira. Biltegi hori nahi izanez gero, aukeratu duzun pasahitzarekin zifratu daiteke. Erasotzaile batek biltegi enkriptatuko fitxategia lortzen badu, ezingo du edukira sartu pasahitza jakin gabe.\n\nZure gailuarentzat hobeto egokituko litzatekeela uste dugun aukera hautatu dugu.</string>
     <string name="authentication_method_none">Bat ere ez</string>
     <string name="authentication_method_none_description">Biltegia desblokeatzeko ez da pasahitzik behar eta ez da enkriptatuko. <b>Aukera hau ez da gomendatzen</b>.</string>
     <string name="authentication_method_password">Pasahitza</string>
@@ -178,17 +176,17 @@
     <string name="set_number">Sartu zenbaki bat mesedez</string>
     <string name="set_password_confirm">Berretsi pasahitza mesedez</string>
     <string name="invalid_password">Pasahitza ez da zuzena</string>
-    <string name="invalidated_biometrics">Aldaketa bat detektatu da zure gailuaren segurtasun ezarpenetan. Joan \"Aegis -&gt; Ezarpenak -&gt; Segurtasuna &gt; Biometriak\" aukerara eta aktibatu berriro desblokeatze-biometrikoa.</string>
+    <string name="invalidated_biometrics">Aldaketa bat detektatu da zure gailuaren segurtasun ezarpenetan. Joan \"Cue -&gt; Ezarpenak -&gt; Segurtasuna &gt; Biometriak\" aukerara eta aktibatu berriro desblokeatze-biometrikoa.</string>
     <string name="password_reminder">Sartu zure pasahitza mesedez. Noizean behin pasahitza sartzeko eskatzen dizugu ahaztu ez dezazun.</string>
     <string name="password_reminder_dialog_title">Defektuz biometria bidezko desblokeatzea erabili</string>
-    <string name="password_reminder_dialog_message">Noizean behin pasahitza sartzeko eskatzen dizugu ahaztu ez duzula frogatzeko eta zure biltegirako sarrera ez galtzeko. Zure pasahitza behin sartzen duzunean, biometria bidezko desblokeatzea erabiliko du defektuz Aegisek beste pasahitz gogorarazpen bat sortu arte.</string>
+    <string name="password_reminder_dialog_message">Noizean behin pasahitza sartzeko eskatzen dizugu ahaztu ez duzula frogatzeko eta zure biltegirako sarrera ez galtzeko. Zure pasahitza behin sartzen duzunean, biometria bidezko desblokeatzea erabiliko du defektuz Cueek beste pasahitz gogorarazpen bat sortu arte.</string>
     <string name="password_reminder_freq_never">Inoiz ez</string>
     <string name="password_reminder_freq_weekly">Astero</string>
     <string name="password_reminder_freq_biweekly">Bi astero</string>
     <string name="password_reminder_freq_monthly">Hilero</string>
     <string name="password_reminder_freq_quarterly">Hiru hilabetero</string>
     <string name="enter_password_2fas_message">2FAko segurtasun kopia hau zifratuta dagoela dirudi. Sartu pasahitza.</string>
-    <string name="enter_password_authy_message">Badirudi Authy tokenak zifratuta daudela. Itxi Aegis, ireki Authy eta desblokeatu tokenak pasahitzarekin. Horren ordez, Aegis zure Authy fitxak deszifratzen ere saia daiteke, ondoren pasahitza sartzen baduzu.</string>
+    <string name="enter_password_authy_message">Badirudi Authy tokenak zifratuta daudela. Itxi Cue, ireki Authy eta desblokeatu tokenak pasahitzarekin. Horren ordez, Cue zure Authy fitxak deszifratzen ere saia daiteke, ondoren pasahitza sartzen baduzu.</string>
     <string name="enter_password_aegis_title">Mesedez sartu inportatzeko pasahitza</string>
     <string name="period_hint">Tartea (segundoak)</string>
     <string name="algorithm_hint">Hash funtzioa</string>
@@ -251,9 +249,8 @@
     <string name="saving_profile_error">Errorea profila gordetzerakoan</string>
     <string name="saving_assign_icons_error">Errorea ikonoak esleitzean</string>
     <string name="welcome">Ongi Etorri</string>
-    <string name="app_description">Aegis doakoa, segurua eta software librea den 2FA aplikazioa da</string>
     <string name="setup_completed">Konfigurazioa osatuta</string>
-    <string name="setup_completed_description">Aegis konfiguratu egin da eta hasteko prest dago.</string>
+    <string name="setup_completed_description">Cue konfiguratu egin da eta hasteko prest dago.</string>
     <string name="vault_not_found">Ez da bitegia aurkitu, abian jartzen…</string>
     <string name="copied">Kopiatuta</string>
     <string name="errors_copied">Erroreak arbelera kopiatu dira</string>
@@ -265,8 +262,8 @@
     <string name="saving_error">Errorea gertatu da biltegia gordetzen saiatzean</string>
     <string name="vault_init_error">Errorea gertatu da biltegia hasieratzen saiatzean</string>
     <string name="vault_load_error">Errorea gertatu da biltegia memoriatik kargatzen saiatzean</string>
-    <string name="biometric_decrypt_error">Errorea gertatu da biltegia autentifikazio biometrikoarekin deszifratzen saiatzean. Normalean, gailuaren segurtasun ezarpenak aldatu direnean bakarrik gertatzen da hori. Desblokeatu biltegia pasahitzarekin, eta konfiguratu autentifikazio biometrikoa Aegisen konfigurazioan.</string>
-    <string name="biometric_init_error">Errorea gertatu da autentifikazio biometrikoa prestatzen saiatzean. Normalean, gailuaren segurtasun ezarpenak aldatu direnean bakarrik gertatzen da hori. Desblokeatu biltegia pasahitzarekin, eta konfiguratu autentifikazio biometrikoa Aegisen konfigurazioan.</string>
+    <string name="biometric_decrypt_error">Errorea gertatu da biltegia autentifikazio biometrikoarekin deszifratzen saiatzean. Normalean, gailuaren segurtasun ezarpenak aldatu direnean bakarrik gertatzen da hori. Desblokeatu biltegia pasahitzarekin, eta konfiguratu autentifikazio biometrikoa Cueen konfigurazioan.</string>
+    <string name="biometric_init_error">Errorea gertatu da autentifikazio biometrikoa prestatzen saiatzean. Normalean, gailuaren segurtasun ezarpenak aldatu direnean bakarrik gertatzen da hori. Desblokeatu biltegia pasahitzarekin, eta konfiguratu autentifikazio biometrikoa Cueen konfigurazioan.</string>
     <string name="disable_encryption">Desgaitu zifratua</string>
     <string name="disable_encryption_description">Zifratzea desaktibatu nahi duzu? Honek zure biltegia testu hutsean gordeko dela esan nahi du. <b>Segurtasun kopia automatikoak ere desgaitu egingo dira</b>.</string>
     <string name="enable_encryption_error">Errorea gertatu da zifratua gaitzerakoan</string>
@@ -300,7 +297,7 @@
     <string name="file_not_found">Errorea: Ez da fitxategia aurkitu</string>
     <string name="reading_file_error">Errorea gertatu da fitxategia irakurtzen saiatzean</string>
     <string name="app_lookup_error">Errorea: Aplikazioa ez dago instalatuta</string>
-    <string name="app_version_error">Instalatuta dagoen %s bertsioa ez da bateragarria. Bertsio berriak fitxategietako batzuk barneko biltegiratze-direktorioan zifratzen hasi dira, ondorioz Aegisek ezin du inportaziorako behar duen informazioa eskuratu. Inportatzen saiatzeak errore bat emango du ziurrenik. Jarraitu nahi duzu?</string>
+    <string name="app_version_error">Instalatuta dagoen %s bertsioa ez da bateragarria. Bertsio berriak fitxategietako batzuk barneko biltegiratze-direktorioan zifratzen hasi dira, ondorioz Cueek ezin du inportaziorako behar duen informazioa eskuratu. Inportatzen saiatzeak errore bat emango du ziurrenik. Jarraitu nahi duzu?</string>
     <string name="root_error">Errorea: Ezin izan da root sarbidea lortu</string>
     <plurals name="imported_entries_count">
         <item quantity="one">%d sarrera inportatuta</item>
@@ -318,7 +315,7 @@
     <string name="encryption_enable_biometrics_error">Errorea gertatu da desblokeo biometrikoa gaitzen saiatzean. Gailu batzuek autentifikazio biometrikoko ezarpen txarrak dituzte, eta baliteke zurea horietako bat izatea. Aldatu horren ordez pasahitza soilik duen konfigurazio batera.</string>
     <string name="no_cameras_available">Kamera ez dago erabilgarri</string>
     <string name="read_qr_error">Errorea gertatu da QR kodea irakurtzen saiatzean</string>
-    <string name="read_qr_error_phonefactor">Aegis ez da bateragarria Microsoften 2FA algoritmo jabedunarekin. Office 365en 2FA konfiguratzen duzunean aukeratu \"Aplikazioa jakinarazpen gabe konfiguratu\" aukeratu ezazu (ingelesez: \"Setup application without notifications\").</string>
+    <string name="read_qr_error_phonefactor">Cue ez da bateragarria Microsoften 2FA algoritmo jabedunarekin. Office 365en 2FA konfiguratzen duzunean aukeratu \"Aplikazioa jakinarazpen gabe konfiguratu\" aukeratu ezazu (ingelesez: \"Setup application without notifications\").</string>
     <string name="partial_google_auth_import">Google Authenticatorren esportazioa ez da osoa</string>
     <string name="partial_google_auth_import_warning">QR kode batzuk falta dira zure inportazioan. Kode hauek ez dira aurktu: \n\n<b>%s</b>\n\nZatikako inportazio honekin jarrai dezakezu baina berriz ere QR kode guztiekin saiatzea gomendatzen dizugu tokenetarako sarrera gal ez dezazun.</string>
     <string name="missing_qr_code_descriptor">• QR kodea %d</string>
@@ -401,8 +398,8 @@
     <string name="unknown_issuer">Igorle ezezaguna</string>
     <string name="unknown_account_name">Kontu-izen ezezaguna</string>
     <plurals name="import_error_dialog">
-        <item quantity="one">Aegisek ezin izan du token %d inportatu. Token hau ez dugu inportatuko. Egin klik xehetasunetan erroreari buruzko informazio gehiago lortzeko.</item>
-        <item quantity="other">Aegisek ezin izan ditu %d token inportatu. Token hauek ez ditugu inportatuko. Egin klik xehetasunetan erroreari buruzko informazio gehiago lortzeko.</item>
+        <item quantity="one">Cueek ezin izan du token %d inportatu. Token hau ez dugu inportatuko. Egin klik xehetasunetan erroreari buruzko informazio gehiago lortzeko.</item>
+        <item quantity="other">Cueek ezin izan ditu %d token inportatu. Token hauek ez ditugu inportatuko. Egin klik xehetasunetan erroreari buruzko informazio gehiago lortzeko.</item>
     </plurals>
     <string name="unable_to_process_deeplink">Ezin izan da esteka sakona prozesatu</string>
     <string name="unable_to_read_qrcode_file">Ezin izan da fitxategian oinarritutako QR kodea prozesatu: %s.</string>
@@ -416,16 +413,15 @@
     <string name="toggle_checkboxes">Aukeraketa kutxak aldatu</string>
     <string name="search">Bilatu</string>
     <string name="channel_name_lock_status">Blokeo egoera</string>
-    <string name="channel_description_lock_status">Aegisek jakinarazpen iraunkorra ezar dezake biltegia blokeatuta dagoenean jakinarazteko</string>
+    <string name="channel_description_lock_status">Cueek jakinarazpen iraunkorra ezar dezake biltegia blokeatuta dagoenean jakinarazteko</string>
     <string name="vault_unlocked_state">Biltegia desblokeatuta dago. Ukitu hemen blokeatzeko.</string>
     <string name="version">Bertsioa</string>
     <string name="changelog">Aldaketen erregistroa</string>
     <string name="whats_new">Zer berri</string>
     <string name="github_description">Iturburu-kodea, arazoak eta informazioa</string>
     <string name="license">Lizentzia</string>
-    <string name="license_description">Aegis Autenticator GPLv3 lizentziapean banatzen da</string>
     <string name="third_party_licenses">Hirugarrenen lizentziak</string>
-    <string name="third_party_licenses_description">Aegisek erabiltzen dituen hirugarrenen lizentziak</string>
+    <string name="third_party_licenses_description">Cueek erabiltzen dituen hirugarrenen lizentziak</string>
     <string name="country_netherlands">Herbehereak</string>
     <string name="email_us">Idatzi eposta bat</string>
     <string name="visit_website">Ikusi gure webgunea</string>
@@ -435,7 +431,7 @@
     <string name="webview_error">Gailu honetan ez dabil web view, eta beharrezkoa da aldaketen erregistroa eta lizentzia ikusteko. Sistemaren osagai bat da eta ez dago instalatuta.</string>
     <string name="email">Eposta</string>
     <string name="time_sync_warning_title">Denboraren sinkronizazio automatikoa</string>
-    <string name="time_sync_warning_message">Aegis-ek konfiantza du sistemaren denboran, kode zuzenak sortzeko sinkronizatuta egoteko. Segundo batzuetako desbideratzea kode okerrak eragin ditzake. Badirudi zure gailua ez dagoela denbora automatikoki sinkronizatzeko konfiguratuta. Orain egitea gustatuko litzaizuke?</string>
+    <string name="time_sync_warning_message">Cue-ek konfiantza du sistemaren denboran, kode zuzenak sortzeko sinkronizatuta egoteko. Segundo batzuetako desbideratzea kode okerrak eragin ditzake. Badirudi zure gailua ez dagoela denbora automatikoki sinkronizatzeko konfiguratuta. Orain egitea gustatuko litzaizuke?</string>
     <string name="time_sync_warning_disable">Utzi aholkuak emateari. Badakit zer egiten ari naizen.</string>
     <string name="google_qr_export_unrelated">Erlazionatu gabeko QR kodea aurkitu da. Saiatu eskanerra berrabiarazten.</string>
     <plurals name="google_qr_export_scanned">
@@ -447,8 +443,8 @@
     <string name="backup_error_dialog_details" comment="The first parameter is the type of backup (e.g. built-in or Android backup). The second parameter is an elapsed time in the style of 'x seconds/minutes/days ago'.">
 %1$s erabiliz egindako biltegiaren segurtasun kopiak huts egin du. Saiakera noiz egin den: %2$s. Ziurtatu segurtasun kopien ezarpenak ondo daudela hauek ondo egin daitezen.    </string>
     <string name="backup_permission_error_dialog_details" comment="The first parameter is the type of backup (e.g. built-in or Android backup). The second parameter is an elapsed time in the style of 'x seconds/minutes/days ago'.">
-%1$s erabiliz egin den segurtasun-kopia baten saiakerak huts egin du Aegisek ez baitu baimenik helburuan ezer idazteko. Segurtasun kopiaren saiakera %2$s izan da. Errore hau kopia mugitu/berrizendatu egin duzulako izan daiteke edo Aegis segurtasun-kopia batetik berrezarri duzulako. Konfiguratu berriz zure kopien helburu karpeta.    </string>
-    <string name="backup_system_builtin">Aegisek egindako segurtasun kopia automatikoak</string>
+%1$s erabiliz egin den segurtasun-kopia baten saiakerak huts egin du Cueek ez baitu baimenik helburuan ezer idazteko. Segurtasun kopiaren saiakera %2$s izan da. Errore hau kopia mugitu/berrizendatu egin duzulako izan daiteke edo Cue segurtasun-kopia batetik berrezarri duzulako. Konfiguratu berriz zure kopien helburu karpeta.    </string>
+    <string name="backup_system_builtin">Cueek egindako segurtasun kopia automatikoak</string>
     <string name="backup_system_android">Androidek lainoan egidako segurtasun kopiak</string>
     <string name="backup_reminder_bar_message_with_latest" comment="The parameter is an elapsed time in the style of 'x seconds/minutes/days ago'">
 Azken segurtasun kopia zaharregia da (%s)
@@ -484,7 +480,7 @@ Biltegian egindako azken aldaketen segurtasun kopiarik ez dago. Garrantzitsua da
     <string name="uri_copied_to_clipboard">URIa arbelean kopiatu da</string>
     <string name="transfer_entry_description">Eskaneatu QR kode hau sarrera transferitu nahi diozun aitentifikazio-aplikazioarekin</string>
     <string name="transfer_entry_brightness">Sakatu QR kodea pantaila osoan ikusteko</string>
-    <string name="google_auth_compatible_transfer_description">Eskaneatu QR kode hauek Aegis edo Google Authenticator erabiliz.\n\nGoogle Authenticator aplikazioaren mugak direla eta, SHA1 darabilten eta 6 zenbakiko kodeak erabiltzen dituzten TOTP &amp; HOTP tokenak bakarrik sartzen dira</string>
+    <string name="google_auth_compatible_transfer_description">Eskaneatu QR kode hauek Cue edo Google Authenticator erabiliz.\n\nGoogle Authenticator aplikazioaren mugak direla eta, SHA1 darabilten eta 6 zenbakiko kodeak erabiltzen dituzten TOTP &amp; HOTP tokenak bakarrik sartzen dira</string>
     <string name="password_strength_very_weak">Oso ahula</string>
     <string name="password_strength_weak">Ahula</string>
     <string name="password_strength_fair">Ertaina</string>
@@ -507,10 +503,9 @@ Biltegian egindako azken aldaketen segurtasun kopiarik ez dago. Garrantzitsua da
     <string name="dialog_wipe_entries_checkbox">Garbitu biltegiaren sarrerak</string>
     <string name="import_from_clipboard_title">Inportatu arbeletik</string>
     <string name="import_from_clipboard_message">Zure arbelean otpauth uri zuzen bat aurkitu dugu: \n\n<b>Izena</b>: %1$s\n<b>Jaulkitzailea</b>:%2$s\n\nSarrera hau automatikoki betetzeko erabili nahi duzu?</string>
-    <string name="panic_trigger_ignore_toast">Aegisek arrisku mezua jaso du baina ezarpen hau desaktibatuta dago, ez da ezer egingo</string>
+    <string name="panic_trigger_ignore_toast">Cueek arrisku mezua jaso du baina ezarpen hau desaktibatuta dago, ez da ezer egingo</string>
     <string name="pref_panic_trigger_title">Ezabatu biltegia arrisku mezua jasotzean</string>
     <string name="pref_panic_trigger_summary">Ezabatu biltegia Rippletik arrisku mezua jasotzean</string>
-    <string name="import_vault">Inportatu Aegis biltegia</string>
     <string name="import_vault_hint">Beste 2FA aplikazio batetik inportatu nahi duzu? Amaitu konfigurazioa lehenengo eta joan ondoren ezarpenetara.</string>
     <plurals name="import_duplicate_toast">
         <item quantity="one">Bikoiztutako sarrera posible %d. Errebisatu zerrenda mesedez.</item>
@@ -528,7 +523,7 @@ Biltegian egindako azken aldaketen segurtasun kopiarik ez dago. Garrantzitsua da
     <string name="importer_help_freeotp">FreeOTP 2: Kargatu segurtasun-kopiaren fitxategia. \nFreeOTP 1.x: kargatu FreeOTPren barne-biltegiratzeko karpetan dagoen <b>/data/data/org.fedorahosted.freeotp/shared_prefs/tokens.xml</b> fitxategia.</string>
     <string name="importer_help_freeotp_plus">FreeOTP+en esportazio fitxategia aukeratu.</string>
     <string name="importer_warning_title_freeotp2">FreeOTP 2rekin bateragarritasuna</string>
-    <string name="importer_warning_message_freeotp2">Hainbat arazo daude FreeOTP 2rekin eta segurtasun-kopia okerrak eragin ditzagete. Aegis ahalik eta elementu gehien berreskuratzen saiatuko da baina horietako batzuk edo agian guztiek huts egitea gerta daiteke.</string>
+    <string name="importer_warning_message_freeotp2">Hainbat arazo daude FreeOTP 2rekin eta segurtasun-kopia okerrak eragin ditzagete. Cue ahalik eta elementu gehien berreskuratzen saiatuko da baina horietako batzuk edo agian guztiek huts egitea gerta daiteke.</string>
     <string name="importer_help_google_authenticator">&lt;b&gt;Google Authenticator aplikazioaren v5.10 bertsioa edo lehenagokoak diren datu-baseak erabili daitezke. \n\n&lt;b&gt;data/data/com.google.android.apps.authenticator2/databases/databases&lt;/b&gt; fitxategiaren kopia bat eman, berau Google Authenticator aplikazioaren barne biltegiratzean dago.</string>
     <string name="importer_help_microsoft_authenticator">Microsoft Authenticatoren <b>/data/data/com.azure.authenticator/databases/PhoneFactor</b> fitxategia aukeratu.</string>
     <string name="importer_help_plain_text">Google Authenticator URIak dituen testu hutseko fitxategia aukeratu.</string>
@@ -541,7 +536,7 @@ Biltegian egindako azken aldaketen segurtasun kopiarik ez dago. Garrantzitsua da
     <string name="import_assign_icons_dialog_title">Esleitu ikonoak</string>
     <string name="import_assign_icons_dialog_text">Inportatutako sarrerei ikonoak esleitu nahi dizkiezu?</string>
     <string name="importer_encrypted_exception_google_authenticator">Zifratutako sarrera ez da kontuan hartu: %s</string>
-    <string name="importer_help_direct">Sarrerak %s-etik inportatu. Honek funtzionatzeko aplikazioa gailu honetan instalatuta egon behar da eta Aegisi root baimena eman beharko diozu.</string>
+    <string name="importer_help_direct">Sarrerak %s-etik inportatu. Honek funtzionatzeko aplikazioa gailu honetan instalatuta egon behar da eta Cuei root baimena eman beharko diozu.</string>
     <string name="groups">Taldeak</string>
     <string name="pref_focus_search">Bilaketara joan aplikazioa hastean</string>
     <string name="pref_focus_search_summary">Aplikazioa irekitzean bilaketa leihora joan.</string>

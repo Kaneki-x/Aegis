@@ -28,7 +28,6 @@
     <string name="pref_section_security_title">Безопасность</string>
     <string name="pref_section_security_summary">Настройка шифрования, биометрической разблокировки, автоматической блокировки и других параметров безопасности.</string>
     <string name="pref_section_import_export_title">Импорт и экспорт</string>
-    <string name="pref_section_import_export_summary">Импорт резервных копий Aegis или других приложений для аутентификации. Экспорт хранилища Aegis вручную.</string>
     <string name="pref_section_audit_log_title">Журнал событий</string>
     <string name="pref_section_audit_log_summary">Просмотр всех зарегистрированных важных событий, произошедших в приложении.</string>
     <string name="pref_section_backups_title">Резервные копии</string>
@@ -56,14 +55,14 @@
     <string name="pref_import_file_title">Импорт из файла</string>
     <string name="pref_import_file_summary">Импорт ключей из файла</string>
     <string name="pref_android_backups_title">Облачное резервирование Android</string>
-    <string name="pref_android_backups_summary">Разрешить системе облачного резервного копирования включать Aegis в свои резервные копии. Поддерживается только для зашифрованных хранилищ.</string>
+    <string name="pref_android_backups_summary">Разрешить системе облачного резервного копирования включать Cue в свои резервные копии. Поддерживается только для зашифрованных хранилищ.</string>
     <string name="pref_android_backups_hint"><i>Резервное копирование между устройствами (D2D) всегда разрешено независимо от настройки выше</i></string>
     <string name="pref_backups_title">Автоматическое резервирование хранилища</string>
     <string name="pref_backups_summary">Автоматически создавать резервные копии хранилища на внешнем носителе при внесении изменений. Поддерживается только для зашифрованных хранилищ.</string>
     <string name="pref_backups_reminder_title">Напоминание о резервном копировании</string>
     <string name="pref_backups_reminder_summary">Показывать напоминание о необходимости создания резервной копии хранилища, если резервирование последних изменений ещё не выполнялось.</string>
     <string name="pref_backups_reminder_dialog_title">Отключить напоминание о резервном копировании</string>
-    <string name="pref_backups_reminder_dialog_summary">Отключение этого напоминания означает, что Aegis не будет сообщать вам о наличии изменений, резервная копия которых ещё не создана. В результате вы рискуете потерять доступ к своим ключам. Вы уверены, что хотите отключить напоминание?</string>
+    <string name="pref_backups_reminder_dialog_summary">Отключение этого напоминания означает, что Cue не будет сообщать вам о наличии изменений, резервная копия которых ещё не создана. В результате вы рискуете потерять доступ к своим ключам. Вы уверены, что хотите отключить напоминание?</string>
     <string name="pref_backups_versioning_strategy_title">Стратегия резервного копирования</string>
     <string name="pref_backups_versioning_strategy_keep_x_versions">Несколько версий резервных копий</string>
     <string name="pref_backups_versioning_strategy_single_backup">Одна резервная копия</string>
@@ -107,7 +106,7 @@
     <string name="pref_auto_lock_title">Автоматическая блокировка</string>
     <string name="pref_auto_lock_summary">Когда %s</string>
     <string name="pref_auto_lock_summary_disabled">Отключено</string>
-    <string name="pref_auto_lock_prompt">Автоматически блокировать Aegis, когда</string>
+    <string name="pref_auto_lock_prompt">Автоматически блокировать Cue, когда</string>
     <string name="pref_auto_lock_type_back_button">Нажата кнопка \"Назад\"</string>
     <string name="pref_auto_lock_type_minimize">Приложение свёрнуто</string>
     <string name="pref_auto_lock_type_device_lock">Устройство заблокировано</string>
@@ -149,11 +148,10 @@
     <string name="today_at_time">Сегодня в %1$s</string>
     <string name="day_of_week_at_time">%1$s в %2$s</string>
     <string name="export_encrypted">Шифровать хранилище</string>
-    <string name="export_help">Экспорт внутреннего хранилища Aegis. Выберите формат:</string>
-    <string name="export_warning_unencrypted">Вы собираетесь экспортировать незашифрованную копию хранилища Aegis. <b>Не рекомендуется</b>.</string>
+    <string name="export_help">Экспорт внутреннего хранилища Cue. Выберите формат:</string>
+    <string name="export_warning_unencrypted">Вы собираетесь экспортировать незашифрованную копию хранилища Cue. <b>Не рекомендуется</b>.</string>
     <string name="export_warning_password">Экспортируемые данные шифруются с использованием отдельного пароля, указанного в разделе настроек «Безопасность».</string>
     <string name="understand_risk_accept">Я понимаю риск</string>
-    <string name="export_format_aegis">Aegis (.JSON)</string>
     <string name="export_format_google_auth_uri">Текстовый файл (.TXT)</string>
     <string name="export_format_html">Веб-страница (.HTML)</string>
     <string name="export_format_hint">Формат экспорта</string>
@@ -166,9 +164,9 @@
         <item quantity="other">%d групп выбрано</item>
     </plurals>
     <string name="export_no_groups_selected">Не выбрано групп для экспорта</string>
-    <string name="export_html_title" comment="The title of an HTML export document">Экспорт Aegis Authenticator</string>
+    <string name="export_html_title" comment="The title of an HTML export document">Экспорт Cue Authenticator</string>
     <string name="choose_authentication_method">Безопасность</string>
-    <string name="authentication_method_explanation">Aegis — приложение двухфакторной аутентификации (2FA), ориентированное на безопасность. Ключи хранятся в хранилище, которое по желанию можно зашифровать с помощью пароля. Если злоумышленник получит зашифрованный файл хранилища, он не сможет получить доступ к содержимому без указания пароля.\n\nВыбран наиболее подходящий вариант для вашего устройства.</string>
+    <string name="authentication_method_explanation">Cue — приложение двухфакторной аутентификации (2FA), ориентированное на безопасность. Ключи хранятся в хранилище, которое по желанию можно зашифровать с помощью пароля. Если злоумышленник получит зашифрованный файл хранилища, он не сможет получить доступ к содержимому без указания пароля.\n\nВыбран наиболее подходящий вариант для вашего устройства.</string>
     <string name="authentication_method_none">Нет</string>
     <string name="authentication_method_none_description">Хранилище не будет зашифровано, пароль для разблокировки не потребуется. <b>Не рекомендуется</b>.</string>
     <string name="authentication_method_password">Пароль</string>
@@ -184,10 +182,10 @@
     <string name="set_number">Введите число</string>
     <string name="set_password_confirm">Подтвердите пароль</string>
     <string name="invalid_password">Неверный пароль</string>
-    <string name="invalidated_biometrics">Обнаружено изменение настроек безопасности устройства. Перейдите в настройки Aegis и откройте раздел «Безопасность» → «Биометрическая разблокировка», где повторно добавьте свой отпечаток пальца.</string>
+    <string name="invalidated_biometrics">Обнаружено изменение настроек безопасности устройства. Перейдите в настройки Cue и откройте раздел «Безопасность» → «Биометрическая разблокировка», где повторно добавьте свой отпечаток пальца.</string>
     <string name="password_reminder">Пожалуйста, введите свой пароль. Иногда такая просьба будет появляться, чтобы вы не забыли его.</string>
     <string name="password_reminder_dialog_title">Биометрическая разблокировка по умолчанию</string>
-    <string name="password_reminder_dialog_message">Периодически будет предлагаться ввести пароль, чтобы убедиться, что вы его помните и не потеряете доступ к своему хранилищу. После однократного ввода пароля Aegis по умолчанию вернётся к биометрической разблокировке до тех пор, пока не наступит время очередного напоминания о пароле.</string>
+    <string name="password_reminder_dialog_message">Периодически будет предлагаться ввести пароль, чтобы убедиться, что вы его помните и не потеряете доступ к своему хранилищу. После однократного ввода пароля Cue по умолчанию вернётся к биометрической разблокировке до тех пор, пока не наступит время очередного напоминания о пароле.</string>
     <string name="password_reminder_freq_never">Никогда</string>
     <string name="password_reminder_freq_weekly">Еженедельно</string>
     <string name="password_reminder_freq_biweekly">Раз в две недели</string>
@@ -195,7 +193,7 @@
     <string name="password_reminder_freq_quarterly">Ежеквартально</string>
     <string name="enter_password_proton_message">Похоже, эта резервная копия Proton Authenticator зашифрована. Пожалуйста, введите пароль ниже.</string>
     <string name="enter_password_2fas_message">Похоже, эта резервная копия 2FAS зашифрована. Пожалуйста, введите пароль ниже.</string>
-    <string name="enter_password_authy_message">Похоже, что ваши ключи Authy зашифрованы. Перейдите в Authy и расшифруйте ключи своим паролем. Вы также можете ввести пароль от Authy ниже и Aegis расшифрует ключи за вас.</string>
+    <string name="enter_password_authy_message">Похоже, что ваши ключи Authy зашифрованы. Перейдите в Authy и расшифруйте ключи своим паролем. Вы также можете ввести пароль от Authy ниже и Cue расшифрует ключи за вас.</string>
     <string name="enter_password_aegis_title">Введите пароль для импорта</string>
     <string name="period_hint">Период (сек.)</string>
     <string name="algorithm_hint">Функция хеширования</string>
@@ -262,9 +260,8 @@
     <string name="saving_profile_error">Ошибка сохранения профиля</string>
     <string name="saving_assign_icons_error">Невозможно назначить значки</string>
     <string name="welcome">Добро пожаловать</string>
-    <string name="app_description">Aegis — бесплатное, безопасное и открытое приложение 2FA.</string>
     <string name="setup_completed">Настройка завершена</string>
-    <string name="setup_completed_description">Aegis настроен и готов к работе.</string>
+    <string name="setup_completed_description">Cue настроен и готов к работе.</string>
     <string name="vault_not_found">Хранилище не найдено, запуск первоначальной настройки…</string>
     <string name="copied">Скопировано</string>
     <string name="errors_copied">Ошибки скопированы в буфер обмена</string>
@@ -276,8 +273,8 @@
     <string name="saving_error">Произошла ошибка при попытке сохранить хранилище</string>
     <string name="vault_init_error">Произошла ошибка при попытке создания хранилища</string>
     <string name="vault_load_error">Произошла ошибка при попытке прочитать файл хранилища</string>
-    <string name="biometric_decrypt_error">Произошла ошибка при попытке расшифровать хранилище с помощью биометрической аутентификации. Обычно это происходит при изменении настроек безопасности вашего устройства. Разблокируйте хранилище вашим паролем и перенастройте биометрическую аутентификацию в настройках Aegis.</string>
-    <string name="biometric_init_error">Произошла ошибка при попытке расшифровать хранилище с помощью биометрической аутентификации. Обычно это происходит при изменении настроек безопасности вашего устройства. Разблокируйте хранилище вашим паролем и перенастройте биометрическую аутентификацию в настройках Aegis.</string>
+    <string name="biometric_decrypt_error">Произошла ошибка при попытке расшифровать хранилище с помощью биометрической аутентификации. Обычно это происходит при изменении настроек безопасности вашего устройства. Разблокируйте хранилище вашим паролем и перенастройте биометрическую аутентификацию в настройках Cue.</string>
+    <string name="biometric_init_error">Произошла ошибка при попытке расшифровать хранилище с помощью биометрической аутентификации. Обычно это происходит при изменении настроек безопасности вашего устройства. Разблокируйте хранилище вашим паролем и перенастройте биометрическую аутентификацию в настройках Cue.</string>
     <string name="disable_encryption">Отключить шифрование</string>
     <string name="disable_encryption_description">Отключить шифрование? Это приведёт к сохранению хранилища обычным текстом. <b>Автоматическое резервное копирование также будет отключено</b>.</string>
     <string name="enable_encryption_error">Произошла ошибка при включении шифрования</string>
@@ -313,7 +310,7 @@
     <string name="file_not_found">Ошибка: файл не найден</string>
     <string name="reading_file_error">Произошла ошибка при попытке прочитать файл</string>
     <string name="app_lookup_error">Ошибка: приложение не установлено</string>
-    <string name="app_version_error">Установленная версия %s не поддерживается. Последние версии начали шифровать некоторые файлы во внутренней памяти хранилища, из-за чего Aegis не может получить доступ к информации, необходимой для импорта. Попытка импорта может привести к ошибке. Всё равно продолжить?</string>
+    <string name="app_version_error">Установленная версия %s не поддерживается. Последние версии начали шифровать некоторые файлы во внутренней памяти хранилища, из-за чего Cue не может получить доступ к информации, необходимой для импорта. Попытка импорта может привести к ошибке. Всё равно продолжить?</string>
     <string name="root_error">Ошибка: root-доступ не получен</string>
     <plurals name="imported_entries_count">
         <item quantity="one">Импортирована %d запись</item>
@@ -335,7 +332,7 @@
     <string name="encryption_enable_biometrics_error">Невозможно включить биометрическую разблокировку. На некоторых устройствах плохо реализована эта функция, и, возможно, это ваш случай. Попробуйте вместо этого использовать пароль.</string>
     <string name="no_cameras_available">Нет доступных камер</string>
     <string name="read_qr_error">Произошла ошибка при попытке прочитать QR-код</string>
-    <string name="read_qr_error_phonefactor">Aegis не совместим с проприетарным алгоритмом 2FA Microsoft. Не забудьте выбрать «Установить приложение без уведомлений» при настройке 2FA в Office 365.</string>
+    <string name="read_qr_error_phonefactor">Cue не совместим с проприетарным алгоритмом 2FA Microsoft. Не забудьте выбрать «Установить приложение без уведомлений» при настройке 2FA в Office 365.</string>
     <string name="partial_google_auth_import">Обнаружен неполный экспорт Google Authenticator</string>
     <string name="partial_google_auth_import_warning">Некоторые QR-коды отсутствуют в импорте. Следующие коды не найдены:\n\n<b>%s</b>\n\nВы можете продолжить импорт этого неполного экспорта, но лучше сделать повторный экспорт со всеми QR-кодами, чтобы избежать риска потери доступа к ключам.</string>
     <string name="missing_qr_code_descriptor">• QR-код %d</string>
@@ -426,10 +423,10 @@
     <string name="unknown_issuer">Неизвестный эмитент</string>
     <string name="unknown_account_name">Неизвестное название учётной записи</string>
     <plurals name="import_error_dialog">
-        <item quantity="one">Aegis не может импортировать %d ключ. Этот ключ будет пропущен. Нажмите «Подробнее», чтобы просмотреть дополнительную информацию об ошибке.</item>
-        <item quantity="few">Aegis не может импортировать %d ключа. Эти ключи будут пропущены. Нажмите «Подробнее», чтобы просмотреть дополнительную информацию об ошибке.</item>
-        <item quantity="many">Aegis не может импортировать %d ключей. Эти ключи будут пропущены. Нажмите «Подробнее», чтобы просмотреть дополнительную информацию об ошибке.</item>
-        <item quantity="other">Aegis не может импортировать %d ключей. Эти ключи будут пропущены. Нажмите «Подробнее», чтобы просмотреть дополнительную информацию об ошибке.</item>
+        <item quantity="one">Cue не может импортировать %d ключ. Этот ключ будет пропущен. Нажмите «Подробнее», чтобы просмотреть дополнительную информацию об ошибке.</item>
+        <item quantity="few">Cue не может импортировать %d ключа. Эти ключи будут пропущены. Нажмите «Подробнее», чтобы просмотреть дополнительную информацию об ошибке.</item>
+        <item quantity="many">Cue не может импортировать %d ключей. Эти ключи будут пропущены. Нажмите «Подробнее», чтобы просмотреть дополнительную информацию об ошибке.</item>
+        <item quantity="other">Cue не может импортировать %d ключей. Эти ключи будут пропущены. Нажмите «Подробнее», чтобы просмотреть дополнительную информацию об ошибке.</item>
     </plurals>
     <string name="unable_to_process_deeplink">Невозможно обработать глубокую ссылку</string>
     <string name="unable_to_read_qrcode_file">Невозможно считать и обработать QR-код из файла: %s.</string>
@@ -443,16 +440,15 @@
     <string name="toggle_checkboxes">Установите переключатели</string>
     <string name="search">Поиск</string>
     <string name="channel_name_lock_status">Статус блокировки</string>
-    <string name="channel_description_lock_status">Aegis может создать постоянное уведомление для отображения статуса блокировки хранилища</string>
+    <string name="channel_description_lock_status">Cue может создать постоянное уведомление для отображения статуса блокировки хранилища</string>
     <string name="vault_unlocked_state">Хранилище разблокировано. Нажмите для блокировки.</string>
     <string name="version">Версия</string>
     <string name="changelog">Список изменений</string>
     <string name="whats_new">Что нового</string>
     <string name="github_description">Исходный код, замечания и информация</string>
     <string name="license">Лицензия</string>
-    <string name="license_description">Aegis Authenticator выпускается под лицензией GPLv3</string>
     <string name="third_party_licenses">Лицензии третьих сторон</string>
-    <string name="third_party_licenses_description">Лицензии сторонних библиотек, используемых в Aegis</string>
+    <string name="third_party_licenses_description">Лицензии сторонних библиотек, используемых в Cue</string>
     <string name="country_netherlands">Нидерланды</string>
     <string name="email_us">Написать эл. письмо</string>
     <string name="visit_website">Посетить сайт</string>
@@ -462,7 +458,7 @@
     <string name="webview_error">Это устройство не поддерживает веб-просмотр, необходимый для просмотра списка изменений и лицензии, т.к. в нём отсутствует соответствующий системный компонент.</string>
     <string name="email">Адрес электронной почты</string>
     <string name="time_sync_warning_title">Автосинхронизация времени</string>
-    <string name="time_sync_warning_message">Aegis полагается на системное время для генерации правильных кодов. Отклонение всего в несколько секунд может привести к неверным кодам. Кажется, ваше устройство не настроено для автоматической синхронизации времени. Хотите сделать это сейчас?</string>
+    <string name="time_sync_warning_message">Cue полагается на системное время для генерации правильных кодов. Отклонение всего в несколько секунд может привести к неверным кодам. Кажется, ваше устройство не настроено для автоматической синхронизации времени. Хотите сделать это сейчас?</string>
     <string name="time_sync_warning_disable">Прекратите меня предупреждать, я знаю, что делаю.</string>
     <string name="google_qr_export_unrelated">Найден несвязанный QR-код. Попробуйте перезапустить сканер.</string>
     <plurals name="google_qr_export_scanned">
@@ -477,9 +473,9 @@
 Последнее резервное копирование хранилища с использованием %1$s не выполнено из-за ошибки. Попытка производилась %2$s. Убедитесь, что настройки резервного копирования правильные.
     </string>
     <string name="backup_permission_error_dialog_details" comment="The first parameter is the type of backup (e.g. built-in or Android backup). The second parameter is an elapsed time in the style of 'x seconds/minutes/days ago'.">
-        Недавняя попытка резервного копирования хранилища с использованием %1$s не выполнена, поскольку у Aegis нет разрешения на запись в место назначения резервной копии. Попытка создания резервной копии была %2$s. Эта ошибка может возникать, если вы переместили/переименовали место назначения резервной копии или если недавно восстановили параметры Aegis из резервной копии. Пожалуйста, перенастройте место назначения резервной копии.
+        Недавняя попытка резервного копирования хранилища с использованием %1$s не выполнена, поскольку у Cue нет разрешения на запись в место назначения резервной копии. Попытка создания резервной копии была %2$s. Эта ошибка может возникать, если вы переместили/переименовали место назначения резервной копии или если недавно восстановили параметры Cue из резервной копии. Пожалуйста, перенастройте место назначения резервной копии.
     </string>
-    <string name="backup_system_builtin">Встроенное автоматическое резервирование Aegis</string>
+    <string name="backup_system_builtin">Встроенное автоматическое резервирование Cue</string>
     <string name="backup_system_android">Системное облачное резервирование Android</string>
     <string name="backup_reminder_bar_message_with_latest" comment="The parameter is an elapsed time in the style of 'x seconds/minutes/days ago'">
         Резервная копия устарела (%s)
@@ -518,7 +514,7 @@
     <string name="uri_copied_to_clipboard">URI скопирован в буфер обмена</string>
     <string name="transfer_entry_description">Отсканируйте QR-код с помощью приложения для аутентификации, в которое вы хотите передать эту запись.</string>
     <string name="transfer_entry_brightness">Нажатие на QR-код переключает полную яркость экрана</string>
-    <string name="google_auth_compatible_transfer_description">Сканируйте эти QR-коды в Aegis или Google Authenticator. Из-за ограничений приложения Google Authenticator, включены только ключи TOTP и HOTP, использующие SHA1 и создающие 6-значные коды.</string>
+    <string name="google_auth_compatible_transfer_description">Сканируйте эти QR-коды в Cue или Google Authenticator. Из-за ограничений приложения Google Authenticator, включены только ключи TOTP и HOTP, использующие SHA1 и создающие 6-значные коды.</string>
     <string name="password_strength_very_weak">Очень слабый</string>
     <string name="password_strength_weak">Слабый</string>
     <string name="password_strength_fair">Средний</string>
@@ -544,7 +540,6 @@
     <string name="panic_trigger_ignore_toast">Получен сигнал паники, но настройка отключена — сигнал паники игнорируется</string>
     <string name="pref_panic_trigger_title">Удалять хранилище при панике</string>
     <string name="pref_panic_trigger_summary">Удалить хранилище при получении сигнала паники от Ripple</string>
-    <string name="import_vault">Импорт хранилища Aegis</string>
     <string name="import_vault_hint">Хотите импортировать данные из другого приложения 2FA? Завершите настройку приложения, затем перейдите в меню настроек.</string>
     <plurals name="import_duplicate_toast">
         <item quantity="one">Не выбран %d потенциальный дубликат. Проверьте список записей.</item>
@@ -564,7 +559,7 @@
     <string name="importer_help_freeotp">FreeOTP 2: необходим файл резервной копии.\nFreeOTP 1.x: необходима копия файла <b>/data/data/org.fedorahosted.freeotp/shared_prefs/tokens.xml</b>, расположенного в папке «FreeOTP» во внутренней памяти.</string>
     <string name="importer_help_freeotp_plus">Необходим файл экспорта FreeOTP+.</string>
     <string name="importer_warning_title_freeotp2">Совместимость с FreeOTP 2</string>
-    <string name="importer_warning_message_freeotp2">В FreeOTP 2 существует ряд проблем, которые могут привести к повреждению резервных копий. Aegis постарается сохранить как можно больше записей, но возможно, что некоторые или даже все из них не удастся импортировать.</string>
+    <string name="importer_warning_message_freeotp2">В FreeOTP 2 существует ряд проблем, которые могут привести к повреждению резервных копий. Cue постарается сохранить как можно больше записей, но возможно, что некоторые или даже все из них не удастся импортировать.</string>
     <string name="importer_help_google_authenticator"><b>Поддерживаются только файлы баз данных Google Authenticator версии 5.10 и более ранних</b>.\n\nНеобходима копия файла <b>/data/data/com.google.android.apps.authenticator2/databases/databases</b>, расположенного в папке «Google Authenticator» во внутренней памяти.</string>
     <string name="importer_help_microsoft_authenticator">Необходима копия файла <b>/data/data/com.azure.authenticator/databases/PhoneFactor</b>, расположенного в папке «Microsoft Authenticator» во внутренней памяти.</string>
     <string name="importer_help_plain_text">Необходим текстовый файл с URI Google Authenticator в каждой строке.</string>
@@ -577,7 +572,7 @@
     <string name="import_assign_icons_dialog_title">Назначить значки</string>
     <string name="import_assign_icons_dialog_text">Назначить значки для импортированных записей?</string>
     <string name="importer_encrypted_exception_google_authenticator">Была пропущена зашифрованная запись: %s</string>
-    <string name="importer_help_direct">Импорт записей напрямую из %s. Для этого необходимо, чтобы приложение было установлено на этом устройстве и чтобы Aegis были предоставлены права суперпользователя.</string>
+    <string name="importer_help_direct">Импорт записей напрямую из %s. Для этого необходимо, чтобы приложение было установлено на этом устройстве и чтобы Cue были предоставлены права суперпользователя.</string>
     <string name="groups">Группы</string>
     <string name="pref_focus_search">Поиск при запуске</string>
     <string name="pref_focus_search_summary">Начинать поиск сразу после запуска приложения.</string>

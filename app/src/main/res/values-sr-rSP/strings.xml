@@ -28,7 +28,6 @@
     <string name="pref_section_security_title">Безбедност</string>
     <string name="pref_section_security_summary">Конфигуришите шифровање, биометријско откључавање и друга безбедносна подешавања.</string>
     <string name="pref_section_import_export_title">Увоз и извоз</string>
-    <string name="pref_section_import_export_summary">Увезите резервне копије за Aegis или друге апликације за аутентификацију. Ручно извезите ваш Aegis трезор.</string>
     <string name="pref_section_audit_log_title">Евиденција ревизије</string>
     <string name="pref_section_audit_log_summary">Пронађите листу свих пријављених важних догађаја који су се десили у апликацији.</string>
     <string name="pref_section_backups_title">Резервне копије</string>
@@ -56,14 +55,14 @@
     <string name="pref_import_file_title">Увоз из фајла</string>
     <string name="pref_import_file_summary">Увоз токена из фајла</string>
     <string name="pref_android_backups_title">Android резервне копије у облаку</string>
-    <string name="pref_android_backups_summary">Дозволите Android-овом систему резервних копија у облаку да укључи Aegis-ов трезор у своје резервне копије. Ово је подржано само за шифроване трезоре.</string>
+    <string name="pref_android_backups_summary">Дозволите Android-овом систему резервних копија у облаку да укључи Cue-ов трезор у своје резервне копије. Ово је подржано само за шифроване трезоре.</string>
     <string name="pref_android_backups_hint"><i>Резервне копије са уређаја на уређај (D2D) су увек дозвољене, без обзира на подешавања изнад</i></string>
     <string name="pref_backups_title">Аутоматски прави резервну копију трезора</string>
     <string name="pref_backups_summary">Аутоматско прављење резервних копија трезора на спољној меморији када се изврше промене. Ово је подржано само за шифроване трезоре.</string>
     <string name="pref_backups_reminder_title">Подсетник о резервним копијама</string>
     <string name="pref_backups_reminder_summary">Приказивање подсетника за прављење резервне копије вашег трезора у случају да нисте направили резервну копију најновијих промена.</string>
     <string name="pref_backups_reminder_dialog_title">Онемогућите подсетник о резервним копијама</string>
-    <string name="pref_backups_reminder_dialog_summary">Онемогућавање овог подсетника значи да вам Aegis неће рећи да ли имате промене за које још увек није направљена резервна копија. Ово вас доводи у опасност да изгубите приступ својим токенима. Желите ли заиста да онемогућите подсетник?</string>
+    <string name="pref_backups_reminder_dialog_summary">Онемогућавање овог подсетника значи да вам Cue неће рећи да ли имате промене за које још увек није направљена резервна копија. Ово вас доводи у опасност да изгубите приступ својим токенима. Желите ли заиста да онемогућите подсетник?</string>
     <string name="pref_backups_versioning_strategy_title">Стратегија прављења резервних копија</string>
     <string name="pref_backups_versioning_strategy_keep_x_versions">Чувај неколико верзија</string>
     <string name="pref_backups_versioning_strategy_single_backup">Једна резервна копија</string>
@@ -105,7 +104,7 @@
     <string name="pref_auto_lock_title">Аутоматско закључавање</string>
     <string name="pref_auto_lock_summary">Када %s</string>
     <string name="pref_auto_lock_summary_disabled">Онемогућено</string>
-    <string name="pref_auto_lock_prompt">Аутоматски закључати Aegis када је</string>
+    <string name="pref_auto_lock_prompt">Аутоматски закључати Cue када је</string>
     <string name="pref_auto_lock_type_back_button">Притиснуто дугме „Назад”</string>
     <string name="pref_auto_lock_type_minimize">Апликација минимизирана</string>
     <string name="pref_auto_lock_type_device_lock">Уређај закључан</string>
@@ -147,11 +146,10 @@
     <string name="today_at_time">Данас у %1$s</string>
     <string name="day_of_week_at_time">%1$s у %2$s</string>
     <string name="export_encrypted">Шифруј трезор</string>
-    <string name="export_help">Ова радња извести трезор из Aegis-ове унутрашње меморије. Изаберите формат у којем желите да извоз буде:</string>
-    <string name="export_warning_unencrypted">Управо ћете извести нешифровану копију вашег Aegis трезора. <b>Ово није препоручено</b>.</string>
+    <string name="export_help">Ова радња извести трезор из Cue-ове унутрашње меморије. Изаберите формат у којем желите да извоз буде:</string>
+    <string name="export_warning_unencrypted">Управо ћете извести нешифровану копију вашег Cue трезора. <b>Ово није препоручено</b>.</string>
     <string name="export_warning_password">Извози су шифровани коришћењем посебне лозинке конфигурисане у подешавањима „Безбедност”.</string>
     <string name="understand_risk_accept">Разумем ризик</string>
-    <string name="export_format_aegis">Aegis (.JSON)</string>
     <string name="export_format_google_auth_uri">Текстуални фајл (.TXT)</string>
     <string name="export_format_html">Веб-страница (.HTML)</string>
     <string name="export_format_hint">Формат извоза</string>
@@ -163,9 +161,9 @@
         <item quantity="other">%d група изабрано</item>
     </plurals>
     <string name="export_no_groups_selected">Није изабрана ниједна група за извоз</string>
-    <string name="export_html_title" comment="The title of an HTML export document">Извоз Aegis Authenticator-a</string>
+    <string name="export_html_title" comment="The title of an HTML export document">Извоз Cue Authenticator-a</string>
     <string name="choose_authentication_method">Безбедност</string>
-    <string name="authentication_method_explanation">Aegis је апликација двофакторске аутентификације (2FA), фокусирана на безбедност. Токени се чувају у трезору, који се опционално може шифровати лозинком по вашем избору. Ако нападач добије ваш шифрован фајл трезора, неће моћи да приступи садржају без познавања лозинке.\n\nУнапред смо изабрали опцију за коју мислимо да би најбоље одговарала вашем уређају.</string>
+    <string name="authentication_method_explanation">Cue је апликација двофакторске аутентификације (2FA), фокусирана на безбедност. Токени се чувају у трезору, који се опционално може шифровати лозинком по вашем избору. Ако нападач добије ваш шифрован фајл трезора, неће моћи да приступи садржају без познавања лозинке.\n\nУнапред смо изабрали опцију за коју мислимо да би најбоље одговарала вашем уређају.</string>
     <string name="authentication_method_none">Ниједно</string>
     <string name="authentication_method_none_description">За откључавање трезора није потребна лозинка и он неће бити шифрован. <b>Ова опција није препоручена</b>.</string>
     <string name="authentication_method_password">Лозинка</string>
@@ -181,10 +179,10 @@
     <string name="set_number">Унесите број</string>
     <string name="set_password_confirm">Потврдите лозинку</string>
     <string name="invalid_password">Нетачна лозинка</string>
-    <string name="invalidated_biometrics">Откривена је промена у безбедносним подешавањима вашег уређаја. Идите у „Aegis -&gt; Подешавања -&gt; Безбедност -&gt; Биометријско откључавање” да бисте онемогућили и поново омогућили биометријско откључавање.</string>
+    <string name="invalidated_biometrics">Откривена је промена у безбедносним подешавањима вашег уређаја. Идите у „Cue -&gt; Подешавања -&gt; Безбедност -&gt; Биометријско откључавање” да бисте онемогућили и поново омогућили биометријско откључавање.</string>
     <string name="password_reminder">Унесите лозинку. Повремено вас питамо да то урадите како је не бисте заборавили.</string>
     <string name="password_reminder_dialog_title">Биометријско откључавање подразумевано</string>
-    <string name="password_reminder_dialog_message">Повремено од вас тражимо да уместо тога унесете лозинку како бисте били сигурни да је нисте заборавили и да нећете изгубити приступ свом трезору. Након што једном унесете лозинку, Aegis ће се подразумевано вратити на биометријско откључавање док не дође време за следећи подсетник за лозинку.</string>
+    <string name="password_reminder_dialog_message">Повремено од вас тражимо да уместо тога унесете лозинку како бисте били сигурни да је нисте заборавили и да нећете изгубити приступ свом трезору. Након што једном унесете лозинку, Cue ће се подразумевано вратити на биометријско откључавање док не дође време за следећи подсетник за лозинку.</string>
     <string name="password_reminder_freq_never">Никада</string>
     <string name="password_reminder_freq_weekly">Недељно</string>
     <string name="password_reminder_freq_biweekly">Двонедељно</string>
@@ -192,7 +190,7 @@
     <string name="password_reminder_freq_quarterly">Тромесечно</string>
     <string name="enter_password_proton_message">Изгледа да је ова резервна копија Proton Authenticator-а шифрована. Унесите лозинку испод.</string>
     <string name="enter_password_2fas_message">Изгледа да је ова 2FAS резервна копија шифрована. Унесите лозинку испод.</string>
-    <string name="enter_password_authy_message">Изгледа да су ваши Authy токени шифровани. Затворите Aegis, отворите Authy и откључајте токене својом лозинком. Уместо тога, Aegis такође може покушати да дешифрује ваше Authy токене за вас, ако унесете своју лозинку испод.</string>
+    <string name="enter_password_authy_message">Изгледа да су ваши Authy токени шифровани. Затворите Cue, отворите Authy и откључајте токене својом лозинком. Уместо тога, Cue такође може покушати да дешифрује ваше Authy токене за вас, ако унесете своју лозинку испод.</string>
     <string name="enter_password_aegis_title">Унесите лозинку за увоз</string>
     <string name="period_hint">Период (секунди)</string>
     <string name="algorithm_hint">Функција хеша</string>
@@ -257,9 +255,8 @@
     <string name="saving_profile_error">Грешка при чувању профила</string>
     <string name="saving_assign_icons_error">Грешка при додели иконица</string>
     <string name="welcome">Добро дошли</string>
-    <string name="app_description">Aegis је бесплатна, безбедна и апликација отвореног кода за двофакторску аутентификацију</string>
     <string name="setup_completed">Подешавање завршено</string>
-    <string name="setup_completed_description">Aegis је подешен и спреман за рад.</string>
+    <string name="setup_completed_description">Cue је подешен и спреман за рад.</string>
     <string name="vault_not_found">Трезор није пронађен, покретање подешавања…</string>
     <string name="copied">Копирано</string>
     <string name="errors_copied">Грешке су копиране у привремену меморију</string>
@@ -271,8 +268,8 @@
     <string name="saving_error">Дошло је до грешке приликом покушаја чувања трезора</string>
     <string name="vault_init_error">Дошло је до грешке приликом покушаја састављања трезора</string>
     <string name="vault_load_error">Дошло је до грешке приликом покушаја учитавања трезора из меморије</string>
-    <string name="biometric_decrypt_error">Дошло је до грешке приликом покушаја дешифровања трезора биометријском аутентификацијом. Ово се обично дешава само ако су безбедносна подешавања вашег уређаја промењена. Откључајте трезор својом лозинком и поново конфигуришите биометријску аутентификацију у подешавањима Aegis-а.</string>
-    <string name="biometric_init_error">Дошло је до грешке приликом покушаја припремања биометријске аутентификације. Ово се обично дешава само ако су безбедносна подешавања вашег уређаја промењена. Откључајте трезор својом лозинком и поново конфигуришите биометријску аутентификацију у подешавањима Aegis-а.</string>
+    <string name="biometric_decrypt_error">Дошло је до грешке приликом покушаја дешифровања трезора биометријском аутентификацијом. Ово се обично дешава само ако су безбедносна подешавања вашег уређаја промењена. Откључајте трезор својом лозинком и поново конфигуришите биометријску аутентификацију у подешавањима Cue-а.</string>
+    <string name="biometric_init_error">Дошло је до грешке приликом покушаја припремања биометријске аутентификације. Ово се обично дешава само ако су безбедносна подешавања вашег уређаја промењена. Откључајте трезор својом лозинком и поново конфигуришите биометријску аутентификацију у подешавањима Cue-а.</string>
     <string name="disable_encryption">Онемогући шифровање</string>
     <string name="disable_encryption_description">Желите ли заиста да онемогућите шифровање? Ово ће довести до тога да трезор буде сачуван као обичан текст. <b>Аутоматско прављење резервних копија ће такође бити онемогућено</b>.</string>
     <string name="enable_encryption_error">Дошло је до грешке приликом омогућавања шифровања</string>
@@ -307,7 +304,7 @@
     <string name="file_not_found">Грешка: Фајл није пронађен</string>
     <string name="reading_file_error">Дошло је до грешке приликом покушаја читања фајла</string>
     <string name="app_lookup_error">Грешка: Апликација није инсталирана</string>
-    <string name="app_version_error">Верзија %s која је инсталирана није подржана. Недавне верзије су почеле да шифрују неке фајлове у фолдеру интерне меморије, због чега Aegis не може да приступи информацијама које су му потребне за увоз. Покушај увоза ће вероватно довести до грешке. Желите ли да ипак наставите?</string>
+    <string name="app_version_error">Верзија %s која је инсталирана није подржана. Недавне верзије су почеле да шифрују неке фајлове у фолдеру интерне меморије, због чега Cue не може да приступи информацијама које су му потребне за увоз. Покушај увоза ће вероватно довести до грешке. Желите ли да ипак наставите?</string>
     <string name="root_error">Грешка: Није могуће добити root приступ</string>
     <plurals name="imported_entries_count">
         <item quantity="one">Увезен %d унос</item>
@@ -327,7 +324,7 @@
     <string name="encryption_enable_biometrics_error">Дошло је до грешке приликом покушаја омогућавања биометријског откључавања. Неки уређаји имају лоше имплементације биометријске аутентификације и вероватно је да је ваш један од њих. Уместо овога, размислите о преласку на конфигурацију само са лозинком.</string>
     <string name="no_cameras_available">Нема доступних камера</string>
     <string name="read_qr_error">Дошло је до грешке приликом покушаја читања QR кода</string>
-    <string name="read_qr_error_phonefactor">Aegis није компатибилан са Microsoft-овим власничким 2FA алгоритмом. Обавезно изаберите „Подешавање апликације без обавештења” када конфигуришете 2FA у Office 365.</string>
+    <string name="read_qr_error_phonefactor">Cue није компатибилан са Microsoft-овим власничким 2FA алгоритмом. Обавезно изаберите „Подешавање апликације без обавештења” када конфигуришете 2FA у Office 365.</string>
     <string name="partial_google_auth_import">Откривен је непотпун извоз Google Authenticator-а</string>
     <string name="partial_google_auth_import_warning">Неки QR кодови недостају у вашем увозу. Следећи кодови нису пронађени:\n\n<b>%s</b>\n\nМожете да наставите са увозом овог делимичног извоза, али препоручујемо да покушате поново са свим QR кодовима како не бисте ризиковали да изгубите приступ токенима.</string>
     <string name="missing_qr_code_descriptor">• QR кôд %d</string>
@@ -416,9 +413,9 @@
     <string name="unknown_issuer">Непознати издавач</string>
     <string name="unknown_account_name">Непознати назив налога</string>
     <plurals name="import_error_dialog">
-        <item quantity="one">Aegis није могао да увезе %d токен. Овај токен ће бити прескочен. Притисните „детаљи” да бисте видели више информација о грешци.</item>
-        <item quantity="few">Aegis није могао да увезе %d токена. Ови токени ће бити прескочени. Притисните „детаљи” да бисте видели више информација о грешкама.</item>
-        <item quantity="other">Aegis није могао да увезе %d токена. Ови токени ће бити прескочени. Притисните „детаљи” да бисте видели више информација о грешкама.</item>
+        <item quantity="one">Cue није могао да увезе %d токен. Овај токен ће бити прескочен. Притисните „детаљи” да бисте видели више информација о грешци.</item>
+        <item quantity="few">Cue није могао да увезе %d токена. Ови токени ће бити прескочени. Притисните „детаљи” да бисте видели више информација о грешкама.</item>
+        <item quantity="other">Cue није могао да увезе %d токена. Ови токени ће бити прескочени. Притисните „детаљи” да бисте видели више информација о грешкама.</item>
     </plurals>
     <string name="unable_to_process_deeplink">Није могуће обрадити дубоки линк</string>
     <string name="unable_to_read_qrcode_file">Није могуће прочитати и обрадити QR кôд из фајла: %s.</string>
@@ -432,16 +429,15 @@
     <string name="toggle_checkboxes">Укључи поља за потврду</string>
     <string name="search">Претрага</string>
     <string name="channel_name_lock_status">Статус закључавања</string>
-    <string name="channel_description_lock_status">Aegis може да направи трајно обавештење да вас обавести када је трезор закључан</string>
+    <string name="channel_description_lock_status">Cue може да направи трајно обавештење да вас обавести када је трезор закључан</string>
     <string name="vault_unlocked_state">Трезор је откључан. Додирните овде да га закључате.</string>
     <string name="version">Верзија</string>
     <string name="changelog">Евиденција промена</string>
     <string name="whats_new">Шта је ново</string>
     <string name="github_description">Изворни кôд, проблеми и информације</string>
     <string name="license">Лиценца</string>
-    <string name="license_description">Aegis Authenticator је лиценциран под GPLv3</string>
     <string name="third_party_licenses">Лиценце треће стране</string>
-    <string name="third_party_licenses_description">Лиценце библиотека трећих страна које користи Aegis</string>
+    <string name="third_party_licenses_description">Лиценце библиотека трећих страна које користи Cue</string>
     <string name="country_netherlands">Холандија</string>
     <string name="email_us">Напишите имејл</string>
     <string name="visit_website">Посетите наш веб-сајт</string>
@@ -451,7 +447,7 @@
     <string name="webview_error">Овај уређај не подржава веб-приказ, који је неопходан за преглед евиденције промена и лиценце. Недостаје системска компонента.</string>
     <string name="email">Имејл</string>
     <string name="time_sync_warning_title">Аутоматска синхронизација времена</string>
-    <string name="time_sync_warning_message">Aegis се ослања на системско време да буде синхронизовано да генерише исправне кодове. Одступање од само неколико секунди може довести до нетачних кодова. Изгледа да ваш уређај није конфигурисан да аутоматски синхронизује време. Желите ли да то урадите сада?</string>
+    <string name="time_sync_warning_message">Cue се ослања на системско време да буде синхронизовано да генерише исправне кодове. Одступање од само неколико секунди може довести до нетачних кодова. Изгледа да ваш уређај није конфигурисан да аутоматски синхронизује време. Желите ли да то урадите сада?</string>
     <string name="time_sync_warning_disable">Престаните да ме упозоравате. Знам шта радим.</string>
     <string name="google_qr_export_unrelated">Пронађен је неповезан QR кôд. Покушајте да рестартујете скенер.</string>
     <plurals name="google_qr_export_scanned">
@@ -465,8 +461,8 @@
 Недавни покушај прављења резервне копије трезора помоћу %1$s није успео, јер је дошло до грешке. Прављење резервне копије је покушано %2$s. Проверите подешавања резервних копија да бисте били сигурни да се прављење резервних копија може успешно завршити.
     </string>
     <string name="backup_permission_error_dialog_details" comment="The first parameter is the type of backup (e.g. built-in or Android backup). The second parameter is an elapsed time in the style of 'x seconds/minutes/days ago'.">
-Недавни покушај прављења резервне копије трезора помоћу %1$s није успео, јер Aegis није имао дозволу да пише на одредиште резервне копије. Прављење резервне копије је покушано %2$s. До ове грешке може доћи ако сте преместили/преименовали одредиште резервне копије или ако сте недавно вратили Aegis из резервне копије. Поново конфигуришите одредиште резервне копије.    </string>
-    <string name="backup_system_builtin">уграђене аутоматске резервне копије у Aegis</string>
+Недавни покушај прављења резервне копије трезора помоћу %1$s није успео, јер Cue није имао дозволу да пише на одредиште резервне копије. Прављење резервне копије је покушано %2$s. До ове грешке може доћи ако сте преместили/преименовали одредиште резервне копије или ако сте недавно вратили Cue из резервне копије. Поново конфигуришите одредиште резервне копије.    </string>
+    <string name="backup_system_builtin">уграђене аутоматске резервне копије у Cue</string>
     <string name="backup_system_android">система резервних копија у облаку у Android-у</string>
     <string name="backup_reminder_bar_message_with_latest" comment="The parameter is an elapsed time in the style of 'x seconds/minutes/days ago'">
         Последња резервна копија је застарела (%s)
@@ -504,7 +500,7 @@
     <string name="uri_copied_to_clipboard">URI је копиран у привремену меморију</string>
     <string name="transfer_entry_description">Скенирајте овај QR кôд помоћу апликације за аутентификацију у коју желите да пренесете овај унос</string>
     <string name="transfer_entry_brightness">Додирните QR код за пребацивање на пуну осветљеност екрана</string>
-    <string name="google_auth_compatible_transfer_description">Скенирајте ове QR кодове користећи Aegis или Google Authenticator.\n\nЗбог ограничења апликације Google Authenticator, обухваћени су само TOTP и HOTP токени који користе SHA1 и производе 6-цифрене кодове</string>
+    <string name="google_auth_compatible_transfer_description">Скенирајте ове QR кодове користећи Cue или Google Authenticator.\n\nЗбог ограничења апликације Google Authenticator, обухваћени су само TOTP и HOTP токени који користе SHA1 и производе 6-цифрене кодове</string>
     <string name="password_strength_very_weak">Веома слаба</string>
     <string name="password_strength_weak">Слаба</string>
     <string name="password_strength_fair">Задовољавајућа</string>
@@ -527,10 +523,9 @@
     <string name="dialog_wipe_entries_checkbox">Очисти садржаје трезора</string>
     <string name="import_from_clipboard_title">Увези из привремене меморије</string>
     <string name="import_from_clipboard_message">Пронашли смо важећи otpauth Uri у привременој меморији.\n\n<b>Име</b>:%1$s\n<b>Издавалац</b>:%2$s\n\nЖелите ли да искористите ове податке за попуњавање овог уноса?</string>
-    <string name="panic_trigger_ignore_toast">Aegis је примио сигнал панике, али је подешавање онемогућено, сигнал панике се занемарује</string>
+    <string name="panic_trigger_ignore_toast">Cue је примио сигнал панике, али је подешавање онемогућено, сигнал панике се занемарује</string>
     <string name="pref_panic_trigger_title">Избриши трезор при сигналу панике</string>
     <string name="pref_panic_trigger_summary">Избришите трезор када се од Ripple прими сигнал панике</string>
-    <string name="import_vault">Увоз Aegis трезора</string>
     <string name="import_vault_hint">Желите да увезете из друге 2FA апликације? Прво довршите подешавање, а затим пређите на мени подешавања.</string>
     <plurals name="import_duplicate_toast">
         <item quantity="one">Опозван је %d потенцијални дупликат. Прегледајте листу уноса.</item>
@@ -549,7 +544,7 @@
     <string name="importer_help_freeotp">FreeOTP 2: Доставите фајл резервне копије.\nFreeOtp 1.x: Доставите копију <b>/data/data/org.fedorahosted.freeotp/shared_prefs/tokens.xml</b>, која се налази у фолдеру интерне меморије FreeOTP-а.</string>
     <string name="importer_help_freeotp_plus">Доставите фајл извоза FreeOTP+-а.</string>
     <string name="importer_warning_title_freeotp2">Компатибилност FreeOTP 2</string>
-    <string name="importer_warning_message_freeotp2">Постоји низ проблема у FreeOTP 2 који могу довести до оштећених резервних копија. Aegis ће покушати да спаси што је могуће више уноса, али је могуће да неки или чак сви не успеју да увезу.</string>
+    <string name="importer_warning_message_freeotp2">Постоји низ проблема у FreeOTP 2 који могу довести до оштећених резервних копија. Cue ће покушати да спаси што је могуће више уноса, али је могуће да неки или чак сви не успеју да увезу.</string>
     <string name="importer_help_google_authenticator"><b>Подржани су само фајлови базе података из Google Authenticator v5.10 и старијих</b>.\n\nДоставите копију <b>/data/data/com.google.android.apps.authenticator2/databases/databases</b>, која се налази у фолдеру интерне меморије Google Authenticator-а.</string>
     <string name="importer_help_microsoft_authenticator">Доставите копију <b>/data/data/com.azure.authenticator/databases/PhoneFactor</b>, која се налази у фолдеру интерне меморије Microsoft Authenticator-а.</string>
     <string name="importer_help_plain_text">Доставите обичан текстуални фајл са URI-јем Google Authenticator-а у сваком реду.</string>
@@ -561,7 +556,7 @@
     <string name="import_assign_icons_dialog_title">Доделите иконице</string>
     <string name="import_assign_icons_dialog_text">Желите ли да доделите иконице увезеним уносима?</string>
     <string name="importer_encrypted_exception_google_authenticator">Шифрован унос је прескочен: %s</string>
-    <string name="importer_help_direct">Увезите уносе директно из %s. Ово захтева да апликација буде инсталирана на овом уређају и да се одобри роот приступ за Aegis.</string>
+    <string name="importer_help_direct">Увезите уносе директно из %s. Ово захтева да апликација буде инсталирана на овом уређају и да се одобри роот приступ за Cue.</string>
     <string name="groups">Групе</string>
     <string name="pref_focus_search">Фокус на претрагу приликом покретања апликације</string>
     <string name="pref_focus_search_summary">Фокусирање на претрагу одмах након отварања апликације.</string>

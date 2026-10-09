@@ -26,13 +26,13 @@ import com.google.android.material.color.MaterialColors;
 
 public class AboutActivity extends AegisActivity {
 
-    private static String GITHUB = "https://github.com/beemdevelopment/Aegis";
+    private static String GITHUB = "https://github.com/Kaneki-x/Aegis";
     private static String WEBSITE_ALEXANDER = "https://alexbakker.me";
     private static String GITHUB_MICHAEL = "https://github.com/michaelschattgen";
 
-    private static String MAIL_BEEMDEVELOPMENT = "beemdevelopment@gmail.com";
-    private static String WEBSITE_BEEMDEVELOPMENT = "https://beem.dev/";
-    private static String PLAYSTORE_BEEMDEVELOPMENT = "https://play.google.com/store/apps/details?id=com.beemdevelopment.aegis";
+    private static String MAIL_BEEMDEVELOPMENT = "";
+    private static String WEBSITE_BEEMDEVELOPMENT = "https://getaegis.app/";
+    private static String PLAYSTORE_BEEMDEVELOPMENT = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,12 +81,17 @@ public class AboutActivity extends AegisActivity {
         btnMichael.setOnClickListener(v -> openUrl(GITHUB_MICHAEL));
 
         View btnMail = findViewById(R.id.btn_email);
+        btnMail.setVisibility(View.GONE);
         btnMail.setOnClickListener(v -> openMail(MAIL_BEEMDEVELOPMENT));
 
         View btnWebsite = findViewById(R.id.btn_website);
+        btnWebsite.setVisibility(View.GONE);
         btnWebsite.setOnClickListener(v -> openUrl(WEBSITE_BEEMDEVELOPMENT));
 
         View btnRate = findViewById(R.id.btn_rate);
+        btnRate.setVisibility(View.GONE);
+        // nothing left in the support card until Cue has its own store listing
+        findViewById(R.id.card_support).setVisibility(View.GONE);
         btnRate.setOnClickListener(v -> openUrl(PLAYSTORE_BEEMDEVELOPMENT ));
 
         View btnChangelog = findViewById(R.id.btn_changelog);

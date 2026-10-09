@@ -28,7 +28,6 @@
     <string name="pref_section_security_title">Turvalisus</string>
     <string name="pref_section_security_summary">Seadista krüptimist, biomeetrilist tuvastust, automaatset lukustust ja muid turvaseadistusi.</string>
     <string name="pref_section_import_export_title">Andmete import ja eksport</string>
-    <string name="pref_section_import_export_summary">Impordi Aegise või teiste autentimisrakenduste varukoopiaid. Tee Aegise andmehoidlast käsitsi varukoopia.</string>
     <string name="pref_section_audit_log_title">Rakenduse logi</string>
     <string name="pref_section_audit_log_summary">Kõikide oluliste rakendusega juhtunud sündmuste logi hilisema auditeerimise jaoks.</string>
     <string name="pref_section_backups_title">Varukoopiad</string>
@@ -56,14 +55,14 @@
     <string name="pref_import_file_title">Impordi failist</string>
     <string name="pref_import_file_summary">Impordi andmekirjed failist</string>
     <string name="pref_android_backups_title">Androidi pilvevarundus</string>
-    <string name="pref_android_backups_summary">Luba kaasata Aegise varukoopiaid Androidi sisseehitatud pilvevarundusse. Kehtib vaid krüptitud andmehoidla puhul.</string>
+    <string name="pref_android_backups_summary">Luba kaasata Cuee varukoopiaid Androidi sisseehitatud pilvevarundusse. Kehtib vaid krüptitud andmehoidla puhul.</string>
     <string name="pref_android_backups_hint"><i>Seadmelt seadmele (Device-to-device, D2D) varukoopiad on lubatud alati, sõltumata ülaltoodud seadistusest</i></string>
     <string name="pref_backups_title">Tee andmehoidlast automaatselt varukoopiaid</string>
     <string name="pref_backups_summary">Peale iga muudatust tee automaatselt andmehoidlast varukoopia. See funktsionaalsus toimib vaid krüptitud andmehoidlate puhul.</string>
     <string name="pref_backups_reminder_title">Varunduse meeldetuletus</string>
     <string name="pref_backups_reminder_summary">Kui sa pole viimaseid muudatusi varundanud, näita meeldetuletust sinu andmehoidla kohta.</string>
     <string name="pref_backups_reminder_dialog_title">Lülita varunduse meeldetuletus välja</string>
-    <string name="pref_backups_reminder_dialog_summary">Selle meeldetuletuse väljalülitamisel Aegis ei anna sulle enam teada, kas muudatused on varundatud või mitte. Sellega tekib aga võimalus, et võid kaotada ligipääsu oma tunnuslubadele. Kas sa oled kindel, et soovid meeldetuletuse välja lülitada?</string>
+    <string name="pref_backups_reminder_dialog_summary">Selle meeldetuletuse väljalülitamisel Cue ei anna sulle enam teada, kas muudatused on varundatud või mitte. Sellega tekib aga võimalus, et võid kaotada ligipääsu oma tunnuslubadele. Kas sa oled kindel, et soovid meeldetuletuse välja lülitada?</string>
     <string name="pref_backups_versioning_strategy_title">Varundusplaan</string>
     <string name="pref_backups_versioning_strategy_keep_x_versions">Säilita mitu varukoopiat</string>
     <string name="pref_backups_versioning_strategy_single_backup">Tee vaid üks varukoopia</string>
@@ -103,7 +102,7 @@
     <string name="pref_auto_lock_title">Automaatne lukustus</string>
     <string name="pref_auto_lock_summary">Kui %s</string>
     <string name="pref_auto_lock_summary_disabled">Pole kasutusel</string>
-    <string name="pref_auto_lock_prompt">Lukusta Aegis automaatselt</string>
+    <string name="pref_auto_lock_prompt">Lukusta Cue automaatselt</string>
     <string name="pref_auto_lock_type_back_button">Androidi „Tagasi“ nupu vajutamisel</string>
     <string name="pref_auto_lock_type_minimize">Rakenduse minimeerimisel</string>
     <string name="pref_auto_lock_type_device_lock">Seadme lukustamisel</string>
@@ -145,11 +144,10 @@
     <string name="today_at_time">Täna kell %1$s</string>
     <string name="day_of_week_at_time">%1$s kell %2$s</string>
     <string name="export_encrypted">Krüpti andmehoidla</string>
-    <string name="export_help">Selle toiminguga ekspordid andmehoidla Aegise sisemisest andmeruumist. Palun vali vorming, mida soovid eksportimiseks kasutada:</string>
-    <string name="export_warning_unencrypted">Sa oled eksportimas Aegise andmehoidla krüptimata koopiat. <b>Me ei soovita sellist tegevust</b>.</string>
+    <string name="export_help">Selle toiminguga ekspordid andmehoidla Cuee sisemisest andmeruumist. Palun vali vorming, mida soovid eksportimiseks kasutada:</string>
+    <string name="export_warning_unencrypted">Sa oled eksportimas Cuee andmehoidla krüptimata koopiat. <b>Me ei soovita sellist tegevust</b>.</string>
     <string name="export_warning_password">Ekspordifailid on krüptitud eraldi salasõnaga, mis on lisatud seadistuste sektsioonist Turvalisus.</string>
     <string name="understand_risk_accept">Ma mõistan seda riski</string>
-    <string name="export_format_aegis">Aegis (.JSON)</string>
     <string name="export_format_google_auth_uri">Tekstifail (.TXT)</string>
     <string name="export_format_html">Veebileht (.HTML)</string>
     <string name="export_format_hint">Eksportimise vorming</string>
@@ -160,9 +158,9 @@
         <item quantity="other">%d gruppi on valitud</item>
     </plurals>
     <string name="export_no_groups_selected">Sa pole eksportimiseks valinud ühtegi gruppi</string>
-    <string name="export_html_title" comment="The title of an HTML export document">Eksport Aegis Authenticatorist</string>
+    <string name="export_html_title" comment="The title of an HTML export document">Eksport Cue Authenticatorist</string>
     <string name="choose_authentication_method">Turvalisus</string>
-    <string name="authentication_method_explanation">Aegis on turvalisuskeskne kaheastmelise autentimise haldusrakendus. Kirjed on salvestatud andmehoidlas, mida saad soovi korral enda valitud salasõnaga krüptida. Kui see krüptitud andmehoidla satub pahatahtlike kavatsustega kolmanda osapoole kätte, siis pole tal ilma salasõna teadmata võimalust sisu lugeda.\n\nJärgnevalt oleme eelvalinud eelistuse, mis võiks sinu nutiseadmele parimal viisil sobida.</string>
+    <string name="authentication_method_explanation">Cue on turvalisuskeskne kaheastmelise autentimise haldusrakendus. Kirjed on salvestatud andmehoidlas, mida saad soovi korral enda valitud salasõnaga krüptida. Kui see krüptitud andmehoidla satub pahatahtlike kavatsustega kolmanda osapoole kätte, siis pole tal ilma salasõna teadmata võimalust sisu lugeda.\n\nJärgnevalt oleme eelvalinud eelistuse, mis võiks sinu nutiseadmele parimal viisil sobida.</string>
     <string name="authentication_method_none">Puudub</string>
     <string name="authentication_method_none_description">Andmehoidla lukustuse eemaldamiseks pole vaja kasutada salasõna ning ta on ka krüptimata. <b>Me ei soovita selle valiku kasutamist</b>.</string>
     <string name="authentication_method_password">Salasõna</string>
@@ -178,10 +176,10 @@
     <string name="set_number">Palun sisesta number</string>
     <string name="set_password_confirm">Palun korda salasõna</string>
     <string name="invalid_password">Sisestatud salasõna pole õige</string>
-    <string name="invalidated_biometrics">Tuvastasin muudatuse sinu nutiseadme turvaseadistustes. Palun ava Aegise „Seadistused“ → „Turvalisus“ → „Biomeetriline tuvastus“ ning lülita ta korraks välja ning seejärel uuesti sisse.</string>
+    <string name="invalidated_biometrics">Tuvastasin muudatuse sinu nutiseadme turvaseadistustes. Palun ava Cuee „Seadistused“ → „Turvalisus“ → „Biomeetriline tuvastus“ ning lülita ta korraks välja ning seejärel uuesti sisse.</string>
     <string name="password_reminder">Palun sisesta oma salasõna. Selleks, et sa salasõna ei unustaks, me vahetevahel palume sind seda sisestada.</string>
     <string name="password_reminder_dialog_title">Vaikimisi on lukustuse eemaldamiseks kasutusel biomeetriline tuvastus</string>
-    <string name="password_reminder_dialog_message">Selleks, et sa salasõna ei unustaks ja kaotaks ligipääsu oma andmehoidlale, me vahetevahel palume sind seda sisestada. Peale salasõna kasutamist Aegis pruugib jälle biomeetrilist tuvastust seni, kuni jõuab kätte järjekordne salasõna sisestamise hetk.</string>
+    <string name="password_reminder_dialog_message">Selleks, et sa salasõna ei unustaks ja kaotaks ligipääsu oma andmehoidlale, me vahetevahel palume sind seda sisestada. Peale salasõna kasutamist Cue pruugib jälle biomeetrilist tuvastust seni, kuni jõuab kätte järjekordne salasõna sisestamise hetk.</string>
     <string name="password_reminder_freq_never">Mitte kunagi</string>
     <string name="password_reminder_freq_weekly">kord nädalas</string>
     <string name="password_reminder_freq_biweekly">kaks korda nädalas</string>
@@ -189,7 +187,7 @@
     <string name="password_reminder_freq_quarterly">kord kvartalis</string>
     <string name="enter_password_proton_message">Tundub, et Proton Authenticatori rakenduse varukoopia on krüptitud. Palun sisesta alljärgnevalt salasõna.</string>
     <string name="enter_password_2fas_message">Tundub, et 2FAS rakenduse varukoopia on krüptitud. Palun sisesta alljärgnevalt salasõna.</string>
-    <string name="enter_password_authy_message">Tundub, et Authy rakenduse kirjed on krüptitud. Palun sulge Aegis, ava Authy ning eemalda kirjete lukustus oma salasõnaga. Võid ka proovida, kas Aegis saab dekrüptimisega hakkama. Selleks sisesta alljärgnevalt vajalik salasõna.</string>
+    <string name="enter_password_authy_message">Tundub, et Authy rakenduse kirjed on krüptitud. Palun sulge Cue, ava Authy ning eemalda kirjete lukustus oma salasõnaga. Võid ka proovida, kas Cue saab dekrüptimisega hakkama. Selleks sisesta alljärgnevalt vajalik salasõna.</string>
     <string name="enter_password_aegis_title">Palun sisesta importimise salasõna</string>
     <string name="period_hint">Välp (sekundites)</string>
     <string name="algorithm_hint">Räsifunktsioon</string>
@@ -252,9 +250,8 @@
     <string name="saving_profile_error">Viga profiili salvestamisel</string>
     <string name="saving_assign_icons_error">Viga ikoonide lisamisel</string>
     <string name="welcome">Tere tulemast</string>
-    <string name="app_description">Aegis on vaba, turvaline ja avatud lähtekoodil põhinev kaheastmelise autentimise haldusrakendus</string>
     <string name="setup_completed">Algseadistamine on lõppenud</string>
-    <string name="setup_completed_description">Aegis on seadistatud ja valmis tegutsema.</string>
+    <string name="setup_completed_description">Cue on seadistatud ja valmis tegutsema.</string>
     <string name="vault_not_found">Andmehoidlat ei leidu, alustan algseadistamisega…</string>
     <string name="copied">Kopeeritud</string>
     <string name="errors_copied">Vead on kopeeritud lõikelauale</string>
@@ -266,8 +263,8 @@
     <string name="saving_error">Andmehoidla salvestamisel tekkis viga</string>
     <string name="vault_init_error">Andmehoidla valmendamisel tekkis viga</string>
     <string name="vault_load_error">Andmehoidla laadimisel nutiseadme andmeruumist tekkis viga</string>
-    <string name="biometric_decrypt_error">Andmehoidla dekrüptimisel biomeetrilise isikutuvastuse abil tekkis viga. Tavaliselt juhtub see siis, kui nutiseadme turvaseadistused on muutunud. Palun eemalda andmehoidla lukustus salasõnaga ja kohenda Aegise seadistustest uuesti biomeetrilist tuvastust.</string>
-    <string name="biometric_init_error">Biomeetrilise isikutuvastuse valmendamisel tekkis viga. Tavaliselt juhtub see siis, kui nutiseadme turvaseadistused on muutunud. Palun eemalda andmehoidla lukustus salasõnaga ja kohenda Aegise seadistustest uuesti biomeetrilist tuvastust.</string>
+    <string name="biometric_decrypt_error">Andmehoidla dekrüptimisel biomeetrilise isikutuvastuse abil tekkis viga. Tavaliselt juhtub see siis, kui nutiseadme turvaseadistused on muutunud. Palun eemalda andmehoidla lukustus salasõnaga ja kohenda Cuee seadistustest uuesti biomeetrilist tuvastust.</string>
+    <string name="biometric_init_error">Biomeetrilise isikutuvastuse valmendamisel tekkis viga. Tavaliselt juhtub see siis, kui nutiseadme turvaseadistused on muutunud. Palun eemalda andmehoidla lukustus salasõnaga ja kohenda Cuee seadistustest uuesti biomeetrilist tuvastust.</string>
     <string name="disable_encryption">Lülita krüptimine välja</string>
     <string name="disable_encryption_description">Kas sa oled kindel, et soovid krüptimist välja lülitada? Selle tulemusel salvestatakse andmehoidla lihtteksti vormingus. <b>Lisaks ei saa enam kasutada automaatset varundust</b>.</string>
     <string name="enable_encryption_error">Krüptimise sisselülitamisel tekkis viga</string>
@@ -301,7 +298,7 @@
     <string name="file_not_found">Viga: faili ei leidu</string>
     <string name="reading_file_error">Faili lugemisel tekkis viga</string>
     <string name="app_lookup_error">Viga: rakendus pole paigaldatud</string>
-    <string name="app_version_error">Paigaldatud „%s“ rakenduse versioon pole toetatud. Viimased versioonid krüptivad osasid faile oma andmekaustas ja seega puudub Aegisel ligipääs nende importimiseks. Kui proovid importida, siis ilmselt lõppeb see veaga. Kas ikkagi tahad jätkata?</string>
+    <string name="app_version_error">Paigaldatud „%s“ rakenduse versioon pole toetatud. Viimased versioonid krüptivad osasid faile oma andmekaustas ja seega puudub Cueel ligipääs nende importimiseks. Kui proovid importida, siis ilmselt lõppeb see veaga. Kas ikkagi tahad jätkata?</string>
     <string name="root_error">Viga: ei õnnestu kasutada juurkasutaja õigusi</string>
     <plurals name="imported_entries_count">
         <item quantity="one">Importisin %d kirje</item>
@@ -319,7 +316,7 @@
     <string name="encryption_enable_biometrics_error">Biomeetrilise isikutuvastuse kasutuselevõtmisel lukustuse eemaldamise jaoks tekkis viga. Mõnede nutiseadmete biomeetrilise tuvastuse teostused on puudulikud ning tundub, et see on üks niisugustest seadmetest. Me soovitame, et kasutad vaid salasõnapõhist tuvastust.</string>
     <string name="no_cameras_available">Ühtegi kaamerat pole saadaval</string>
     <string name="read_qr_error">QR-koodi lugemisel tekkis viga</string>
-    <string name="read_qr_error_phonefactor">Aegis pole ühilduv Microsofti kaheastmelise autentimise suletud algoritmiga. Kui oled seadistamas kaheastmelist autentimist Office 365 teenuses, siis palun vali eelistus „Seadista rakendus ilma teavitusteta“.</string>
+    <string name="read_qr_error_phonefactor">Cue pole ühilduv Microsofti kaheastmelise autentimise suletud algoritmiga. Kui oled seadistamas kaheastmelist autentimist Office 365 teenuses, siis palun vali eelistus „Seadista rakendus ilma teavitusteta“.</string>
     <string name="partial_google_auth_import">Tuvastasin pooliku Google Authenticatori ekspordifaili</string>
     <string name="partial_google_auth_import_warning">Mõned QR-koodid on imporditavatest andmetest puudu. Järgnevaid koode ei leidunud: \n\n<b>%s</b>\n\nSa võid küll jätkata selle pooliku impordiga, kuid me soovitame, et proovid uuesti kõikide andmetega ning väldid mõmõnede kirjete kadumaminekut.</string>
     <string name="missing_qr_code_descriptor">• QR-kood %d</string>
@@ -406,8 +403,8 @@
     <string name="unknown_issuer">Tundmatu väljaandja</string>
     <string name="unknown_account_name">Tundmatu kasutajakonto nimi</string>
     <plurals name="import_error_dialog">
-        <item quantity="one">Aegis ei suutnud importida %d-t kirjet ja see kirje jääb vahele. Leiad täpsemat teavet vea kohta, kui klõpsid viidet „üksikasjad“.</item>
-        <item quantity="other">Aegis ei suutnud importida %d-t kirjet ja need kirjed jäävad vahele. Leiad täpsemat teavet vea kohta, kui klõpsid viidet „üksikasjad“.</item>
+        <item quantity="one">Cue ei suutnud importida %d-t kirjet ja see kirje jääb vahele. Leiad täpsemat teavet vea kohta, kui klõpsid viidet „üksikasjad“.</item>
+        <item quantity="other">Cue ei suutnud importida %d-t kirjet ja need kirjed jäävad vahele. Leiad täpsemat teavet vea kohta, kui klõpsid viidet „üksikasjad“.</item>
     </plurals>
     <string name="unable_to_process_deeplink">Süvalinki ei õnnestunud töödelda</string>
     <string name="unable_to_read_qrcode_file">Failis leiduvad QR-koodi ei õnnestunud töödelda: %s.</string>
@@ -421,16 +418,15 @@
     <string name="toggle_checkboxes">Märgista märkeruudud või eemalda märgistus</string>
     <string name="search">Otsi</string>
     <string name="channel_name_lock_status">Lukustuse olek</string>
-    <string name="channel_description_lock_status">Aegis võib luua püsiteavituse, mis kinnitab sulle, kui andmehoidla lukustub</string>
+    <string name="channel_description_lock_status">Cue võib luua püsiteavituse, mis kinnitab sulle, kui andmehoidla lukustub</string>
     <string name="vault_unlocked_state">Andmehoidla pole lukus. Lukustamiseks klõpsi siin.</string>
     <string name="version">Versioon</string>
     <string name="changelog">Muudatuste logi</string>
     <string name="whats_new">Mida on uut</string>
     <string name="github_description">Lähtekood, veahaldus ja teave</string>
     <string name="license">Litsents</string>
-    <string name="license_description">Aegis Authenticator on litsentseeritud GPLv3 alusel</string>
     <string name="third_party_licenses">Kolmandate osapoolte litsentsid</string>
-    <string name="third_party_licenses_description">Aegise kasutatavate kolmandate osapoolte teekide litsentsid</string>
+    <string name="third_party_licenses_description">Cuee kasutatavate kolmandate osapoolte teekide litsentsid</string>
     <string name="country_netherlands">Madalmaad</string>
     <string name="email_us">Saada e-kiri</string>
     <string name="visit_website">Külasta meie veebisaiti</string>
@@ -440,7 +436,7 @@
     <string name="webview_error">Selles nutiseadmes puudub webview-teegi tugi. Seda on vaja muudatuste logi ja litsentside kuvamiseks. Tegemist on operatsioonisüsteemi komponendiga.</string>
     <string name="email">E-post</string>
     <string name="time_sync_warning_title">Kellaaja automaatne sünkroniseerimine</string>
-    <string name="time_sync_warning_message">Õigete tuvastusskoodide loomiseks vajab Aegis, et kellaajad nutiserdme ja serveri vahel on sünkroonis. Isegi mõnesekundiline erinevus võib tulemuseks anda vale koodi. Tundub, et sinu nutiseadmes on puudu automaatne aja sünkroniseerimine. Kas sa tahaksid seda nüüd teha?</string>
+    <string name="time_sync_warning_message">Õigete tuvastusskoodide loomiseks vajab Cue, et kellaajad nutiserdme ja serveri vahel on sünkroonis. Isegi mõnesekundiline erinevus võib tulemuseks anda vale koodi. Tundub, et sinu nutiseadmes on puudu automaatne aja sünkroniseerimine. Kas sa tahaksid seda nüüd teha?</string>
     <string name="time_sync_warning_disable">Ära hoiata mind enam. Ma tean, mida ma teen.</string>
     <string name="google_qr_export_unrelated">Tuvastasin mitteseotud QR-koodi. Proovi skanneri uuesti käivitamist.</string>
     <plurals name="google_qr_export_scanned">
@@ -452,8 +448,8 @@
     <string name="backup_error_dialog_details" comment="The first parameter is the type of backup (e.g. built-in or Android backup). The second parameter is an elapsed time in the style of 'x seconds/minutes/days ago'.">
 Vea tekkimise tõttu hiljutine andmehoidla varundus %1$s abil ei õnnestunud. Varukoopia loomise katse toimus %2$s. Selleks, et varundus toimiks korrektselt, palun kontrolli varunduse seadistusi.    </string>
     <string name="backup_permission_error_dialog_details" comment="The first parameter is the type of backup (e.g. built-in or Android backup). The second parameter is an elapsed time in the style of 'x seconds/minutes/days ago'.">
-Kuna Aegisel polnud õigust kirjutada varunduse kausta, siis hiljutine andmehoidla varundus %1$s abil ei õnnestunud. Varukoopia loomise katse toimus %2$s. Selline viga võib tekkida, kui sa oled hiljuti muutnud varukoopia kausta nime või ta teisaldanud, samuti ka kui oled hiljuti Aegise varukoopiast taastanud. Palun seadista varukoopia kaust uuesti.    </string>
-    <string name="backup_system_builtin">Aegise sisseehitatud automaatne varundus</string>
+Kuna Cueel polnud õigust kirjutada varunduse kausta, siis hiljutine andmehoidla varundus %1$s abil ei õnnestunud. Varukoopia loomise katse toimus %2$s. Selline viga võib tekkida, kui sa oled hiljuti muutnud varukoopia kausta nime või ta teisaldanud, samuti ka kui oled hiljuti Cuee varukoopiast taastanud. Palun seadista varukoopia kaust uuesti.    </string>
+    <string name="backup_system_builtin">Cuee sisseehitatud automaatne varundus</string>
     <string name="backup_system_android">Androidi pilvevarundus</string>
     <string name="backup_reminder_bar_message_with_latest" comment="The parameter is an elapsed time in the style of 'x seconds/minutes/days ago'">
 Viimane varukoopia on aegunud (%s)    </string>
@@ -487,7 +483,7 @@ Andmehoidla viimased muudatused on veel varundamata. Vältimaks, et kaotad ligip
     <string name="uri_copied_to_clipboard">URI on kopeeritud lõikelauale</string>
     <string name="transfer_entry_description">Skaneeri seda QR-koodi autentimisrakendusega, kuhu soovid seda kirjet eksportida</string>
     <string name="transfer_entry_brightness">Täisekraani ereduse sisse/välja lülitamiseks klõosi QR-koodi</string>
-    <string name="google_auth_compatible_transfer_description">Skaneeri neid QR-koode Aegise või Google Authenticatoriga.\n\nGoogle Authenticatori tehniliste piirangute tõttu on võimalik eksportida vaid TOTP ja HOTP tunnuslube, mis kasutavad SHA1 räsi ning kuvavad tulemuseks 6-kohalisi koode</string>
+    <string name="google_auth_compatible_transfer_description">Skaneeri neid QR-koode Cuee või Google Authenticatoriga.\n\nGoogle Authenticatori tehniliste piirangute tõttu on võimalik eksportida vaid TOTP ja HOTP tunnuslube, mis kasutavad SHA1 räsi ning kuvavad tulemuseks 6-kohalisi koode</string>
     <string name="password_strength_very_weak">Väga nõrk</string>
     <string name="password_strength_weak">Nõrk</string>
     <string name="password_strength_fair">Keskpärane</string>
@@ -510,10 +506,9 @@ Andmehoidla viimased muudatused on veel varundamata. Vältimaks, et kaotad ligip
     <string name="dialog_wipe_entries_checkbox">Kustuta andmehoidla sisu</string>
     <string name="import_from_clipboard_title">Impordi lõikelaualt</string>
     <string name="import_from_clipboard_message">Me tuvastasime sinu lõikelaualt korrektse otpauth-tüüpi aadressi.\n\n<b>Nimi</b>: %1$s\n<b>Väljaandja</b>: %2$s\n\nKas sa tahaksid seda kasutada antud kirje esmaseks täitmiseks?</string>
-    <string name="panic_trigger_ignore_toast">Aegis tuvastas paanikanupu vajutuse, kuid kuna vastav seadistus on keelatud, siis me ei tee midagi</string>
+    <string name="panic_trigger_ignore_toast">Cue tuvastas paanikanupu vajutuse, kuid kuna vastav seadistus on keelatud, siis me ei tee midagi</string>
     <string name="pref_panic_trigger_title">Paanikanupu vajutusel kustuta andmehoidla</string>
     <string name="pref_panic_trigger_summary">Kui Guardian Projekti Ripple\'i rakenduses vajutatakse paanikanuppu, siis kustuta andmehoidla</string>
-    <string name="import_vault">Impordi Aegise andmehoidla</string>
     <string name="import_vault_hint">Kas soovid andmeid importida mõnest teisest kaheastmelise autentimise haldusrakendusest? Esmalt lõpeta algseadistamine ja seejärel ava rakenduse seadistustest importimise valikud.</string>
     <plurals name="import_duplicate_toast">
         <item quantity="one">%d võimalik kontrollimata duplikaat. Palun vaata kirjete loend üle.</item>
@@ -531,7 +526,7 @@ Andmehoidla viimased muudatused on veel varundamata. Vältimaks, et kaotad ligip
     <string name="importer_help_freeotp">FreeOTP 2: Ava varundatud fail.\nFreeOTP 1.x: Ava <b>/data/data/org.fedorahosted.freeotp/shared_prefs/tokens.xml</b> faili koopia, mille leiad FreeOTP sisemise andmeruumi kaustast.</string>
     <string name="importer_help_freeotp_plus">Ava FreeOTP+ ekspordifail.</string>
     <string name="importer_warning_title_freeotp2">FreeOTP 2 ühilduvus</string>
-    <string name="importer_warning_message_freeotp2">FreeOTP 2 rakendusega on seotud mitu viga, mis võib tekitada olukorra, kus varukoopiad on vigased. Aegis proovib olukorrast päästa maksimumi, aga võib juhtuda, et mõned või lausa kõik kirjed jäävad importimata.</string>
+    <string name="importer_warning_message_freeotp2">FreeOTP 2 rakendusega on seotud mitu viga, mis võib tekitada olukorra, kus varukoopiad on vigased. Cue proovib olukorrast päästa maksimumi, aga võib juhtuda, et mõned või lausa kõik kirjed jäävad importimata.</string>
     <string name="importer_help_google_authenticator"><b>Toetatud on ainult Google Authenticatori versiooni 5.10 või varasemad failid</b>.\n\nAva <b>/data/data/com.google.android.apps.authenticator2/databases/databases</b> faili koopia, mille leiad Google Authenticatori sisemise andmeruumi kaustast.</string>
     <string name="importer_help_microsoft_authenticator">Ava <b>/data/data/com.azure.authenticator/databases/PhoneFactor</b> faili koopia, mille leiad Microsoft Authenticatori sisemisest andmeruumist.</string>
     <string name="importer_help_plain_text">Lisa siia lihttekstina vormindatud fail, kus iga Google Authenticatori URI asub omaette real.</string>
@@ -543,7 +538,7 @@ Andmehoidla viimased muudatused on veel varundamata. Vältimaks, et kaotad ligip
     <string name="import_assign_icons_dialog_title">Lisa ikoone</string>
     <string name="import_assign_icons_dialog_text">Kas sa sooviksid lisada imporditud kirjetele ikoone?</string>
     <string name="importer_encrypted_exception_google_authenticator">Krüptitud kirje jäi vahele: %s</string>
-    <string name="importer_help_direct">Impordi kirjed otse „%s“ rakendusest. See eeldab, et rakendus on nutiseadmesse paigaldatud ja Aegisel on juurkasutaja õigused.</string>
+    <string name="importer_help_direct">Impordi kirjed otse „%s“ rakendusest. See eeldab, et rakendus on nutiseadmesse paigaldatud ja Cueel on juurkasutaja õigused.</string>
     <string name="groups">Grupid</string>
     <string name="pref_focus_search">Rakenduse käivitamisel pane fookus otsingule</string>
     <string name="pref_focus_search_summary">Rakenduse käivitamisel võimalda kohe alustada otsingut.</string>

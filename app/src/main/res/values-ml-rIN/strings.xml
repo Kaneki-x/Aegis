@@ -105,7 +105,6 @@
     <string name="export_warning_unencrypted">നിങ്ങളുടെ ഏജിസ് നിലവറയുടെ എൻക്രിപ്റ്റ് ചെയ്യാത്ത ഒരു പകർപ്പ് നിങ്ങൾ കയറ്റുമതി ചെയ്യാൻ പോകുകയാണ്. <b>ഇത് ശുപാർശ ചെയ്യുന്നില്ല</b>.</string>
     <string name="export_warning_password">സുരക്ഷാ ക്രമീകരണങ്ങളിൽ കോൺഫിഗർ ചെയ്‌തിരിക്കുന്ന പ്രത്യേക പാസ്‌വേഡ് ഉപയോഗിച്ചാണ് കയറ്റുമതി എൻക്രിപ്റ്റ് ചെയ്യുന്നത്.</string>
     <string name="understand_risk_accept">അപകടസാധ്യത ഞാൻ മനസ്സിലാക്കുന്നു</string>
-    <string name="export_format_aegis">Aegis (.JSON)</string>
     <string name="export_format_google_auth_uri">Text file (.TXT)</string>
     <string name="export_format_html">Web page (.HTML)</string>
     <string name="export_format_hint">കയറ്റുമതി ഫോർമാറ്റ്</string>
@@ -134,17 +133,17 @@
     <string name="set_number">ദയവായി ഒരു അക്കം നൽകുക</string>
     <string name="set_password_confirm">ദയവായി പാസ്‌വേഡ് സ്ഥിരീകരിക്കുക</string>
     <string name="invalid_password">പാസ്‌വേഡ് തെറ്റാണ്</string>
-    <string name="invalidated_biometrics">നിങ്ങളുടെ ഉപകരണത്തിൻ്റെ സുരക്ഷാ ക്രമീകരണത്തിൽ ഒരു മാറ്റം കണ്ടെത്തി. ബയോമെട്രിക് അൺലോക്ക് പ്രവർത്തനരഹിതമാക്കുന്നതിനും വീണ്ടും പ്രവർത്തനക്ഷമമാക്കുന്നതിനും ദയവായി \"Aegis -&gt; ക്രമീകരണങ്ങൾ -&gt; സുരക്ഷ -&gt; ബയോമെട്രിക് അൺലോക്ക്\" എന്നതിലേക്ക് പോകുക.</string>
+    <string name="invalidated_biometrics">നിങ്ങളുടെ ഉപകരണത്തിൻ്റെ സുരക്ഷാ ക്രമീകരണത്തിൽ ഒരു മാറ്റം കണ്ടെത്തി. ബയോമെട്രിക് അൺലോക്ക് പ്രവർത്തനരഹിതമാക്കുന്നതിനും വീണ്ടും പ്രവർത്തനക്ഷമമാക്കുന്നതിനും ദയവായി \"Cue -&gt; ക്രമീകരണങ്ങൾ -&gt; സുരക്ഷ -&gt; ബയോമെട്രിക് അൺലോക്ക്\" എന്നതിലേക്ക് പോകുക.</string>
     <string name="password_reminder">ദയവായി നിങ്ങളുടെ പാസ്‌വേഡ് നൽകുക. ഇത് മറക്കാതിരിക്കാൻ ഞങ്ങൾ ഇടയ്ക്കിടെ നിങ്ങളോട് ആവശ്യപ്പെടാറുണ്ട്.</string>
     <string name="password_reminder_dialog_title">സ്ഥിരസ്ഥിതി ബയോമെട്രിക് അൺലോക്ക്</string>
-    <string name="password_reminder_dialog_message">നിങ്ങളുടെ പാസ്‌വേഡ് നിങ്ങൾ മറന്നിട്ടില്ലെന്നും നിങ്ങളുടെ നിലവറയിൽ നിന്ന് ലോക്ക് ചെയ്യപ്പെടില്ലെന്നും ഉറപ്പാക്കാൻ പകരം അത് നൽകാൻ ഞങ്ങൾ ഇടയ്ക്കിടെ നിങ്ങളോട് ആവശ്യപ്പെടും. ഒരിക്കൽ നിങ്ങളുടെ പാസ്‌വേഡ് നൽകിയതിന് ശേഷം, മറ്റൊരു പാസ്‌വേഡ് ഓർമ്മപ്പെടുത്തലിനുള്ള സമയം ആകുന്നത് വരെ Aegis ബയോമെട്രിക് അൺലോക്കിലേക്ക് സ്ഥിരസ്ഥിതി ആയി മടങ്ങും.</string>
+    <string name="password_reminder_dialog_message">നിങ്ങളുടെ പാസ്‌വേഡ് നിങ്ങൾ മറന്നിട്ടില്ലെന്നും നിങ്ങളുടെ നിലവറയിൽ നിന്ന് ലോക്ക് ചെയ്യപ്പെടില്ലെന്നും ഉറപ്പാക്കാൻ പകരം അത് നൽകാൻ ഞങ്ങൾ ഇടയ്ക്കിടെ നിങ്ങളോട് ആവശ്യപ്പെടും. ഒരിക്കൽ നിങ്ങളുടെ പാസ്‌വേഡ് നൽകിയതിന് ശേഷം, മറ്റൊരു പാസ്‌വേഡ് ഓർമ്മപ്പെടുത്തലിനുള്ള സമയം ആകുന്നത് വരെ Cue ബയോമെട്രിക് അൺലോക്കിലേക്ക് സ്ഥിരസ്ഥിതി ആയി മടങ്ങും.</string>
     <string name="password_reminder_freq_never">ഒരിക്കലും</string>
     <string name="password_reminder_freq_weekly">പ്രതിവാരം</string>
     <string name="password_reminder_freq_biweekly">ദ്വൈവാരം</string>
     <string name="password_reminder_freq_monthly">പ്രതിമാസ</string>
     <string name="password_reminder_freq_quarterly">ത്രൈമാസ</string>
     <string name="enter_password_2fas_message">ഈ 2FAS ബാക്കപ്പ് എൻക്രിപ്റ്റ് ചെയ്തതായി തോന്നുന്നു. ദയവായി താഴെ പാസ്‌വേഡ് നൽകുക.</string>
-    <string name="enter_password_authy_message">നിങ്ങളുടെ Authy ടോക്കണുകൾ എൻക്രിപ്റ്റ് ചെയ്തതായി തോന്നുന്നു. ദയവായി Aegis അടയ്ക്കുക, Authy തുറന്ന് നിങ്ങളുടെ പാസ്‌വേഡ് ഉപയോഗിച്ച് ടോക്കണുകൾ അൺലോക്ക് ചെയ്യുക. പകരം, നിങ്ങളുടെ പാസ്‌വേഡ് ചുവടെ നൽകിയാൽ, നിങ്ങളുടെ Authy ടോക്കണുകൾ ഡീക്രിപ്റ്റ് ചെയ്യാനും ഏജിസിന് ശ്രമിക്കാം.</string>
+    <string name="enter_password_authy_message">നിങ്ങളുടെ Authy ടോക്കണുകൾ എൻക്രിപ്റ്റ് ചെയ്തതായി തോന്നുന്നു. ദയവായി Cue അടയ്ക്കുക, Authy തുറന്ന് നിങ്ങളുടെ പാസ്‌വേഡ് ഉപയോഗിച്ച് ടോക്കണുകൾ അൺലോക്ക് ചെയ്യുക. പകരം, നിങ്ങളുടെ പാസ്‌വേഡ് ചുവടെ നൽകിയാൽ, നിങ്ങളുടെ Authy ടോക്കണുകൾ ഡീക്രിപ്റ്റ് ചെയ്യാനും ഏജിസിന് ശ്രമിക്കാം.</string>
     <string name="enter_password_aegis_title">ഇറക്കുമതി പാസ്‌വേഡ് നൽകുക</string>
     <string name="period_hint">കാലയളവ് (സെക്കൻ്റുകൾ)</string>
     <string name="algorithm_hint">ഹാഷ് ഫംഗ്ഷൻ</string>
@@ -201,7 +200,6 @@
     <string name="saving_profile_error">പ്രൊഫൈൽ സംരക്ഷിക്കുന്നതിൽ പിശക്</string>
     <string name="saving_assign_icons_error">ഐക്കണുകൾ നൽകുന്നതിൽ പിശക്</string>
     <string name="welcome">സ്വാഗതം</string>
-    <string name="app_description">Aegis ഒരു സൗജന്യവും സുരക്ഷിതവും ഓപ്പൺ സോഴ്‌സ് 2FA ആപ്പാണ്</string>
     <string name="setup_completed">സജ്ജീകരണം പൂർത്തിയായി</string>
     <string name="setup_completed_description">ഏജീസ് സജ്ജീകരിച്ചു, പോകാൻ തയ്യാറാണ്.</string>
     <string name="vault_not_found">നിലവറ കണ്ടെത്തിയില്ല, സജ്ജീകരണം ആരംഭിക്കുന്നു…</string>
@@ -245,7 +243,7 @@
     <string name="file_not_found">പിശക്: ഫയൽ കണ്ടെത്തിയില്ല</string>
     <string name="reading_file_error">ഫയൽ വായിക്കാൻ ശ്രമിക്കുന്നതിനിടെ ഒരു പിശക് സംഭവിച്ചു</string>
     <string name="app_lookup_error">പിശക്: ആപ്പ് ഇൻസ്റ്റാൾ ചെയ്തിട്ടില്ല</string>
-    <string name="app_version_error">ഇൻസ്റ്റാൾ ചെയ്ത %s-ൻ്റെ പതിപ്പ് പിന്തുണയ്ക്കുന്നില്ല. സമീപകാല പതിപ്പുകൾ ഇൻ്റേണൽ സ്റ്റോറേജ് ഡയറക്‌ടറിയിലെ ചില ഫയലുകൾ എൻക്രിപ്റ്റ് ചെയ്യാൻ തുടങ്ങി, അത് ഇറക്കുമതിക്ക് ആവശ്യമായ വിവരങ്ങൾ ആക്‌സസ് ചെയ്യാൻ Aegis-ന് കഴിയുന്നില്ല. ഇറക്കുമതി ചെയ്യാൻ ശ്രമിക്കുന്നത് ഒരു പിശകിന് കാരണമാകും. എന്തായാലും തുടരാൻ നിങ്ങൾ ആഗ്രഹിക്കുന്നുണ്ടോ?</string>
+    <string name="app_version_error">ഇൻസ്റ്റാൾ ചെയ്ത %s-ൻ്റെ പതിപ്പ് പിന്തുണയ്ക്കുന്നില്ല. സമീപകാല പതിപ്പുകൾ ഇൻ്റേണൽ സ്റ്റോറേജ് ഡയറക്‌ടറിയിലെ ചില ഫയലുകൾ എൻക്രിപ്റ്റ് ചെയ്യാൻ തുടങ്ങി, അത് ഇറക്കുമതിക്ക് ആവശ്യമായ വിവരങ്ങൾ ആക്‌സസ് ചെയ്യാൻ Cue-ന് കഴിയുന്നില്ല. ഇറക്കുമതി ചെയ്യാൻ ശ്രമിക്കുന്നത് ഒരു പിശകിന് കാരണമാകും. എന്തായാലും തുടരാൻ നിങ്ങൾ ആഗ്രഹിക്കുന്നുണ്ടോ?</string>
     <string name="root_error">പിശക്: റൂട്ട് ആക്സസ് നേടാനായില്ല</string>
     <plurals name="imported_entries_count">
         <item quantity="one">%d എൻട്രി ഇറക്കുമതി ചെയ്തു</item>
@@ -347,7 +345,6 @@
     <string name="whats_new">പുതിയതെന്താണ്</string>
     <string name="github_description">കോഡ്, പ്രശ്നങ്ങൾ, വിവരങ്ങൾ</string>
     <string name="license">ലൈസൻസ്</string>
-    <string name="license_description">GPLv3 പ്രകാരം Aegis Authenticator ലൈസൻസ് ചെയ്തിട്ടുണ്ട്</string>
     <string name="third_party_licenses">മൂന്നാം കക്ഷി ലൈസൻസുകൾ</string>
     <string name="third_party_licenses_description">ഏജിസ് ഉപയോഗിക്കുന്ന മൂന്നാം കക്ഷി ലൈബ്രറികളുടെ ലൈസൻസുകൾ</string>
     <string name="country_netherlands">നെതർലാൻഡ്സ്</string>
@@ -437,7 +434,7 @@
     <string name="import_assign_icons_dialog_title">ഐക്കണുകൾ അസൈൻ ചെയ്യുക</string>
     <string name="import_assign_icons_dialog_text">ഇറക്കുമതി ചെയ്ത എൻട്രികൾക്ക് ഐക്കണുകൾ നൽകണോ?</string>
     <string name="importer_encrypted_exception_google_authenticator">എൻക്രിപ്റ്റ് ചെയ്ത എൻട്രി ഒഴിവാക്കി: %s</string>
-    <string name="importer_help_direct">%s-ൽ നിന്ന് നേരിട്ട് എൻട്രികൾ ഇറക്കുമതി ചെയ്യുക. ഇതിന് ഈ ഉപകരണത്തിൽ ആപ്പ് ഇൻസ്റ്റാൾ ചെയ്യുകയും റൂട്ട് ആക്‌സസ്സ് Aegis-ന് നൽകുകയും വേണം.</string>
+    <string name="importer_help_direct">%s-ൽ നിന്ന് നേരിട്ട് എൻട്രികൾ ഇറക്കുമതി ചെയ്യുക. ഇതിന് ഈ ഉപകരണത്തിൽ ആപ്പ് ഇൻസ്റ്റാൾ ചെയ്യുകയും റൂട്ട് ആക്‌സസ്സ് Cue-ന് നൽകുകയും വേണം.</string>
     <string name="groups">ഗ്രൂപ്പുകൾ</string>
     <string name="pref_focus_search">ആപ്പ് ആരംഭത്തിൽ സെർച്ച് ഫോക്കസ് ചെയ്യുക</string>
     <string name="pref_focus_search_summary">ആപ്പ് തുറന്ന ഉടനെ സെർച്ചിൽ ഫോക്കസ് ചെയ്യുക.</string>

@@ -28,7 +28,6 @@
     <string name="pref_section_security_title">Securitate</string>
     <string name="pref_section_security_summary">Configurați criptarea, deblocarea biometrică, blocarea automată și alte setări de securitate.</string>
     <string name="pref_section_import_export_title">Importă &amp; Exportă</string>
-    <string name="pref_section_import_export_summary">Importă copii de rezervă ale Aegis sau ale altor aplicații de autentificare. Creează exporturi manuale în seiful dvs. Aegis.</string>
     <string name="pref_section_audit_log_title">Jurnal de audit</string>
     <string name="pref_section_audit_log_summary">Găsiți o listă cu toate evenimentele importante raportate care s-au întâmplat în cadrul aplicației.</string>
     <string name="pref_section_backups_title">Backup-uri</string>
@@ -105,7 +104,7 @@
     <string name="pref_auto_lock_title">Blocare automată</string>
     <string name="pref_auto_lock_summary">Când %s</string>
     <string name="pref_auto_lock_summary_disabled">Dezactivat</string>
-    <string name="pref_auto_lock_prompt">Blocare automată Aegis când</string>
+    <string name="pref_auto_lock_prompt">Blocare automată Cue când</string>
     <string name="pref_auto_lock_type_back_button">Butonul înapoi este apăsat</string>
     <string name="pref_auto_lock_type_minimize">Aplicația este minimizată</string>
     <string name="pref_auto_lock_type_device_lock">Dispozitivul este blocat</string>
@@ -148,10 +147,9 @@
     <string name="day_of_week_at_time">%1$s la %2$s</string>
     <string name="export_encrypted">Criptează seiful</string>
     <string name="export_help">Această acțiune va exporta seiful din spațiul de stocare al aplicaţiei. Selectează formatul în care dorești exportul:</string>
-    <string name="export_warning_unencrypted">Ești pe cale să exportezi o copie necriptată a seifului Aegis. <b>Acest lucru nu este recomandat</b>.</string>
+    <string name="export_warning_unencrypted">Ești pe cale să exportezi o copie necriptată a seifului Cue. <b>Acest lucru nu este recomandat</b>.</string>
     <string name="export_warning_password">Exporturile sunt criptate folosind o parolă separată configurată în setările de securitate.</string>
     <string name="understand_risk_accept">Înțeleg riscul</string>
-    <string name="export_format_aegis">Aegis (.JSON)</string>
     <string name="export_format_google_auth_uri">Fișier text (.TXT)</string>
     <string name="export_format_html">Pagină web (.HTML)</string>
     <string name="export_format_hint">Formatul în care se exportă</string>
@@ -163,9 +161,9 @@
         <item quantity="other">%d de grupuri selectate</item>
     </plurals>
     <string name="export_no_groups_selected">Nici un grup selectat pentru export</string>
-    <string name="export_html_title" comment="The title of an HTML export document">Exportul aplicației Aegis Authenticator</string>
+    <string name="export_html_title" comment="The title of an HTML export document">Exportul aplicației Cue Authenticator</string>
     <string name="choose_authentication_method">Securitate</string>
-    <string name="authentication_method_explanation">Aegis este o aplicație 2FA concentrată pe securitate. Token-urile sunt stocate într-un seif, care poate criptat cu o parolă aleasă. Dacă un atacator obține fișierul criptat al seifului, nu va putea accesa conținutul fără a cunoaște parola.\n\nAm selectat opțiunea pe care o credem cea mai potrivită pentru dispozitivul tău.</string>
+    <string name="authentication_method_explanation">Cue este o aplicație 2FA concentrată pe securitate. Token-urile sunt stocate într-un seif, care poate criptat cu o parolă aleasă. Dacă un atacator obține fișierul criptat al seifului, nu va putea accesa conținutul fără a cunoaște parola.\n\nAm selectat opțiunea pe care o credem cea mai potrivită pentru dispozitivul tău.</string>
     <string name="authentication_method_none">Fără</string>
     <string name="authentication_method_none_description">Nu este necesară nicio parolă pentru a debloca seiful și nu va fi criptată. <b>Această opțiune nu este recomandată</b>.</string>
     <string name="authentication_method_password">Parolă</string>
@@ -181,17 +179,17 @@
     <string name="set_number">Te rugăm să introduci un număr</string>
     <string name="set_password_confirm">Te rugăm să confirmi parola</string>
     <string name="invalid_password">Parola este incorectă</string>
-    <string name="invalidated_biometrics">A fost detectată o modificare a setărilor de securitate ale dispozitivului. Vă rugăm să mergeţi la \"Aegis -&gt; Setări -&gt; Securitate -&gt; Deblocare biometrică\" pentru a dezactiva şi reactiva deblocarea biometrică.</string>
+    <string name="invalidated_biometrics">A fost detectată o modificare a setărilor de securitate ale dispozitivului. Vă rugăm să mergeţi la \"Cue -&gt; Setări -&gt; Securitate -&gt; Deblocare biometrică\" pentru a dezactiva şi reactiva deblocarea biometrică.</string>
     <string name="password_reminder">Te rugăm să introduci parola. Uneori îți cerem să faci asta pentru a nu o uita.</string>
     <string name="password_reminder_dialog_title">Deblocare biometrică în mod implicit</string>
-    <string name="password_reminder_dialog_message">Vă recomandăm ocazional să introduci parola pentru a te asigura că nu ai uitat-o. După introducerea parolei o dată, Aegis va reveni la deblocarea biometrică până când este timpul pentru o altă reamintire a parolei.</string>
+    <string name="password_reminder_dialog_message">Vă recomandăm ocazional să introduci parola pentru a te asigura că nu ai uitat-o. După introducerea parolei o dată, Cue va reveni la deblocarea biometrică până când este timpul pentru o altă reamintire a parolei.</string>
     <string name="password_reminder_freq_never">Niciodată</string>
     <string name="password_reminder_freq_weekly">Săptămânal</string>
     <string name="password_reminder_freq_biweekly">La doua săptămâni</string>
     <string name="password_reminder_freq_monthly">Lunar</string>
     <string name="password_reminder_freq_quarterly">Trimestrial</string>
     <string name="enter_password_2fas_message">Se pare că această copie de rezervă 2FAS este criptată. Introduceți parola mai jos.</string>
-    <string name="enter_password_authy_message">Se pare că token-urile tale Authy sunt criptate. Te rugăm să închizi Aegis, să deschizi Authy și să deblochezi tokenurile cu parola ta. În schimb, Aegis poate încerca, de asemenea, să decripteze tokenurile Authy pentru tine, dacă introduci parola mai jos.</string>
+    <string name="enter_password_authy_message">Se pare că token-urile tale Authy sunt criptate. Te rugăm să închizi Cue, să deschizi Authy și să deblochezi tokenurile cu parola ta. În schimb, Cue poate încerca, de asemenea, să decripteze tokenurile Authy pentru tine, dacă introduci parola mai jos.</string>
     <string name="enter_password_aegis_title">Vă rugăm să introduceți parola curentă</string>
     <string name="period_hint">Timp (secunde)</string>
     <string name="algorithm_hint">Funcția Hash</string>
@@ -256,9 +254,8 @@
     <string name="saving_profile_error">Eroare la salvarea profilului</string>
     <string name="saving_assign_icons_error">Eroare la atribuirea pictogramelor</string>
     <string name="welcome">Bun venit</string>
-    <string name="app_description">Aegis este o aplicație 2FA gratuită, sigură și cu sursă deschisă</string>
     <string name="setup_completed">Configurare finalizată</string>
-    <string name="setup_completed_description">Aegis a fost configurat cu succes.</string>
+    <string name="setup_completed_description">Cue a fost configurat cu succes.</string>
     <string name="vault_not_found">Seiful nu a fost găsit, se pornește configurarea…</string>
     <string name="copied">Copiat</string>
     <string name="errors_copied">Erori copiate în clipboard</string>
@@ -270,8 +267,8 @@
     <string name="saving_error">A apărut o eroare în timpul salvării seifului</string>
     <string name="vault_init_error">A apărut o eroare în timpul inițializării seifului</string>
     <string name="vault_load_error">A apărut o eroare la încărcarea seifului din stocare</string>
-    <string name="biometric_decrypt_error">A apărut o eroare în timp ce se încerca decriptarea seifului cu autentificarea biometrică. Acest lucru se întâmplă de obicei numai dacă setările de securitate ale dispozitivului au fost modificate. Te rugăm să deblochezi seiful cu parola și să reconfigurezi autentificarea biometrică în setările Aegis.</string>
-    <string name="biometric_init_error">A apărut o eroare în timp ce se încerca pregătirea autentificării biometrice. Acest lucru se întâmplă de obicei numai dacă setările de securitate ale dispozitivului dvs. au fost modificate. Te rugăm să deblochezi seiful cu parola și să reconfigurezi autentificarea biometrică în setările Aegis.</string>
+    <string name="biometric_decrypt_error">A apărut o eroare în timp ce se încerca decriptarea seifului cu autentificarea biometrică. Acest lucru se întâmplă de obicei numai dacă setările de securitate ale dispozitivului au fost modificate. Te rugăm să deblochezi seiful cu parola și să reconfigurezi autentificarea biometrică în setările Cue.</string>
+    <string name="biometric_init_error">A apărut o eroare în timp ce se încerca pregătirea autentificării biometrice. Acest lucru se întâmplă de obicei numai dacă setările de securitate ale dispozitivului dvs. au fost modificate. Te rugăm să deblochezi seiful cu parola și să reconfigurezi autentificarea biometrică în setările Cue.</string>
     <string name="disable_encryption">Dezactivare criptare</string>
     <string name="disable_encryption_description">Ești sigur că dorești să dezactivezi criptarea? Aceasta va face ca seiful să fie stocat în text simplu. <b>Copiile de rezervă automate vor fi de asemenea dezactivate</b>.</string>
     <string name="enable_encryption_error">A apărut o eroare la activarea criptării</string>
@@ -306,7 +303,7 @@
     <string name="file_not_found">Eroare: Fișierul nu a fost găsit</string>
     <string name="reading_file_error">A apărut o eroare în timpul citirii fișierului</string>
     <string name="app_lookup_error">Eroare: Aplicația nu este instalată</string>
-    <string name="app_version_error">Versiunea %s care este instalată nu este suportată. Versiunile recente au început criptarea unora dintre fișierele din directorul de stocare internă, Aegis devenind incapabil de a accesa informațiile de care are nevoie pentru import. Este posibil ca încercarea de a importa să ducă la o eroare. Doriţi să continuaţi oricum?</string>
+    <string name="app_version_error">Versiunea %s care este instalată nu este suportată. Versiunile recente au început criptarea unora dintre fișierele din directorul de stocare internă, Cue devenind incapabil de a accesa informațiile de care are nevoie pentru import. Este posibil ca încercarea de a importa să ducă la o eroare. Doriţi să continuaţi oricum?</string>
     <string name="root_error">Eroare: nu se poate obține acces root</string>
     <plurals name="imported_entries_count">
         <item quantity="one">Importată %d intrare</item>
@@ -326,7 +323,7 @@
     <string name="encryption_enable_biometrics_error">A apărut o eroare în timp ce se încerca activarea deblocării biometrice. Unele dispozitive au implementări slabe ale autentificării biometrice şi este probabil ca aceasta să fie una dintre ele. Consideră comutarea la o configurație exclusiv parolă.</string>
     <string name="no_cameras_available">Nu sunt camere disponibile</string>
     <string name="read_qr_error">A apărut o eroare în timp ce se încerca citirea codului QR</string>
-    <string name="read_qr_error_phonefactor">Aegis nu este compatibil cu algoritmul 2FA brevetat al Microsoft. Te rugăm să selectezi \"Configurare aplicație fără notificări\" la configurarea 2FA în Office 365.</string>
+    <string name="read_qr_error_phonefactor">Cue nu este compatibil cu algoritmul 2FA brevetat al Microsoft. Te rugăm să selectezi \"Configurare aplicație fără notificări\" la configurarea 2FA în Office 365.</string>
     <string name="partial_google_auth_import">S-a detectat exportul incomplet a datelor din autentificatorul Google</string>
     <string name="partial_google_auth_import_warning">Unele coduri QR lipsesc din fișerul importat. Următoarele coduri nu au fost găsite:\n\n<b>%s</b>\n\nPuteţi continua importul acestui fișier parţial, dar vă recomandăm să încercaţi din nou cu toate codurile QR pentru a nu risca pierderea niciunui token.</string>
     <string name="missing_qr_code_descriptor">• codul QR %d</string>
@@ -403,9 +400,9 @@
     <string name="unknown_issuer">Emitent necunoscut</string>
     <string name="unknown_account_name">Nume de cont necunoscut</string>
     <plurals name="import_error_dialog">
-        <item quantity="one">Aegis nu a putut importa tokenul %d. Acest token va fi omis. Apasă pe \"detalii\" pentru a vedea mai multe informații despre erori.</item>
-        <item quantity="few">Aegis nu a putut importa tokenurile %d. Aceste tokenuri vor fi omise. Apasă pe \'detalii\' pentru a vedea mai multe informații despre erori.</item>
-        <item quantity="other">Aegis nu a putut importa tokenurile %d. Aceste tokenuri vor fi omise. Apasă pe \'detalii\' pentru a vedea mai multe informații despre erori.</item>
+        <item quantity="one">Cue nu a putut importa tokenul %d. Acest token va fi omis. Apasă pe \"detalii\" pentru a vedea mai multe informații despre erori.</item>
+        <item quantity="few">Cue nu a putut importa tokenurile %d. Aceste tokenuri vor fi omise. Apasă pe \'detalii\' pentru a vedea mai multe informații despre erori.</item>
+        <item quantity="other">Cue nu a putut importa tokenurile %d. Aceste tokenuri vor fi omise. Apasă pe \'detalii\' pentru a vedea mai multe informații despre erori.</item>
     </plurals>
     <string name="unable_to_process_deeplink">Nu se poate procesa link-ul</string>
     <string name="unable_to_read_qrcode_file">Nu se poate citi și procesa codul QR din fișierul: %s.</string>
@@ -419,16 +416,15 @@
     <string name="toggle_checkboxes">Comută casetele de selectare</string>
     <string name="search">Căutare</string>
     <string name="channel_name_lock_status">Stare blocare</string>
-    <string name="channel_description_lock_status">Aegis poate crea o notificare persistentă pentru a te notifica când seiful este blocat</string>
+    <string name="channel_description_lock_status">Cue poate crea o notificare persistentă pentru a te notifica când seiful este blocat</string>
     <string name="vault_unlocked_state">Seiful este deblocat. Atinge aici pentru a bloca.</string>
     <string name="version">Versiune</string>
     <string name="changelog">Istoric modificări</string>
     <string name="whats_new">Ce este nou</string>
     <string name="github_description">Cod sursă, probleme și informații</string>
     <string name="license">Licență</string>
-    <string name="license_description">Aegis Authenticator este licențiat sub licență GPLv3</string>
     <string name="third_party_licenses">Licențe terțe</string>
-    <string name="third_party_licenses_description">Licenţele bibliotecilor terţe pe care Aegis le utilizează</string>
+    <string name="third_party_licenses_description">Licenţele bibliotecilor terţe pe care Cue le utilizează</string>
     <string name="country_netherlands">Olanda</string>
     <string name="email_us">Scrie un e-mail</string>
     <string name="visit_website">Vizitează site-ul nostru web</string>
@@ -438,7 +434,7 @@
     <string name="webview_error">Acest dispozitiv nu acceptă vizualizare web, care este necesară pentru a vizualiza jurnalul modificărilor și licența. Îi lipsește o componentă de sistem.</string>
     <string name="email">Email</string>
     <string name="time_sync_warning_title">Sincronizare automată a timpului</string>
-    <string name="time_sync_warning_message">Aegis-ul se bazează pe un sistem de timp pentru a fi sincronizat pentru a genera codurile corecte. O abatere de doar câteva secunde ar putea duce la coduri incorecte. Se pare că dispozitivul tău nu este configurat pentru a sincroniza automat timpul. Dorești să faci acest lucru acum?</string>
+    <string name="time_sync_warning_message">Cue-ul se bazează pe un sistem de timp pentru a fi sincronizat pentru a genera codurile corecte. O abatere de doar câteva secunde ar putea duce la coduri incorecte. Se pare că dispozitivul tău nu este configurat pentru a sincroniza automat timpul. Dorești să faci acest lucru acum?</string>
     <string name="time_sync_warning_disable">Nu mă mai avertiza. Ştiu ce fac.</string>
     <string name="google_qr_export_unrelated">Cod QR negăsit găsit. Încearcă să repornești scanerul.</string>
     <string name="google_qr_export_unexpected">Așteptat QR code #%1$d, dar scanat #%2$d totuși</string>
@@ -446,7 +442,7 @@
     <string name="backup_error_dialog_details" comment="The first parameter is the type of backup (e.g. built-in or Android backup). The second parameter is an elapsed time in the style of 'x seconds/minutes/days ago'.">
 O tentativă recentă de backup de vault utilizând %1$s a eșuată deoarece un erori a întâmplat. Backup-ul a încercat %2$s. Va rog verificați setările backup-ului tale pentru a asigura că backup-urile pot completează cu succes.    </string>
     <string name="backup_permission_error_dialog_details" comment="The first parameter is the type of backup (e.g. built-in or Android backup). The second parameter is an elapsed time in the style of 'x seconds/minutes/days ago'.">
-O tentativă recentă de backup de vault utilizând %1$s a eșuată deoarece Aegis nu are permisiunea a scrie la destinația backup-ului. Backup-ul a încercat %2$s. Acest erori poate întâmplă dacă aveți recent restaurat Aegis dintr-un backup. Vă rog reconfigurați destinația backup-ului.    </string>
+O tentativă recentă de backup de vault utilizând %1$s a eșuată deoarece Cue nu are permisiunea a scrie la destinația backup-ului. Backup-ul a încercat %2$s. Acest erori poate întâmplă dacă aveți recent restaurat Cue dintr-un backup. Vă rog reconfigurați destinația backup-ului.    </string>
     <string name="backup_system_builtin">Copiile de siguranță încorporate în aplicație</string>
     <string name="backup_system_android">Sistemul de backup în cloud Android</string>
     <string name="backup_reminder_bar_message_with_latest" comment="The parameter is an elapsed time in the style of 'x seconds/minutes/days ago'">
@@ -484,7 +480,7 @@ O tentativă recentă de backup de vault utilizând %1$s a eșuată deoarece Aeg
     <string name="unable_to_copy_uri_to_clipboard">Nu se poate copia în clipboard</string>
     <string name="uri_copied_to_clipboard">URI copiat în clipboard</string>
     <string name="transfer_entry_description">Scanează acest cod QR cu aplicația de autentificare pe care dorești să o transferi</string>
-    <string name="google_auth_compatible_transfer_description">Scanați aceste coduri QR cu Aegis sau Google Authenticator.\n\nDatorită limitărilor aplicației Google Authenticator, numai token-urile TOTP &amp; HOTP care folosesc SHA1 și produc coduri de 6 cifre sunt incluse</string>
+    <string name="google_auth_compatible_transfer_description">Scanați aceste coduri QR cu Cue sau Google Authenticator.\n\nDatorită limitărilor aplicației Google Authenticator, numai token-urile TOTP &amp; HOTP care folosesc SHA1 și produc coduri de 6 cifre sunt incluse</string>
     <string name="password_strength_very_weak">Foarte slabă</string>
     <string name="password_strength_weak">Slabă</string>
     <string name="password_strength_fair">Acceptabilă</string>
@@ -505,10 +501,9 @@ O tentativă recentă de backup de vault utilizând %1$s a eșuată deoarece Aeg
     <string name="dialog_wipe_entries_title">Șterge intrările</string>
     <string name="dialog_wipe_entries_message">Seiful tău conține deja intrări. Dorești să ştergi aceste intrări înainte de a importa acest fişier?\n\n<b>Făcând acest lucru, vei pierde permanent accesul la intrările existente din seif.</b></string>
     <string name="dialog_wipe_entries_checkbox">Şterge conţinutul seifului</string>
-    <string name="panic_trigger_ignore_toast">Aegis a primit un declanșator de panică, dar setarea este dezactivată, se ignoră</string>
+    <string name="panic_trigger_ignore_toast">Cue a primit un declanșator de panică, dar setarea este dezactivată, se ignoră</string>
     <string name="pref_panic_trigger_title">Șterge seiful la declanșatorul de panică</string>
     <string name="pref_panic_trigger_summary">Șterge seiful atunci când un declanșator de panică este primit de la Ripple</string>
-    <string name="import_vault">Importă seiful Aegis</string>
     <string name="import_vault_hint">Doriți să importați dintr-o altă aplicație 2FA? Finalizați configurarea mai întâi și apoi mergeți la meniul de setări.</string>
     <plurals name="import_duplicate_toast">
         <item quantity="one">Am detectat %d potențial duplicat ce a rămas nebifat. Te rugăm să revizuiești lista intrărilor.</item>
@@ -527,7 +522,7 @@ O tentativă recentă de backup de vault utilizând %1$s a eșuată deoarece Aeg
     <string name="importer_help_freeotp">FreeOTP 2: Furnizează o copie de rezervă.\nFreeOTP 1.x: Furnizează o copie a <b>/data/org.fedorahosted.freeotp/shared_prefs/tokens.xml</b>, localizată în directorul FreeOTP din stocarea internă.</string>
     <string name="importer_help_freeotp_plus">Furnizează un fișier de export FreeOTP+.</string>
     <string name="importer_warning_title_freeotp2">Compatibilitate FreeOTP 2</string>
-    <string name="importer_warning_message_freeotp2">În FreeOTP 2 există o serie de probleme care pot duce la copii de rezervă corupte. Aegis va încerca să salveze cât mai multe intrări, dar este posibil ca unele sau chiar toate să nu poată fi importe.</string>
+    <string name="importer_warning_message_freeotp2">În FreeOTP 2 există o serie de probleme care pot duce la copii de rezervă corupte. Cue va încerca să salveze cât mai multe intrări, dar este posibil ca unele sau chiar toate să nu poată fi importe.</string>
     <string name="importer_help_google_authenticator"><b>Doar fișierele de la Google Authenticator v5.10 și înainte sunt acceptate</b>.\n\nFurnizează o copie a <b>/data/data/com. oogle.android.apps.authenticator2/databases/databases</b>, situat în directorul de stocare internă al Google Authenticator.</string>
     <string name="importer_help_microsoft_authenticator">Furnizează o copie a <b>/data/data/com.azure.authenticator/databases/PhoneFactor</b>, localizată în directorul de stocare internă al Microsoft Authenticator.</string>
     <string name="importer_help_plain_text">Furnizează un fișier text simplu cu un URL de autentificare Google pe fiecare linie.</string>
@@ -537,7 +532,7 @@ O tentativă recentă de backup de vault utilizând %1$s a eșuată deoarece Aeg
     <string name="import_assign_icons_dialog_title">Atribuie pictograme</string>
     <string name="import_assign_icons_dialog_text">Dorești să atribui pictograme intrărilor importate?</string>
     <string name="importer_encrypted_exception_google_authenticator">Informațiile criptate au fost omise: %s</string>
-    <string name="importer_help_direct">Importă intrările direct din %s. Aceasta necesită ca aplicația să fie instalată pe acest dispozitiv și ca accesul root să fie acordat Aegis.</string>
+    <string name="importer_help_direct">Importă intrările direct din %s. Aceasta necesită ca aplicația să fie instalată pe acest dispozitiv și ca accesul root să fie acordat Cue.</string>
     <string name="groups">Grupuri</string>
     <string name="pref_focus_search">Focalizare pe căsuţa de căutare la pornirea aplicației</string>
     <string name="pref_focus_search_summary">Focalizați căutarea imediat după deschiderea aplicației.</string>

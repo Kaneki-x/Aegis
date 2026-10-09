@@ -28,7 +28,6 @@
     <string name="pref_section_security_title">安全</string>
     <string name="pref_section_security_summary">配置加密、生物识别解锁、自动锁定和其他安全设置。</string>
     <string name="pref_section_import_export_title">导入 &amp; 导出</string>
-    <string name="pref_section_import_export_summary">导入 Aegis 或其他身份验证程序的备份。创建您的 Aegis 数据库的手动导出。</string>
     <string name="pref_section_audit_log_title">审计日志</string>
     <string name="pref_section_audit_log_summary">查找应用内发生的所有报告的重要事件列表。</string>
     <string name="pref_section_backups_title">备份</string>
@@ -56,14 +55,14 @@
     <string name="pref_import_file_title">从文件导入</string>
     <string name="pref_import_file_summary">从文件导入令牌</string>
     <string name="pref_android_backups_title">Android 云备份</string>
-    <string name="pref_android_backups_summary">允许 Android 的云备份系统在其备份中包含 Aegis 的数据库。这只支持加密的数据库。</string>
+    <string name="pref_android_backups_summary">允许 Android 的云备份系统在其备份中包含 Cue 的数据库。这只支持加密的数据库。</string>
     <string name="pref_android_backups_hint"><i>无论上面如何设置，将始终允许设备到设备的备份</i></string>
     <string name="pref_backups_title">自动备份数据库</string>
     <string name="pref_backups_summary">在外部存储上创建数据库的备份。仅加密的数据库支持此功能。</string>
     <string name="pref_backups_reminder_title">提醒备份</string>
     <string name="pref_backups_reminder_summary">如果没有备份最新的变更，提醒您备份自己的数据库。</string>
     <string name="pref_backups_reminder_dialog_title">禁用提醒备份</string>
-    <string name="pref_backups_reminder_dialog_summary">禁用后 Aegis 不会再提醒您备份变更。这有可能促使您遗失令牌。确定禁用吗？</string>
+    <string name="pref_backups_reminder_dialog_summary">禁用后 Cue 不会再提醒您备份变更。这有可能促使您遗失令牌。确定禁用吗？</string>
     <string name="pref_backups_versioning_strategy_title">备份策略</string>
     <string name="pref_backups_versioning_strategy_keep_x_versions">保留版本数</string>
     <string name="pref_backups_versioning_strategy_single_backup">单个备份</string>
@@ -101,7 +100,7 @@
     <string name="pref_auto_lock_title">自动锁定</string>
     <string name="pref_auto_lock_summary">%s 时</string>
     <string name="pref_auto_lock_summary_disabled">已禁用</string>
-    <string name="pref_auto_lock_prompt">何时自动锁定 Aegis</string>
+    <string name="pref_auto_lock_prompt">何时自动锁定 Cue</string>
     <string name="pref_auto_lock_type_back_button">返回按钮已按下</string>
     <string name="pref_auto_lock_type_minimize">应用被最小化</string>
     <string name="pref_auto_lock_type_device_lock">设备已锁定</string>
@@ -143,11 +142,10 @@
     <string name="today_at_time">今天 %1$s</string>
     <string name="day_of_week_at_time">%2$s 的 %1$s</string>
     <string name="export_encrypted">加密数据库</string>
-    <string name="export_help">此操作将从 Aegis 的内部存储中导出数据库。选择您想要的导出格式：</string>
-    <string name="export_warning_unencrypted">您将导出一个未加密的 Aegis 数据库副本。<b>不建议这么做</b></string>
+    <string name="export_help">此操作将从 Cue 的内部存储中导出数据库。选择您想要的导出格式：</string>
+    <string name="export_warning_unencrypted">您将导出一个未加密的 Cue 数据库副本。<b>不建议这么做</b></string>
     <string name="export_warning_password">导出使用在安全设置中配置的单独密码进行加密。</string>
     <string name="understand_risk_accept">我了解风险</string>
-    <string name="export_format_aegis">Aegis (.JSON)</string>
     <string name="export_format_google_auth_uri">文本文件 (.TXT)</string>
     <string name="export_format_html">网页 (.HTML)</string>
     <string name="export_format_hint">导出格式</string>
@@ -157,9 +155,9 @@
         <item quantity="other">已选择 %d 个群组</item>
     </plurals>
     <string name="export_no_groups_selected">没有选择要导出的组</string>
-    <string name="export_html_title" comment="The title of an HTML export document">Aegis 身份验证器导出</string>
+    <string name="export_html_title" comment="The title of an HTML export document">Cue 身份验证器导出</string>
     <string name="choose_authentication_method">安全</string>
-    <string name="authentication_method_explanation">Aegis 是一款专注于安全性的双重认证（2FA）应用。令牌存储在数据库中，可以选择使用您选择的密码进行加密。如果攻击者获得了加密的数据库文件，他们将无法在不知道密码的情况下访问内容。\n\n我们已预先选择了我们认为最适合您的设备的选项。</string>
+    <string name="authentication_method_explanation">Cue 是一款专注于安全性的双重认证（2FA）应用。令牌存储在数据库中，可以选择使用您选择的密码进行加密。如果攻击者获得了加密的数据库文件，他们将无法在不知道密码的情况下访问内容。\n\n我们已预先选择了我们认为最适合您的设备的选项。</string>
     <string name="authentication_method_none">无</string>
     <string name="authentication_method_none_description">您无需密码即可解锁数据库，并且不会对其进行加密。<b>不建议使用此选项</b>。</string>
     <string name="authentication_method_password">密码</string>
@@ -175,10 +173,10 @@
     <string name="set_number">请选择时长</string>
     <string name="set_password_confirm">请确认密码</string>
     <string name="invalid_password">密码错误</string>
-    <string name="invalidated_biometrics">检测到你设备安全设置的一处更改。请转到 “Aegis -&gt; 设置 -&gt; 安全性 -&gt; 生物解锁” 来禁用并重新启用生物解锁。</string>
+    <string name="invalidated_biometrics">检测到你设备安全设置的一处更改。请转到 “Cue -&gt; 设置 -&gt; 安全性 -&gt; 生物解锁” 来禁用并重新启用生物解锁。</string>
     <string name="password_reminder">您已有一段时间没有输入密码了，还记得它吗？</string>
     <string name="password_reminder_dialog_title">默认使用生物识别解锁</string>
-    <string name="password_reminder_dialog_message">我们会偶尔提示您输入密码，以免您忘记它而被锁在密码库之外。输入一次密码后，Aegis 将回到默认使用生物识别解锁，直到下次提醒周期。</string>
+    <string name="password_reminder_dialog_message">我们会偶尔提示您输入密码，以免您忘记它而被锁在密码库之外。输入一次密码后，Cue 将回到默认使用生物识别解锁，直到下次提醒周期。</string>
     <string name="password_reminder_freq_never">从不</string>
     <string name="password_reminder_freq_weekly">每周</string>
     <string name="password_reminder_freq_biweekly">每两周</string>
@@ -186,7 +184,7 @@
     <string name="password_reminder_freq_quarterly">每季度</string>
     <string name="enter_password_proton_message">此 Proton Authenticator 备份似乎已加密。请在下方输入密码。</string>
     <string name="enter_password_2fas_message">看起来此 2FAS 备份已加密。请在下方输入密码。</string>
-    <string name="enter_password_authy_message">您的 Authy 令牌似乎已加密。请关闭 Aegis，打开 Authy，然后使用您的密码解锁令牌。另外，如果您在下面输入密码，Aegis 也可以尝试为您解密 Authy 令牌。</string>
+    <string name="enter_password_authy_message">您的 Authy 令牌似乎已加密。请关闭 Cue，打开 Authy，然后使用您的密码解锁令牌。另外，如果您在下面输入密码，Cue 也可以尝试为您解密 Authy 令牌。</string>
     <string name="enter_password_aegis_title">请输入导入密码</string>
     <string name="period_hint">时间间隔 (秒)</string>
     <string name="algorithm_hint">哈希函数</string>
@@ -247,9 +245,8 @@
     <string name="saving_profile_error">保存配置文件时出错</string>
     <string name="saving_assign_icons_error">分配图标时出错</string>
     <string name="welcome">欢迎使用</string>
-    <string name="app_description">Aegis 是一款免费，安全和开源的双重认证（2FA）应用</string>
     <string name="setup_completed">设置完成</string>
-    <string name="setup_completed_description">Aegis 设置完成，可以开始使用了。</string>
+    <string name="setup_completed_description">Cue 设置完成，可以开始使用了。</string>
     <string name="vault_not_found">未找到数据库，开始设置…</string>
     <string name="copied">已复制</string>
     <string name="errors_copied">错误已复制到剪贴板</string>
@@ -261,8 +258,8 @@
     <string name="saving_error">试图保存数据库时出错</string>
     <string name="vault_init_error">尝试初始化数据库时发生错误</string>
     <string name="vault_load_error">尝试从存储中加载数据库时发生错误</string>
-    <string name="biometric_decrypt_error">尝试使用生物特征认证对数据库进行解密时发生错误。通常只有在更改设备的安全设置后才会发生这种情况。请使用您的密码解锁数据库，然后在 Aegis 的设置中重新配置生物特征认证。</string>
-    <string name="biometric_init_error">尝试准备生物特征认证时发生错误。通常只有在更改设备的安全设置后才会发生这种情况。请使用您的密码解锁数据库，然后在 Aegis 的设置中重新配置生物特征认证。</string>
+    <string name="biometric_decrypt_error">尝试使用生物特征认证对数据库进行解密时发生错误。通常只有在更改设备的安全设置后才会发生这种情况。请使用您的密码解锁数据库，然后在 Cue 的设置中重新配置生物特征认证。</string>
+    <string name="biometric_init_error">尝试准备生物特征认证时发生错误。通常只有在更改设备的安全设置后才会发生这种情况。请使用您的密码解锁数据库，然后在 Cue 的设置中重新配置生物特征认证。</string>
     <string name="disable_encryption">禁用加密</string>
     <string name="disable_encryption_description">你确定要禁用加密吗？这将导致数据库存储在纯文本中。 <b>自动备份也将被禁用</b>。</string>
     <string name="enable_encryption_error">启用加密时出错</string>
@@ -295,7 +292,7 @@
     <string name="file_not_found">错误：文件未找到</string>
     <string name="reading_file_error">试图读取文件时出错</string>
     <string name="app_lookup_error">错误：应用未安装</string>
-    <string name="app_version_error">不支持已安装的 %s 版本。最近的版本已开始加密内部存储目录中的部分文件，因此 Aegis 无法访问导入所需的信息。尝试导入可能会出错，仍要继续吗？</string>
+    <string name="app_version_error">不支持已安装的 %s 版本。最近的版本已开始加密内部存储目录中的部分文件，因此 Cue 无法访问导入所需的信息。尝试导入可能会出错，仍要继续吗？</string>
     <string name="root_error">错误：无法获取 root 权限</string>
     <plurals name="imported_entries_count">
         <item quantity="other">已导入 %d 个条目</item>
@@ -311,7 +308,7 @@
     <string name="encryption_enable_biometrics_error">尝试启用生物识别解锁时发生错误。某些设备的生物识别认证实现不佳，您的很可能就是其中之一。考虑改用仅密码配置。</string>
     <string name="no_cameras_available">无可用的摄像头</string>
     <string name="read_qr_error">试图读取二维码时出错</string>
-    <string name="read_qr_error_phonefactor">Aegis 不兼容 Microsoft 专有的 2FA 算法。请确保在设置 Office 365 的 2FA 时选择“在无通知情况下安装应用程序”。</string>
+    <string name="read_qr_error_phonefactor">Cue 不兼容 Microsoft 专有的 2FA 算法。请确保在设置 Office 365 的 2FA 时选择“在无通知情况下安装应用程序”。</string>
     <string name="partial_google_auth_import">检测到不完整的 Google 身份验证器导出</string>
     <string name="partial_google_auth_import_warning">您的导入缺少一些  QR 码。 找不到下列代码：\n\n<b>%s</b>\n\n您仍可以继续导入已有部分，但建议您重试所有 QR 码，以避免出现丢失令牌的风险。</string>
     <string name="missing_qr_code_descriptor">• QR 码 %d</string>
@@ -396,7 +393,7 @@
     <string name="unknown_issuer">未知的服务商</string>
     <string name="unknown_account_name">未知的帐户名称</string>
     <plurals name="import_error_dialog">
-        <item quantity="other">Aegis 无法导入 %d 个令牌。此类令牌将被忽略。点击 “详细信息” 查看关于错误的更多信息。</item>
+        <item quantity="other">Cue 无法导入 %d 个令牌。此类令牌将被忽略。点击 “详细信息” 查看关于错误的更多信息。</item>
     </plurals>
     <string name="unable_to_process_deeplink">无法处理深层链接</string>
     <string name="unable_to_read_qrcode_file">无法从文件读取和处理二维码: %s。</string>
@@ -410,16 +407,15 @@
     <string name="toggle_checkboxes">切换复选框</string>
     <string name="search">搜索</string>
     <string name="channel_name_lock_status">锁定状态</string>
-    <string name="channel_description_lock_status">当数据库处于锁定状态时，Aegis 可以创建一个持久的通知来提示您</string>
+    <string name="channel_description_lock_status">当数据库处于锁定状态时，Cue 可以创建一个持久的通知来提示您</string>
     <string name="vault_unlocked_state">数据库已解锁，点击此处锁定。</string>
     <string name="version">版本</string>
     <string name="changelog">更新日志</string>
     <string name="whats_new">新增功能</string>
     <string name="github_description">源代码，问题和信息</string>
     <string name="license">代码许可</string>
-    <string name="license_description">Aegis 身份验证器在 GPLv3 下授权</string>
     <string name="third_party_licenses">第三方许可</string>
-    <string name="third_party_licenses_description">Aegis 用到的第三方库的许可</string>
+    <string name="third_party_licenses_description">Cue 用到的第三方库的许可</string>
     <string name="country_netherlands">荷兰</string>
     <string name="email_us">发送电子邮件</string>
     <string name="visit_website">访问我们的网站</string>
@@ -429,7 +425,7 @@
     <string name="webview_error">此设备不支持 webview，这是查看更新日志和许可证所必需的。你的系统缺少这一组件。</string>
     <string name="email">电子邮件</string>
     <string name="time_sync_warning_title">自动同步时间</string>
-    <string name="time_sync_warning_message">Aegis 依靠系统时间来同步生成正确的验证码。仅几秒钟的偏差可能会导致验证码错误。您的设备似乎未配置为自动同步时间。您现在要设置自动同步时间吗？</string>
+    <string name="time_sync_warning_message">Cue 依靠系统时间来同步生成正确的验证码。仅几秒钟的偏差可能会导致验证码错误。您的设备似乎未配置为自动同步时间。您现在要设置自动同步时间吗？</string>
     <string name="time_sync_warning_disable">不要再次提醒。我知道我在做什么。</string>
     <string name="google_qr_export_unrelated">找到不相关的二维码。请尝试重新扫描。</string>
     <plurals name="google_qr_export_scanned">
@@ -441,9 +437,9 @@
         最近使用%1$s 备份密码库的尝试失败了，因为发生了错误。 备份尝试发生在 %2$s 前。请检查你的备份设备，确保备份可以成功完成。
     </string>
     <string name="backup_permission_error_dialog_details" comment="The first parameter is the type of backup (e.g. built-in or Android backup). The second parameter is an elapsed time in the style of 'x seconds/minutes/days ago'.">
-        最近使用 %1$s 备份密码库的尝试失败了，因为 Aegis 没有写入备份目的地的权限。备份尝试发生在%2$s前。发生错误的原因可能是你 移动或重命名了备份目的地或者你近期从备份恢复了 Aegis。请重新配置备份目的地。
+        最近使用 %1$s 备份密码库的尝试失败了，因为 Cue 没有写入备份目的地的权限。备份尝试发生在%2$s前。发生错误的原因可能是你 移动或重命名了备份目的地或者你近期从备份恢复了 Cue。请重新配置备份目的地。
     </string>
-    <string name="backup_system_builtin">Aegis 内置的自动备份</string>
+    <string name="backup_system_builtin">Cue 内置的自动备份</string>
     <string name="backup_system_android">Android 的云备份系统</string>
     <string name="backup_reminder_bar_message_with_latest" comment="The parameter is an elapsed time in the style of 'x seconds/minutes/days ago'">
         最新备份已过时 (%s)
@@ -478,7 +474,7 @@
     <string name="uri_copied_to_clipboard">URI 已复制到剪贴板</string>
     <string name="transfer_entry_description">使用您想将此条目迁移到的其它身份验证器应用扫描此二维码</string>
     <string name="transfer_entry_brightness">轻按二维码切换全屏亮度</string>
-    <string name="google_auth_compatible_transfer_description">使用 Aegis 或 Google 身份验证器扫描这些二维码。\n\n由于 Google 身份验证器应用的限制， 只包含使用 SHA1 并生成 6 位数字代码的 TOTP &amp; HOTP 令牌</string>
+    <string name="google_auth_compatible_transfer_description">使用 Cue 或 Google 身份验证器扫描这些二维码。\n\n由于 Google 身份验证器应用的限制， 只包含使用 SHA1 并生成 6 位数字代码的 TOTP &amp; HOTP 令牌</string>
     <string name="password_strength_very_weak">很弱</string>
     <string name="password_strength_weak">弱</string>
     <string name="password_strength_fair">中等</string>
@@ -501,10 +497,9 @@
     <string name="dialog_wipe_entries_checkbox">擦除数据库内容</string>
     <string name="import_from_clipboard_title">从剪贴板导入</string>
     <string name="import_from_clipboard_message">我们在您的剪贴板上找到了一个有效的 otpauth uri。\n\n<b>名称</b>: %1$s\n<b>发行者</b>: %2$s\n\n你想要使用它预填充此条目吗？</string>
-    <string name="panic_trigger_ignore_toast">Aegis 收到紧急触发信号，但您未启用相关设置，忽略中</string>
+    <string name="panic_trigger_ignore_toast">Cue 收到紧急触发信号，但您未启用相关设置，忽略中</string>
     <string name="pref_panic_trigger_title">收到紧急触发信号时删除数据库</string>
     <string name="pref_panic_trigger_summary">从 Ripple 收到紧急触发信号时删除数据库</string>
-    <string name="import_vault">导入 Aegis 数据库</string>
     <string name="import_vault_hint">想要从其他 2FA 应用程序导入吗？请先完成设置，然后转到设置菜单。</string>
     <plurals name="import_duplicate_toast">
         <item quantity="other">未选中 %d 个潜在重复项。请检视条目列表。</item>
@@ -521,7 +516,7 @@
     <string name="importer_help_freeotp">FreeOTP 2: 提供备份文件.\nFreeOTP 1.x: 提供<b>/data/data/org.fedorahosted.freeotp/shared_prefs/tokens.xml</b>的副本，位于 FreeOTP 的内部存储目录。</string>
     <string name="importer_help_freeotp_plus">提供 FreeOTP+ 导出文件。</string>
     <string name="importer_warning_title_freeotp2">FreeOTP 2 兼容性</string>
-    <string name="importer_warning_message_freeotp2">FreeOTP 2 有许多问题可能导致备份损坏。 Aegis 将试着挽救尽可能多的条目，但有些条目甚至全部都未能导入。</string>
+    <string name="importer_warning_message_freeotp2">FreeOTP 2 有许多问题可能导致备份损坏。 Cue 将试着挽救尽可能多的条目，但有些条目甚至全部都未能导入。</string>
     <string name="importer_help_google_authenticator"><b>仅支持来自 Google Authenticator v5.10 及先前版本的数据库</b>。\n\n提供 <b>/data/data/com.google.android.apps.authenticator2/databases/databases</b> 的副本，文件位于 Google Authenticator 的内部存储目录。</string>
     <string name="importer_help_microsoft_authenticator">提供 <b>/data/data/com.azure.authenticator/databases/PhoneFactor</b> 的一个副本，位于 Microsoft Authenticator 的内部存储目录。</string>
     <string name="importer_help_plain_text">提供一个每一行都有一个 Google Authenticator URI 的纯文本文件。</string>
@@ -533,7 +528,7 @@
     <string name="import_assign_icons_dialog_title">分配图标</string>
     <string name="import_assign_icons_dialog_text">您想给导入的条目分配图标吗？</string>
     <string name="importer_encrypted_exception_google_authenticator">加密条目已跳过：%s</string>
-    <string name="importer_help_direct">直接导入来自 %s 的条目。这要求将应用程序安装在此设备上，并授予 Aegis root 权限。</string>
+    <string name="importer_help_direct">直接导入来自 %s 的条目。这要求将应用程序安装在此设备上，并授予 Cue root 权限。</string>
     <string name="groups">分组</string>
     <string name="pref_focus_search">应用启动后聚焦搜索</string>
     <string name="pref_focus_search_summary">打开应用程序后立即聚焦搜索</string>
@@ -566,30 +561,30 @@
     <plurals name="dropdown_checkboxes_default_count">
         <item quantity="other">已选择 %d 个项目</item>
     </plurals>
-    <string name="ime_label">Aegis 验证码</string>
+    <string name="ime_label">Cue 验证码</string>
     <string name="ime_hint_suggested_for">为 %s 推荐</string>
     <string name="ime_vault_locked">数据库已锁定</string>
-    <string name="ime_setup_required">使用键盘前请先设置 Aegis</string>
-    <string name="ime_open_app">打开 Aegis</string>
+    <string name="ime_setup_required">使用键盘前请先设置 Cue</string>
+    <string name="ime_open_app">打开 Cue</string>
     <string name="ime_switch_keyboard">切换键盘</string>
     <string name="ime_no_entries">数据库中还没有条目</string>
     <string name="ime_no_matches">没有符合此筛选的条目</string>
     <string name="ime_filter_favorites">收藏</string>
     <string name="ime_own_app_hint">请切换到其他键盘在此输入</string>
-    <string name="widget_label">Aegis 验证码</string>
+    <string name="widget_label">Cue 验证码</string>
     <string name="widget_description">显示收藏或所选条目的验证码，点击后才会显示。</string>
     <string name="widget_locked">数据库已锁定，点击解锁。</string>
     <string name="widget_no_entries">没有可显示的条目，点击选择条目。</string>
-    <string name="widget_setup_required">请先打开 Aegis 设置数据库。</string>
+    <string name="widget_setup_required">请先打开 Cue 设置数据库。</string>
     <string name="widget_configure_title">选择条目</string>
     <string name="widget_configure_favorites_title">显示收藏</string>
     <string name="widget_configure_favorites_summary">小组件会自动跟随你的收藏</string>
     <string name="widget_configure_select_hint">选择要在小组件中显示的条目</string>
     <string name="pref_section_integrations_title">键盘与小组件</string>
-    <string name="pref_section_integrations_summary">用 Aegis 键盘直接填入验证码，并在桌面上查看验证码。</string>
+    <string name="pref_section_integrations_summary">用 Cue 键盘直接填入验证码，并在桌面上查看验证码。</string>
     <string name="pref_cat_ime">键盘</string>
     <string name="pref_cat_widget">小组件</string>
-    <string name="pref_ime_enable_title">启用 Aegis 键盘</string>
+    <string name="pref_ime_enable_title">启用 Cue 键盘</string>
     <string name="pref_ime_enable_summary_enabled">已启用。需要输入验证码时，从键盘的切换菜单中切到它即可。</string>
     <string name="pref_ime_enable_summary_disabled">未启用。点击前往系统键盘设置启用。</string>
     <string name="pref_ime_switch_back_title">填入后切回原键盘</string>

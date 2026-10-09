@@ -28,7 +28,6 @@
     <string name="pref_section_security_title">الحماية</string>
     <string name="pref_section_security_summary">اضبط التعمية، وفك القفل المقاييس الحيوية، والقفل التلقائي وإعدادات الأمان الأخرى.</string>
     <string name="pref_section_import_export_title">الاستيراد والتصدير</string>
-    <string name="pref_section_import_export_summary">استورد النسخ الاحتياطية من Aegis أو من تطبيقات استيثاق أخرى. أنشئ تصدير يدوي لمخزن Aegis.</string>
     <string name="pref_section_audit_log_title">سجل المراجعة</string>
     <string name="pref_section_audit_log_summary">العثور على قائمة بجميع الأحداث الهامة المبلغ عنها التي حدثت داخل التطبيق.</string>
     <string name="pref_section_backups_title">نُسخ احتياطية</string>
@@ -56,14 +55,14 @@
     <string name="pref_import_file_title">استورد من ملف</string>
     <string name="pref_import_file_summary">استورد الرموز من ملف</string>
     <string name="pref_android_backups_title">النُسخ الاحتياطية السحابية للأندرويد</string>
-    <string name="pref_android_backups_summary">اسمح لنظام النسخ الاحتياطي لأندرويد بإدراج خزانة Aegis في النُسخ الاحتياطية الخاصة به. هذا مدعوم فقط للمخازن المُعمَّاة.</string>
+    <string name="pref_android_backups_summary">اسمح لنظام النسخ الاحتياطي لأندرويد بإدراج خزانة Cue في النُسخ الاحتياطية الخاصة به. هذا مدعوم فقط للمخازن المُعمَّاة.</string>
     <string name="pref_android_backups_hint"><i>النسخ الاحتياطي من جهاز لجهاز (D2D) مسموح به دائمًا، بغض النظر عن الخَيار أعلاه</i></string>
     <string name="pref_backups_title">انسخ تلقائيًا الخزينة</string>
     <string name="pref_backups_summary">أنشئ تلقائيًا نُسخ احتياطية للمخزن على الذاكرة الخارجية عند إجراء تغييرات هذا مدعوم للمخازن المُعمَّاة فقط.</string>
     <string name="pref_backups_reminder_title">تذكير النسخ الاحتياطي</string>
     <string name="pref_backups_reminder_summary">أظهر تذكيرًا للاحتفاظ بنسخة احتياطية من مخزنك في حالة عدم إجراء نسخ احتياطي لآخر تغييراتك.</string>
     <string name="pref_backups_reminder_dialog_title">عطِّل تذكير النسخ الاحتياطي</string>
-    <string name="pref_backups_reminder_dialog_summary">يعني تعطيل هذا التذكير أن Aegis لن يخبرك بما إذا كان لديك تغييرات لم يتم نسخها احتياطيًا حتى الآن أم لا. هذا يعرضك لخطر فقدان الوصول إلى رموزك. هل أنت متأكد أنك تريد تعطيل التذكير؟</string>
+    <string name="pref_backups_reminder_dialog_summary">يعني تعطيل هذا التذكير أن Cue لن يخبرك بما إذا كان لديك تغييرات لم يتم نسخها احتياطيًا حتى الآن أم لا. هذا يعرضك لخطر فقدان الوصول إلى رموزك. هل أنت متأكد أنك تريد تعطيل التذكير؟</string>
     <string name="pref_backups_versioning_strategy_title">استراتيجية النسخ الاحتياطي</string>
     <string name="pref_backups_versioning_strategy_keep_x_versions">احتفظ بعدد من الإصدارات</string>
     <string name="pref_backups_versioning_strategy_single_backup">نُسخة احتياطية واحدة</string>
@@ -111,7 +110,7 @@
     <string name="pref_auto_lock_title">القفل التلقائي</string>
     <string name="pref_auto_lock_summary">متى %s</string>
     <string name="pref_auto_lock_summary_disabled">معطَّل</string>
-    <string name="pref_auto_lock_prompt">اقفل Aegis تلقائيًا عند</string>
+    <string name="pref_auto_lock_prompt">اقفل Cue تلقائيًا عند</string>
     <string name="pref_auto_lock_type_back_button">ضُغط زر الرجوع</string>
     <string name="pref_auto_lock_type_minimize">صُغر التطبيق</string>
     <string name="pref_auto_lock_type_device_lock">الجهاز مقفل</string>
@@ -153,11 +152,10 @@
     <string name="today_at_time">اليوم على %1$s</string>
     <string name="day_of_week_at_time">%1$s في %2$s</string>
     <string name="export_encrypted">عمِّ المخزن</string>
-    <string name="export_help">هذا الإجراء سيصدِّر المخزن خارج ذاكرة تخزين Aegis الداخلية. حدد الصيغة التي ترغب بأن يكون التصدير عليها:</string>
-    <string name="export_warning_unencrypted">أنت على وشك تصدير نسخة غير مُعمّى من مخزن Aegis. <b>لا يُنصح بهذا</b>.</string>
+    <string name="export_help">هذا الإجراء سيصدِّر المخزن خارج ذاكرة تخزين Cue الداخلية. حدد الصيغة التي ترغب بأن يكون التصدير عليها:</string>
+    <string name="export_warning_unencrypted">أنت على وشك تصدير نسخة غير مُعمّى من مخزن Cue. <b>لا يُنصح بهذا</b>.</string>
     <string name="export_warning_password">تُعمّى عمليات التصدير باستخدام كلمة سر منفصلة مضبطة في إعدادات اﻷمن.</string>
     <string name="understand_risk_accept">أنا أفهم المخاطر</string>
-    <string name="export_format_aegis">Aegis (.JSON)</string>
     <string name="export_format_google_auth_uri">ملف نصي (.TXT)</string>
     <string name="export_format_html">صفحة ويب (.HTML)</string>
     <string name="export_format_hint">صدِّر الصيغة</string>
@@ -172,9 +170,9 @@
         <item quantity="other">%d مجموعة حُددت</item>
     </plurals>
     <string name="export_no_groups_selected">لم يُحدد مجموعات للتصدير</string>
-    <string name="export_html_title" comment="The title of an HTML export document">تصدير Aegis Authenticator</string>
+    <string name="export_html_title" comment="The title of an HTML export document">تصدير Cue Authenticator</string>
     <string name="choose_authentication_method">الأمن</string>
-    <string name="authentication_method_explanation">تطبيق Aegis هو تطبيق استيثاق يركز على الأمان. تُخزّن الرموز في مخزن، يمكن تعميتها اختياريًا بكلمة سر من اختيارك. إذا حصل مهاجم على ملف المخزن المُعمّى الخاص بك، فإنه لن يتمكن من الوصول إلى المحتوى بدون معرفة كلمة السر.\n\nلقد حددنا مسبقًا الخيار الذي نعتقد أنه يناسب جهازك.</string>
+    <string name="authentication_method_explanation">تطبيق Cue هو تطبيق استيثاق يركز على الأمان. تُخزّن الرموز في مخزن، يمكن تعميتها اختياريًا بكلمة سر من اختيارك. إذا حصل مهاجم على ملف المخزن المُعمّى الخاص بك، فإنه لن يتمكن من الوصول إلى المحتوى بدون معرفة كلمة السر.\n\nلقد حددنا مسبقًا الخيار الذي نعتقد أنه يناسب جهازك.</string>
     <string name="authentication_method_none">بلا</string>
     <string name="authentication_method_none_description">لا حاجة لكلمة السر لفك قفل المخزن، ولن يتم تعميته. <b>لا يُنصح بهذا الخيار</b>.</string>
     <string name="authentication_method_password">كلمة السر</string>
@@ -190,10 +188,10 @@
     <string name="set_number">الرجاء إدخال رقم</string>
     <string name="set_password_confirm">الرجاء تأكيد كلمة السر</string>
     <string name="invalid_password">كلمة السر غير صحيحة</string>
-    <string name="invalidated_biometrics">اكتُشف تغيير في إعدادات أمان جهازك. الرجاء الذهاب إلى \"Aegis -&gt; الإعدادات -&gt; الأمن -&gt; الفتح بالمقاييس الحيوية\" لتعطيل وإعادة التمكين الفتح بالمقاييس الحيوية.</string>
+    <string name="invalidated_biometrics">اكتُشف تغيير في إعدادات أمان جهازك. الرجاء الذهاب إلى \"Cue -&gt; الإعدادات -&gt; الأمن -&gt; الفتح بالمقاييس الحيوية\" لتعطيل وإعادة التمكين الفتح بالمقاييس الحيوية.</string>
     <string name="password_reminder">من فضلك أدخل كلمة السر. نطلب منك أحيانًا القيام بذلك حتى لا تنساه.</string>
     <string name="password_reminder_dialog_title">افتح المقاييس الحيوية افتراضيًا</string>
-    <string name="password_reminder_dialog_message">نطلب منك أحيانًا إدخال كلمة سرك بدلاً من ذلك للتأكد من أنك لم تنساها ولن يتم قفله من المخزن الخاص بك. بعد إدخال كلمة السر مرة واحدة، سيعود Aegis افتراضيًا إلى فتح المقاييس الحيوية حتى يحين وقت تذكير آخر بكلمة السر.</string>
+    <string name="password_reminder_dialog_message">نطلب منك أحيانًا إدخال كلمة سرك بدلاً من ذلك للتأكد من أنك لم تنساها ولن يتم قفله من المخزن الخاص بك. بعد إدخال كلمة السر مرة واحدة، سيعود Cue افتراضيًا إلى فتح المقاييس الحيوية حتى يحين وقت تذكير آخر بكلمة السر.</string>
     <string name="password_reminder_freq_never">أبدًا</string>
     <string name="password_reminder_freq_weekly">أسبوعيًا</string>
     <string name="password_reminder_freq_biweekly">كل أسبوعين</string>
@@ -201,7 +199,7 @@
     <string name="password_reminder_freq_quarterly">كل ثلاثة أشهر</string>
     <string name="enter_password_proton_message">يبدو أن نُسخة Proton Authenticator هذه مُعمّاة. يُرجى إدخال كلمة السر أدناه.</string>
     <string name="enter_password_2fas_message">يبدو أن نُسخة 2FAS الاحتياطية مُعمَّاة، الرجاء إدخال كلمة السر أدناه.</string>
-    <string name="enter_password_authy_message">يبدو أن رموز Authy الخاصة بك مُعمَّاة. الرجاء إغلاق Aegis، وفتح Authy وفتح قفل الرموز بكلمة سرك. بدلًا من ذلك، Aegis يمكنه أيضًا محاولة فك تعمية رموز Authy الخاصة بك، إذا أدخلت كلمة سرك أدناه.</string>
+    <string name="enter_password_authy_message">يبدو أن رموز Authy الخاصة بك مُعمَّاة. الرجاء إغلاق Cue، وفتح Authy وفتح قفل الرموز بكلمة سرك. بدلًا من ذلك، Cue يمكنه أيضًا محاولة فك تعمية رموز Authy الخاصة بك، إذا أدخلت كلمة سرك أدناه.</string>
     <string name="enter_password_aegis_title">الرجاء إدخال كلمة سر الاستيراد</string>
     <string name="period_hint">الفترة (بالثواني)</string>
     <string name="algorithm_hint">دالات/وظائف التجزئة (Hash Functions)</string>
@@ -272,9 +270,8 @@
     <string name="saving_profile_error">حدث خطأ أثناء حفظ الملف الشخصي</string>
     <string name="saving_assign_icons_error">خطأ في تعيين الأيقونات</string>
     <string name="welcome">مرحبًا</string>
-    <string name="app_description">تطبيق Aegis، استيثاق ثنائي مجاني وآمن ومفتوح المصدر</string>
     <string name="setup_completed">اكتمل الإعداد</string>
-    <string name="setup_completed_description">أُعِدَّ Aegis وهو جاهز للعمل.</string>
+    <string name="setup_completed_description">أُعِدَّ Cue وهو جاهز للعمل.</string>
     <string name="vault_not_found">لم يُعثر على مخزن، بدء الإعداد…</string>
     <string name="copied">نُسِخ</string>
     <string name="errors_copied">نُسِخ الخطأ للحافظة</string>
@@ -286,8 +283,8 @@
     <string name="saving_error">حدث خطأ أثناء محاولة حفظ المخزن</string>
     <string name="vault_init_error">حدث خطأ أثناء محاولة تهيئة المخزن</string>
     <string name="vault_load_error">حدث خطأ أثناء محاولة تحميل المخزن من الذاكرة</string>
-    <string name="biometric_decrypt_error">حدث خطأ أثناء محاولة فك تعمية المخزن بالاستيثاق المقاييس الحيوية. هذا يحدث عادةً فقط إن غُيّر إعدادات أمان جهازك. الرجاء فك قفل المخزن بكلمة سرك وإعادة تعيين الاستيثاق المقاييس الحيوية داخل إعدادات Aegis.</string>
-    <string name="biometric_init_error">حدث خطأ أثناء محاولة تحضير الاستيثاق المقاييس الحيوية. هذا يحدث عادةً فقط إن غُيّر إعدادات أمان جهازك. الرجاء فك قفل المخزن بكلمة سرك وإعادة تعيين الاستيثاق المقاييس الحيوية داخل إعدادات Aegis.</string>
+    <string name="biometric_decrypt_error">حدث خطأ أثناء محاولة فك تعمية المخزن بالاستيثاق المقاييس الحيوية. هذا يحدث عادةً فقط إن غُيّر إعدادات أمان جهازك. الرجاء فك قفل المخزن بكلمة سرك وإعادة تعيين الاستيثاق المقاييس الحيوية داخل إعدادات Cue.</string>
+    <string name="biometric_init_error">حدث خطأ أثناء محاولة تحضير الاستيثاق المقاييس الحيوية. هذا يحدث عادةً فقط إن غُيّر إعدادات أمان جهازك. الرجاء فك قفل المخزن بكلمة سرك وإعادة تعيين الاستيثاق المقاييس الحيوية داخل إعدادات Cue.</string>
     <string name="disable_encryption">عطِّل التعمية</string>
     <string name="disable_encryption_description">أمتأكد من أنك تريد تعطيل التعمية؟ سيؤدي هذا إلى تخزين المخزن في نص عادي. <b>سيتم تعطيل النُسخ الاحتياطية التلقائية أيضًا</b>.</string>
     <string name="enable_encryption_error">حدث خطأ أثناء تفعيل التعمية</string>
@@ -325,7 +322,7 @@
     <string name="file_not_found">خطأ: لم يُعثر على الملف</string>
     <string name="reading_file_error">حدث خطأ أثناء محاولة قراءة الملف</string>
     <string name="app_lookup_error">خطأ: التطبيق غير مثبّت</string>
-    <string name="app_version_error">نُسخة %s المثبتة غير مدعومة. أصبحت الإصدارات الحديثة تقوم بتعمية بعض الملفات في مجلد التخزين الداخلي، مما يجعل Aegis غير قادر على الوصول إلى المعلومات التي يحتاجها من أجل الاستيراد. محاولة الاستيراد من المرجح أن تؤدي إلى خطأ. هل ترغب في الاستمرار على أي حال؟</string>
+    <string name="app_version_error">نُسخة %s المثبتة غير مدعومة. أصبحت الإصدارات الحديثة تقوم بتعمية بعض الملفات في مجلد التخزين الداخلي، مما يجعل Cue غير قادر على الوصول إلى المعلومات التي يحتاجها من أجل الاستيراد. محاولة الاستيراد من المرجح أن تؤدي إلى خطأ. هل ترغب في الاستمرار على أي حال؟</string>
     <string name="root_error">خطأ: تعذر الحصول على حق الوصول إلى الجذر</string>
     <plurals name="imported_entries_count">
         <item quantity="zero">استوردت %d مدخلات</item>
@@ -351,7 +348,7 @@
     <string name="encryption_enable_biometrics_error">حدث خطأ أثناء محاولة تفعيل الفتح البيومتري. لبعض الأجهزة تنفيذ رديئ لأستيثاق البيومتري، والأرجح أن جهازك أحدها. بدلًا من ذلك، فكّر بتحويل الإعدادات إلى كلمة سر فقط.</string>
     <string name="no_cameras_available">لا توجد كاميرا متاحة</string>
     <string name="read_qr_error">حدث خطأ أثناء محاولة قراءة رمز QR</string>
-    <string name="read_qr_error_phonefactor">Aegis غير متوافق مع خوارزمة 2FA الخاصة بمايكروسوفت. الرجاء التأكد من تحديد \"إعداد التطبيق دون إشعارات\" عند إعداد 2FA في Office 365.</string>
+    <string name="read_qr_error_phonefactor">Cue غير متوافق مع خوارزمة 2FA الخاصة بمايكروسوفت. الرجاء التأكد من تحديد \"إعداد التطبيق دون إشعارات\" عند إعداد 2FA في Office 365.</string>
     <string name="partial_google_auth_import">اكتُشف تصدير Google Authenticator غير مكتمل</string>
     <string name="partial_google_auth_import_warning">بعض رموز QR مفقودة من الاستيراد. لم يُعثر على الرموز التالية:\n\n<b>%s</b>\n\nيمكنك الاستمرار في استيراد هذا التصدير الجزئي ولكننا نوصي بإعادة المحاولة باستخدام جميع رموز QR حتى لا تخاطر بفقدان الوصول إلى أي رموز.</string>
     <string name="missing_qr_code_descriptor">• رمز QR %d</string>
@@ -446,12 +443,12 @@
     <string name="unknown_issuer">مُصدِّر غير معروف</string>
     <string name="unknown_account_name">اسم الحساب غير معروف</string>
     <plurals name="import_error_dialog">
-        <item quantity="zero">تعذر Aegis استيراد %d رمز. سيتم تخطي هذا الرمز. اضغط \'التفاصيل\' للاطلاع على مزيد من المعلومات حول الخطأ.</item>
-        <item quantity="one">تعذر Aegis استيراد %d رمز. سيتم تخطي هذا الرمز. اضغط \'التفاصيل\' للاطلاع على مزيد من المعلومات حول الخطأ.</item>
-        <item quantity="two">تعذر Aegis استيراد رمزين. سيتم تخطي هذه اﻷماراة. اضغط \'التفاصيل\' للاطلاع على مزيد من المعلومات حول الخطأ.</item>
-        <item quantity="few">تعذر Aegis استيراد %d رمز. سيتم تخطي هذه اﻷمارة. اضغط \'التفاصيل\' للاطلاع على مزيد من المعلومات حول الخطأ.</item>
-        <item quantity="many">تعذر Aegis استيراد %d رمز. سيتم تخطي هذه اﻷمارة. اضغط \'التفاصيل\' للاطلاع على مزيد من المعلومات حول الخطأ.</item>
-        <item quantity="other">تعذر Aegis استيراد %d رمز. سيتم تخطي هذه اﻷمارة. اضغط \'التفاصيل\' للاطلاع على مزيد من المعلومات حول الخطأ.</item>
+        <item quantity="zero">تعذر Cue استيراد %d رمز. سيتم تخطي هذا الرمز. اضغط \'التفاصيل\' للاطلاع على مزيد من المعلومات حول الخطأ.</item>
+        <item quantity="one">تعذر Cue استيراد %d رمز. سيتم تخطي هذا الرمز. اضغط \'التفاصيل\' للاطلاع على مزيد من المعلومات حول الخطأ.</item>
+        <item quantity="two">تعذر Cue استيراد رمزين. سيتم تخطي هذه اﻷماراة. اضغط \'التفاصيل\' للاطلاع على مزيد من المعلومات حول الخطأ.</item>
+        <item quantity="few">تعذر Cue استيراد %d رمز. سيتم تخطي هذه اﻷمارة. اضغط \'التفاصيل\' للاطلاع على مزيد من المعلومات حول الخطأ.</item>
+        <item quantity="many">تعذر Cue استيراد %d رمز. سيتم تخطي هذه اﻷمارة. اضغط \'التفاصيل\' للاطلاع على مزيد من المعلومات حول الخطأ.</item>
+        <item quantity="other">تعذر Cue استيراد %d رمز. سيتم تخطي هذه اﻷمارة. اضغط \'التفاصيل\' للاطلاع على مزيد من المعلومات حول الخطأ.</item>
     </plurals>
     <string name="unable_to_process_deeplink">تعذرت معالجة الارتباط العميق</string>
     <string name="unable_to_read_qrcode_file">غير قادر على قراءة ومعالجة رمز QR من الملف: %s.</string>
@@ -465,16 +462,15 @@
     <string name="toggle_checkboxes">تبديل خانات التأشير</string>
     <string name="search">بحث</string>
     <string name="channel_name_lock_status">إشعار القفل</string>
-    <string name="channel_description_lock_status">يمكن لـ Aegis عرض إشعار مستمر لتنبيهك عند قفل المخزن</string>
+    <string name="channel_description_lock_status">يمكن لـ Cue عرض إشعار مستمر لتنبيهك عند قفل المخزن</string>
     <string name="vault_unlocked_state">قفل المخزن مفتوح. انقر هنا للقفل</string>
     <string name="version">الإصدار</string>
     <string name="changelog">سجلّ التغيير</string>
     <string name="whats_new">ما الجديد</string>
     <string name="github_description">المصدر البرمجي والعلل والمعلومات</string>
     <string name="license">الرخصة</string>
-    <string name="license_description">Aegis Authenticator مرخص بموجب GPLv3</string>
     <string name="third_party_licenses">تراخيص طرف ثالث</string>
-    <string name="third_party_licenses_description">تراخيص مكتبات الطرف الثالث التي يستعملها Aegis</string>
+    <string name="third_party_licenses_description">تراخيص مكتبات الطرف الثالث التي يستعملها Cue</string>
     <string name="country_netherlands">هولندا</string>
     <string name="email_us">اكتب بريد الكتروني</string>
     <string name="visit_website">زُر موقعنا</string>
@@ -484,7 +480,7 @@
     <string name="webview_error">هذا الجهاز لا يدعم عرض الويب، والذي هو ضروري لعرض سجلّ التغيير و الرخصة. إنه مكوِّن نظام مفقود.</string>
     <string name="email">البريد الإلكتروني</string>
     <string name="time_sync_warning_title">مزامنة الوقت تلقائيًا</string>
-    <string name="time_sync_warning_message">يعتمد Aegis على وقت النظام لتوليد رموز صحيحة. انحراف بمقادر بضعة ثواني يمكن أن يؤدي إلى رموز خاطئة. يبدو أن جهازك غير معيّن إلى مزامنة الوقت تلقائيًا. أترغب بفعل ذلك الآن؟</string>
+    <string name="time_sync_warning_message">يعتمد Cue على وقت النظام لتوليد رموز صحيحة. انحراف بمقادر بضعة ثواني يمكن أن يؤدي إلى رموز خاطئة. يبدو أن جهازك غير معيّن إلى مزامنة الوقت تلقائيًا. أترغب بفعل ذلك الآن؟</string>
     <string name="time_sync_warning_disable">توقف عن تحذيري. أعرف ماذا أفعل.</string>
     <string name="google_qr_export_unrelated">عُثر على رمز QR لا علاقة له. حاول إعادة تشغيل الماسح.</string>
     <plurals name="google_qr_export_scanned">
@@ -501,8 +497,8 @@
          فشلت محاولة النسخ الاحتياطي للمخزون باستخدام %1$s بسبب حدوث خطأ. تمت محاولة النسخ الاحتياطي %2$s. الرجاء التحقق من إعدادات النسخ الاحتياطي للتأكد من أن النسخ الاحتياطي يمكن أن يكتمل بنجاح.
     </string>
     <string name="backup_permission_error_dialog_details" comment="The first parameter is the type of backup (e.g. built-in or Android backup). The second parameter is an elapsed time in the style of 'x seconds/minutes/days ago'.">
-فشلت محاولة النسخ الاحتياطي الأخيرة للمخزون باستخدام %1$s لأن Aegis لم يكن لديه الإذن قراءة وجهة النسخ الاحتياطي. تمت محاولة النسخ الاحتياطي %2$s. يمكن أن يحدث هذا الخطأ إذا قمت بنقل/إعادة تسمية وجهة النسخ الاحتياطي أو إذا قمت للتو باستعادة Aegis من نسخة احتياطية. الرجاء إعادة إعداد وجهة النسخ الإحتياطي.    </string>
-    <string name="backup_system_builtin">النسخ الاحتياطية التلقائية المضنة في Aegis</string>
+فشلت محاولة النسخ الاحتياطي الأخيرة للمخزون باستخدام %1$s لأن Cue لم يكن لديه الإذن قراءة وجهة النسخ الاحتياطي. تمت محاولة النسخ الاحتياطي %2$s. يمكن أن يحدث هذا الخطأ إذا قمت بنقل/إعادة تسمية وجهة النسخ الاحتياطي أو إذا قمت للتو باستعادة Cue من نسخة احتياطية. الرجاء إعادة إعداد وجهة النسخ الإحتياطي.    </string>
+    <string name="backup_system_builtin">النسخ الاحتياطية التلقائية المضنة في Cue</string>
     <string name="backup_system_android">نظام النسخ الاحتياطي السحابي للأندرويد</string>
     <string name="backup_reminder_bar_message_with_latest" comment="The parameter is an elapsed time in the style of 'x seconds/minutes/days ago'">
         أحدث نسخة احتياطية قديمة (%s)
@@ -543,7 +539,7 @@
     <string name="uri_copied_to_clipboard">نُسِخ URI إلى الحافظة</string>
     <string name="transfer_entry_description">امسح رمز QR هذا بتطبيق الاستيثاق الذي ترغب بنقل ذلك المدخل إليه</string>
     <string name="transfer_entry_brightness">انقر على رمز QR لتبديل سطوع الشاشة بالكامل</string>
-    <string name="google_auth_compatible_transfer_description">امسح رموز ال QR هذه بواسطة Aegis أو Google Authenticator.\n\n بسبب القيود في تطبيقGoogle Authenticator، فقط رموز TOTP &amp; HOTP التي تستعمل SHA1 وتنتِج رموز من 6 خانات هي من سيتم إدراجها</string>
+    <string name="google_auth_compatible_transfer_description">امسح رموز ال QR هذه بواسطة Cue أو Google Authenticator.\n\n بسبب القيود في تطبيقGoogle Authenticator، فقط رموز TOTP &amp; HOTP التي تستعمل SHA1 وتنتِج رموز من 6 خانات هي من سيتم إدراجها</string>
     <string name="password_strength_very_weak">ضعيف جدًا</string>
     <string name="password_strength_weak">ضعيف</string>
     <string name="password_strength_fair">مقبول</string>
@@ -566,10 +562,9 @@
     <string name="dialog_wipe_entries_checkbox">حذف محتويات المخزن</string>
     <string name="import_from_clipboard_title">استورد من الحافظة</string>
     <string name="import_from_clipboard_message">وجدنا عنوان uri صالح على حافظتك.\n\n<b>الاسم</b>: %1$s\n<b>المُصدِّر</b>: %2$s\n\nأتريد استخدامه لملء هذا الإدخال؟</string>
-    <string name="panic_trigger_ignore_toast">تلقى Aegis حالة من الذعر ولكن الإعداد مُعطّل، يتجاهل</string>
+    <string name="panic_trigger_ignore_toast">تلقى Cue حالة من الذعر ولكن الإعداد مُعطّل، يتجاهل</string>
     <string name="pref_panic_trigger_title">احذف المخزن على الزناد الذعر</string>
     <string name="pref_panic_trigger_summary">احذف المخزن عند تلقي مصدر ذعر من Ripple</string>
-    <string name="import_vault">استورد مخزن Aegis</string>
     <string name="import_vault_hint">هل تريد الاستيراد من تطبيق 2FA مختلف؟ أكمل الإعداد أولاً ثم انتقل إلى قائمة الإعدادات.</string>
     <plurals name="import_duplicate_toast">
         <item quantity="zero">لم يُؤشَّر %d من التكرار المحتمل. الرجاء مراجعة قائمة الإدخالات.</item>
@@ -603,7 +598,7 @@
     <string name="import_assign_icons_dialog_title">عيّن أيقونات</string>
     <string name="import_assign_icons_dialog_text">هل تريد تعيين أيقونات إلى المدخلات المستوردة؟</string>
     <string name="importer_encrypted_exception_google_authenticator">تخطَّى الإدخال المُعمّى: %s</string>
-    <string name="importer_help_direct">استيراد الإدخالات مباشرة من %s. يتطلب هذا تثبيت التطبيق على هذا الجهاز ومنح حق الوصول إلى الجذر Aegis.</string>
+    <string name="importer_help_direct">استيراد الإدخالات مباشرة من %s. يتطلب هذا تثبيت التطبيق على هذا الجهاز ومنح حق الوصول إلى الجذر Cue.</string>
     <string name="groups">المجموعات</string>
     <string name="pref_focus_search">التركيز على البحث عند بدء التطبيق</string>
     <string name="pref_focus_search_summary">التركيز على البحث مباشرةً بعد فتح التطبيق.</string>

@@ -28,7 +28,6 @@
     <string name="pref_section_security_title">安全性</string>
     <string name="pref_section_security_summary">設定加密、生物特徵辨識解鎖、自動鎖定以及其他安全性選項。</string>
     <string name="pref_section_import_export_title">匯入 &amp; 匯出</string>
-    <string name="pref_section_import_export_summary">匯入 Aegis 或其他驗證程式的備份檔，或手動匯出 Aegis 保險箱。</string>
     <string name="pref_section_audit_log_title">稽核記錄</string>
     <string name="pref_section_audit_log_summary">找出應用程式內發生的所有重要事件清單。</string>
     <string name="pref_section_backups_title">備份</string>
@@ -56,14 +55,14 @@
     <string name="pref_import_file_title">從檔案匯入</string>
     <string name="pref_import_file_summary">從檔案匯入憑證</string>
     <string name="pref_android_backups_title">Android 雲端備份</string>
-    <string name="pref_android_backups_summary">允許 Android 的雲端備份系統主動納入 Aegis 的保險箱。僅適用於已加密的保險箱。</string>
+    <string name="pref_android_backups_summary">允許 Android 的雲端備份系統主動納入 Cue 的保險箱。僅適用於已加密的保險箱。</string>
     <string name="pref_android_backups_hint"><i>與上述設定無關的是：裝置對裝置 (D2D) 備份傳輸是常時允許的。</i></string>
     <string name="pref_backups_title">自動備份保險箱</string>
     <string name="pref_backups_summary">自動於外部儲存裝置上建立保險箱的備份。僅支援已加密的保險箱。</string>
     <string name="pref_backups_reminder_title">備份提醒</string>
     <string name="pref_backups_reminder_summary">提示您備份保險箱以避免最後的變更狀態未被加入備份。</string>
     <string name="pref_backups_reminder_dialog_title">關閉備份提醒</string>
-    <string name="pref_backups_reminder_dialog_summary">停用後 Aegis 不會再提醒您備份未備份的變更。這會讓你有遺失 tokens 的風險。您確定要停用嗎？</string>
+    <string name="pref_backups_reminder_dialog_summary">停用後 Cue 不會再提醒您備份未備份的變更。這會讓你有遺失 tokens 的風險。您確定要停用嗎？</string>
     <string name="pref_backups_versioning_strategy_title">備份策略</string>
     <string name="pref_backups_versioning_strategy_keep_x_versions">保留多份備份檔</string>
     <string name="pref_backups_versioning_strategy_single_backup">單一備份</string>
@@ -101,7 +100,7 @@
     <string name="pref_auto_lock_title">自動鎖定</string>
     <string name="pref_auto_lock_summary">當 %s</string>
     <string name="pref_auto_lock_summary_disabled">已停用</string>
-    <string name="pref_auto_lock_prompt">自動鎖定 Aegis 的時機是</string>
+    <string name="pref_auto_lock_prompt">自動鎖定 Cue 的時機是</string>
     <string name="pref_auto_lock_type_back_button">返回按鈕已按下</string>
     <string name="pref_auto_lock_type_minimize">最小化應用程式</string>
     <string name="pref_auto_lock_type_device_lock">裝置已鎖定</string>
@@ -143,11 +142,10 @@
     <string name="today_at_time">今天 %1$s</string>
     <string name="day_of_week_at_time">%1$s 的 %2$s</string>
     <string name="export_encrypted">加密保險箱</string>
-    <string name="export_help">此動作將保險箱從 Aegis 的內部儲存空間裡匯出，請選擇欲匯出的格式：</string>
-    <string name="export_warning_unencrypted">即將匯出未加密的 Aegis 保險箱。<b>不建議</b>。</string>
+    <string name="export_help">此動作將保險箱從 Cue 的內部儲存空間裡匯出，請選擇欲匯出的格式：</string>
+    <string name="export_warning_unencrypted">即將匯出未加密的 Cue 保險箱。<b>不建議</b>。</string>
     <string name="export_warning_password">匯出的壓縮檔將使用安全設定中設定的獨立密碼。</string>
     <string name="understand_risk_accept">我瞭解相關風險</string>
-    <string name="export_format_aegis">Aegis (.JSON)</string>
     <string name="export_format_google_auth_uri">純文字檔案 (.TXT)</string>
     <string name="export_format_html">網頁 (.html)</string>
     <string name="export_format_hint">匯出格式</string>
@@ -157,9 +155,9 @@
         <item quantity="other">選取了 %d 個群組</item>
     </plurals>
     <string name="export_no_groups_selected">尚未選擇要匯出的群組</string>
-    <string name="export_html_title" comment="The title of an HTML export document">Aegis 驗證器匯出</string>
+    <string name="export_html_title" comment="The title of an HTML export document">Cue 驗證器匯出</string>
     <string name="choose_authentication_method">安全性</string>
-    <string name="authentication_method_explanation">Aegis 是一款安全第一的雙因素驗證（2FA）應用程式。憑證儲存於特殊的保險箱檔案中，此保險箱可依照使用者的設定以密碼金鑰加密。就算駭客取得了被加密的保險箱檔案，他們也無法在不知道密碼的情況下取得內含的憑證。 \n\n我們已預先為您的裝置選擇了我們認為最適合的選項。</string>
+    <string name="authentication_method_explanation">Cue 是一款安全第一的雙因素驗證（2FA）應用程式。憑證儲存於特殊的保險箱檔案中，此保險箱可依照使用者的設定以密碼金鑰加密。就算駭客取得了被加密的保險箱檔案，他們也無法在不知道密碼的情況下取得內含的憑證。 \n\n我們已預先為您的裝置選擇了我們認為最適合的選項。</string>
     <string name="authentication_method_none">沒有</string>
     <string name="authentication_method_none_description">保險箱並未上鎖也未加密。<b>不建議使用此選項</b>。</string>
     <string name="authentication_method_password">密碼</string>
@@ -175,10 +173,10 @@
     <string name="set_number">請選擇時長</string>
     <string name="set_password_confirm">請確認密碼</string>
     <string name="invalid_password">密碼錯誤</string>
-    <string name="invalidated_biometrics">偵測到您的裝置更新了安全性設定。請前往「Aegis -&gt; 設定 -&gt; 安全性 -&gt; 生物特徵辨識解鎖」停用並重新啟用生物特徵辨識解鎖。</string>
+    <string name="invalidated_biometrics">偵測到您的裝置更新了安全性設定。請前往「Cue -&gt; 設定 -&gt; 安全性 -&gt; 生物特徵辨識解鎖」停用並重新啟用生物特徵辨識解鎖。</string>
     <string name="password_reminder">請輸入您的密碼。我們偶爾會提醒您進行此操作，防止您忘記密碼。</string>
     <string name="password_reminder_dialog_title">預設使用生物特徵辨識解鎖</string>
-    <string name="password_reminder_dialog_message">我們會不定期的要求您使用密碼解鎖，以確保您尚未忘記設定的密碼而被拒於門外。當你成功使用密碼解鎖後，Aegis 將會回到原本的生物特徵解鎖模式，直到下一次的密碼提醒。</string>
+    <string name="password_reminder_dialog_message">我們會不定期的要求您使用密碼解鎖，以確保您尚未忘記設定的密碼而被拒於門外。當你成功使用密碼解鎖後，Cue 將會回到原本的生物特徵解鎖模式，直到下一次的密碼提醒。</string>
     <string name="password_reminder_freq_never">從不</string>
     <string name="password_reminder_freq_weekly">每週一次</string>
     <string name="password_reminder_freq_biweekly">隔週一次</string>
@@ -186,7 +184,7 @@
     <string name="password_reminder_freq_quarterly">每季（三個月）一次</string>
     <string name="enter_password_proton_message">看來這 Proton 驗證器的備份已被加密。請在下方輸入密碼。</string>
     <string name="enter_password_2fas_message">看來此 2FAS 備份已被加密，請在此輸入密碼。</string>
-    <string name="enter_password_authy_message">您的似乎已加密 Authy 驗證碼。請關閉 Aegis，開啟 Authy，然後使用您的密碼解鎖憑證。另外，如果您在下方輸入 Authy 的解密密碼，Aegis 也可以嘗試為您解密 Authy 憑證。</string>
+    <string name="enter_password_authy_message">您的似乎已加密 Authy 驗證碼。請關閉 Cue，開啟 Authy，然後使用您的密碼解鎖憑證。另外，如果您在下方輸入 Authy 的解密密碼，Cue 也可以嘗試為您解密 Authy 憑證。</string>
     <string name="enter_password_aegis_title">請輸入匯入密碼</string>
     <string name="period_hint">長度（秒）</string>
     <string name="algorithm_hint">雜湊函數</string>
@@ -247,9 +245,8 @@
     <string name="saving_profile_error">儲存設定檔時發生錯誤</string>
     <string name="saving_assign_icons_error">指派圖示時發生錯誤</string>
     <string name="welcome">歡迎使用</string>
-    <string name="app_description">Aegis 是一款免費、安全與開放原始碼的雙因素驗證（2FA）應用程式</string>
     <string name="setup_completed">設定完成</string>
-    <string name="setup_completed_description">Aegis設定完成，可以開始使用了。</string>
+    <string name="setup_completed_description">Cue設定完成，可以開始使用了。</string>
     <string name="vault_not_found">保險箱不存在，開始設定…</string>
     <string name="copied">已複製</string>
     <string name="errors_copied">錯誤已複製至剪貼簿</string>
@@ -261,8 +258,8 @@
     <string name="saving_error">儲存保險箱時發生錯誤</string>
     <string name="vault_init_error">初始化保險箱時發生錯誤</string>
     <string name="vault_load_error">從儲存空間讀取保險箱時發生錯誤</string>
-    <string name="biometric_decrypt_error">使用生物特徵驗證對保險箱進行解密時發生錯誤。通常發生在您變更裝置的安全設定後。請使用您的密碼解鎖保險箱，然後在 Aegis 的設定中重新設定生物驗證選項。</string>
-    <string name="biometric_init_error">準備使用生物特徵驗證時發生錯誤。通常發生在您更改設備的安全設定後。請使用您的密碼解鎖保險箱，然後在 Aegis 的設定中重新設定生物驗證選項。</string>
+    <string name="biometric_decrypt_error">使用生物特徵驗證對保險箱進行解密時發生錯誤。通常發生在您變更裝置的安全設定後。請使用您的密碼解鎖保險箱，然後在 Cue 的設定中重新設定生物驗證選項。</string>
+    <string name="biometric_init_error">準備使用生物特徵驗證時發生錯誤。通常發生在您更改設備的安全設定後。請使用您的密碼解鎖保險箱，然後在 Cue 的設定中重新設定生物驗證選項。</string>
     <string name="disable_encryption">停用加密</string>
     <string name="disable_encryption_description">確定要停用加密嗎？此舉將使保險箱以明文儲存。<b>同時將停用自動備份</b>。</string>
     <string name="enable_encryption_error">啟用加密時出錯</string>
@@ -295,7 +292,7 @@
     <string name="file_not_found">錯誤：找不到檔案</string>
     <string name="reading_file_error">試圖開啟檔案時發生錯誤</string>
     <string name="app_lookup_error">錯誤：應用程式未安裝</string>
-    <string name="app_version_error">不支援已安裝的 %s 版本。近期的版本已經開始加密內部儲存目錄中的部分檔案，導致 Aegis 無法存取匯入所需的資料。嘗試匯入很可能會發生錯誤。您確定仍要繼續嗎？</string>
+    <string name="app_version_error">不支援已安裝的 %s 版本。近期的版本已經開始加密內部儲存目錄中的部分檔案，導致 Cue 無法存取匯入所需的資料。嘗試匯入很可能會發生錯誤。您確定仍要繼續嗎？</string>
     <string name="root_error">錯誤：無法取得 root 權限</string>
     <plurals name="imported_entries_count">
         <item quantity="other">已匯入 %d 個條目</item>
@@ -311,7 +308,7 @@
     <string name="encryption_enable_biometrics_error">嘗試啟用生物特徵辨識解鎖時發生錯誤。某些裝置的生物特徵辨識認證實作欠佳，您手中的裝置或許就是其中之一。考慮改用僅密碼設定。</string>
     <string name="no_cameras_available">鏡頭不可用</string>
     <string name="read_qr_error">試圖讀取 QR Code 時出錯</string>
-    <string name="read_qr_error_phonefactor">Aegis 不相容於微軟私有的雙因素驗證演算法。請確保在 Microsoft 365 設定雙因素驗證時選擇「設定無通知的應用程式」。</string>
+    <string name="read_qr_error_phonefactor">Cue 不相容於微軟私有的雙因素驗證演算法。請確保在 Microsoft 365 設定雙因素驗證時選擇「設定無通知的應用程式」。</string>
     <string name="partial_google_auth_import">偵測到不完整的 Google Authenticator 匯出</string>
     <string name="partial_google_auth_import_warning">您的匯入中缺少部分 QR Code。詳情如下：\n\n<b>%s</b>\n\n您可以繼續匯入這份闕漏的匯出檔，但我們建議您在補齊 QR Code 後再嘗試匯入，以免無法存取憑證。</string>
     <string name="missing_qr_code_descriptor">• QR Code %d</string>
@@ -396,7 +393,7 @@
     <string name="unknown_issuer">未知的服務商</string>
     <string name="unknown_account_name">未知帳戶</string>
     <plurals name="import_error_dialog">
-        <item quantity="other">Aegis 無法匯入 %d 組 token，已經忽略。若欲了解更詳細錯誤資訊，請按「詳細內容」。</item>
+        <item quantity="other">Cue 無法匯入 %d 組 token，已經忽略。若欲了解更詳細錯誤資訊，請按「詳細內容」。</item>
     </plurals>
     <string name="unable_to_process_deeplink">無法處理 deep link</string>
     <string name="unable_to_read_qrcode_file">無法從 %s 檔案讀取和處理 QR Code</string>
@@ -410,16 +407,15 @@
     <string name="toggle_checkboxes">切換核取方塊</string>
     <string name="search">搜尋</string>
     <string name="channel_name_lock_status">鎖定狀態</string>
-    <string name="channel_description_lock_status">Aegis 可以常駐通知顯示保險箱鎖定中</string>
+    <string name="channel_description_lock_status">Cue 可以常駐通知顯示保險箱鎖定中</string>
     <string name="vault_unlocked_state">保險箱已解鎖，輕觸此處再次鎖定。</string>
     <string name="version">版本</string>
     <string name="changelog">變更記錄</string>
     <string name="whats_new">有什麼新鮮事</string>
     <string name="github_description">原始碼、問題與資訊</string>
     <string name="license">授權條款</string>
-    <string name="license_description">Aegis 驗證器以 GPLv3 授權條款釋出。</string>
     <string name="third_party_licenses">第三方授權條款</string>
-    <string name="third_party_licenses_description">Aegis 所使用的第三方函式庫及其授權條款</string>
+    <string name="third_party_licenses_description">Cue 所使用的第三方函式庫及其授權條款</string>
     <string name="country_netherlands">荷蘭</string>
     <string name="email_us">撰寫郵件</string>
     <string name="visit_website">瀏覽我們的網站</string>
@@ -441,8 +437,8 @@
         最近一次嘗試使用 %1$s 的備份行為失敗。本次備份發生於 %2$s。請檢查您的備份設定以確保備份能順利完成。
     </string>
     <string name="backup_permission_error_dialog_details" comment="The first parameter is the type of backup (e.g. built-in or Android backup). The second parameter is an elapsed time in the style of 'x seconds/minutes/days ago'.">
-最近使用 %1$s 嘗試備份保管庫失敗，因為 Aegis 沒有寫入備份目的地的權限。備份嘗試時間為 %2$s。若您移動或重新命名了備份目的地，或是最近從備份中還原了 Aegis，都可能會發生此錯誤。請重新設定備份目的地    </string>
-    <string name="backup_system_builtin">Aegis 內建的自動備份</string>
+最近使用 %1$s 嘗試備份保管庫失敗，因為 Cue 沒有寫入備份目的地的權限。備份嘗試時間為 %2$s。若您移動或重新命名了備份目的地，或是最近從備份中還原了 Cue，都可能會發生此錯誤。請重新設定備份目的地    </string>
+    <string name="backup_system_builtin">Cue 內建的自動備份</string>
     <string name="backup_system_android">Android 雲端備份</string>
     <string name="backup_reminder_bar_message_with_latest" comment="The parameter is an elapsed time in the style of 'x seconds/minutes/days ago'">
         最新的備份已過時 (%s)    
@@ -478,7 +474,7 @@
     <string name="uri_copied_to_clipboard">URI 已複製到剪貼簿</string>
     <string name="transfer_entry_description">請使用您欲轉移至的驗證器應用程式掃描此 QR Code</string>
     <string name="transfer_entry_brightness">觸碰 QR code 使螢幕達到最大亮度</string>
-    <string name="google_auth_compatible_transfer_description">請使用 Aegis 或 Google Authenticator 掃描以下 QR Code。\n\n由於 Google Authenticator 程式的限制，將僅包含使用 SHA1 並產生六位數密碼的 TOTP &amp; HOTP 憑證</string>
+    <string name="google_auth_compatible_transfer_description">請使用 Cue 或 Google Authenticator 掃描以下 QR Code。\n\n由於 Google Authenticator 程式的限制，將僅包含使用 SHA1 並產生六位數密碼的 TOTP &amp; HOTP 憑證</string>
     <string name="password_strength_very_weak">很弱</string>
     <string name="password_strength_weak">弱</string>
     <string name="password_strength_fair">中等</string>
@@ -501,10 +497,9 @@
     <string name="dialog_wipe_entries_checkbox">清除保險箱中的所有內容</string>
     <string name="import_from_clipboard_title">從剪貼簿匯入</string>
     <string name="import_from_clipboard_message">我們在您的剪貼簿上找到了一個有效的 otpauth uri。\n\n<b>名稱</b>：%1$s\n<b>服務商</b>：%2$s\n\n你想要用他預先填充此條目嗎？</string>
-    <string name="panic_trigger_ignore_toast">Aegis 收到了危急指令，但此設定被停用，忽略中</string>
+    <string name="panic_trigger_ignore_toast">Cue 收到了危急指令，但此設定被停用，忽略中</string>
     <string name="pref_panic_trigger_title">危急時刪除保險箱</string>
     <string name="pref_panic_trigger_summary">從 Ripple 收到危急指令時刪除保險箱</string>
-    <string name="import_vault">匯入 Aegis 金鑰庫</string>
     <string name="import_vault_hint">想從其他 2FA 驗證器應用程式匯入？先完成首次設定，就可在設定功能表中匯入。</string>
     <plurals name="import_duplicate_toast">
         <item quantity="other">未選中 %d 個潛在重複項。請檢查條目列表。</item>
@@ -521,7 +516,7 @@
     <string name="importer_help_freeotp">FreeOTP 2：請提供備份檔。\nFreeOTP 1.x：請提供 FreeOTP 內部儲存空間目錄當中的 <b>/data/data/org.fedorahosted.freeotp/shared_prefs/tokens.xml</b> 的檔案副本。</string>
     <string name="importer_help_freeotp_plus">提供 FreeOTP+ 的匯出檔。</string>
     <string name="importer_warning_title_freeotp2">FreeOTP 2 相容性</string>
-    <string name="importer_warning_message_freeotp2">FreeOTP 2 有一些問題，可能會造成備份檔毀損。Aegis 將盡可能修復備份項目，但還是可能會有一部分或全部項目無法匯入。</string>
+    <string name="importer_warning_message_freeotp2">FreeOTP 2 有一些問題，可能會造成備份檔毀損。Cue 將盡可能修復備份項目，但還是可能會有一部分或全部項目無法匯入。</string>
     <string name="importer_help_google_authenticator"><b>僅支援 Google Authenticator v5.10 及之前版本的資料庫檔案</b>。\n\n請提供 <b>/data/data/com.google.android.apps.authenticator2/databases/databases</b> 的副本，其位於 Google Authenticator 的內部儲存空間中。</string>
     <string name="importer_help_microsoft_authenticator">提供 <b>/data/data/com.azure.authenticator/databases/PhoneFactor</b> 的複本，其位於 Microsoft Authenticator 的內部儲存空間。</string>
     <string name="importer_help_plain_text">提供純文字檔，其中每行都是完整的 Google Authenticator URI</string>
@@ -533,7 +528,7 @@
     <string name="import_assign_icons_dialog_title">分配圖示</string>
     <string name="import_assign_icons_dialog_text">您要對匯入的項目設定圖示嗎？</string>
     <string name="importer_encrypted_exception_google_authenticator">已跳過已加密的條目：%s</string>
-    <string name="importer_help_direct">直接從 %s 匯入條目。這個裝置需已安裝此應用程式且 Aegis 擁有 root 權限。</string>
+    <string name="importer_help_direct">直接從 %s 匯入條目。這個裝置需已安裝此應用程式且 Cue 擁有 root 權限。</string>
     <string name="groups">群組</string>
     <string name="pref_focus_search">在應用程式啟動時把焦點放在搜尋上</string>
     <string name="pref_focus_search_summary">開啟應用程式後立即把焦點放在搜尋上</string>

@@ -28,7 +28,6 @@
     <string name="pref_section_security_title">Sikkerhet</string>
     <string name="pref_section_security_summary">Konfigurer kryptering, biometrisk opplåsing, automatisk låsing og andre sikkerhetsinnstillinger.</string>
     <string name="pref_section_import_export_title">Import &amp; Eksport</string>
-    <string name="pref_section_import_export_summary">Importer sikkerhetskopier av Aegis eller andre autentiseringsapper. Opprett en manuell eksport av Aegis-hvelvet ditt.</string>
     <string name="pref_section_audit_log_title">Revisjonslogg</string>
     <string name="pref_section_audit_log_summary">Finn en liste over alle rapporterte viktige hendelser i appen.</string>
     <string name="pref_section_backups_title">Sikkerhetskopier</string>
@@ -56,7 +55,7 @@
     <string name="pref_import_file_title">Importer fra fil</string>
     <string name="pref_import_file_summary">Importer nøkler fra en fil</string>
     <string name="pref_android_backups_title">Android-sikkerhetskopiering i skyen</string>
-    <string name="pref_android_backups_summary">Tillat at Android-sikkerhetskopiering i skyen inkluderer Aegis-hvelvet i sine sikkerhetskopier. Dette støttes kun for krypterte hvelv.</string>
+    <string name="pref_android_backups_summary">Tillat at Android-sikkerhetskopiering i skyen inkluderer Cue-hvelvet i sine sikkerhetskopier. Dette støttes kun for krypterte hvelv.</string>
     <string name="pref_android_backups_hint"><i>Enhet-til-enhet (D2D) sikkerhetskopiering er alltid tillat, uavhengig av innstillingene over</i></string>
     <string name="pref_backups_title">Sikkerhetskopier hvelvet automatisk</string>
     <string name="pref_backups_summary">Opprett sikkerhetskopier av hvelvet automatisk på ekstern lagringsenhet når noe endres. Gjelder bare for krypterte hvelv.</string>
@@ -99,7 +98,7 @@
     <string name="pref_auto_lock_title">Lås automatisk</string>
     <string name="pref_auto_lock_summary">Når %s</string>
     <string name="pref_auto_lock_summary_disabled">Deaktivert</string>
-    <string name="pref_auto_lock_prompt">Lås Aegis automatisk når</string>
+    <string name="pref_auto_lock_prompt">Lås Cue automatisk når</string>
     <string name="pref_auto_lock_type_back_button">Tilbakeknappen trykkes</string>
     <string name="pref_auto_lock_type_minimize">Appen er minimert</string>
     <string name="pref_auto_lock_type_device_lock">Enheten er låst</string>
@@ -141,11 +140,10 @@
     <string name="today_at_time">I dag ved %1$s</string>
     <string name="day_of_week_at_time">%1$s ved %2$s</string>
     <string name="export_encrypted">Krypter hvelvet</string>
-    <string name="export_help">Denne handlingen vil eksportere hvelvet utenfor Aegis\' interne lagring. Velg filformat du vil eksportere til:</string>
-    <string name="export_warning_unencrypted">Du er i ferd med å eksportere en ukryptert kopi av Aegis hvelvet ditt. <b>Dette er ikke anbefalt</b>.</string>
+    <string name="export_help">Denne handlingen vil eksportere hvelvet utenfor Cue\' interne lagring. Velg filformat du vil eksportere til:</string>
+    <string name="export_warning_unencrypted">Du er i ferd med å eksportere en ukryptert kopi av Cue hvelvet ditt. <b>Dette er ikke anbefalt</b>.</string>
     <string name="export_warning_password">Eksporter er kryptert med et separat passord satt opp i sikkerhetsinnstillingene.</string>
     <string name="understand_risk_accept">Jeg forstår risikoen</string>
-    <string name="export_format_aegis">Aegis (.JSON)</string>
     <string name="export_format_google_auth_uri">Tekstfil (.TXT)</string>
     <string name="export_format_html">Nettside (.HTML)</string>
     <string name="export_format_hint">Eksporteringsformat</string>
@@ -156,9 +154,9 @@
         <item quantity="other">%d grupper valgt</item>
     </plurals>
     <string name="export_no_groups_selected">Ingen grupper valgt for eksportering</string>
-    <string name="export_html_title" comment="The title of an HTML export document">Aegis Authenticator eksportering</string>
+    <string name="export_html_title" comment="The title of an HTML export document">Cue Authenticator eksportering</string>
     <string name="choose_authentication_method">Sikkerhet</string>
-    <string name="authentication_method_explanation">Aegis er en sikkerhetsfokusert app for tofaktorautentisering (2FA). Nøklene blir lagret i et hvelv, som kan krypteres med passord etter eget ønske. Hvis en angriper får tilgang til den krypterte hvelv-filen, vil de i så fall ikke kunne få tilgang til innholdet uten passordet.\n\nVi har forhåndsvalgt løsningen vi mener passer best til enheten din.</string>
+    <string name="authentication_method_explanation">Cue er en sikkerhetsfokusert app for tofaktorautentisering (2FA). Nøklene blir lagret i et hvelv, som kan krypteres med passord etter eget ønske. Hvis en angriper får tilgang til den krypterte hvelv-filen, vil de i så fall ikke kunne få tilgang til innholdet uten passordet.\n\nVi har forhåndsvalgt løsningen vi mener passer best til enheten din.</string>
     <string name="authentication_method_none">Ingen</string>
     <string name="authentication_method_none_description">Det trengs ikke passord for å låse opp hvelvet, og hvelvet vil ikke bli kryptert. <b>Dette er ikke anbefalt</b>.</string>
     <string name="authentication_method_password">Passordd</string>
@@ -174,17 +172,17 @@
     <string name="set_number">Vennligst skriv inn et nummer</string>
     <string name="set_password_confirm">Vennligst bekreft passordet</string>
     <string name="invalid_password">Passordet er feil</string>
-    <string name="invalidated_biometrics">En endring har blitt oppdaget i enhetens sikkerhetsinnstillinger. Vennligst gå til «Aegis -&gt; Innstillinger -&gt; Sikkerhet - &gt; Biometrisk opplåsing» for å skru av og på biometrisk opplåsing.</string>
+    <string name="invalidated_biometrics">En endring har blitt oppdaget i enhetens sikkerhetsinnstillinger. Vennligst gå til «Cue -&gt; Innstillinger -&gt; Sikkerhet - &gt; Biometrisk opplåsing» for å skru av og på biometrisk opplåsing.</string>
     <string name="password_reminder">Vennligst skriv inn passordet ditt. Vi ber deg om dette av og til så du ikke glemmer det.</string>
     <string name="password_reminder_dialog_title">Biometrisk opplåsning som standard</string>
-    <string name="password_reminder_dialog_message">Vi ber deg av og til om å skrive inn passordet ditt for å passe på at du ikke har glemt det, slik at du ikke blir låst ute av hvelvet ditt. Etter å ha skrevet inn passordet vil Aegis gå tilbake til biometrisk opplåsning frem til neste passordpåminnelse.</string>
+    <string name="password_reminder_dialog_message">Vi ber deg av og til om å skrive inn passordet ditt for å passe på at du ikke har glemt det, slik at du ikke blir låst ute av hvelvet ditt. Etter å ha skrevet inn passordet vil Cue gå tilbake til biometrisk opplåsning frem til neste passordpåminnelse.</string>
     <string name="password_reminder_freq_never">Aldri</string>
     <string name="password_reminder_freq_weekly">Ukentlig</string>
     <string name="password_reminder_freq_biweekly">Annenhver uke</string>
     <string name="password_reminder_freq_monthly">Månedlig</string>
     <string name="password_reminder_freq_quarterly">Kvartalvis</string>
     <string name="enter_password_2fas_message">Det ser ut som at denne 2FAS sikkerhetskopien er kryptert. Vennligst skriv inn passordet under.</string>
-    <string name="enter_password_authy_message">Det ser ut som at nøklene i Authy er krypterte. Vennligst lukk Aegis, åpne Authy og lås opp nøklene med passordet ditt. Alternativt kan Aegis forsøke å dekryptere Authy nøklene dine om du skriver passordet ditt nedenfor.</string>
+    <string name="enter_password_authy_message">Det ser ut som at nøklene i Authy er krypterte. Vennligst lukk Cue, åpne Authy og lås opp nøklene med passordet ditt. Alternativt kan Cue forsøke å dekryptere Authy nøklene dine om du skriver passordet ditt nedenfor.</string>
     <string name="enter_password_aegis_title">Vennligst skriv inn det importerte passordet</string>
     <string name="period_hint">Periode (sekunder)</string>
     <string name="algorithm_hint">Hashfunksjon</string>
@@ -247,9 +245,8 @@
     <string name="saving_profile_error">Feil ved lagring av profil</string>
     <string name="saving_assign_icons_error">Feil ved tildeling av ikoner</string>
     <string name="welcome">Velkommen</string>
-    <string name="app_description">Aegis er en gratis og sikker 2FA app med åpen kildekode</string>
     <string name="setup_completed">Oppsett fullført</string>
-    <string name="setup_completed_description">Aegis er satt opp og er klar for bruk.</string>
+    <string name="setup_completed_description">Cue er satt opp og er klar for bruk.</string>
     <string name="vault_not_found">Finner ikke hvelv, starter oppsett…</string>
     <string name="copied">Kopiert</string>
     <string name="errors_copied">Feil kopiert til utklippstavlen</string>
@@ -261,8 +258,8 @@
     <string name="saving_error">En feil oppstod ved lagring av hvelvet</string>
     <string name="vault_init_error">En feil oppstod ved initialisering av hvelvet</string>
     <string name="vault_load_error">Det oppsto en feil under forsøk på å laste inn hvelvet</string>
-    <string name="biometric_decrypt_error">En feil oppstod under forsøk på å dekryptere hvelvet med biometrisk godkjenning. Dette skjer vanligvis bare hvis sikkerhetsinnstillingene for enheten ble endret. Lås opp hvelvet med passordet ditt og sett opp biometrisk autentisering på nytt i innstillingene til Aegis.</string>
-    <string name="biometric_init_error">En feil oppsto ved forsøk på å forberede biometrisk autentisering. Dette skjer vanligvis bare hvis sikkerhetsinnstillingene til enheten ble endret. Lås opp hvelvet med passordet ditt og sett opp biometrisk autentiseringpå nytt i innstillingene til Aegis.</string>
+    <string name="biometric_decrypt_error">En feil oppstod under forsøk på å dekryptere hvelvet med biometrisk godkjenning. Dette skjer vanligvis bare hvis sikkerhetsinnstillingene for enheten ble endret. Lås opp hvelvet med passordet ditt og sett opp biometrisk autentisering på nytt i innstillingene til Cue.</string>
+    <string name="biometric_init_error">En feil oppsto ved forsøk på å forberede biometrisk autentisering. Dette skjer vanligvis bare hvis sikkerhetsinnstillingene til enheten ble endret. Lås opp hvelvet med passordet ditt og sett opp biometrisk autentiseringpå nytt i innstillingene til Cue.</string>
     <string name="disable_encryption">Deaktiver kryptering</string>
     <string name="disable_encryption_description">Er du sikker på at du vil deaktivere kryptering? Dette vil føre til at hvelvet lagres i klartekst. <b>automatiske sikkerhetskopier vil også bli deaktivert</b>.</string>
     <string name="enable_encryption_error">En feil oppstod under aktivering av kryptering</string>
@@ -296,7 +293,7 @@
     <string name="file_not_found">Feil: Finner ikke filen</string>
     <string name="reading_file_error">Det oppsto en feil under forsøk på å lese filen</string>
     <string name="app_lookup_error">Feil: Appen er ikke installert</string>
-    <string name="app_version_error">Versjonen av %s som er installert støttes ikke. Nylige versjoner har begynt å kryptere noen av filene i den interne lagringsmappen, slik at Aegis ikke får tilgang til den informasjonen den trenger for å importere dataene. Om du prøver å importere dataene vil det sannsynligvis resultere i en feil. Ønsker du likevel å fortsette?</string>
+    <string name="app_version_error">Versjonen av %s som er installert støttes ikke. Nylige versjoner har begynt å kryptere noen av filene i den interne lagringsmappen, slik at Cue ikke får tilgang til den informasjonen den trenger for å importere dataene. Om du prøver å importere dataene vil det sannsynligvis resultere i en feil. Ønsker du likevel å fortsette?</string>
     <string name="root_error">Feil: Kunne ikke få root-tilgang</string>
     <plurals name="imported_entries_count">
         <item quantity="one">Importerte %d oppføring</item>
@@ -314,7 +311,7 @@
     <string name="encryption_enable_biometrics_error">Det oppsto en feil under forsøk på å aktivere biometrisk opplåsing. Noen enheter har dårlige implementeringer av biometriske godkjenninger, og det er sannsynlig at din enhet er en av dem. Vurder å bytte til annen konfigurasjon som kun bruker passord i stedet.</string>
     <string name="no_cameras_available">Ingen kameraer tilgjengelig</string>
     <string name="read_qr_error">Det oppstod en feil under forsøk på å lese QR-koden</string>
-    <string name="read_qr_error_phonefactor">Aegis er ikke kompatibel med Microsofts egenutviklede 2FA algoritme. Vennligst velg \"Oppsett app uten varsler\" når du konfigurerer 2FA i Office 365.</string>
+    <string name="read_qr_error_phonefactor">Cue er ikke kompatibel med Microsofts egenutviklede 2FA algoritme. Vennligst velg \"Oppsett app uten varsler\" når du konfigurerer 2FA i Office 365.</string>
     <string name="partial_google_auth_import">Ufullstendig eksport av Google Authenticator funnet</string>
     <string name="partial_google_auth_import_warning">Noen QR-koder mangler i de importerte dataene. Følgende koder ble ikke funnet:\n\n<b>%s</b>\n\nDu kan fortsette å importere denne ufullstendige eksporten, men vi anbefaler at du prøver på nytt med alle QR-kodene slik at du ikke risikerer å miste tilgang til noen av nøklene.</string>
     <string name="missing_qr_code_descriptor">• QR-kode %d</string>
@@ -383,16 +380,15 @@
     <string name="tile_open_scanner" comment="label for a quick settings tile that opens the QR code scanner when tapped">Åpne skanner</string>
     <string name="search">Søk</string>
     <string name="channel_name_lock_status">Låsestatus</string>
-    <string name="channel_description_lock_status">Aegis kan opprette et vedvarende varsel for å informere deg når hvelvet er låst</string>
+    <string name="channel_description_lock_status">Cue kan opprette et vedvarende varsel for å informere deg når hvelvet er låst</string>
     <string name="vault_unlocked_state">Hvelvet er låst opp. Trykk her for å låse.</string>
     <string name="version">Versjon</string>
     <string name="changelog">Endringslogg</string>
     <string name="whats_new">Nyheter</string>
     <string name="github_description">Kildekode, problemer og informasjon</string>
     <string name="license">Lisens</string>
-    <string name="license_description">Aegis Authenticator er lisensiert under GPLv3</string>
     <string name="third_party_licenses">Tredjepartslisenser</string>
-    <string name="third_party_licenses_description">Lisenser til tredjepartsbiblioteker Aegis benytter</string>
+    <string name="third_party_licenses_description">Lisenser til tredjepartsbiblioteker Cue benytter</string>
     <string name="country_netherlands">Nederland</string>
     <string name="email_us">Skriv en e-post</string>
     <string name="visit_website">Besøk nettsiden våres</string>
@@ -400,7 +396,7 @@
     <string name="support_rate">Ranger</string>
     <string name="support_rate_description">Støtt oss ved å skrive en anmeldelse i Google Play Butikk</string>
     <string name="email">E-post</string>
-    <string name="backup_system_builtin">Aegis\' innebygde automatiske sikkerhetskopier</string>
+    <string name="backup_system_builtin">Cue\' innebygde automatiske sikkerhetskopier</string>
     <string name="backup_system_android">System for Android-sikkerhetskopiering i skyen</string>
     <string name="backup_reminder_bar_message_with_latest" comment="The parameter is an elapsed time in the style of 'x seconds/minutes/days ago'">
         Siste sikkerhetskopi er utdatert (%s)
@@ -436,7 +432,7 @@
     <string name="unable_to_copy_uri_to_clipboard">Kunne ikke kopiere URI til utklippstavlen</string>
     <string name="uri_copied_to_clipboard">URI kopiert til utklippstavlen</string>
     <string name="transfer_entry_description">Skann denne QR-koden med autentiseringsappen du ønsker å overføre denne oppføringen til</string>
-    <string name="google_auth_compatible_transfer_description">Skann disse QR-kodene med Aegis eller Google Authenticator.\n\nPå grunn av begrensningene i Google Authenticator appen, vil kun TOTP og HOTP nøkler som benytter SHA1 og produserer 6-sifrede koder bli inkludert</string>
+    <string name="google_auth_compatible_transfer_description">Skann disse QR-kodene med Cue eller Google Authenticator.\n\nPå grunn av begrensningene i Google Authenticator appen, vil kun TOTP og HOTP nøkler som benytter SHA1 og produserer 6-sifrede koder bli inkludert</string>
     <string name="password_strength_very_weak">Veldig svakt</string>
     <string name="password_strength_weak">Svak</string>
     <string name="password_strength_fair">Middels</string>
@@ -455,7 +451,6 @@
     <string name="title_activity_licenses">Tredjepartslisenser</string>
     <string name="dialog_wipe_entries_title">Tøm oppføringner</string>
     <string name="dialog_wipe_entries_checkbox">Destruer hvelv</string>
-    <string name="import_vault">Importer Aegis hvelv</string>
     <string name="importer_help_2fas">Legg ved en 2FAS Authenticator sikkerhetskopi.</string>
     <string name="importer_help_aegis">Legg ved en Aegis eksportfil eller sikkerhetskopi.</string>
     <string name="importer_help_andotp">Legg ved en andOTP eksportfil eller sikkerhetskopi.</string>
@@ -466,7 +461,7 @@
     <string name="import_assign_icons_dialog_title">Tildel ikoner</string>
     <string name="import_assign_icons_dialog_text">Ønsker du å tildele ikoner til de importerte oppføringene?</string>
     <string name="importer_encrypted_exception_google_authenticator">Kryptert oppføring ble hoppet over: %s</string>
-    <string name="importer_help_direct">Importer oppføringer direkte fra %s. Dette krever at appen er installert på denne enheten og at Aegis har root-tilgang.</string>
+    <string name="importer_help_direct">Importer oppføringer direkte fra %s. Dette krever at appen er installert på denne enheten og at Cue har root-tilgang.</string>
     <string name="groups">Grupper</string>
     <string name="pref_focus_search">Fokuser på søkefelt når appen startes</string>
     <string name="pref_focus_search_summary">Fokuser på søkefelt med en gang appen er åpnet.</string>

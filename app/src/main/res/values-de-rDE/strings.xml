@@ -28,7 +28,6 @@
     <string name="pref_section_security_title">Sicherheit</string>
     <string name="pref_section_security_summary">Verschlüsselung, biometrisches Entsperren, automatisches Sperren und andere Sicherheitseinstellungen konfigurieren.</string>
     <string name="pref_section_import_export_title">Importieren und exportieren</string>
-    <string name="pref_section_import_export_summary">Sicherungskopien von Aegis oder anderen Authentifizierungs-Apps importieren und Exportdateien der Aegis-Datenbank erstellen.</string>
     <string name="pref_section_audit_log_title">Auditprotokoll</string>
     <string name="pref_section_audit_log_summary">Liste aller wichtigen Ereignisse, die innerhalb der App registriert wurden.</string>
     <string name="pref_section_backups_title">Sicherungen</string>
@@ -56,14 +55,14 @@
     <string name="pref_import_file_title">Aus Datei importieren</string>
     <string name="pref_import_file_summary">Token aus einer Datei importieren</string>
     <string name="pref_android_backups_title">Cloud-Sicherungen von Android</string>
-    <string name="pref_android_backups_summary">Dem Cloud-Sicherungssystem von Android erlauben, die Datenbank von Aegis in die Sicherungen aufzunehmen. Das wird nur für verschlüsselte Datenbanken unterstützt.</string>
+    <string name="pref_android_backups_summary">Dem Cloud-Sicherungssystem von Android erlauben, die Datenbank von Cue in die Sicherungen aufzunehmen. Das wird nur für verschlüsselte Datenbanken unterstützt.</string>
     <string name="pref_android_backups_hint"><i>Gerät-zu-Gerät-Sicherungen (D2D) sind immer erlaubt – unabhängig von der obigen Einstellung</i></string>
     <string name="pref_backups_title">Datenbank automatisch sichern</string>
     <string name="pref_backups_summary">Sicherungskopie der Datenbank automatisch bei Änderungen auf externem Speicher erstellen. Nur für verschlüsselte Datenbanken unterstützt.</string>
     <string name="pref_backups_reminder_title">Erinnerung für Sicherungen</string>
     <string name="pref_backups_reminder_summary">Erinnerung zur Sicherung der Datenbank anzeigen, falls die letzten Änderungen nicht gesichert wurden.</string>
     <string name="pref_backups_reminder_dialog_title">Erinnerung für Sicherungen deaktivieren</string>
-    <string name="pref_backups_reminder_dialog_summary">Das Deaktivieren dieser Erinnerung bedeutet, dass Aegis nicht mitteilt, ob Änderungen vorgenommen wurden, die noch nicht gesichert sind. Dadurch besteht die Gefahr, dass der Zugriff auf deine Token verloren geht. Möchtest du die Erinnerung wirklich deaktivieren?</string>
+    <string name="pref_backups_reminder_dialog_summary">Das Deaktivieren dieser Erinnerung bedeutet, dass Cue nicht mitteilt, ob Änderungen vorgenommen wurden, die noch nicht gesichert sind. Dadurch besteht die Gefahr, dass der Zugriff auf deine Token verloren geht. Möchtest du die Erinnerung wirklich deaktivieren?</string>
     <string name="pref_backups_versioning_strategy_title">Sicherungsstrategie</string>
     <string name="pref_backups_versioning_strategy_keep_x_versions">Bestimmte Anzahl an Sicherungen behalten</string>
     <string name="pref_backups_versioning_strategy_single_backup">Einzelne Sicherung</string>
@@ -103,7 +102,7 @@
     <string name="pref_auto_lock_title">Automatisches Sperren</string>
     <string name="pref_auto_lock_summary">Wenn %s</string>
     <string name="pref_auto_lock_summary_disabled">Deaktiviert</string>
-    <string name="pref_auto_lock_prompt">Aegis automatisch sperren, wenn</string>
+    <string name="pref_auto_lock_prompt">Cue automatisch sperren, wenn</string>
     <string name="pref_auto_lock_type_back_button">Die „Zurück“-Taste gedrückt wird</string>
     <string name="pref_auto_lock_type_minimize">Die App minimiert wird</string>
     <string name="pref_auto_lock_type_device_lock">Das Gerät gesperrt wird</string>
@@ -145,11 +144,10 @@
     <string name="today_at_time">Heute um %1$s</string>
     <string name="day_of_week_at_time">%1$s um %2$s</string>
     <string name="export_encrypted">Datenbank verschlüsseln</string>
-    <string name="export_help">Mit dieser Aktion wird die Datenbank aus dem internen Speicher von Aegis exportiert. Wähle das Format aus, in dem der Export erfolgen soll:</string>
-    <string name="export_warning_unencrypted">Du bist dabei, eine unverschlüsselte Kopie deiner Aegis-Datenbank zu exportieren. <b>Dies wird nicht empfohlen</b>.</string>
+    <string name="export_help">Mit dieser Aktion wird die Datenbank aus dem internen Speicher von Cue exportiert. Wähle das Format aus, in dem der Export erfolgen soll:</string>
+    <string name="export_warning_unencrypted">Du bist dabei, eine unverschlüsselte Kopie deiner Cue-Datenbank zu exportieren. <b>Dies wird nicht empfohlen</b>.</string>
     <string name="export_warning_password">Exportdateien werden mit einem separaten Passwort verschlüsselt, das in den Sicherheitseinstellungen konfiguriert wurde.</string>
     <string name="understand_risk_accept">Ich bin mir des Risikos bewusst</string>
-    <string name="export_format_aegis">Aegis (.JSON)</string>
     <string name="export_format_google_auth_uri">Textdatei (.TXT)</string>
     <string name="export_format_html">Webseite (.HTML)</string>
     <string name="export_format_hint">Exportformat</string>
@@ -160,9 +158,9 @@
         <item quantity="other">%d Gruppen ausgewählt</item>
     </plurals>
     <string name="export_no_groups_selected">Keine Gruppen zum Exportieren ausgewählt</string>
-    <string name="export_html_title" comment="The title of an HTML export document">Aegis-Authenticator-Exportdatei</string>
+    <string name="export_html_title" comment="The title of an HTML export document">Cue-Authenticator-Exportdatei</string>
     <string name="choose_authentication_method">Sicherheit</string>
-    <string name="authentication_method_explanation">Aegis ist eine auf Sicherheit ausgerichtete 2FA-App. Die Token werden in einer Datenbank gespeichert, die optional mit einem Passwort deiner Wahl verschlüsselt werden kann. Wenn ein Angreifer an deine verschlüsselte Datenbankdatei gelangt, kann er ohne Kenntnis des Passworts nicht auf den Inhalt zugreifen.\n\nWir haben die Optionen voreingestellt, die unserer Meinung nach am besten zu deinem Gerät passen.</string>
+    <string name="authentication_method_explanation">Cue ist eine auf Sicherheit ausgerichtete 2FA-App. Die Token werden in einer Datenbank gespeichert, die optional mit einem Passwort deiner Wahl verschlüsselt werden kann. Wenn ein Angreifer an deine verschlüsselte Datenbankdatei gelangt, kann er ohne Kenntnis des Passworts nicht auf den Inhalt zugreifen.\n\nWir haben die Optionen voreingestellt, die unserer Meinung nach am besten zu deinem Gerät passen.</string>
     <string name="authentication_method_none">Keine</string>
     <string name="authentication_method_none_description">Die Datenbank wird nicht verschlüsselt und es wird kein Passwort zum Entschlüsseln benötigt. <b>Diese Option wird nicht empfohlen</b>.</string>
     <string name="authentication_method_password">Passwort</string>
@@ -178,10 +176,10 @@
     <string name="set_number">Eine Zahl eingeben</string>
     <string name="set_password_confirm">Bitte bestätige das Passwort</string>
     <string name="invalid_password">Das Passwort ist falsch</string>
-    <string name="invalidated_biometrics">Es wurde eine Änderung in den Sicherheitseinstellungen deines Geräts erkannt. Bitte navigiere zu »Aegis -&gt; Einstellungen -&gt; Sicherheit -&gt; Biometrisches Entsperren«, um biometrisches Entsperren zu deaktivieren und wieder zu aktivieren.</string>
+    <string name="invalidated_biometrics">Es wurde eine Änderung in den Sicherheitseinstellungen deines Geräts erkannt. Bitte navigiere zu »Cue -&gt; Einstellungen -&gt; Sicherheit -&gt; Biometrisches Entsperren«, um biometrisches Entsperren zu deaktivieren und wieder zu aktivieren.</string>
     <string name="password_reminder">Bitte gib dein Passwort ein. Wir fordern dich gelegentlich dazu auf, damit du es nicht vergisst.</string>
     <string name="password_reminder_dialog_title">Biometrisches Entsperren als Standard</string>
-    <string name="password_reminder_dialog_message">Wir fordern dich gelegentlich auf, dein Passwort einzugeben, um sicherzustellen, dass du es nicht vergessen hast und du nicht den Zugang zu deiner Datenbank verlierst. Nachdem du dein Passwort einmal eingegeben hast, verwendet Aegis wieder das biometrische Entsperren, bis es Zeit für eine weitere Passworterinnerung ist.</string>
+    <string name="password_reminder_dialog_message">Wir fordern dich gelegentlich auf, dein Passwort einzugeben, um sicherzustellen, dass du es nicht vergessen hast und du nicht den Zugang zu deiner Datenbank verlierst. Nachdem du dein Passwort einmal eingegeben hast, verwendet Cue wieder das biometrische Entsperren, bis es Zeit für eine weitere Passworterinnerung ist.</string>
     <string name="password_reminder_freq_never">Niemals</string>
     <string name="password_reminder_freq_weekly">wöchentlich</string>
     <string name="password_reminder_freq_biweekly">alle 2 Wochen</string>
@@ -189,7 +187,7 @@
     <string name="password_reminder_freq_quarterly">vierteljährlich</string>
     <string name="enter_password_proton_message">Es sieht so aus, als wäre diese Proton-Authenticator-Sicherung verschlüsselt. Bitte gib unten das Passwort ein.</string>
     <string name="enter_password_2fas_message">Es sieht so aus, als ob diese 2FAS-Sicherung verschlüsselt ist. Bitte das Passwort unten eingeben.</string>
-    <string name="enter_password_authy_message">Es sieht so aus, als ob deine Authy-Token verschlüsselt sind. Bitte schließe Aegis, öffne Authy und entsperre die Token mit deinem Passwort. Aegis kann ebenfalls versuchen, deine Authy-Token zu entschlüsseln, wenn du unten dein Passwort eingibst.</string>
+    <string name="enter_password_authy_message">Es sieht so aus, als ob deine Authy-Token verschlüsselt sind. Bitte schließe Cue, öffne Authy und entsperre die Token mit deinem Passwort. Cue kann ebenfalls versuchen, deine Authy-Token zu entschlüsseln, wenn du unten dein Passwort eingibst.</string>
     <string name="enter_password_aegis_title">Gib das Passwort der zu importierenden Datenbank ein</string>
     <string name="period_hint">Zeitraum (Sekunden)</string>
     <string name="algorithm_hint">Hashfunktion</string>
@@ -252,9 +250,8 @@
     <string name="saving_profile_error">Fehler beim Speichern des Profils</string>
     <string name="saving_assign_icons_error">Fehler beim Zuweisen der Symbole</string>
     <string name="welcome">Willkommen</string>
-    <string name="app_description">Aegis ist eine kostenlose, sichere und quelloffene 2FA-App</string>
     <string name="setup_completed">Einrichtung abgeschlossen</string>
-    <string name="setup_completed_description">Aegis wurde eingerichtet und ist nun bereit.</string>
+    <string name="setup_completed_description">Cue wurde eingerichtet und ist nun bereit.</string>
     <string name="vault_not_found">Datenbank nicht gefunden. Einrichtung wird gestartet …</string>
     <string name="copied">Kopiert</string>
     <string name="errors_copied">Fehlermeldungen in die Zwischenablage kopiert</string>
@@ -266,8 +263,8 @@
     <string name="saving_error">Beim Speichern der Datenbank ist ein Fehler aufgetreten</string>
     <string name="vault_init_error">Beim Initialisieren der Datenbank ist ein Fehler aufgetreten</string>
     <string name="vault_load_error">Beim Laden der Datenbank aus dem Speicher ist ein Fehler aufgetreten</string>
-    <string name="biometric_decrypt_error">Beim Versuch, die Datenbank mit biometrischer Authentifizierung zu entschlüsseln, ist ein Fehler aufgetreten. Dies geschieht in der Regel nur, wenn die Sicherheitseinstellungen deines Geräts geändert wurden. Bitte entsperre die Datenbank mit deinem Passwort und konfiguriere die biometrische Authentifizierung in den Einstellungen von Aegis neu.</string>
-    <string name="biometric_init_error">Beim Versuch, die biometrische Authentifizierung vorzubereiten, ist ein Fehler aufgetreten. Dies geschieht in der Regel nur, wenn die Sicherheitseinstellungen deines Geräts geändert wurden. Bitte entsperre die Datenbank mit deinem Passwort und konfiguriere die biometrische Authentifizierung in den Einstellungen von Aegis neu.</string>
+    <string name="biometric_decrypt_error">Beim Versuch, die Datenbank mit biometrischer Authentifizierung zu entschlüsseln, ist ein Fehler aufgetreten. Dies geschieht in der Regel nur, wenn die Sicherheitseinstellungen deines Geräts geändert wurden. Bitte entsperre die Datenbank mit deinem Passwort und konfiguriere die biometrische Authentifizierung in den Einstellungen von Cue neu.</string>
+    <string name="biometric_init_error">Beim Versuch, die biometrische Authentifizierung vorzubereiten, ist ein Fehler aufgetreten. Dies geschieht in der Regel nur, wenn die Sicherheitseinstellungen deines Geräts geändert wurden. Bitte entsperre die Datenbank mit deinem Passwort und konfiguriere die biometrische Authentifizierung in den Einstellungen von Cue neu.</string>
     <string name="disable_encryption">Verschlüsselung deaktivieren</string>
     <string name="disable_encryption_description">Möchtest du die Verschlüsselung wirklich deaktivieren? Dadurch wird die Datenbank im Klartext gespeichert. <b>Automatische Sicherungen werden ebenfalls deaktiviert</b>.</string>
     <string name="enable_encryption_error">Bei der Aktivierung der Verschlüsselung ist ein Fehler aufgetreten</string>
@@ -301,7 +298,7 @@
     <string name="file_not_found">Fehler: Datei nicht gefunden</string>
     <string name="reading_file_error">Beim Lesen der Datei ist ein Fehler aufgetreten</string>
     <string name="app_lookup_error">Fehler: App ist nicht installiert</string>
-    <string name="app_version_error">Die installierte Version von %s wird nicht unterstützt. Neuere Versionen verschlüsseln einige der Dateien im internen Speicherverzeichnis, sodass Aegis nicht mehr auf die Informationen zugreifen kann, die für das Importieren benötigt werden. Der Importversuch wird wahrscheinlich zu einem Fehler führen. Möchtest du trotzdem fortfahren?</string>
+    <string name="app_version_error">Die installierte Version von %s wird nicht unterstützt. Neuere Versionen verschlüsseln einige der Dateien im internen Speicherverzeichnis, sodass Cue nicht mehr auf die Informationen zugreifen kann, die für das Importieren benötigt werden. Der Importversuch wird wahrscheinlich zu einem Fehler führen. Möchtest du trotzdem fortfahren?</string>
     <string name="root_error">Fehler: Root-Zugriff konnte nicht gewährt werden</string>
     <plurals name="imported_entries_count">
         <item quantity="one">%d Eintrag importiert</item>
@@ -319,7 +316,7 @@
     <string name="encryption_enable_biometrics_error">Beim Versuch, biometrisches Entsperren zu aktivieren, ist ein Fehler aufgetreten. Einige Geräte haben eine schlechte Implementierung der biometrischen Authentifizierung und es ist wahrscheinlich, dass dieses Gerät dazugehört. Erwäge stattdessen den Wechsel zu einer nur passwortbasierten Konfiguration.</string>
     <string name="no_cameras_available">Keine Kameras verfügbar</string>
     <string name="read_qr_error">Beim Lesen des QR-Codes ist ein Fehler aufgetreten</string>
-    <string name="read_qr_error_phonefactor">Aegis ist nicht mit dem proprietären 2FA-Algorithmus von Microsoft kompatibel. Bitte vergewissere dich, dass du bei der Konfiguration von 2FA in Office 365 »Anwendung ohne Benachrichtigungen einrichten« auswählst.</string>
+    <string name="read_qr_error_phonefactor">Cue ist nicht mit dem proprietären 2FA-Algorithmus von Microsoft kompatibel. Bitte vergewissere dich, dass du bei der Konfiguration von 2FA in Office 365 »Anwendung ohne Benachrichtigungen einrichten« auswählst.</string>
     <string name="partial_google_auth_import">Unvollständiger Google-Authenticator-Export erkannt</string>
     <string name="partial_google_auth_import_warning">Einige QR-Codes fehlen in deinem Importversuch. Die folgenden Codes wurden nicht gefunden:\n\n<b>%s</b>\n\nDu kannst mit dem Importieren dieses Teilexports fortfahren, aber wir empfehlen es mit allen QR-Codes erneut zu versuchen, damit du nicht riskierst, den Zugriff auf Token zu verlieren.</string>
     <string name="missing_qr_code_descriptor">• QR-Code %d</string>
@@ -406,8 +403,8 @@
     <string name="unknown_issuer">Unbekannter Herausgeber</string>
     <string name="unknown_account_name">Unbekannter Kontoname</string>
     <plurals name="import_error_dialog">
-        <item quantity="one">Aegis konnte %d Token nicht importieren. Dieser Token wird übersprungen. Drücke auf »Details«, um weitere Informationen über diesen Fehler zu erhalten.</item>
-        <item quantity="other">Aegis konnte %d Token nicht importieren. Diese Token werden übersprungen. Drücke auf »Details«, um weitere Informationen über diese Fehler zu erhalten.</item>
+        <item quantity="one">Cue konnte %d Token nicht importieren. Dieser Token wird übersprungen. Drücke auf »Details«, um weitere Informationen über diesen Fehler zu erhalten.</item>
+        <item quantity="other">Cue konnte %d Token nicht importieren. Diese Token werden übersprungen. Drücke auf »Details«, um weitere Informationen über diese Fehler zu erhalten.</item>
     </plurals>
     <string name="unable_to_process_deeplink">Deep-Link konnte nicht verarbeitet werden</string>
     <string name="unable_to_read_qrcode_file">QR-Code konnte nicht aus der Datei gelesen und verarbeitet werden: %s.</string>
@@ -421,16 +418,15 @@
     <string name="toggle_checkboxes">Kontrollkästchen umschalten</string>
     <string name="search">Suchen</string>
     <string name="channel_name_lock_status">Sperrstatus</string>
-    <string name="channel_description_lock_status">Aegis kann eine dauerhafte Benachrichtigung erstellen, um dich zu benachrichtigen, wenn die Datenbank gesperrt ist</string>
+    <string name="channel_description_lock_status">Cue kann eine dauerhafte Benachrichtigung erstellen, um dich zu benachrichtigen, wenn die Datenbank gesperrt ist</string>
     <string name="vault_unlocked_state">Die Datenbank ist entsperrt. Hier antippen, um sie zu sperren.</string>
     <string name="version">Version</string>
     <string name="changelog">Änderungsprotokoll</string>
     <string name="whats_new">Was ist neu</string>
     <string name="github_description">Quellcode, Probleme und Informationen</string>
     <string name="license">Lizenz</string>
-    <string name="license_description">Aegis Authenticator ist lizenziert unter GPLv3</string>
     <string name="third_party_licenses">Lizenzen von Dritten</string>
-    <string name="third_party_licenses_description">Lizenzen für die von Aegis verwendeten Bibliotheken von Dritten</string>
+    <string name="third_party_licenses_description">Lizenzen für die von Cue verwendeten Bibliotheken von Dritten</string>
     <string name="country_netherlands">Niederlande</string>
     <string name="email_us">Eine E-Mail schreiben</string>
     <string name="visit_website">Unsere Website besuchen</string>
@@ -440,7 +436,7 @@
     <string name="webview_error">Dieses Gerät unterstützt kein WebView, das zum Anzeigen des Änderungsprotokolls und der Lizenz erforderlich ist. Es fehlt eine Systemkomponente.</string>
     <string name="email">E-Mail</string>
     <string name="time_sync_warning_title">Automatische Zeitsynchronisierung</string>
-    <string name="time_sync_warning_message">Aegis ist auf die Synchronisierung der Systemzeit angewiesen, um korrekte Codes zu generieren. Eine Abweichung von nur wenigen Sekunden kann zu falschen Codes führen. Es sieht so aus, als ob dein Gerät nicht so konfiguriert ist, dass es die Zeit automatisch synchronisiert. Möchtest du das jetzt tun?</string>
+    <string name="time_sync_warning_message">Cue ist auf die Synchronisierung der Systemzeit angewiesen, um korrekte Codes zu generieren. Eine Abweichung von nur wenigen Sekunden kann zu falschen Codes führen. Es sieht so aus, als ob dein Gerät nicht so konfiguriert ist, dass es die Zeit automatisch synchronisiert. Möchtest du das jetzt tun?</string>
     <string name="time_sync_warning_disable">Höre auf, mich zu warnen. Ich weiß, was ich tue.</string>
     <string name="google_qr_export_unrelated">Nicht zugehöriger QR-Code gefunden. Versuche, den Scanner neu zu starten.</string>
     <plurals name="google_qr_export_scanned">
@@ -453,9 +449,9 @@
         Ein kürzlicher Sicherungsversuch der Datenbank mit %1$s ist fehlgeschlagen, da ein Fehler aufgetreten ist. Das Erstellen einer Sicherung wurde am %2$s versucht. Bitte überprüfe deine Sicherungseinstellungen, damit Sicherungen erfolgreich abgeschlossen werden können.
     </string>
     <string name="backup_permission_error_dialog_details" comment="The first parameter is the type of backup (e.g. built-in or Android backup). The second parameter is an elapsed time in the style of 'x seconds/minutes/days ago'.">
-        Ein kürzlicher Sicherungsversuch der Datenbank mit %1$s ist fehlgeschlagen, da Aegis keine Berechtigung zum Schreiben auf das Sicherungsziel hatte. Das Erstellen einer Sicherung wurde am %2$s versucht. Dieser Fehler kann auftreten, wenn das Sicherungsziel verschoben/umbenannt wurde oder wenn Aegis kürzlich aus einer Sicherung wiederhergestellt wurde. Bitte konfiguriere das Sicherungsziel neu.
+        Ein kürzlicher Sicherungsversuch der Datenbank mit %1$s ist fehlgeschlagen, da Cue keine Berechtigung zum Schreiben auf das Sicherungsziel hatte. Das Erstellen einer Sicherung wurde am %2$s versucht. Dieser Fehler kann auftreten, wenn das Sicherungsziel verschoben/umbenannt wurde oder wenn Cue kürzlich aus einer Sicherung wiederhergestellt wurde. Bitte konfiguriere das Sicherungsziel neu.
     </string>
-    <string name="backup_system_builtin">Automatische Sicherungen von Aegis</string>
+    <string name="backup_system_builtin">Automatische Sicherungen von Cue</string>
     <string name="backup_system_android">Cloud-Sicherungssystem von Android</string>
     <string name="backup_reminder_bar_message_with_latest" comment="The parameter is an elapsed time in the style of 'x seconds/minutes/days ago'">        Die letzte Sicherung ist veraltet (%s)
     </string>
@@ -490,7 +486,7 @@
     <string name="uri_copied_to_clipboard">URI in die Zwischenablage kopiert</string>
     <string name="transfer_entry_description">Scanne diesen QR-Code mit der Authentifizierungs-App, zu der du diesen Eintrag übertragen möchtest</string>
     <string name="transfer_entry_brightness">QR-Code antippen, um die Helligkeit zu ändern</string>
-    <string name="google_auth_compatible_transfer_description">Scanne diese QR-Codes mit Aegis oder Google Authenticator.\n\nAufgrund der Einschränkungen der Google Authenticator-App sind nur TOTP- und HOTP-Token enthalten, die SHA1 verwenden und 6-stellige Codes erzeugen</string>
+    <string name="google_auth_compatible_transfer_description">Scanne diese QR-Codes mit Cue oder Google Authenticator.\n\nAufgrund der Einschränkungen der Google Authenticator-App sind nur TOTP- und HOTP-Token enthalten, die SHA1 verwenden und 6-stellige Codes erzeugen</string>
     <string name="password_strength_very_weak">Sehr schwach</string>
     <string name="password_strength_weak">Schwach</string>
     <string name="password_strength_fair">Mittel</string>
@@ -513,10 +509,9 @@
     <string name="dialog_wipe_entries_checkbox">Datenbankinhalt löschen</string>
     <string name="import_from_clipboard_title">Aus Zwischenablage importieren</string>
     <string name="import_from_clipboard_message">Gültige otpauth-URI in der Zwischenablage erkannt.\n\n<b>Name</b>: %1$s\n<b>Herausgeber</b>: %2$s\n\nMöchtest du damit diesen Eintrag ausfüllen?</string>
-    <string name="panic_trigger_ignore_toast">Aegis hat ein Paniksignal empfangen, aber die Einstellung ist deaktiviert – Paniksignal wird ignoriert</string>
+    <string name="panic_trigger_ignore_toast">Cue hat ein Paniksignal empfangen, aber die Einstellung ist deaktiviert – Paniksignal wird ignoriert</string>
     <string name="pref_panic_trigger_title">Datenbank bei Paniksignal löschen</string>
     <string name="pref_panic_trigger_summary">Datenbank löschen, wenn ein Paniksignal von Ripple empfangen wird</string>
-    <string name="import_vault">Aegis-Datenbank importieren</string>
     <string name="import_vault_hint">Möchtest du Daten aus einer anderen 2FA-App importieren? Schließe zuerst die Einrichtung ab. Anschließend kannst du die Einstellungen aufrufen.</string>
     <plurals name="import_duplicate_toast">
         <item quantity="one">Auswahl für %d potenzielles Duplikat aufgehoben. Bitte überprüfe die Einträge.</item>
@@ -534,7 +529,7 @@
     <string name="importer_help_freeotp">FreeOTP 2: Gib eine Sicherungsdatei an.\nFreeOTP 1.X: Gib eine Kopie von <b>/data/data/org.fedorahosted.freeotp/shared_prefs/tokens.xml</b>, die sich im internen Speicherverzeichnis von FreeOTP befindet.</string>
     <string name="importer_help_freeotp_plus">Gib eine FreeOTP+-Exportdatei an.</string>
     <string name="importer_warning_title_freeotp2">Kompatibilität mit FreeOTP 2</string>
-    <string name="importer_warning_message_freeotp2">Es gibt in FreeOTP 2 eine Reihe von Problemen, die zu beschädigten Sicherungsdateien führen können. Aegis wird versuchen, so viele Einträge wie möglich zu retten. Es ist möglich, dass das Importieren einiger oder sogar aller Einträge fehlschlägt.</string>
+    <string name="importer_warning_message_freeotp2">Es gibt in FreeOTP 2 eine Reihe von Problemen, die zu beschädigten Sicherungsdateien führen können. Cue wird versuchen, so viele Einträge wie möglich zu retten. Es ist möglich, dass das Importieren einiger oder sogar aller Einträge fehlschlägt.</string>
     <string name="importer_help_google_authenticator"><b>Es werden nur Datenbankdateien von Google Authenticator bis Version 5.10 unterstützt</b>.\n\nGib eine Kopie von <b>/data/data/com.google.android.apps.authenticator2/databases/databases</b> an, die sich im internen Speicherverzeichnis von Google Authenticator befindet.</string>
     <string name="importer_help_microsoft_authenticator">Gib eine Kopie von <b>/data/data/com.azure.authenticator/databases/PhoneFactor</b> an, die sich im internen Speicherverzeichnis von Microsoft Authenticator befindet.</string>
     <string name="importer_help_plain_text">Gib eine Klartextdatei an, die in jeder Zeile eine Google-Authenticator-URI enthält.</string>
@@ -546,7 +541,7 @@
     <string name="import_assign_icons_dialog_title">Symbole zuweisen</string>
     <string name="import_assign_icons_dialog_text">Möchtest du den importierten Einträgen Symbole zuweisen?</string>
     <string name="importer_encrypted_exception_google_authenticator">Verschlüsselter Eintrag wurde übersprungen: %s</string>
-    <string name="importer_help_direct">Importiere Einträge direkt aus %s. Dazu muss die App auf diesem Gerät installiert sein und Aegis muss Root-Zugriff gewährt werden.</string>
+    <string name="importer_help_direct">Importiere Einträge direkt aus %s. Dazu muss die App auf diesem Gerät installiert sein und Cue muss Root-Zugriff gewährt werden.</string>
     <string name="groups">Gruppen</string>
     <string name="pref_focus_search">Suche beim App-Start öffnen</string>
     <string name="pref_focus_search_summary">Die Suche wird sofort nach dem Öffnen der App ausgewählt.</string>

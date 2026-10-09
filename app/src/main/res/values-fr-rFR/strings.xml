@@ -28,7 +28,6 @@
     <string name="pref_section_security_title">Sécurité</string>
     <string name="pref_section_security_summary">Configurer le chiffrement, le déverrouillage biométrique, le verrouillage automatique et d\'autres paramètres de sécurité.</string>
     <string name="pref_section_import_export_title">Importer &amp; Exporter</string>
-    <string name="pref_section_import_export_summary">Importer des sauvegardes d\'Aegis ou d\'autres applications d\'authentification. Créez des exportations manuelles de votre coffre Aegis.</string>
     <string name="pref_section_audit_log_title">Journal d\'audit</string>
     <string name="pref_section_audit_log_summary">Trouver une liste de tous les événements importants signalés qui se sont produits dans l\'application.</string>
     <string name="pref_section_backups_title">Sauvegardes</string>
@@ -56,14 +55,14 @@
     <string name="pref_import_file_title">Importer depuis un fichier</string>
     <string name="pref_import_file_summary">Importer des jetons depuis un fichier</string>
     <string name="pref_android_backups_title">Sauvegardes cloud d\'Android</string>
-    <string name="pref_android_backups_summary">Autoriser le système de sauvegarde cloud d\'Android à inclure le coffre-fort d\'Aegis dans ses sauvegardes. Ceci n\'est pris en charge que pour les coffres-forts chiffrés.</string>
+    <string name="pref_android_backups_summary">Autoriser le système de sauvegarde cloud d\'Android à inclure le coffre-fort d\'Cue dans ses sauvegardes. Ceci n\'est pris en charge que pour les coffres-forts chiffrés.</string>
     <string name="pref_android_backups_hint"><i>Les sauvegardes device-to-device (D2D) sont toujours autorisées, indépendamment du paramétrage ci-dessus</i></string>
     <string name="pref_backups_title">Sauvegarder automatiquement le coffre-fort</string>
     <string name="pref_backups_summary">Créer automatiquement des sauvegardes du coffre-fort sur le stockage externe lorsque des modifications sont apportées. Ceci n\'est pris en charge que pour les coffres-forts chiffrés.</string>
     <string name="pref_backups_reminder_title">Rappel de sauvegarde</string>
     <string name="pref_backups_reminder_summary">Afficher un rappel pour sauvegarder votre coffre-fort si vous n\'avez pas sauvegardé vos dernières modifications.</string>
     <string name="pref_backups_reminder_dialog_title">Désactiver le rappel de sauvegarde</string>
-    <string name="pref_backups_reminder_dialog_summary">Désactiver ce rappel signifie qu\'Aegis ne vous dira pas si vous avez ou non des modifications qui ne sont pas encore sauvegardées. Cela vous expose au risque de perdre l\'accès à vos jetons. Êtes-vous sûr de vouloir désactiver le rappel ?</string>
+    <string name="pref_backups_reminder_dialog_summary">Désactiver ce rappel signifie qu\'Cue ne vous dira pas si vous avez ou non des modifications qui ne sont pas encore sauvegardées. Cela vous expose au risque de perdre l\'accès à vos jetons. Êtes-vous sûr de vouloir désactiver le rappel ?</string>
     <string name="pref_backups_versioning_strategy_title">Stratégie de sauvegarde</string>
     <string name="pref_backups_versioning_strategy_keep_x_versions">Conserver plusieurs versions</string>
     <string name="pref_backups_versioning_strategy_single_backup">Sauvegarde unique</string>
@@ -103,7 +102,7 @@
     <string name="pref_auto_lock_title">Verrouillage automatique</string>
     <string name="pref_auto_lock_summary">Quand %s</string>
     <string name="pref_auto_lock_summary_disabled">Désactivé</string>
-    <string name="pref_auto_lock_prompt">Verrouiller automatiquement Aegis quand</string>
+    <string name="pref_auto_lock_prompt">Verrouiller automatiquement Cue quand</string>
     <string name="pref_auto_lock_type_back_button">Le bouton Retour est appuyé</string>
     <string name="pref_auto_lock_type_minimize">L\'application est minimisée</string>
     <string name="pref_auto_lock_type_device_lock">L\'appareil est verrouillé</string>
@@ -145,11 +144,10 @@
     <string name="today_at_time">Ajourd\'hui à %1$s</string>
     <string name="day_of_week_at_time">%1$s à %2$s</string>
     <string name="export_encrypted">Chiffrer le coffre-fort</string>
-    <string name="export_help">Cette action exportera le coffre-fort à partir du stockage interne d\'Aegis. Sélectionnez le format vers lequel vous souhaitez faire votre export :</string>
-    <string name="export_warning_unencrypted">Vous êtes sur le point d\'exporter une copie non chiffrée de votre coffre-fort Aegis. <b>Ce n\'est pas recommandé</b>.</string>
+    <string name="export_help">Cette action exportera le coffre-fort à partir du stockage interne d\'Cue. Sélectionnez le format vers lequel vous souhaitez faire votre export :</string>
+    <string name="export_warning_unencrypted">Vous êtes sur le point d\'exporter une copie non chiffrée de votre coffre-fort Cue. <b>Ce n\'est pas recommandé</b>.</string>
     <string name="export_warning_password">Les exports sont chiffrés à l\'aide d\'un mot de passe séparé configuré dans les paramètres de sécurité.</string>
     <string name="understand_risk_accept">Je comprends le risque</string>
-    <string name="export_format_aegis">Aegis (.JSON)</string>
     <string name="export_format_google_auth_uri">Fichier texte (.TXT)</string>
     <string name="export_format_html">Page Web (.HTML)</string>
     <string name="export_format_hint">Format d\'export</string>
@@ -160,9 +158,9 @@
         <item quantity="other">%d groupes sélectionnés</item>
     </plurals>
     <string name="export_no_groups_selected">Aucun groupe sélectionné pour l\'export</string>
-    <string name="export_html_title" comment="The title of an HTML export document">Export Aegis Authenticator</string>
+    <string name="export_html_title" comment="The title of an HTML export document">Export Cue Authenticator</string>
     <string name="choose_authentication_method">Sécurité</string>
-    <string name="authentication_method_explanation">Aegis est une application d\'authentification à deux facteurs (2FA) axée sur la sécurité. Les jetons sont stockés dans un coffre-fort, qui peut être éventuellement chiffré avec un mot de passe de votre choix. Si un attaquant obtient votre fichier de coffre-fort chiffré, il ne pourra pas accéder au contenu sans connaître le mot de passe.\n\nNous avons présélectionné l\'option que nous pensons la plus adaptée à votre appareil.</string>
+    <string name="authentication_method_explanation">Cue est une application d\'authentification à deux facteurs (2FA) axée sur la sécurité. Les jetons sont stockés dans un coffre-fort, qui peut être éventuellement chiffré avec un mot de passe de votre choix. Si un attaquant obtient votre fichier de coffre-fort chiffré, il ne pourra pas accéder au contenu sans connaître le mot de passe.\n\nNous avons présélectionné l\'option que nous pensons la plus adaptée à votre appareil.</string>
     <string name="authentication_method_none">Aucun</string>
     <string name="authentication_method_none_description">Aucun mot de passe n\'est nécessaire pour déverrouiller le coffre-fort et il ne sera pas chiffré. <b>Cette option n\'est pas recommandée</b>.</string>
     <string name="authentication_method_password">Mot de passe</string>
@@ -178,10 +176,10 @@
     <string name="set_number">Veuillez saisir un nombre</string>
     <string name="set_password_confirm">Veuillez confirmer le mot de passe</string>
     <string name="invalid_password">Le mot de passe est incorrect</string>
-    <string name="invalidated_biometrics">Un changement dans les paramètres de sécurité de votre appareil a été détecté. Veuillez aller dans \"Aegis -&gt; Paramètres -&gt; Sécurité -&gt; Déverrouillage biométrique\" pour désactiver et réactiver le déverrouillage biométrique.</string>
+    <string name="invalidated_biometrics">Un changement dans les paramètres de sécurité de votre appareil a été détecté. Veuillez aller dans \"Cue -&gt; Paramètres -&gt; Sécurité -&gt; Déverrouillage biométrique\" pour désactiver et réactiver le déverrouillage biométrique.</string>
     <string name="password_reminder">Veuillez saisir votre mot de passe. Nous vous demandons de le faire de temps en temps afin que vous ne l\'oubliez pas.</string>
     <string name="password_reminder_dialog_title">Déverrouillage biométrique par défaut</string>
-    <string name="password_reminder_dialog_message">Nous vous demandons de temps en temps de saisir votre mot de passe à la place afin de nous assurer que vous ne ne l\'avez pas oublié et que l\'accès à votre coffre-fort ne soit pas bloqué. Après avoir saisi votre mot de passe une fois, Aegis utilisera de nouveau le déverrouillage biométrique par défaut jusqu\'à ce qu\'il soit temps pour un autre rappel de mot de passe.</string>
+    <string name="password_reminder_dialog_message">Nous vous demandons de temps en temps de saisir votre mot de passe à la place afin de nous assurer que vous ne ne l\'avez pas oublié et que l\'accès à votre coffre-fort ne soit pas bloqué. Après avoir saisi votre mot de passe une fois, Cue utilisera de nouveau le déverrouillage biométrique par défaut jusqu\'à ce qu\'il soit temps pour un autre rappel de mot de passe.</string>
     <string name="password_reminder_freq_never">Jamais</string>
     <string name="password_reminder_freq_weekly">Toutes les semaines</string>
     <string name="password_reminder_freq_biweekly">Toutes les deux semaines</string>
@@ -189,7 +187,7 @@
     <string name="password_reminder_freq_quarterly">Tous les trois mois</string>
     <string name="enter_password_proton_message">Il semble que cette sauvegarde Proton Authenticator soit chiffrée. Veuillez saisir le mot de passe ci-dessous.</string>
     <string name="enter_password_2fas_message">Il semble que cette sauvegarde 2FAS soit chiffrée. Veuillez saisir le mot de passe ci-dessous.</string>
-    <string name="enter_password_authy_message">Il semble que vos jetons Authy soient chiffrés. Veuillez fermer Aegis, ouvrir Authy et déverrouiller les jetons avec votre mot de passe. Au lieu de cela, Aegis peut également tenter de déchiffrer vos jetons Authy pour vous si vous entrez votre mot de passe ci-dessous.</string>
+    <string name="enter_password_authy_message">Il semble que vos jetons Authy soient chiffrés. Veuillez fermer Cue, ouvrir Authy et déverrouiller les jetons avec votre mot de passe. Au lieu de cela, Cue peut également tenter de déchiffrer vos jetons Authy pour vous si vous entrez votre mot de passe ci-dessous.</string>
     <string name="enter_password_aegis_title">Veuillez saisir le mot de passe pour l\'importation</string>
     <string name="period_hint">Période (secondes)</string>
     <string name="algorithm_hint">Fonction de hachage</string>
@@ -252,9 +250,8 @@
     <string name="saving_profile_error">Erreur lors de l\'enregistrement du profil</string>
     <string name="saving_assign_icons_error">Erreur lors de l\'association des icônes</string>
     <string name="welcome">Bienvenue</string>
-    <string name="app_description">Aegis est une application d\'authentification à deux facteurs (2FA) gratuite, sécurisée et open source</string>
     <string name="setup_completed">Configuration terminée</string>
-    <string name="setup_completed_description">Aegis a été configuré et est prêt à être utilisé.</string>
+    <string name="setup_completed_description">Cue a été configuré et est prêt à être utilisé.</string>
     <string name="vault_not_found">Coffre-fort introuvable, lancement de la configuration…</string>
     <string name="copied">Copié</string>
     <string name="errors_copied">Erreurs copiées dans le presse-papier</string>
@@ -266,8 +263,8 @@
     <string name="saving_error">Une erreur est survenue en essayant d\'enregistrer le coffre-fort</string>
     <string name="vault_init_error">Une erreur est survenue en essayant d\'initialiser le coffre-fort</string>
     <string name="vault_load_error">Une erreur est survenue en essayant de charger le coffre-fort</string>
-    <string name="biometric_decrypt_error">Une erreur est survenue en essayant de déchiffrer le coffre-fort avec l\'authentification biométrique. Cela ne se produit généralement que si les paramètres de sécurité de votre appareil ont été modifiés. Veuillez déverrouiller le coffre-fort avec votre mot de passe et reconfigurer l\'authentification biométrique dans les paramètres d\'Aegis.</string>
-    <string name="biometric_init_error">Une erreur est survenue lors de la préparation de l\'authentification biométrique. Cela ne se produit généralement que si les paramètres de sécurité de votre appareil ont été modifiés. Veuillez déverrouiller le coffre-fort avec votre mot de passe et reconfigurer l\'authentification biométrique dans les paramètres d\'Aegis.</string>
+    <string name="biometric_decrypt_error">Une erreur est survenue en essayant de déchiffrer le coffre-fort avec l\'authentification biométrique. Cela ne se produit généralement que si les paramètres de sécurité de votre appareil ont été modifiés. Veuillez déverrouiller le coffre-fort avec votre mot de passe et reconfigurer l\'authentification biométrique dans les paramètres d\'Cue.</string>
+    <string name="biometric_init_error">Une erreur est survenue lors de la préparation de l\'authentification biométrique. Cela ne se produit généralement que si les paramètres de sécurité de votre appareil ont été modifiés. Veuillez déverrouiller le coffre-fort avec votre mot de passe et reconfigurer l\'authentification biométrique dans les paramètres d\'Cue.</string>
     <string name="disable_encryption">Désactiver le chiffrement</string>
     <string name="disable_encryption_description">Êtes-vous sûr de vouloir désactiver le chiffrement ? Cela entraînera l\'enregistrement du coffre-fort en texte brut. <b>Les sauvegardes automatiques seront également désactivées</b>.</string>
     <string name="enable_encryption_error">Une erreur est survenue lors de l\'activation du chiffrement</string>
@@ -301,7 +298,7 @@
     <string name="file_not_found">Erreur : Fichier introuvable</string>
     <string name="reading_file_error">Une erreur est survenue en essayant de lire le fichier</string>
     <string name="app_lookup_error">Erreur: l\'application n\'est pas installée</string>
-    <string name="app_version_error">La version de %s installée n\'est pas prise en charge. Les versions récentes ont commencé à chiffrer certains fichiers dans le répertoire de stockage interne, rendant Aegis incapable d\'accéder aux informations dont il a besoin pour l\'importation. Tenter d\'importer est susceptible de provoquer une erreur. Souhaitez-vous continuer quand même ?</string>
+    <string name="app_version_error">La version de %s installée n\'est pas prise en charge. Les versions récentes ont commencé à chiffrer certains fichiers dans le répertoire de stockage interne, rendant Cue incapable d\'accéder aux informations dont il a besoin pour l\'importation. Tenter d\'importer est susceptible de provoquer une erreur. Souhaitez-vous continuer quand même ?</string>
     <string name="root_error">Erreur : Impossible d\'obtenir l\'accès root</string>
     <plurals name="imported_entries_count">
         <item quantity="one">%d entrée importée</item>
@@ -319,7 +316,7 @@
     <string name="encryption_enable_biometrics_error">Une erreur est survenue lors de l\'activation du déverrouillage biométrique. Certains appareils ont de mauvaises implémentations de l\'authentification biométrique et il est probable que le vôtre soit l\'un d\'entre eux. Envisagez plutôt de passer à une configuration avec mot de passe uniquement.</string>
     <string name="no_cameras_available">Aucun appareil photo disponible</string>
     <string name="read_qr_error">Une erreur est survenue en essayant de lire le code QR</string>
-    <string name="read_qr_error_phonefactor">Aegis n\'est pas compatible avec l\'algorithme d\'authentification à deux facteurs (2FA) propriétaire de Microsoft. Veuillez vous assurer de sélectionner \"Configurer l\'application sans notification\" lors de la configuration de la 2FA dans Office 365.</string>
+    <string name="read_qr_error_phonefactor">Cue n\'est pas compatible avec l\'algorithme d\'authentification à deux facteurs (2FA) propriétaire de Microsoft. Veuillez vous assurer de sélectionner \"Configurer l\'application sans notification\" lors de la configuration de la 2FA dans Office 365.</string>
     <string name="partial_google_auth_import">Export Google Authenticator incomplet détecté</string>
     <string name="partial_google_auth_import_warning">Certains codes QR sont manquants dans votre export. Les codes suivants n\'ont pas été trouvés :\n\n<b>%s</b>\n\nVous pouvez continuer à importer cet export partiel, mais nous vous recommandons de réessayer avec tous les codes QR afin de ne risquer de perdre l\'accès à aucun jeton.</string>
     <string name="missing_qr_code_descriptor">• code QR %d</string>
@@ -406,8 +403,8 @@
     <string name="unknown_issuer">Émetteur inconnu</string>
     <string name="unknown_account_name">Nom de compte inconnu</string>
     <plurals name="import_error_dialog">
-        <item quantity="one">Aegis n\'a pas pu importer %d jeton. Ce jeton sera ignoré. Appuyez sur « détails » pour voir plus d\'informations sur l\'erreur.</item>
-        <item quantity="other">Aegis n\'a pas pu importer %d jetons. Ces jetons seront ignorés. Appuyez sur « détails » pour voir plus d\'informations sur l\'erreur.</item>
+        <item quantity="one">Cue n\'a pas pu importer %d jeton. Ce jeton sera ignoré. Appuyez sur « détails » pour voir plus d\'informations sur l\'erreur.</item>
+        <item quantity="other">Cue n\'a pas pu importer %d jetons. Ces jetons seront ignorés. Appuyez sur « détails » pour voir plus d\'informations sur l\'erreur.</item>
     </plurals>
     <string name="unable_to_process_deeplink">Impossible de traiter le lien profond</string>
     <string name="unable_to_read_qrcode_file">Impossible de lire et de traiter le code QR depuis le fichier : %s.</string>
@@ -421,16 +418,15 @@
     <string name="toggle_checkboxes">Basculer les cases</string>
     <string name="search">Recherche</string>
     <string name="channel_name_lock_status">Statut du verrouillage</string>
-    <string name="channel_description_lock_status">Aegis peut créer une notification persistante pour vous notifier quand le coffre-fort est verrouillé</string>
+    <string name="channel_description_lock_status">Cue peut créer une notification persistante pour vous notifier quand le coffre-fort est verrouillé</string>
     <string name="vault_unlocked_state">Le coffre-fort est déverrouillé. Appuyer ici pour verrouiller.</string>
     <string name="version">Version</string>
     <string name="changelog">Historique des modifications</string>
     <string name="whats_new">Les nouveautés</string>
     <string name="github_description">Code source, problèmes et informations</string>
     <string name="license">Licence</string>
-    <string name="license_description">Aegis Authenticator est sous licence GPLv3</string>
     <string name="third_party_licenses">Licences tierces</string>
-    <string name="third_party_licenses_description">Licences des bibliothèques tierces utilisées par Aegis</string>
+    <string name="third_party_licenses_description">Licences des bibliothèques tierces utilisées par Cue</string>
     <string name="country_netherlands">Pays-Bas</string>
     <string name="email_us">Écrire un email</string>
     <string name="visit_website">Visiter notre site internet</string>
@@ -440,7 +436,7 @@
     <string name="webview_error">Cet appareil ne supporte pas web view, qui est nécessaire pour voir l\'historique des modifications et la licence. Un composant système est manquant.</string>
     <string name="email">Email</string>
     <string name="time_sync_warning_title">Synchronisation automatique de l\'heure</string>
-    <string name="time_sync_warning_message">Aegis s\'appuie sur l\'heure du système pour être synchronisé afin de générer des codes corrects. Un écart de quelques secondes seulement pourrait aboutir à des codes incorrects. Il semble que votre appareil n\'est pas configuré pour synchroniser le temps automatiquement. Souhaitez-vous le faire maintenant ?</string>
+    <string name="time_sync_warning_message">Cue s\'appuie sur l\'heure du système pour être synchronisé afin de générer des codes corrects. Un écart de quelques secondes seulement pourrait aboutir à des codes incorrects. Il semble que votre appareil n\'est pas configuré pour synchroniser le temps automatiquement. Souhaitez-vous le faire maintenant ?</string>
     <string name="time_sync_warning_disable">Arrêter de m\'avertir. Je sais ce que je fais.</string>
     <string name="google_qr_export_unrelated">Code QR non lié trouvé. Essayez de redémarrer le scanner.</string>
     <plurals name="google_qr_export_scanned">
@@ -453,9 +449,9 @@
         Une tentative récente de sauvegarde du coffre-fort en utilisant %1$s a échoué car une erreur est survenue. La sauvegarde a été tentée %2$s. Veuillez vérifier vos paramètres de sauvegarde pour vous assurer que les sauvegardes peuvent se terminer avec succès.
     </string>
     <string name="backup_permission_error_dialog_details" comment="The first parameter is the type of backup (e.g. built-in or Android backup). The second parameter is an elapsed time in the style of 'x seconds/minutes/days ago'.">
-        Une tentative récente de sauvegarde du coffre-fort en utilisant %1$s a échoué car Aegis n\'avait pas la permission d\'écrire dans la destination de la sauvegarde. La sauvegarde a été tentée %2$s. Cette erreur peut se produire si vous avez déplacé/renommé la destination de la sauvegarde ou si vous avez récemment restauré Aegis depuis une sauvegarde. Veuillez reconfigurer la destination de la sauvegarde.
+        Une tentative récente de sauvegarde du coffre-fort en utilisant %1$s a échoué car Cue n\'avait pas la permission d\'écrire dans la destination de la sauvegarde. La sauvegarde a été tentée %2$s. Cette erreur peut se produire si vous avez déplacé/renommé la destination de la sauvegarde ou si vous avez récemment restauré Cue depuis une sauvegarde. Veuillez reconfigurer la destination de la sauvegarde.
     </string>
-    <string name="backup_system_builtin">Sauvegardes automatiques intégrées dans Aegis</string>
+    <string name="backup_system_builtin">Sauvegardes automatiques intégrées dans Cue</string>
     <string name="backup_system_android">Système de sauvegarde cloud d\'Android</string>
     <string name="backup_reminder_bar_message_with_latest" comment="The parameter is an elapsed time in the style of 'x seconds/minutes/days ago'">
         La dernière sauvegarde est obsolète (%s)
@@ -492,7 +488,7 @@
     <string name="uri_copied_to_clipboard">URI copiée dans le presse-papier</string>
     <string name="transfer_entry_description">Scannez ce code QR avec l\'application d\'authentification vers laquelle vous souhaitez transférer cette entrée</string>
     <string name="transfer_entry_brightness">Appuyer sur le code QR pour activer la luminosité maximale</string>
-    <string name="google_auth_compatible_transfer_description">Scannez ces codes QR avec Aegis ou Google Authenticator.\n\nEn raison des limitations de l\'application Google Authenticator, seuls les jetons TOTP &amp; HOTP qui utilisent SHA1 et produisent des codes à 6 chiffres sont inclus</string>
+    <string name="google_auth_compatible_transfer_description">Scannez ces codes QR avec Cue ou Google Authenticator.\n\nEn raison des limitations de l\'application Google Authenticator, seuls les jetons TOTP &amp; HOTP qui utilisent SHA1 et produisent des codes à 6 chiffres sont inclus</string>
     <string name="password_strength_very_weak">Très faible</string>
     <string name="password_strength_weak">Faible</string>
     <string name="password_strength_fair">Acceptable</string>
@@ -515,10 +511,9 @@
     <string name="dialog_wipe_entries_checkbox">Effacer le contenu du coffre-fort</string>
     <string name="import_from_clipboard_title">Importer depuis le presse-papier</string>
     <string name="import_from_clipboard_message">Nous avons trouvé une uri otpauth valide dans votre presse-papier.\n\n<b>Nom</b> : %1$s\n<b>Émetteur</b> : %2$s\n\nVoulez-vous l\'utiliser pour pré-remplir cette entrée ?</string>
-    <string name="panic_trigger_ignore_toast">Aegis a reçu le déclenchement d\'une alerte mais le paramètre est désactivé, il sera ignoré</string>
+    <string name="panic_trigger_ignore_toast">Cue a reçu le déclenchement d\'une alerte mais le paramètre est désactivé, il sera ignoré</string>
     <string name="pref_panic_trigger_title">Supprimer le coffre-fort lors du déclenchement de l\'alerte</string>
     <string name="pref_panic_trigger_summary">Supprimer le coffre-fort quand le déclenchement d\'une alerte est reçu de Ripple</string>
-    <string name="import_vault">Importer un coffre-fort Aegis</string>
     <string name="import_vault_hint">Vous voulez importer depuis une autre application 2FA ? Complétez d\'abord l\'installation, puis rendez-vous dans le menu des paramètres.</string>
     <plurals name="import_duplicate_toast">
         <item quantity="one">%d potentiel doublon décoché. Veuillez vérifier la liste des entrées.</item>
@@ -536,7 +531,7 @@
     <string name="importer_help_freeotp">FreeOTP 2 : Fournir une sauvegarde.\nFreeOTP 1.x : Fournir une copie de <b>/data/data/org.fedorahosted.freeotp/shared_prefs/tokens.xml</b>, situé dans le répertoire de stockage interne de FreeOTP.</string>
     <string name="importer_help_freeotp_plus">Fournir un export FreeOTP+.</string>
     <string name="importer_warning_title_freeotp2">Compatibilité FreeOTP 2</string>
-    <string name="importer_warning_message_freeotp2">Il y a un certain nombre de problèmes dans FreeOTP 2 qui peuvent entraîner des sauvegardes corrompues. Aegis essaiera de récupérer autant d\'entrées que possible, mais il est possible que certaines ou même la totalité ne parviennent pas à être importées.</string>
+    <string name="importer_warning_message_freeotp2">Il y a un certain nombre de problèmes dans FreeOTP 2 qui peuvent entraîner des sauvegardes corrompues. Cue essaiera de récupérer autant d\'entrées que possible, mais il est possible que certaines ou même la totalité ne parviennent pas à être importées.</string>
     <string name="importer_help_google_authenticator"><b>Seuls les fichiers de base de données de Google Authenticator v5.10 et antérieures sont pris en charge</b>.\n\nFournir une copie de <b>/data/data/com.google.android.apps.authenticator2/databases/databases</b>, situé dans le répertoire de stockage interne de Google Authenticator.</string>
     <string name="importer_help_microsoft_authenticator">Fournir une copie de <b>/data/data/com.azure.authenticator/databases/PhoneFactor</b>, situé dans le répertoire de stockage interne de Microsoft Authenticator.</string>
     <string name="importer_help_plain_text">Fournir un fichier texte brut avec une URI Google Authenticator sur chaque ligne.</string>
@@ -548,7 +543,7 @@
     <string name="import_assign_icons_dialog_title">Association des icônes</string>
     <string name="import_assign_icons_dialog_text">Voulez-vous associer des icônes aux entrées importées ?</string>
     <string name="importer_encrypted_exception_google_authenticator">L\'entrée chiffrée a été ignorée : %s</string>
-    <string name="importer_help_direct">Importer des entrées directement depuis %s. Cela nécessite que l\'application soit installée sur cet appareil et que l\'accès root soit accordé à Aegis.</string>
+    <string name="importer_help_direct">Importer des entrées directement depuis %s. Cela nécessite que l\'application soit installée sur cet appareil et que l\'accès root soit accordé à Cue.</string>
     <string name="groups">Groupes</string>
     <string name="pref_focus_search">Cibler le champ de recherche au démarrage de l\'application</string>
     <string name="pref_focus_search_summary">Cibler immédiatement le champ de recherche au démarrage de l\'application.</string>

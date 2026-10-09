@@ -28,7 +28,6 @@
     <string name="pref_section_security_title">Seguridad</string>
     <string name="pref_section_security_summary">Configura el cifrado, desbloqueo biométrico, bloqueo automático y otros ajustes de seguridad.</string>
     <string name="pref_section_import_export_title">Importar y exportar</string>
-    <string name="pref_section_import_export_summary">Importa copias de seguridad de Aegis u otras aplicaciones de autenticación y exporta de forma manual la bóveda de Aegis.</string>
     <string name="pref_section_audit_log_title">Registro de auditoría</string>
     <string name="pref_section_audit_log_summary">Ver un listado con todos los cambios realizados en la aplicación.</string>
     <string name="pref_section_backups_title">Copias de seguridad</string>
@@ -56,14 +55,14 @@
     <string name="pref_import_file_title">Importar desde un archivo</string>
     <string name="pref_import_file_summary">Importa tus claves desde un archivo</string>
     <string name="pref_android_backups_title">Copias de seguridad en la nube de Android</string>
-    <string name="pref_android_backups_summary">Permitir que el sistema de copia de seguridad en la nube de Android incluya la bóveda de Aegis en sus copias de seguridad. Esto sólo es compatible con las bóvedas cifradas.</string>
+    <string name="pref_android_backups_summary">Permitir que el sistema de copia de seguridad en la nube de Android incluya la bóveda de Cue en sus copias de seguridad. Esto sólo es compatible con las bóvedas cifradas.</string>
     <string name="pref_android_backups_hint"><i>Las copias de seguridad entre dispositivos (D2D) siempre se permiten, independientemente de la configuración anterior</i></string>
     <string name="pref_backups_title">Respaldar automáticamente la bóveda</string>
     <string name="pref_backups_summary">Crear automáticamente una copia de seguridad de la bóveda en un almacenamiento externo cuando se produzcan cambios. Esto solo está soportado para las bóvedas cifradas.</string>
     <string name="pref_backups_reminder_title">Recordatorio de copia de seguridad</string>
     <string name="pref_backups_reminder_summary">Mostrar un recordatorio para hacer una copia de seguridad de tu bóveda en caso de que no hayas hecho una copia de tus últimos cambios.</string>
     <string name="pref_backups_reminder_dialog_title">Desactivar recordatorio de copia de seguridad</string>
-    <string name="pref_backups_reminder_dialog_summary">Al desactivar el recordatorio Aegis no te dirá si tienes o no cambios que aún no están respaldados. Te arriesgas a perder tus claves. ¿Estás seguro de querer desactivarlo?</string>
+    <string name="pref_backups_reminder_dialog_summary">Al desactivar el recordatorio Cue no te dirá si tienes o no cambios que aún no están respaldados. Te arriesgas a perder tus claves. ¿Estás seguro de querer desactivarlo?</string>
     <string name="pref_backups_versioning_strategy_title">Estrategia de respaldo</string>
     <string name="pref_backups_versioning_strategy_keep_x_versions">Mantener varias versiones</string>
     <string name="pref_backups_versioning_strategy_single_backup">Respaldo único</string>
@@ -103,7 +102,7 @@
     <string name="pref_auto_lock_title">Bloqueo automático</string>
     <string name="pref_auto_lock_summary">Cuando %s</string>
     <string name="pref_auto_lock_summary_disabled">Desactivado</string>
-    <string name="pref_auto_lock_prompt">Bloquear automáticamente Aegis cuando</string>
+    <string name="pref_auto_lock_prompt">Bloquear automáticamente Cue cuando</string>
     <string name="pref_auto_lock_type_back_button">Al presionar el botón para volver</string>
     <string name="pref_auto_lock_type_minimize">Al minimizar la aplicación</string>
     <string name="pref_auto_lock_type_device_lock">Al bloquear el dispositivo</string>
@@ -145,11 +144,10 @@
     <string name="today_at_time">Hoy a las %1$s</string>
     <string name="day_of_week_at_time">%1$s a las %2$s</string>
     <string name="export_encrypted">Cifrar la bóveda</string>
-    <string name="export_help">Esta acción exportará la bóveda fuera del almacenamiento interno de Aegis. Seleccione el formato al que desea exportar:</string>
-    <string name="export_warning_unencrypted">Estás a punto de exportar una copia sin cifrar de tu bóveda de Aegis. <b>No se recomienda en absoluto</b>.</string>
+    <string name="export_help">Esta acción exportará la bóveda fuera del almacenamiento interno de Cue. Seleccione el formato al que desea exportar:</string>
+    <string name="export_warning_unencrypted">Estás a punto de exportar una copia sin cifrar de tu bóveda de Cue. <b>No se recomienda en absoluto</b>.</string>
     <string name="export_warning_password">Las exportaciones se cifran usando una contraseña separada configurada en la configuración de seguridad.</string>
     <string name="understand_risk_accept">Entiendo el riesgo</string>
-    <string name="export_format_aegis">Aegis (.JSON)</string>
     <string name="export_format_google_auth_uri">Archivo de texto (.TXT)</string>
     <string name="export_format_html">Página web (.HTML)</string>
     <string name="export_format_hint">Formato de exportación</string>
@@ -160,9 +158,9 @@
         <item quantity="other">%d grupos seleccionados</item>
     </plurals>
     <string name="export_no_groups_selected">No se han seleccionado grupos para exportar</string>
-    <string name="export_html_title" comment="The title of an HTML export document">Exportación de Aegis Authenticator</string>
+    <string name="export_html_title" comment="The title of an HTML export document">Exportación de Cue Authenticator</string>
     <string name="choose_authentication_method">Seguridad</string>
-    <string name="authentication_method_explanation">Aegis es una aplicación 2FA centrada en la seguridad. Las claves o «tokens» se almacenan en una bóveda, que de forma opcional puede cifrarse con una contraseña personal. Si algún malhechor obtiene tu archivo de bóveda cifrado no podrá acceder al contenido sin conocer dicha contraseña.\n\nHemos elegido la opción que creemos que se ajusta más a tu dispositivo.</string>
+    <string name="authentication_method_explanation">Cue es una aplicación 2FA centrada en la seguridad. Las claves o «tokens» se almacenan en una bóveda, que de forma opcional puede cifrarse con una contraseña personal. Si algún malhechor obtiene tu archivo de bóveda cifrado no podrá acceder al contenido sin conocer dicha contraseña.\n\nHemos elegido la opción que creemos que se ajusta más a tu dispositivo.</string>
     <string name="authentication_method_none">Ninguno</string>
     <string name="authentication_method_none_description">No necesitará una contraseña para desbloquear la bóveda y no se cifrará. <b>No se recomienda esta opción</b>.</string>
     <string name="authentication_method_password">Contraseña</string>
@@ -178,7 +176,7 @@
     <string name="set_number">Escribe un número</string>
     <string name="set_password_confirm">Asegúrate de que la contraseña esté bien</string>
     <string name="invalid_password">La contraseña es incorrecta</string>
-    <string name="invalidated_biometrics">Se ha detectado un cambio en la configuración de seguridad de tu dispositivo. Ve a «Aegis -&gt; Configuración -&gt; Seguridad -&gt; Desbloqueo biométrico» para desactivar y reactivar el desbloqueo biométrico.</string>
+    <string name="invalidated_biometrics">Se ha detectado un cambio en la configuración de seguridad de tu dispositivo. Ve a «Cue -&gt; Configuración -&gt; Seguridad -&gt; Desbloqueo biométrico» para desactivar y reactivar el desbloqueo biométrico.</string>
     <string name="password_reminder">Escribe tu contraseña, te pediremos que la vuelvas a poner al abrir la aplicación de vez en cuando para que no se te olvide.</string>
     <string name="password_reminder_dialog_title">Desbloqueo biométrico por defecto</string>
     <string name="password_reminder_dialog_message">Te pediremos que vuelvas a escribir tu contraseña de vez en cuando para asegurarnos de que no la hayas olvidado y que no te quedes sin acceso a la bóveda en un futuro. Si está bien la aplicación volverá a seguir intentando el desbloqueo biométrico hasta el siguiente recordatorio.</string>
@@ -189,7 +187,7 @@
     <string name="password_reminder_freq_quarterly">Cada tres meses</string>
     <string name="enter_password_proton_message">Parece que esta copia de seguridad de Proton Authenticator está cifrada. Por favor, introduce la contraseña a continuación.</string>
     <string name="enter_password_2fas_message">Parece que esta copia de seguridad de 2FAS está cifrada. Introduzca la contraseña a continuación.</string>
-    <string name="enter_password_authy_message">Parece que tus tokens de Authy están cifrados. Cierra Aegis, abre Authy y desbloquea los tokens con tu contraseña. Si lo prefieres Aegis también puede intentar descifrar tus tokens de Authy directamente, si escribes tu contraseña a continuación.</string>
+    <string name="enter_password_authy_message">Parece que tus tokens de Authy están cifrados. Cierra Cue, abre Authy y desbloquea los tokens con tu contraseña. Si lo prefieres Cue también puede intentar descifrar tus tokens de Authy directamente, si escribes tu contraseña a continuación.</string>
     <string name="enter_password_aegis_title">Introduce la contraseña de importación</string>
     <string name="period_hint">Periodo (segundos)</string>
     <string name="algorithm_hint">Función hash</string>
@@ -252,9 +250,8 @@
     <string name="saving_profile_error">Hubo un error al guardar el perfil</string>
     <string name="saving_assign_icons_error">Error al asignar iconos</string>
     <string name="welcome">Te damos la bienvenida</string>
-    <string name="app_description">Aegis es una aplicación 2FA gratuita, segura y de código abierto</string>
     <string name="setup_completed">Se ha completado la configuración</string>
-    <string name="setup_completed_description">Aegis se ha configurado y está listo para funcionar.</string>
+    <string name="setup_completed_description">Cue se ha configurado y está listo para funcionar.</string>
     <string name="vault_not_found">Bóveda no encontrada, iniciando la configuración…</string>
     <string name="copied">Copiado</string>
     <string name="errors_copied">Se han copiado los errores al portapapeles</string>
@@ -266,8 +263,8 @@
     <string name="saving_error">Se ha producido un error tratando de guardar la bóveda</string>
     <string name="vault_init_error">Se ha producido un error tratando de desbloquear la bóveda</string>
     <string name="vault_load_error">Se ha producido un error al intentar cargar la bóveda desde el almacenamiento</string>
-    <string name="biometric_decrypt_error">Se ha producido un error al intentar descifrar la bóveda mediante biometría. Esto normalmente solo pasa al cambiar los ajustes de seguridad del dispositivo. Desbloquea la bóveda con tu contraseña y reactiva la autenticación biométrica en la configuración de Aegis.</string>
-    <string name="biometric_init_error">Se ha producido un error al intentar utilizar la biometría. Esto normalmente solo pasa al cambiar los ajustes de seguridad del dispositivo. Desbloquea la bóveda con tu contraseña y reactiva la autenticación biométrica en la configuración de Aegis.</string>
+    <string name="biometric_decrypt_error">Se ha producido un error al intentar descifrar la bóveda mediante biometría. Esto normalmente solo pasa al cambiar los ajustes de seguridad del dispositivo. Desbloquea la bóveda con tu contraseña y reactiva la autenticación biométrica en la configuración de Cue.</string>
+    <string name="biometric_init_error">Se ha producido un error al intentar utilizar la biometría. Esto normalmente solo pasa al cambiar los ajustes de seguridad del dispositivo. Desbloquea la bóveda con tu contraseña y reactiva la autenticación biométrica en la configuración de Cue.</string>
     <string name="disable_encryption">Desactivar cifrado</string>
     <string name="disable_encryption_description">¿Está seguro de que desea desactivar el cifrado?. Esto provocará que la bóveda sea almacenada en texto plano. <b>Las copias de seguridad automáticas también serán desactivadas</b>.</string>
     <string name="enable_encryption_error">Se ha producido un error al intentar activar el cifrado</string>
@@ -301,7 +298,7 @@
     <string name="file_not_found">Error: Archivo no encontrado</string>
     <string name="reading_file_error">Se ha producido un error al intentar leer el archivo</string>
     <string name="app_lookup_error">Error: La aplicación no está instalada</string>
-    <string name="app_version_error">La versión de %s que está instalada no es compatible. Las versiones recientes han comenzado a cifrar algunos de los archivos en el directorio de almacenamiento interno, haciendo que Aegis no pueda acceder a la información que necesita para la importación. Intentar importar probablemente resultará en un error. ¿Deseas continuar de todos modos?</string>
+    <string name="app_version_error">La versión de %s que está instalada no es compatible. Las versiones recientes han comenzado a cifrar algunos de los archivos en el directorio de almacenamiento interno, haciendo que Cue no pueda acceder a la información que necesita para la importación. Intentar importar probablemente resultará en un error. ¿Deseas continuar de todos modos?</string>
     <string name="root_error">Error: No se puede obtener acceso a la raíz</string>
     <plurals name="imported_entries_count">
         <item quantity="one">Importada %d clave</item>
@@ -319,7 +316,7 @@
     <string name="encryption_enable_biometrics_error">Se ha producido un error al intentar activar el desbloqueo biométrico. Algunos dispositivos tienen deficiencias importantes en sus sistemas de autenticación biométrica y es probable que el tuyo sea uno de ellos. Prueba desactivándolo y dejando solo el acceso por contraseña.</string>
     <string name="no_cameras_available">No hay ninguna cámara disponible</string>
     <string name="read_qr_error">Se ha producido un error al intentar leer el código QR</string>
-    <string name="read_qr_error_phonefactor">Aegis no es compatible con el algoritmo 2FA personalizado de Microsoft. Asegúrate de elegir «Configurar aplicación sin notificaciones» al generar tus códigos 2FA en Office 365 para que funcione.</string>
+    <string name="read_qr_error_phonefactor">Cue no es compatible con el algoritmo 2FA personalizado de Microsoft. Asegúrate de elegir «Configurar aplicación sin notificaciones» al generar tus códigos 2FA en Office 365 para que funcione.</string>
     <string name="partial_google_auth_import">Se ha detectado una exportación incompleta de Google Authenticator</string>
     <string name="partial_google_auth_import_warning">Algunos código QR de importación no están. Faltan los siguientes códigos:\n\n<b>%s</b>\n\nPuedes seguir adelante con esta importación parcial, pero te recomendamos volver a probar otra vez a escanear todos los códigos QR para evitar que pierdas el acceso a alguno de ellos.</string>
     <string name="missing_qr_code_descriptor">• código QR %d</string>
@@ -406,8 +403,8 @@
     <string name="unknown_issuer">Emisor desconocido</string>
     <string name="unknown_account_name">Nombre de cuenta desconocido</string>
     <plurals name="import_error_dialog">
-        <item quantity="one">Aegis no pudo importar %d clave, por lo que se omitirá. Pulsa «más detalles» para ver más información sobre este fallo.</item>
-        <item quantity="other">Aegis no pudo importar %d claves, por lo que se omitirán. Pulsa «más detalles» para ver más información sobre el error.</item>
+        <item quantity="one">Cue no pudo importar %d clave, por lo que se omitirá. Pulsa «más detalles» para ver más información sobre este fallo.</item>
+        <item quantity="other">Cue no pudo importar %d claves, por lo que se omitirán. Pulsa «más detalles» para ver más información sobre el error.</item>
     </plurals>
     <string name="unable_to_process_deeplink">No se puede procesar el enlace profundo</string>
     <string name="unable_to_read_qrcode_file">No se puede leer y procesar el código QR del archivo: %s.</string>
@@ -421,16 +418,15 @@
     <string name="toggle_checkboxes">Activar casillas de verificación</string>
     <string name="search">Buscar</string>
     <string name="channel_name_lock_status">Estado de bloqueo</string>
-    <string name="channel_description_lock_status">Aegis puede crear una notificación persistente para notificar cuando la bóveda está bloqueada</string>
+    <string name="channel_description_lock_status">Cue puede crear una notificación persistente para notificar cuando la bóveda está bloqueada</string>
     <string name="vault_unlocked_state">La bóveda está desbloqueada. Pulse aquí para bloquear.</string>
     <string name="version">Versión</string>
     <string name="changelog">Historial de cambios</string>
     <string name="whats_new">Novedades</string>
     <string name="github_description">Código fuente, problemas e información</string>
     <string name="license">Licencia</string>
-    <string name="license_description">Aegis Authenticator se distribuye bajo los términos de la licencia GPLv3</string>
     <string name="third_party_licenses">Licencias de terceros</string>
-    <string name="third_party_licenses_description">Licencias de las bibliotecas de terceros usadas por Aegis</string>
+    <string name="third_party_licenses_description">Licencias de las bibliotecas de terceros usadas por Cue</string>
     <string name="country_netherlands">Países Bajos</string>
     <string name="email_us">Contacta por correo electrónico</string>
     <string name="visit_website">Visita nuestra web</string>
@@ -440,7 +436,7 @@
     <string name="webview_error">Este dispositivo no soporta web view, lo cual es necesario para visualizar el registro de cambios y la licencia. Falta un componente del sistema.</string>
     <string name="email">Correo electrónico</string>
     <string name="time_sync_warning_title">Sincronización automática de hora</string>
-    <string name="time_sync_warning_message">Aegis depende que la hora de tu dispositivo esté bien para generar códigos válidos en cada momento. Una pequeña diferencia de unos segundos podría hacer que los códigos no se acepten. Parece que tu dispositivo no está configurado para sincronizar automáticamente la hora. ¿Quieres hacerlo ahora?</string>
+    <string name="time_sync_warning_message">Cue depende que la hora de tu dispositivo esté bien para generar códigos válidos en cada momento. Una pequeña diferencia de unos segundos podría hacer que los códigos no se acepten. Parece que tu dispositivo no está configurado para sincronizar automáticamente la hora. ¿Quieres hacerlo ahora?</string>
     <string name="time_sync_warning_disable">No molestar, sé muy bien lo que hago.</string>
     <string name="google_qr_export_unrelated">Encontrado código QR no relacionado. Intente reiniciar el escáner.</string>
     <plurals name="google_qr_export_scanned">
@@ -453,9 +449,9 @@
         Ha fallado una copia de la bóveda mediante %1$s realizada %2$s. Asegúrate de que la configuración esté bien para evitar problemas.
     </string>
     <string name="backup_permission_error_dialog_details" comment="The first parameter is the type of backup (e.g. built-in or Android backup). The second parameter is an elapsed time in the style of 'x seconds/minutes/days ago'.">
-        Ha fallado una copia de la bóveda mediante %1$s realizada %2$s porque Aegis no tenía permiso para escribir la carpeta elegida. Este error puede producirse si se ha movido o renombrado la carpeta o si has importado los ajustes de Aegis desde otro dispositivo. Vuelve a configurar la carpeta destino.
+        Ha fallado una copia de la bóveda mediante %1$s realizada %2$s porque Cue no tenía permiso para escribir la carpeta elegida. Este error puede producirse si se ha movido o renombrado la carpeta o si has importado los ajustes de Cue desde otro dispositivo. Vuelve a configurar la carpeta destino.
     </string>
-    <string name="backup_system_builtin">Copias de seguridad automáticas de Aegis</string>
+    <string name="backup_system_builtin">Copias de seguridad automáticas de Cue</string>
     <string name="backup_system_android">Sistema de copias de seguridad en la nube de Android</string>
     <string name="backup_reminder_bar_message_with_latest" comment="The parameter is an elapsed time in the style of 'x seconds/minutes/days ago'">
         La última copia de seguridad está desactualizada (%s)
@@ -492,7 +488,7 @@
     <string name="uri_copied_to_clipboard">Se ha copiado la dirección URI al portapapeles</string>
     <string name="transfer_entry_description">Escanea este código QR con la aplicación de autenticación a la que vayas a importar esta clave</string>
     <string name="transfer_entry_brightness">Pulsa el código QR para subir/bajar el brillo a pantalla completa</string>
-    <string name="google_auth_compatible_transfer_description">Escanea estos códigos QR con Aegis o Google Authenticator.\n\nDebido a limitaciones técnicas de Google Authenticator solo se incluirán claves de tipo TOTP y HOTP que usen SHA1 y produzcan códigos de 6 dígitos</string>
+    <string name="google_auth_compatible_transfer_description">Escanea estos códigos QR con Cue o Google Authenticator.\n\nDebido a limitaciones técnicas de Google Authenticator solo se incluirán claves de tipo TOTP y HOTP que usen SHA1 y produzcan códigos de 6 dígitos</string>
     <string name="password_strength_very_weak">Muy débil</string>
     <string name="password_strength_weak">Débil</string>
     <string name="password_strength_fair">Aceptable</string>
@@ -515,10 +511,9 @@
     <string name="dialog_wipe_entries_checkbox">Limpiar el contenido de la bóveda</string>
     <string name="import_from_clipboard_title">Importar desde el portapapeles</string>
     <string name="import_from_clipboard_message">Parece que hay una dirección URI de otpauth en el portapapeles.\n\n<b>Nombre</b>: %1$s\n<b>Emisor</b>: %2$s\n\n¿Quieres autocompletar los datos con esto?</string>
-    <string name="panic_trigger_ignore_toast">Aegis ha recibido el activador de pánico pero la configuración está deshabilitada, ignorando</string>
+    <string name="panic_trigger_ignore_toast">Cue ha recibido el activador de pánico pero la configuración está deshabilitada, ignorando</string>
     <string name="pref_panic_trigger_title">Eliminar la bóveda al activar el pánico</string>
     <string name="pref_panic_trigger_summary">Eliminar la bóveda cuando se recibe una activación de pánico desde Ripple</string>
-    <string name="import_vault">Importar bóveda de Aegis</string>
     <string name="import_vault_hint">¿Quieres importar desde una aplicación 2FA diferente? Completa la configuración primero y luego ve al menú de configuración.</string>
     <plurals name="import_duplicate_toast">
         <item quantity="one">%d duplicado potencial sin mirar, revisa el listado.</item>
@@ -536,7 +531,7 @@
     <string name="importer_help_freeotp">FreeOTP 2: Proporciona una copia del archivo de respaldo exportado. En las versiones 1.x: Proporciona el archivo <b>/data/data/org.fedorahosted.freeotp/shared_prefs/tokens.xml</b>, ubicado en la carpeta de almacenamiento interno de FreeOTP.</string>
     <string name="importer_help_freeotp_plus">Suministre un archivo exportado de FreeOTP+.</string>
     <string name="importer_warning_title_freeotp2">Compatibilidad con FreeOTP 2</string>
-    <string name="importer_warning_message_freeotp2">Hay una serie de problemas en FreeOTP 2 que pueden hacer que la exportación genere un archivo incompleto o no válido. Aegis intentará rescatar tantos elementos como sea posible, pero es posible que solo unos pocos (o ninguno) se pueda importar.</string>
+    <string name="importer_warning_message_freeotp2">Hay una serie de problemas en FreeOTP 2 que pueden hacer que la exportación genere un archivo incompleto o no válido. Cue intentará rescatar tantos elementos como sea posible, pero es posible que solo unos pocos (o ninguno) se pueda importar.</string>
     <string name="importer_help_google_authenticator"><b>Solo funcionará con archivos de base de datos de Google Authenticator v5.10 e inferiores</b>.\n\nProporciona una copia del archivo <b>/data/data/com.google.android.apps.authenticator2/databases/databases</b>, ubicado en la carpeta de almacenamiento interno de Google Authenticator.</string>
     <string name="importer_help_microsoft_authenticator">Suministre una copia de <b>/data/data/com.azure.authenticator/databases/PhoneFactor</b>, localizado en el directorio de almacenamiento interno de Microsoft Authenticator.</string>
     <string name="importer_help_plain_text">Suministre un archivo de texto plano con una URI de Google Authenticator en cada línea.</string>
@@ -548,7 +543,7 @@
     <string name="import_assign_icons_dialog_title">Asignar iconos</string>
     <string name="import_assign_icons_dialog_text">¿Deseas asignar iconos a las entradas importadas?</string>
     <string name="importer_encrypted_exception_google_authenticator">Se omitió esta clave cifrada: %s</string>
-    <string name="importer_help_direct">Importa entradas directamente de %s. Esto requiere que la aplicación esté instalada en este dispositivo y que se conceda acceso root a Aegis.</string>
+    <string name="importer_help_direct">Importa entradas directamente de %s. Esto requiere que la aplicación esté instalada en este dispositivo y que se conceda acceso root a Cue.</string>
     <string name="groups">Grupos</string>
     <string name="pref_focus_search">Resaltar el buscador al inicio</string>
     <string name="pref_focus_search_summary">Enfoca la búsqueda inmediatamente después de abrir la aplicación.</string>

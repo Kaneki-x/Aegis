@@ -28,7 +28,6 @@
     <string name="pref_section_security_title">אבטחה</string>
     <string name="pref_section_security_summary">הגדרת הצפנה, פתיחה באמצעות זיהוי ביומטרי, נעילה אוטומטית והגדרות אבטחה נוספות.</string>
     <string name="pref_section_import_export_title">ייבוא וייצוא</string>
-    <string name="pref_section_import_export_summary">ייבוא גיבויים של Aegis או יישומי אימות נוספים. אפשר לבצע ייצוא ידני של הכספת שלך ב־Aegis.</string>
     <string name="pref_section_audit_log_title">יומן ביקורת</string>
     <string name="pref_section_audit_log_summary">מצא רשימה של כל האירועים החשובים שדווחו שקרו בתוך האפליקציה.</string>
     <string name="pref_section_backups_title">גיבויים</string>
@@ -55,14 +54,14 @@
     <string name="pref_import_file_title">ייבוא מקובץ</string>
     <string name="pref_import_file_summary">ייבוא אסימונים מקובץ</string>
     <string name="pref_android_backups_title">גיבויי ענן אנדרואיד</string>
-    <string name="pref_android_backups_summary">אפשר למערכת גיבוי הענן של אנדרואיד לכלול את הכספת של Aegis בגיבויים שלה. אפשרות זו נתמכת רק עבור כספות מוצפנות.</string>
+    <string name="pref_android_backups_summary">אפשר למערכת גיבוי הענן של אנדרואיד לכלול את הכספת של Cue בגיבויים שלה. אפשרות זו נתמכת רק עבור כספות מוצפנות.</string>
     <string name="pref_android_backups_hint"><i>גיבויי התקן להתקן (D2D) מותרים תמיד, ללא קשר להגדרה לעיל</i></string>
     <string name="pref_backups_title">גיבוי אוטומטי של הכספת</string>
     <string name="pref_backups_summary">צור באופן אוטומטי גיבויים של הכספת באחסון חיצוני כאשר מתבצעים שינויים. אפשרות זו נתמכת רק עבור כספות מוצפנות.</string>
     <string name="pref_backups_reminder_title">תזכורת לגיבוי</string>
     <string name="pref_backups_reminder_summary">הצג תזכורת לגיבוי הכספת שלך למקרה שלא גיבית את השינויים האחרונים שלך.</string>
     <string name="pref_backups_reminder_dialog_title">השבתת תזכורות לגיבוי</string>
-    <string name="pref_backups_reminder_dialog_summary">ההשבתה תבטל את כל התזכורות מ־Aegis על שינויים שעדיין אינם מגובים. מצב זה יעמיד בסיכון את הגישה לאסימונים שלך. להמשיך ולהשבית את התזכורות?</string>
+    <string name="pref_backups_reminder_dialog_summary">ההשבתה תבטל את כל התזכורות מ־Cue על שינויים שעדיין אינם מגובים. מצב זה יעמיד בסיכון את הגישה לאסימונים שלך. להמשיך ולהשבית את התזכורות?</string>
     <string name="pref_backups_versioning_strategy_title">תוכנית גיבוי</string>
     <string name="pref_backups_versioning_strategy_keep_x_versions">שמירה על מספר גרסאות</string>
     <string name="pref_backups_versioning_strategy_single_backup">גיבוי יחיד</string>
@@ -103,7 +102,7 @@
     <string name="pref_auto_lock_title">נעילה אוטומטית</string>
     <string name="pref_auto_lock_summary">מתי %s</string>
     <string name="pref_auto_lock_summary_disabled">מושבת</string>
-    <string name="pref_auto_lock_prompt">נעילה אוטומטית של Aegis כאשר</string>
+    <string name="pref_auto_lock_prompt">נעילה אוטומטית של Cue כאשר</string>
     <string name="pref_auto_lock_type_back_button">כאשר כפתור נלחץ</string>
     <string name="pref_auto_lock_type_minimize">האפליקציה ממוזערת</string>
     <string name="pref_auto_lock_type_device_lock">המכשיר נעול</string>
@@ -142,11 +141,10 @@
     <string name="today_at_time">היום בשעה %1$s</string>
     <string name="day_of_week_at_time">%1$s בשעה %2$s</string>
     <string name="export_encrypted">הצפנת הכספת</string>
-    <string name="export_help">פעולה זו תייצא את הכספת מהאחסון הפנימי של Aegis. בחר את הפורמט שבו תרצה שהייצוא שלך יהיה:</string>
-    <string name="export_warning_unencrypted">עומד להתבצע ייצוא של עותק לא מוצפן של כספת Aegis שלך. <b>זה לא מומלץ</b>.</string>
+    <string name="export_help">פעולה זו תייצא את הכספת מהאחסון הפנימי של Cue. בחר את הפורמט שבו תרצה שהייצוא שלך יהיה:</string>
+    <string name="export_warning_unencrypted">עומד להתבצע ייצוא של עותק לא מוצפן של כספת Cue שלך. <b>זה לא מומלץ</b>.</string>
     <string name="export_warning_password">פעולות הייצוא מוצפנות באמצעות סיסמה נפרדת שהוגדרה בהגדרות האבטחה.</string>
     <string name="understand_risk_accept">הסיכון מקובל עליי</string>
-    <string name="export_format_aegis">Aegis (.JSON)</string>
     <string name="export_format_google_auth_uri">קובץ טקסט (.TXT)</string>
     <string name="export_format_html">דף אינטרנט (.HTML)</string>
     <string name="export_format_hint">פורמט ייצוא</string>
@@ -158,9 +156,9 @@
         <item quantity="other">נבחרו %d קבוצות</item>
     </plurals>
     <string name="export_no_groups_selected">לא נבחרו קבוצות לייצוא</string>
-    <string name="export_html_title" comment="The title of an HTML export document">Aegis מאמת ייצוא</string>
+    <string name="export_html_title" comment="The title of an HTML export document">Cue מאמת ייצוא</string>
     <string name="choose_authentication_method">אבטחה</string>
-    <string name="authentication_method_explanation">Aegis היא אפליקציית אימות דו-שלבי ממוקדת אבטחה. אסימונים מאוחסנים בכספת, שבאופן אופציונלי ניתן להצפין באמצעות סיסמה לבחירתך. אם תוקף משיג את קובץ הכספת המוצפן שלך, הוא לא יוכל לגשת לתוכן מבלי לדעת את הסיסמה. \n\nבחרנו מראש באפשרות שלדעתנו תתאים ביותר למכשיר שלך.</string>
+    <string name="authentication_method_explanation">Cue היא אפליקציית אימות דו-שלבי ממוקדת אבטחה. אסימונים מאוחסנים בכספת, שבאופן אופציונלי ניתן להצפין באמצעות סיסמה לבחירתך. אם תוקף משיג את קובץ הכספת המוצפן שלך, הוא לא יוכל לגשת לתוכן מבלי לדעת את הסיסמה. \n\nבחרנו מראש באפשרות שלדעתנו תתאים ביותר למכשיר שלך.</string>
     <string name="authentication_method_none">ללא</string>
     <string name="authentication_method_none_description">לא תידרש סיסמה לפתיחת הכספת והנתונים שבה לא יוצפנו. <b>אפשרות זו אינה מומלצת</b>.</string>
     <string name="authentication_method_password">סיסמה</string>
@@ -176,17 +174,17 @@
     <string name="set_number">נא להקליד מספר</string>
     <string name="set_password_confirm">נא לאשר את הסיסמה</string>
     <string name="invalid_password">הסיסמה שגויה</string>
-    <string name="invalidated_biometrics">זוהו שינויים בהגדרות האבטחה של מכשירך. נא לעבור אל „Aegis -&gt; הגדרות -&gt; אבטחה -&gt; נעילה ביומטרית\" בשביל להשבית ולהפעיל מחדש את הנעילה הביומטרית.</string>
+    <string name="invalidated_biometrics">זוהו שינויים בהגדרות האבטחה של מכשירך. נא לעבור אל „Cue -&gt; הגדרות -&gt; אבטחה -&gt; נעילה ביומטרית\" בשביל להשבית ולהפעיל מחדש את הנעילה הביומטרית.</string>
     <string name="password_reminder">נא להקליד את הסיסמה שלך. אנחנו מבקשים זאת מדי פעם כדי שהסיסמה שלך לא תישכח.</string>
     <string name="password_reminder_dialog_title">פתיחה באמצעות זיהוי ביומטרי כברירת מחדל</string>
-    <string name="password_reminder_dialog_message">מדי פעם אנחנו מבקשים להקליד את הסיסמה שלך במקום זאת בשביל למנוע ממך לשכוח אותה ולהינעל מחוץ לכספת. לאחר הקלדת הסיסמה, Aegis יחזור להשתמש בפתיחה באמצעות זיהוי ביומטרי כברירת מחדל עד שיגיע הזמן להיזכר שוב בסיסמה.</string>
+    <string name="password_reminder_dialog_message">מדי פעם אנחנו מבקשים להקליד את הסיסמה שלך במקום זאת בשביל למנוע ממך לשכוח אותה ולהינעל מחוץ לכספת. לאחר הקלדת הסיסמה, Cue יחזור להשתמש בפתיחה באמצעות זיהוי ביומטרי כברירת מחדל עד שיגיע הזמן להיזכר שוב בסיסמה.</string>
     <string name="password_reminder_freq_never">אף פעם</string>
     <string name="password_reminder_freq_weekly">פעם בשבוע</string>
     <string name="password_reminder_freq_biweekly">פעם בשבועיים</string>
     <string name="password_reminder_freq_monthly">פעם בחודש</string>
     <string name="password_reminder_freq_quarterly">פעם ברבעון</string>
     <string name="enter_password_2fas_message">נראה שגיבוי 2FAS זה מוצפן. אנא הזן את הסיסמה למטה.</string>
-    <string name="enter_password_authy_message">זה נראה כאילו אסימוני Authy שלך מוצפנים. אנא סגור את Aegis, פתח את Authy ובטל את נעילת האסימונים עם הסיסמה שלך. במקום זאת, Aegis יכולה גם לנסות לפענח עבורך את אסימוני Authy שלך, אם תזין את הסיסמה שלך למטה.</string>
+    <string name="enter_password_authy_message">זה נראה כאילו אסימוני Authy שלך מוצפנים. אנא סגור את Cue, פתח את Authy ובטל את נעילת האסימונים עם הסיסמה שלך. במקום זאת, Cue יכולה גם לנסות לפענח עבורך את אסימוני Authy שלך, אם תזין את הסיסמה שלך למטה.</string>
     <string name="enter_password_aegis_title">נא להקליד את הסיסמה לצורך הייבוא</string>
     <string name="period_hint">פרק זמן (שניות)</string>
     <string name="algorithm_hint">פונקציית גיבוב</string>
@@ -250,9 +248,8 @@
     <string name="saving_profile_error">שגיאה בשמירת פרופיל</string>
     <string name="saving_assign_icons_error">שגיאה בשיוך הסמלים</string>
     <string name="welcome">ברוך בואך</string>
-    <string name="app_description">‏Aegis הוא יישום חופשי, מאובטח ופרטי לאימות דו־שלבי</string>
     <string name="setup_completed">ההקמה הושלמה</string>
-    <string name="setup_completed_description">Aegis הוקמה והיא מוכנה לצאת לדרך.</string>
+    <string name="setup_completed_description">Cue הוקמה והיא מוכנה לצאת לדרך.</string>
     <string name="vault_not_found">הכספת לא נמצאה, ההקמה מתחילה…</string>
     <string name="copied">הועתק</string>
     <string name="errors_copied">שגיאות הועתקו ללוח</string>
@@ -264,8 +261,8 @@
     <string name="saving_error">אירעה שגיאה בעת ניסיון לשמור את הכספת</string>
     <string name="vault_init_error">אירעה שגיאה בעת ניסיון לאתחל את הכספת</string>
     <string name="vault_load_error">אירעה שגיאה בעת ניסיון לטעון את הכספת מהאחסון</string>
-    <string name="biometric_decrypt_error">אירעה שגיאה בעת ניסיון לפענח את הכספת באמצעות זיהוי ביומטרי. לרוב זה קורה לאחר שינוי של הגדרות האבטחה של המכשיר. נא לפתוח את הכספת עם הסיסמה שלך ולהגדיר מחדש את הזיהוי הביומטרי בהגדרות Aegis.</string>
-    <string name="biometric_init_error">אירעה שגיאה בעת ניסיון להכין אימות ביומטרי. זה בדרך כלל קורה רק אם הגדרות האבטחה של המכשיר שלך שונו. אנא פתח את נעילת הכספת עם הסיסמה שלך והגדר מחדש את האימות הביומטרי בהגדרות של Aegis.</string>
+    <string name="biometric_decrypt_error">אירעה שגיאה בעת ניסיון לפענח את הכספת באמצעות זיהוי ביומטרי. לרוב זה קורה לאחר שינוי של הגדרות האבטחה של המכשיר. נא לפתוח את הכספת עם הסיסמה שלך ולהגדיר מחדש את הזיהוי הביומטרי בהגדרות Cue.</string>
+    <string name="biometric_init_error">אירעה שגיאה בעת ניסיון להכין אימות ביומטרי. זה בדרך כלל קורה רק אם הגדרות האבטחה של המכשיר שלך שונו. אנא פתח את נעילת הכספת עם הסיסמה שלך והגדר מחדש את האימות הביומטרי בהגדרות של Cue.</string>
     <string name="disable_encryption">השבתת ההצפנה</string>
     <string name="disable_encryption_description">להשבית את ההצפנה? ההשבתה תגרום לכספת להיות מאוחסנת בקובץ טקסט רגיל. <b>גם הגיבויים האוטומטיים יושבתו</b>.</string>
     <string name="enable_encryption_error">אירעה שגיאה בעת הפעלת ההצפנה</string>
@@ -299,7 +296,7 @@
     <string name="file_not_found">שגיאה: הקובץ לא נמצא</string>
     <string name="reading_file_error">אירעה שגיאה בעת ניסיון לקרוא את הקובץ</string>
     <string name="app_lookup_error">שגיאה: האפליקציה לא מותקנת</string>
-    <string name="app_version_error">הגרסה של %s המותקנת אינה נתמכת. גרסאות אחרונות החלו להצפין חלק מהקבצים בספריית האחסון הפנימית, מה שהופך את Aegis לא מסוגלת לגשת למידע שהיא צריכה לצורך הייבוא. ניסיון לייבא צפוי לגרום לשגיאה. האם תרצה להמשיך בכל מקרה?</string>
+    <string name="app_version_error">הגרסה של %s המותקנת אינה נתמכת. גרסאות אחרונות החלו להצפין חלק מהקבצים בספריית האחסון הפנימית, מה שהופך את Cue לא מסוגלת לגשת למידע שהיא צריכה לצורך הייבוא. ניסיון לייבא צפוי לגרום לשגיאה. האם תרצה להמשיך בכל מקרה?</string>
     <string name="root_error">שגיאה: לא ניתן להשיג גישת שורש</string>
     <plurals name="imported_entries_count">
         <item quantity="one">ערך %d יובא</item>
@@ -319,7 +316,7 @@
     <string name="encryption_enable_biometrics_error">אירעה שגיאה בעת ניסיון להפעיל את הנעילה הביומטרית. הזיהוי הביומטרי לא מיושם כראוי בחלק מהמכשירים, ונראה שגם במכשירך. נא לשקול לעבור לתצורת פתיחה באמצעות סיסמה בלבד.</string>
     <string name="no_cameras_available">אין מצלמות זמינות</string>
     <string name="read_qr_error">אירעה שגיאה בעת ניסיון לקריאת קוד ה־QR</string>
-    <string name="read_qr_error_phonefactor">Aegis אינו תואם לאלגוריתם 2FA הקנייני של מיקרוסופט. אנא הקפד לבחור \"הגדר יישום ללא התראות\" בעת הגדרת 2FA ב-Office 365.</string>
+    <string name="read_qr_error_phonefactor">Cue אינו תואם לאלגוריתם 2FA הקנייני של מיקרוסופט. אנא הקפד לבחור \"הגדר יישום ללא התראות\" בעת הגדרת 2FA ב-Office 365.</string>
     <string name="partial_google_auth_import">זוהה ייצוא לא שלם של Google Authenticator</string>
     <string name="partial_google_auth_import_warning">כמה קודי QR חסרים בייבוא שלך. הקודים הבאים לא נמצאו:\n\n<b>%s</b>\n\nתוכל להמשיך לייבא את הייצוא החלקי הזה, אך אנו ממליצים לנסות שוב עם כל קודי ה-QR כדי לא להסתכן באובדן גישה לכל קודי אסימונים.</string>
     <string name="missing_qr_code_descriptor">• קוד QR %d</string>
@@ -407,16 +404,15 @@
     <string name="toggle_checkboxes">החלף את תיבות הסימון</string>
     <string name="search">חיפוש</string>
     <string name="channel_name_lock_status">מצב נעילה</string>
-    <string name="channel_description_lock_status">Aegis יכולה ליצור הודעה מתמשכת כדי להודיע לך כאשר הכספת נעולה</string>
+    <string name="channel_description_lock_status">Cue יכולה ליצור הודעה מתמשכת כדי להודיע לך כאשר הכספת נעולה</string>
     <string name="vault_unlocked_state">הכספת פתוחה. יש להקיש כאן כדי לנעול.</string>
     <string name="version">גרסה</string>
     <string name="changelog">יומן שינויים</string>
     <string name="whats_new">מה חדש</string>
     <string name="github_description">קוד מקור, בעיות ומידע</string>
     <string name="license">רישיון</string>
-    <string name="license_description">Aegis Authenticator מורשה תחת GPLv3</string>
     <string name="third_party_licenses">רישיונות של צד שלישי</string>
-    <string name="third_party_licenses_description">רישיונות של ספריות צד שלישי שבהן משתמשת Aegis</string>
+    <string name="third_party_licenses_description">רישיונות של ספריות צד שלישי שבהן משתמשת Cue</string>
     <string name="country_netherlands">הולנד</string>
     <string name="email_us">כתוב מייל</string>
     <string name="visit_website">בקר באתר שלנו</string>
@@ -426,7 +422,7 @@
     <string name="webview_error">מכשיר זה אינו תומך בתצוגת אינטרנט, הנחוצה להצגת יומן השינויים והרישיון. חסר לו רכיב מערכת.</string>
     <string name="email">אימייל</string>
     <string name="time_sync_warning_title">סנכרון זמן אוטומטי</string>
-    <string name="time_sync_warning_message">Aegis מסתמכת על זמן המערכת להיות מסונכרן כדי ליצור קודים נכונים. סטייה של מספר שניות בלבד עלולה לגרום לקודים שגויים. נראה שהמכשיר שלך לא מוגדר לסנכרון אוטומטי של השעה. האם תרצה לעשות זאת כעת?</string>
+    <string name="time_sync_warning_message">Cue מסתמכת על זמן המערכת להיות מסונכרן כדי ליצור קודים נכונים. סטייה של מספר שניות בלבד עלולה לגרום לקודים שגויים. נראה שהמכשיר שלך לא מוגדר לסנכרון אוטומטי של השעה. האם תרצה לעשות זאת כעת?</string>
     <string name="time_sync_warning_disable">תפסיק להזהיר אותי. אני יודע מה אני עושה.</string>
     <string name="google_qr_export_unrelated">נמצא קוד QR לא קשור. נסה להפעיל מחדש את הסורק.</string>
     <plurals name="google_qr_export_scanned">
@@ -435,7 +431,7 @@
         <item quantity="other">נסרקו %1$d/‏%2$d קודי QR</item>
     </plurals>
     <string name="backup_error_bar_message"><b>גיבוי הכספת נכשל לאחרונה</b></string>
-    <string name="backup_system_builtin">גיבויים אוטומטיים מובנים של Aegis</string>
+    <string name="backup_system_builtin">גיבויים אוטומטיים מובנים של Cue</string>
     <string name="backup_system_android">מערכת גיבוי בענן של אנדרואיד</string>
     <string name="backup_reminder_bar_message_with_latest" comment="The parameter is an elapsed time in the style of 'x seconds/minutes/days ago'">
         הגיבוי האחרון מיושן (%s)
@@ -467,7 +463,7 @@
     <string name="unable_to_copy_uri_to_clipboard">לא ניתן להעתיק URI ללוח</string>
     <string name="uri_copied_to_clipboard">URI שהועתק ללוח</string>
     <string name="transfer_entry_description">נא לסרוק קוד QR זה בעזרת יישום האימות שברצונך להעביר את הרשומה אליו</string>
-    <string name="google_auth_compatible_transfer_description">סרוק קודי QR אלה באמצעות Aegis אוGoogle Authenticator.\n\n בשל מגבלות אפליקציית מאמת Google, רק אסימוני TOTP &amp; HOTP המשתמשים ב- SHA1 ומייצרים קודים בני 6 ספרות כלולים</string>
+    <string name="google_auth_compatible_transfer_description">סרוק קודי QR אלה באמצעות Cue אוGoogle Authenticator.\n\n בשל מגבלות אפליקציית מאמת Google, רק אסימוני TOTP &amp; HOTP המשתמשים ב- SHA1 ומייצרים קודים בני 6 ספרות כלולים</string>
     <string name="password_strength_very_weak">חלש מאוד</string>
     <string name="password_strength_weak">חלש</string>
     <string name="password_strength_fair">סביר</string>
@@ -489,10 +485,9 @@
     <string name="dialog_wipe_entries_message">כבר יש רשומות בכספת שלך. האם ברצונך להסיר רשומות אלה לפני ייבוא הקובץ?\n\n<b>ההסרה תגרום לך לאבד לצמיתות את הגישה לרשומות שנמצאות בכספת.</b></string>
     <string name="dialog_wipe_entries_checkbox">מחק את תוכן הכספת</string>
     <string name="import_from_clipboard_title">ייבוא מלוח הגזירים</string>
-    <string name="panic_trigger_ignore_toast">Aegis קיבל הפעלת פאניקה אך ההגדרה מושבתת, מתעלמת</string>
+    <string name="panic_trigger_ignore_toast">Cue קיבל הפעלת פאניקה אך ההגדרה מושבתת, מתעלמת</string>
     <string name="pref_panic_trigger_title">מחק את הכספת בהפעלת הפאניקה</string>
     <string name="pref_panic_trigger_summary">מחק את הכספת בהפעלת הפאניקה</string>
-    <string name="import_vault">ייבוא כספת של Aegis</string>
     <string name="import_vault_hint">רוצה לייבא מיישום אחר של אימות דו־שלבי? נא לסיים קודם את ההגדרה הראשונית ואז לגשת לתפריט ההגדרות.</string>
     <string name="importer_help_2fas">ספק קובץ גיבוי של 2FAS Authenticator.</string>
     <string name="importer_help_aegis">ספק קובץ ייצוא/גיבוי של Aegis.</string>
@@ -513,7 +508,7 @@
     <string name="import_assign_icons_dialog_title">שיוך סמלים</string>
     <string name="import_assign_icons_dialog_text">האם ברצונך לשייך סמלים לרשומות שיובאו?</string>
     <string name="importer_encrypted_exception_google_authenticator">בוצע דילוג על רשומה מוצפנת: %s</string>
-    <string name="importer_help_direct">ייבא ערכים ישירות מ-%s. זה מחייב את האפליקציה להיות מותקנת במכשיר זה וכדי להעניק גישת שורש ל-Aegis.</string>
+    <string name="importer_help_direct">ייבא ערכים ישירות מ-%s. זה מחייב את האפליקציה להיות מותקנת במכשיר זה וכדי להעניק גישת שורש ל-Cue.</string>
     <string name="groups">קבוצות</string>
     <string name="pref_focus_search">התמקד בחיפוש בהתחלת האפליקציה</string>
     <string name="pref_focus_search_summary">מקד את החיפוש מיד לאחר פתיחת האפליקציה.</string>

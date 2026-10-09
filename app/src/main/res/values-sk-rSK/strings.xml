@@ -28,7 +28,6 @@
     <string name="pref_section_security_title">Zabezpečenie</string>
     <string name="pref_section_security_summary">Nakonfigurujte šifrovanie, biometrické odomknutie, automatické uzamknutie a ďalšie nastavenia zabezpečenia.</string>
     <string name="pref_section_import_export_title">Import &amp; export dát</string>
-    <string name="pref_section_import_export_summary">Importujte zálohy Aegis alebo iných autentifikačných aplikácií. Vytvorte manuálne exporty svojho trezoru Aegis.</string>
     <string name="pref_section_audit_log_title">Denník záznamov</string>
     <string name="pref_section_audit_log_summary">Nájdite zoznam všetkých nahlásených dôležitých udalosti, ktoré sa stali v aplikácii.</string>
     <string name="pref_section_backups_title">Zálohy</string>
@@ -56,14 +55,14 @@
     <string name="pref_import_file_title">Importovať zo súboru</string>
     <string name="pref_import_file_summary">Importovať tokeny zo súboru</string>
     <string name="pref_android_backups_title">Zálohy na Android cloude</string>
-    <string name="pref_android_backups_summary">Povoliť zálohovaciemu systému Android Cloud zahrnúť Aegis trezor vo svojich zálohách. Je to podporované iba pre šifrované trezory.</string>
+    <string name="pref_android_backups_summary">Povoliť zálohovaciemu systému Android Cloud zahrnúť Cue trezor vo svojich zálohách. Je to podporované iba pre šifrované trezory.</string>
     <string name="pref_android_backups_hint"><i>Device-to-device (D2D) zálohy sú povolené vždy, nezávisle na nastavení vyššie</i></string>
     <string name="pref_backups_title">Automaticky zálohovať trezor</string>
     <string name="pref_backups_summary">Po vykonaní zmien automaticky vytvárať zálohy trezoru na externom úložisku. Toto je podporované iba pre šifrované trezory.</string>
     <string name="pref_backups_reminder_title">Pripomienky zálohovania</string>
     <string name="pref_backups_reminder_summary">Zobraziť pripomienku o zálohovaní vášho trezoru v prípade, že ste nezálohovali vaše najnovšie zmeny.</string>
     <string name="pref_backups_reminder_dialog_title">Zakázať pripomienky zálohovania</string>
-    <string name="pref_backups_reminder_dialog_summary">Ak túto pripomienku zakážete, Aegis vám nepovie, či máte alebo nemáte zmeny, ktoré ešte nie sú zálohované. Vystavujete sa tak riziku straty prístupu k svojim tokenom. Naozaj chcete zakázať pripomenutie?</string>
+    <string name="pref_backups_reminder_dialog_summary">Ak túto pripomienku zakážete, Cue vám nepovie, či máte alebo nemáte zmeny, ktoré ešte nie sú zálohované. Vystavujete sa tak riziku straty prístupu k svojim tokenom. Naozaj chcete zakázať pripomenutie?</string>
     <string name="pref_backups_versioning_strategy_title">Spôsob zálohovania</string>
     <string name="pref_backups_versioning_strategy_keep_x_versions">Ponechať viacero verzií</string>
     <string name="pref_backups_versioning_strategy_single_backup">Jedna záloha</string>
@@ -101,7 +100,7 @@
     <string name="pref_auto_lock_title">Automatické zamykanie</string>
     <string name="pref_auto_lock_summary">Keď %s</string>
     <string name="pref_auto_lock_summary_disabled">Vypnuté</string>
-    <string name="pref_auto_lock_prompt">Automaticky zamknúť Aegis keď</string>
+    <string name="pref_auto_lock_prompt">Automaticky zamknúť Cue keď</string>
     <string name="pref_auto_lock_type_back_button">Je stlačené tlačidlo Späť</string>
     <string name="pref_auto_lock_type_minimize">Aplikácia je minimalizovaná</string>
     <string name="pref_auto_lock_type_device_lock">Zariadenie je uzamknuté</string>
@@ -142,11 +141,10 @@
     <string name="today_at_time">Dnes o %1$s</string>
     <string name="day_of_week_at_time">%1$s o %2$s</string>
     <string name="export_encrypted">Šifrovať trezor</string>
-    <string name="export_help">Touto akciou sa exportuje trezor z interného úložiska Aegis. Vyberte formát, v ktorom chcete mať export:</string>
-    <string name="export_warning_unencrypted">Chystáte sa exportovať nezašifrovanú kópiu svojho trezoru Aegis. <b>Toto sa neodporúča</b>.</string>
+    <string name="export_help">Touto akciou sa exportuje trezor z interného úložiska Cue. Vyberte formát, v ktorom chcete mať export:</string>
+    <string name="export_warning_unencrypted">Chystáte sa exportovať nezašifrovanú kópiu svojho trezoru Cue. <b>Toto sa neodporúča</b>.</string>
     <string name="export_warning_password">Exporty sú šifrované pomocou samostatného hesla nakonfigurovaného v nastaveniach zabezpečenia.</string>
     <string name="understand_risk_accept">Rozumiem rizikám</string>
-    <string name="export_format_aegis">Aegis (.JSON)</string>
     <string name="export_format_google_auth_uri">Textový súbor (.TXT)</string>
     <string name="export_format_html">Webová stránka (.HTML)</string>
     <string name="export_format_hint">Formát exportu</string>
@@ -159,7 +157,7 @@
         <item quantity="other">%d vybraných skupín</item>
     </plurals>
     <string name="export_no_groups_selected">Nie sú vybrané žiadne skupiny na exportovanie</string>
-    <string name="export_html_title" comment="The title of an HTML export document">Export Aegis Authenticator</string>
+    <string name="export_html_title" comment="The title of an HTML export document">Export Cue Authenticator</string>
     <string name="choose_authentication_method">Zabezpečenie</string>
     <string name="authentication_method_none">Žiadne</string>
     <string name="authentication_method_none_description">Na odomknutie trezoru nie je potrebné žiadne heslo a nebude šifrovaný. <b> Táto možnosť sa neodporúča </b>.</string>
@@ -245,9 +243,8 @@
     <string name="saving_profile_error">Pri ukladaní profilu sa vyskytla chyba</string>
     <string name="saving_assign_icons_error">Chyba priradenia ikon</string>
     <string name="welcome">Vitajte</string>
-    <string name="app_description">Aegis je bezplatná, bezpečná a open source aplikácia 2FA</string>
     <string name="setup_completed">Nastavenie je dokončené</string>
-    <string name="setup_completed_description">Aegis bol nastavený a je pripravený k používaniu.</string>
+    <string name="setup_completed_description">Cue bol nastavený a je pripravený k používaniu.</string>
     <string name="vault_not_found">Trezor sa nenašiel, spúšťa sa nastavenie…</string>
     <string name="copied">Skopírované</string>
     <string name="errors_copied">Chyby boli skopírované do schránky</string>
@@ -259,7 +256,7 @@
     <string name="saving_error">Pri pokuse o uloženie trezoru sa vyskytla chyba</string>
     <string name="vault_init_error">Pri pokuse o inicializáciu trezoru sa vyskytla chyba</string>
     <string name="vault_load_error">Pri pokuse o načítanie trezoru z úložiska sa vyskytla chyba</string>
-    <string name="biometric_decrypt_error">Pri pokuse o dešifrovanie trezoru pomocou biometrického overenia sa vyskytla chyba. Zvyčajne sa to stane iba vtedy, ak sa zmenili nastavenia zabezpečenia vášho zariadenia. Odomknite trezor pomocou svojho hesla a prekonfigurujte biometrické overenie v nastaveniach Aegis.</string>
+    <string name="biometric_decrypt_error">Pri pokuse o dešifrovanie trezoru pomocou biometrického overenia sa vyskytla chyba. Zvyčajne sa to stane iba vtedy, ak sa zmenili nastavenia zabezpečenia vášho zariadenia. Odomknite trezor pomocou svojho hesla a prekonfigurujte biometrické overenie v nastaveniach Cue.</string>
     <string name="disable_encryption">Vypnúť šifrovanie</string>
     <string name="enable_encryption_error">Pri zapínaní šifrovania došlo k chybe</string>
     <string name="disable_encryption_error">Pri vypínaní šifrovania došlo k chybe</string>
@@ -307,7 +304,7 @@
     <string name="encryption_enable_biometrics_error">Pri pokuse o povolenie biometrického odomykania sa vyskytla chyba. Niektoré zariadenia majú slabú implementáciu biometrickej autentifikácie a je pravdepodobné, že to vaše je jedno z nich. Zvážte namiesto toho prechod na konfiguráciu iba s heslom.</string>
     <string name="no_cameras_available">K dispozícii nie sú žiadne kamery</string>
     <string name="read_qr_error">Pri pokuse o načítanie kódu QR sa vyskytla chyba</string>
-    <string name="read_qr_error_phonefactor">Aegis nie je kompatibilný s proprietárnym algoritmom 2FA spoločnosti Microsoft. Pri konfigurácii 2FA v Office 365 nezabudnite vybrať možnosť „Nastaviť aplikáciu bez upozornení“.</string>
+    <string name="read_qr_error_phonefactor">Cue nie je kompatibilný s proprietárnym algoritmom 2FA spoločnosti Microsoft. Pri konfigurácii 2FA v Office 365 nezabudnite vybrať možnosť „Nastaviť aplikáciu bez upozornení“.</string>
     <string name="missing_qr_code_descriptor">• QR kód %d</string>
     <string name="import_google_auth_failure">Importovanie exportu služby Google Authenticator zlyhalo</string>
     <string name="unlocking_vault">Odomykanie trezoru</string>
@@ -368,10 +365,10 @@
     <string name="unknown_issuer">Neznámy vydavateľ</string>
     <string name="unknown_account_name">Neznámy názov účtu</string>
     <plurals name="import_error_dialog">
-        <item quantity="one">Aegis nedokázal importovať %d token. Tento token bude preskočený. Pre zobrazenie informácii o chybe kliknite na \'podrobnosti\'.</item>
-        <item quantity="few">Aegis nedokázal importovať %d tokeny. Tieto tokeny budú preskočené. Pre zobrazenie informácii o chybách kliknite na \'podrobnosti\'.</item>
-        <item quantity="many">Aegis nedokázal importovať %d tokenov. Tieto tokeny budú preskočené. Pre zobrazenie informácii o chybách kliknite na \'podrobnosti\'.</item>
-        <item quantity="other">Aegis nedokázal importovať %d tokenov. Tieto tokeny budú preskočené. Pre zobrazenie informácii o chybách kliknite na \'podrobnosti\'.</item>
+        <item quantity="one">Cue nedokázal importovať %d token. Tento token bude preskočený. Pre zobrazenie informácii o chybe kliknite na \'podrobnosti\'.</item>
+        <item quantity="few">Cue nedokázal importovať %d tokeny. Tieto tokeny budú preskočené. Pre zobrazenie informácii o chybách kliknite na \'podrobnosti\'.</item>
+        <item quantity="many">Cue nedokázal importovať %d tokenov. Tieto tokeny budú preskočené. Pre zobrazenie informácii o chybách kliknite na \'podrobnosti\'.</item>
+        <item quantity="other">Cue nedokázal importovať %d tokenov. Tieto tokeny budú preskočené. Pre zobrazenie informácii o chybách kliknite na \'podrobnosti\'.</item>
     </plurals>
     <string name="unable_to_generate_qrcode">Nie je možné vygenerovať QR kód</string>
     <string name="select_picture">Vybrať obrázok</string>
@@ -386,9 +383,8 @@
     <string name="whats_new">Čo je nové</string>
     <string name="github_description">Zdrojový kód, problémy a informácie</string>
     <string name="license">Licencia</string>
-    <string name="license_description">Aegis Authenticator je licencovaný pod GPLv3</string>
     <string name="third_party_licenses">Licencie tretích strán</string>
-    <string name="third_party_licenses_description">Licencie knižníc tretích strán, ktoré Aegis používa</string>
+    <string name="third_party_licenses_description">Licencie knižníc tretích strán, ktoré Cue používa</string>
     <string name="country_netherlands">Holandsko</string>
     <string name="email_us">Napísať e-mail</string>
     <string name="visit_website">Navštíviť našu webstránku</string>
@@ -399,7 +395,7 @@
     <string name="time_sync_warning_title">Automatická synchronizácia času</string>
     <string name="google_qr_export_unrelated">Nesúvisiaci QR kód bol nájdený. Pokúste sa reštartovať skener.</string>
     <string name="backup_error_bar_message"><b>Zálohovanie trezora nedávno zlyhalo</b></string>
-    <string name="backup_system_builtin">Vstavané automatické zálohy Aegisu</string>
+    <string name="backup_system_builtin">Vstavané automatické zálohy Cueu</string>
     <string name="backup_reminder_bar_message_with_latest" comment="The parameter is an elapsed time in the style of 'x seconds/minutes/days ago'">
         Najnovšia záloha je zastaraná (%s)
     </string>
@@ -427,7 +423,7 @@
     <string name="copy_uri">Skopírovať URI</string>
     <string name="uri_copied_to_clipboard">URI bola skopírovaná do schránky</string>
     <string name="transfer_entry_description">Naskenujte tento QR kód pomocou overovacej aplikácie, do ktorej chcete tento záznam preniesť</string>
-    <string name="google_auth_compatible_transfer_description">Naskenujte tieto QR kódy s aplikáciou Aegis alebo Google Authenticator.\n\nKvôli limitáciám aplikácie Google Authenticator sú zahrnuté iba TOTP &amp; HOTP tokény, ktoré používajú SHA1 a obsahujú 6 číselné kódy</string>
+    <string name="google_auth_compatible_transfer_description">Naskenujte tieto QR kódy s aplikáciou Cue alebo Google Authenticator.\n\nKvôli limitáciám aplikácie Google Authenticator sú zahrnuté iba TOTP &amp; HOTP tokény, ktoré používajú SHA1 a obsahujú 6 číselné kódy</string>
     <string name="password_strength_very_weak">Veľmi slabé</string>
     <string name="password_strength_weak">Slabé</string>
     <string name="password_strength_fair">Dostatočné</string>
@@ -441,10 +437,9 @@
     <string name="title_activity_edit_entry">Upraviť záznam</string>
     <string name="title_activity_scan_qr">Skenovať QR kód</string>
     <string name="title_activity_assign_icons">Priradiť ikonky</string>
-    <string name="panic_trigger_ignore_toast">Aegis zaznamenal panický signál, avšak nastavenie je deaktivované. Ignoruje sa</string>
+    <string name="panic_trigger_ignore_toast">Cue zaznamenal panický signál, avšak nastavenie je deaktivované. Ignoruje sa</string>
     <string name="pref_panic_trigger_title">Vymazať trezor pri vyvolaní paniky</string>
     <string name="pref_panic_trigger_summary">Vymazať trezor, keď sa vyvolá panický spúšťač od Ripple</string>
-    <string name="import_vault">Importovať Aegis trezor</string>
     <string name="importer_help_2fas">Nahrajte súbor exportu služby 2FAS Authenticator.</string>
     <string name="importer_help_aegis">Nahrajte súbor exportu/zálohy služby Aegis.</string>
     <string name="importer_help_authenticator_plus">Nahrajte súbor exportu služby Authenticator Plus, ktorý obdržíte cez <b>Nastavenia -&gt; Záloha &amp; Obnoviť -&gt; Exportovať ako Text a HTML</b>.</string>

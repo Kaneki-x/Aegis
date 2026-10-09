@@ -28,7 +28,6 @@
     <string name="pref_section_security_title">Säkerhet</string>
     <string name="pref_section_security_summary">Konfigurera kryptering, biometrisk upplåsning, automatisk låsning och andra säkerhetsinställningar.</string>
     <string name="pref_section_import_export_title">Import &amp; export</string>
-    <string name="pref_section_import_export_summary">Importera säkerhetskopior från Aegis eller andra autentiseringsappar. Skapa manuella exporter av ditt Aegis-valv.</string>
     <string name="pref_section_audit_log_title">Granskningslogg</string>
     <string name="pref_section_audit_log_summary">Hitta en lista över alla rapporterade viktiga händelser som har inträffat i appen.</string>
     <string name="pref_section_backups_title">Säkerhetskopior</string>
@@ -56,14 +55,14 @@
     <string name="pref_import_file_title">Importera från fil</string>
     <string name="pref_import_file_summary">Importera polletter från en fil</string>
     <string name="pref_android_backups_title">Android-molnsäkerhetskopior</string>
-    <string name="pref_android_backups_summary">Tillåt att Androids molnsäkerhetskopieringssystem inkluderar Aegis valv i sina säkerhetskopior. Detta stöds endast för krypterade valv.</string>
+    <string name="pref_android_backups_summary">Tillåt att Androids molnsäkerhetskopieringssystem inkluderar Cue valv i sina säkerhetskopior. Detta stöds endast för krypterade valv.</string>
     <string name="pref_android_backups_hint"><i>Säkerhetskopior mellan enheter (D2D) är alltid tillåtna, oavsett inställningen ovan</i></string>
     <string name="pref_backups_title">Säkerhetskopiera valvet automatiskt</string>
     <string name="pref_backups_summary">Skapa automatiskt säkerhetskopior av valvet i externt lagringsutrymme när ändringar görs. Detta stöds endast för krypterade valv.</string>
     <string name="pref_backups_reminder_title">Påminnelse om säkerhetskopiering</string>
     <string name="pref_backups_reminder_summary">Visa en påminnelse om att säkerhetskopiera ditt valv ifall du inte har säkerhetskopierat dina senaste ändringar.</string>
     <string name="pref_backups_reminder_dialog_title">Inaktivera påminnelse om säkerhetskopiering</string>
-    <string name="pref_backups_reminder_dialog_summary">Inaktivering av denna påminnelse innebär att Aegis inte kommer att meddela dig om du har ändringar som ännu inte har säkerhetskopierats. Detta utsätter dig för risken att förlora åtkomst till dina polletter. Är du säker på att du vill inaktivera påminnelsen?</string>
+    <string name="pref_backups_reminder_dialog_summary">Inaktivering av denna påminnelse innebär att Cue inte kommer att meddela dig om du har ändringar som ännu inte har säkerhetskopierats. Detta utsätter dig för risken att förlora åtkomst till dina polletter. Är du säker på att du vill inaktivera påminnelsen?</string>
     <string name="pref_backups_versioning_strategy_title">Strategi för säkerhetskopiering</string>
     <string name="pref_backups_versioning_strategy_keep_x_versions">Behåll ett antal versioner</string>
     <string name="pref_backups_versioning_strategy_single_backup">Enstaka säkerhetskopia</string>
@@ -103,7 +102,7 @@
     <string name="pref_auto_lock_title">Autolås</string>
     <string name="pref_auto_lock_summary">När %s</string>
     <string name="pref_auto_lock_summary_disabled">Inaktiverad</string>
-    <string name="pref_auto_lock_prompt">Lås Aegis automatiskt när</string>
+    <string name="pref_auto_lock_prompt">Lås Cue automatiskt när</string>
     <string name="pref_auto_lock_type_back_button">Tillbaka-knappen trycks ner</string>
     <string name="pref_auto_lock_type_minimize">Appen är minimerad</string>
     <string name="pref_auto_lock_type_device_lock">Enheten är låst</string>
@@ -145,11 +144,10 @@
     <string name="today_at_time">I dag kl. %1$s</string>
     <string name="day_of_week_at_time">%1$s kl. %2$s</string>
     <string name="export_encrypted">Kryptera valvet</string>
-    <string name="export_help">Denna åtgärd kommer att exportera valvet från Aegis interna lagring. Välj det format som du vill att din export ska vara i:</string>
-    <string name="export_warning_unencrypted">Du håller på att exportera en okrypterad kopia av ditt Aegis-valv. <b>Detta rekommenderas inte.</b></string>
+    <string name="export_help">Denna åtgärd kommer att exportera valvet från Cue interna lagring. Välj det format som du vill att din export ska vara i:</string>
+    <string name="export_warning_unencrypted">Du håller på att exportera en okrypterad kopia av ditt Cue-valv. <b>Detta rekommenderas inte.</b></string>
     <string name="export_warning_password">Exporter krypteras med ett separat lösenord som konfigureras i säkerhetsinställningarna.</string>
     <string name="understand_risk_accept">Jag förstår risken</string>
-    <string name="export_format_aegis">Aegis (.JSON)</string>
     <string name="export_format_google_auth_uri">Textfil (.TXT)</string>
     <string name="export_format_html">Webbsida (.HTML)</string>
     <string name="export_format_hint">Exportformat</string>
@@ -160,9 +158,9 @@
         <item quantity="other">%d grupper valda</item>
     </plurals>
     <string name="export_no_groups_selected">Inga grupper valda för exportering</string>
-    <string name="export_html_title" comment="The title of an HTML export document">Aegis Authenticator-export</string>
+    <string name="export_html_title" comment="The title of an HTML export document">Cue Authenticator-export</string>
     <string name="choose_authentication_method">Säkerhet</string>
-    <string name="authentication_method_explanation">Aegis är en säkerhetsfokuserad 2FA-app. Polletter lagras i ett valv som, om så önskas, kan krypteras med ett lösenord som du väljer. Om en angripare får tag i din krypterade valvfil, kommer hen inte att kunna komma åt innehållet utan att känna till lösenordet.\n\nVi har förvalt det alternativ som vi tror passar bäst för din enhet.</string>
+    <string name="authentication_method_explanation">Cue är en säkerhetsfokuserad 2FA-app. Polletter lagras i ett valv som, om så önskas, kan krypteras med ett lösenord som du väljer. Om en angripare får tag i din krypterade valvfil, kommer hen inte att kunna komma åt innehållet utan att känna till lösenordet.\n\nVi har förvalt det alternativ som vi tror passar bäst för din enhet.</string>
     <string name="authentication_method_none">Ingen</string>
     <string name="authentication_method_none_description">Inget lösenord behövs för att låsa upp valvet och det kommer inte att krypteras. <b>Detta alternativ rekommenderas inte.</b></string>
     <string name="authentication_method_password">Lösenord</string>
@@ -178,10 +176,10 @@
     <string name="set_number">Ange ett nummer</string>
     <string name="set_password_confirm">Bekräfta lösenordet</string>
     <string name="invalid_password">Lösenordet är felaktigt</string>
-    <string name="invalidated_biometrics">En förändring av din enhets säkerhetsinställningar har upptäckts. Vänligen gå till \"Aegis -&gt; Inställningar -&gt; Säkerhet -&gt; Biometrisk upplåsning\" för att inaktivera och återaktivera biometrisk upplåsning.</string>
+    <string name="invalidated_biometrics">En förändring av din enhets säkerhetsinställningar har upptäckts. Vänligen gå till \"Cue -&gt; Inställningar -&gt; Säkerhet -&gt; Biometrisk upplåsning\" för att inaktivera och återaktivera biometrisk upplåsning.</string>
     <string name="password_reminder">Ange ditt lösenord. Ibland ber vi dig göra detta så att du inte glömmer det.</string>
     <string name="password_reminder_dialog_title">Biometrisk upplåsning förvald</string>
-    <string name="password_reminder_dialog_message">Ibland uppmanar vi dig att ange ditt lösenord i stället för att säkerställa att du inte har glömt det och inte kommer att bli utelåst från ditt valv. Efter att du har angett ditt lösenord en gång kommer Aegis att återgå till biometrisk upplåsning tills det är dags för en ny lösenordspåminnelse.</string>
+    <string name="password_reminder_dialog_message">Ibland uppmanar vi dig att ange ditt lösenord i stället för att säkerställa att du inte har glömt det och inte kommer att bli utelåst från ditt valv. Efter att du har angett ditt lösenord en gång kommer Cue att återgå till biometrisk upplåsning tills det är dags för en ny lösenordspåminnelse.</string>
     <string name="password_reminder_freq_never">Aldrig</string>
     <string name="password_reminder_freq_weekly">Varje vecka</string>
     <string name="password_reminder_freq_biweekly">Varannan vecka</string>
@@ -189,7 +187,7 @@
     <string name="password_reminder_freq_quarterly">Varje kvartal</string>
     <string name="enter_password_proton_message">Det verkar som om den här säkerhetskopian från Proton Authenticator är krypterad. Ange lösenordet nedan.</string>
     <string name="enter_password_2fas_message">Det verkar som om den här 2FAS-säkerhetskopian är krypterad. Ange lösenordet nedan.</string>
-    <string name="enter_password_authy_message">Det ser ut som om dina Authy-polletter är krypterade. Vänligen stäng Aegis, öppna Authy och lås upp polletterna med ditt lösenord. Alternativt kan Aegis försöka att dekryptera dina Authy-polletter åt dig, om du anger ditt lösenord nedan.</string>
+    <string name="enter_password_authy_message">Det ser ut som om dina Authy-polletter är krypterade. Vänligen stäng Cue, öppna Authy och lås upp polletterna med ditt lösenord. Alternativt kan Cue försöka att dekryptera dina Authy-polletter åt dig, om du anger ditt lösenord nedan.</string>
     <string name="enter_password_aegis_title">Ange lösenordet för importen</string>
     <string name="period_hint">Period (sekunder)</string>
     <string name="algorithm_hint">Hashfunktion</string>
@@ -252,9 +250,8 @@
     <string name="saving_profile_error">Det gick inte att spara profilen</string>
     <string name="saving_assign_icons_error">Fel vid tilldelning av ikoner</string>
     <string name="welcome">Välkommen</string>
-    <string name="app_description">Aegis är en gratis, säker och öppenkällkodad 2FA-app</string>
     <string name="setup_completed">Konfigurationen slutförd</string>
-    <string name="setup_completed_description">Aegis har konfigurerats och är redo att användas.</string>
+    <string name="setup_completed_description">Cue har konfigurerats och är redo att användas.</string>
     <string name="vault_not_found">Valvet hittades inte, startar konfiguration …</string>
     <string name="copied">Kopierat</string>
     <string name="errors_copied">Fel kopierade till urklipp</string>
@@ -266,8 +263,8 @@
     <string name="saving_error">Ett fel uppstod när valvet skulle sparas</string>
     <string name="vault_init_error">Ett fel uppstod när valvet skulle initieras</string>
     <string name="vault_load_error">Ett fel uppstod när valvet skulle laddas från lagringsutrymmet</string>
-    <string name="biometric_decrypt_error">Ett fel uppstod när valvet skulle dekrypteras med biometrisk autentisering. Detta händer vanligtvis bara om din enhets säkerhetsinställningar har ändrats. Vänligen lås upp valvet med ditt lösenord och konfigurera biometrisk autentisering på nytt i inställningarna för Aegis.</string>
-    <string name="biometric_init_error">Ett fel uppstod när biometrisk autentisering skulle förberedas. Detta händer vanligtvis bara om din enhets säkerhetsinställningar har ändrats. Vänligen lås upp valvet med ditt lösenord och konfigurera biometrisk autentisering på nytt i inställningarna för Aegis.</string>
+    <string name="biometric_decrypt_error">Ett fel uppstod när valvet skulle dekrypteras med biometrisk autentisering. Detta händer vanligtvis bara om din enhets säkerhetsinställningar har ändrats. Vänligen lås upp valvet med ditt lösenord och konfigurera biometrisk autentisering på nytt i inställningarna för Cue.</string>
+    <string name="biometric_init_error">Ett fel uppstod när biometrisk autentisering skulle förberedas. Detta händer vanligtvis bara om din enhets säkerhetsinställningar har ändrats. Vänligen lås upp valvet med ditt lösenord och konfigurera biometrisk autentisering på nytt i inställningarna för Cue.</string>
     <string name="disable_encryption">Inaktivera kryptering</string>
     <string name="disable_encryption_description">Är du säker på att du vill inaktivera kryptering? Detta kommer att göra att valvet lagras som klartext. <b>Automatiska säkerhetskopior kommer också att inaktiveras.</b></string>
     <string name="enable_encryption_error">Ett fel uppstod när kryptering skulle aktiveras</string>
@@ -301,7 +298,7 @@
     <string name="file_not_found">Fel: Filen hittades inte</string>
     <string name="reading_file_error">Ett fel uppstod när filen skulle läsas</string>
     <string name="app_lookup_error">Fel: Appen är inte installerad</string>
-    <string name="app_version_error">Den installerade versionen av %s stöds inte. De senaste versionerna har börjat kryptera vissa filer i den interna lagringskatalogen, vilket gör att Aegis inte kan komma åt den information som krävs för import. Ett importförsök kommer sannolikt att misslyckas. Vill du fortsätta ändå?</string>
+    <string name="app_version_error">Den installerade versionen av %s stöds inte. De senaste versionerna har börjat kryptera vissa filer i den interna lagringskatalogen, vilket gör att Cue inte kan komma åt den information som krävs för import. Ett importförsök kommer sannolikt att misslyckas. Vill du fortsätta ändå?</string>
     <string name="root_error">Fel: Kunde inte få rotåtkomst</string>
     <plurals name="imported_entries_count">
         <item quantity="one">Importerade %d post</item>
@@ -319,7 +316,7 @@
     <string name="encryption_enable_biometrics_error">Ett fel uppstod när biometrisk upplåsning skulle aktiveras. Vissa enheter har en dålig implementering av biometrisk autentisering, och det är troligt att din är en av dem. Överväg att byta till en konfiguration med endast lösenord i stället.</string>
     <string name="no_cameras_available">Inga kameror tillgängliga</string>
     <string name="read_qr_error">Ett fel uppstod när rutkoden skulle läsas</string>
-    <string name="read_qr_error_phonefactor">Aegis är inte kompatibel med Microsofts egenutvecklade 2FA-algoritm. Vänligen se till att välja \"Konfigurera applikation utan aviseringar\" när du konfigurerar 2FA i Office 365.</string>
+    <string name="read_qr_error_phonefactor">Cue är inte kompatibel med Microsofts egenutvecklade 2FA-algoritm. Vänligen se till att välja \"Konfigurera applikation utan aviseringar\" när du konfigurerar 2FA i Office 365.</string>
     <string name="partial_google_auth_import">Ofullständig Google Authenticator-export upptäckt</string>
     <string name="partial_google_auth_import_warning">Vissa rutkoder saknas från din import. Följande koder hittades inte:\n\n<b>%s</b>\n\nDu kan fortsätta att importera denna partiella export, men vi rekommenderar att du försöker igen med alla rutkoder, så att du inte riskerar att förlora åtkomst till några polletter.</string>
     <string name="missing_qr_code_descriptor">• rutkod %d</string>
@@ -406,8 +403,8 @@
     <string name="unknown_issuer">Okänd utfärdare</string>
     <string name="unknown_account_name">Okänt kontonamn</string>
     <plurals name="import_error_dialog">
-        <item quantity="one">Aegis kunde inte importera %d pollett. Denna pollett kommer att ignoreras. Tryck på \'detaljer\' för att se mer information om felet.</item>
-        <item quantity="other">Aegis kunde inte importera %d polletter. Dessa polletter kommer att ignoreras. Tryck på \'detaljer\' för att se mer information om felen.</item>
+        <item quantity="one">Cue kunde inte importera %d pollett. Denna pollett kommer att ignoreras. Tryck på \'detaljer\' för att se mer information om felet.</item>
+        <item quantity="other">Cue kunde inte importera %d polletter. Dessa polletter kommer att ignoreras. Tryck på \'detaljer\' för att se mer information om felen.</item>
     </plurals>
     <string name="unable_to_process_deeplink">Kunde inte bearbeta djuplänk</string>
     <string name="unable_to_read_qrcode_file">Det gick inte att läsa och bearbeta rutkoden från filen: %s.</string>
@@ -421,16 +418,15 @@
     <string name="toggle_checkboxes">Växla kryssrutor</string>
     <string name="search">Sök</string>
     <string name="channel_name_lock_status">Låsstatus</string>
-    <string name="channel_description_lock_status">Aegis kan skapa en beständig avisering för att meddela dig när valvet är låst</string>
+    <string name="channel_description_lock_status">Cue kan skapa en beständig avisering för att meddela dig när valvet är låst</string>
     <string name="vault_unlocked_state">Valvet är olåst. Tryck här för att låsa.</string>
     <string name="version">Version</string>
     <string name="changelog">Ändringslogg</string>
     <string name="whats_new">Vad är nytt</string>
     <string name="github_description">Källkod, problem och information</string>
     <string name="license">Licens</string>
-    <string name="license_description">Aegis Authenticator är licensierad under GPLv3</string>
     <string name="third_party_licenses">Tredjepartslicenser</string>
-    <string name="third_party_licenses_description">Licenser för de tredjepartsbibliotek Aegis använder</string>
+    <string name="third_party_licenses_description">Licenser för de tredjepartsbibliotek Cue använder</string>
     <string name="country_netherlands">Nederländerna</string>
     <string name="email_us">Skriv ett mejl</string>
     <string name="visit_website">Besök vår webbplats</string>
@@ -440,7 +436,7 @@
     <string name="webview_error">Denna enhet stöder inte WebView, vilket krävs för att visa ändringsloggen och licensen. Den saknar en systemkomponent.</string>
     <string name="email">E-post</string>
     <string name="time_sync_warning_title">Automatisk tidssynkronisering</string>
-    <string name="time_sync_warning_message">Aegis förlitar sig på att systemtiden är i synk för att kunna generera korrekta koder. En avvikelse på bara några sekunder kan resultera i felaktiga koder. Det verkar som om din enhet inte är konfigurerad för att synkronisera tiden automatiskt. Vill du göra det nu?</string>
+    <string name="time_sync_warning_message">Cue förlitar sig på att systemtiden är i synk för att kunna generera korrekta koder. En avvikelse på bara några sekunder kan resultera i felaktiga koder. Det verkar som om din enhet inte är konfigurerad för att synkronisera tiden automatiskt. Vill du göra det nu?</string>
     <string name="time_sync_warning_disable">Sluta varna mig. Jag vet vad jag gör.</string>
     <string name="google_qr_export_unrelated">Orelaterad rutkod hittades. Pröva att starta om skannern.</string>
     <plurals name="google_qr_export_scanned">
@@ -453,9 +449,9 @@
         Ett nyligen utfört försök att säkerhetskopiera valvet via %1$s misslyckades på grund av ett fel. Försöket gjordes för %2$s sedan. Kontrollera dina säkerhetskopieringsinställningar för att säkerställa att säkerhetskopior kan skapas.
     </string>
     <string name="backup_permission_error_dialog_details" comment="The first parameter is the type of backup (e.g. built-in or Android backup). The second parameter is an elapsed time in the style of 'x seconds/minutes/days ago'.">
-        Ett nyligen utfört försök att säkerhetskopiera valvet via %1$s misslyckades eftersom Aegis saknade behörighet att skriva till lagringsplatsen för säkerhetskopior. Försöket gjordes för %2$s sedan. Felet kan uppstå om du har flyttat eller bytt namn på lagringsplatsen för säkerhetskopior, eller om du nyligen har återställt Aegis från en säkerhetskopia. Konfigurera lagringsplatsen för säkerhetskopior på nytt.
+        Ett nyligen utfört försök att säkerhetskopiera valvet via %1$s misslyckades eftersom Cue saknade behörighet att skriva till lagringsplatsen för säkerhetskopior. Försöket gjordes för %2$s sedan. Felet kan uppstå om du har flyttat eller bytt namn på lagringsplatsen för säkerhetskopior, eller om du nyligen har återställt Cue från en säkerhetskopia. Konfigurera lagringsplatsen för säkerhetskopior på nytt.
     </string>
-    <string name="backup_system_builtin">Aegis inbyggda automatiska säkerhetskopior</string>
+    <string name="backup_system_builtin">Cue inbyggda automatiska säkerhetskopior</string>
     <string name="backup_system_android">Androids molnsäkerhetskopieringssystem</string>
     <string name="backup_reminder_bar_message_with_latest" comment="The parameter is an elapsed time in the style of 'x seconds/minutes/days ago'">
         Senaste säkerhetskopian är föråldrad (%s)
@@ -492,7 +488,7 @@
     <string name="uri_copied_to_clipboard">URI kopierad till urklipp</string>
     <string name="transfer_entry_description">Skanna denna rutkod med den autentiseringsapp som du vill överföra denna post till</string>
     <string name="transfer_entry_brightness">Tryck på rutkoden för att växla till/från full ljusstyrka på skärmen</string>
-    <string name="google_auth_compatible_transfer_description">Skanna dessa rutkoder med Aegis eller Google Authenticator.\n\nPå grund av begränsningar i Google Authenticator-appen inkluderas endast TOTP- &amp; HOTP-polletter som använder SHA1 och producerar 6-siffriga koder.</string>
+    <string name="google_auth_compatible_transfer_description">Skanna dessa rutkoder med Cue eller Google Authenticator.\n\nPå grund av begränsningar i Google Authenticator-appen inkluderas endast TOTP- &amp; HOTP-polletter som använder SHA1 och producerar 6-siffriga koder.</string>
     <string name="password_strength_very_weak">Mycket svagt</string>
     <string name="password_strength_weak">Svagt</string>
     <string name="password_strength_fair">Godtagbart</string>
@@ -515,10 +511,9 @@
     <string name="dialog_wipe_entries_checkbox">Rensa valvets innehåll</string>
     <string name="import_from_clipboard_title">Importera från urklipp</string>
     <string name="import_from_clipboard_message">Vi hittade en giltig otpauth-uri i ditt urklipp.\n\n<b>Namn</b>: %1$s\n<b>Utgivare</b>: %2$s\n\nVill du använda den för att förifylla denna post?</string>
-    <string name="panic_trigger_ignore_toast">Aegis tog emot en panikutlösare, men inställningen är inaktiverad – ignorerar</string>
+    <string name="panic_trigger_ignore_toast">Cue tog emot en panikutlösare, men inställningen är inaktiverad – ignorerar</string>
     <string name="pref_panic_trigger_title">Radera valvet vid panikutlösare</string>
     <string name="pref_panic_trigger_summary">Radera valvet när en panikutlösare tas emot från Ripple</string>
-    <string name="import_vault">Importera Aegis-valv</string>
     <string name="import_vault_hint">Vill du importera från en annan 2FA-app? Slutför installationen först och gå sedan till inställningarna.</string>
     <plurals name="import_duplicate_toast">
         <item quantity="one">Avmarkerade %d möjlig dubblett. Vänligen granska listan över poster.</item>
@@ -536,7 +531,7 @@
     <string name="importer_help_freeotp">FreeOTP 2: Tillhandahåll en säkerhetskopiefil.\nFreeOTP 1.x: Tillhandahåll en kopia av <b>/data/data/org.fedorahosted.freeotp/shared_prefs/tokens.xml</b>, som finns i den interna lagringskatalogen för FreeOTP.</string>
     <string name="importer_help_freeotp_plus">Tillhandahåll en exportfil från FreeOTP+.</string>
     <string name="importer_warning_title_freeotp2">FreeOTP 2-kompatibilitet</string>
-    <string name="importer_warning_message_freeotp2">Det finns flera problem i FreeOTP 2 som kan leda till skadade säkerhetskopior. Aegis försöker rädda så många poster som möjligt, men det är möjligt att vissa eller till och med alla inte går att importera.</string>
+    <string name="importer_warning_message_freeotp2">Det finns flera problem i FreeOTP 2 som kan leda till skadade säkerhetskopior. Cue försöker rädda så många poster som möjligt, men det är möjligt att vissa eller till och med alla inte går att importera.</string>
     <string name="importer_help_google_authenticator"><b>Endast databasfiler från Google Authenticator v5.10 och tidigare stöds.</b>\n\nTillhandahåll en kopia av <b>/data/data/com.google.android.apps.authenticator2/databases/databases</b>, som finns i den interna lagringskatalogen för Google Authenticator.</string>
     <string name="importer_help_microsoft_authenticator">Tillhandahåll en kopia av <b>/data/data/com.azure.authenticator/databases/PhoneFactor</b>, som finns i den interna lagringskatalogen för Microsoft Authenticator.</string>
     <string name="importer_help_plain_text">Tillhandahåll en klartextfil med en Google Authenticator-URI per rad.</string>
@@ -548,7 +543,7 @@
     <string name="import_assign_icons_dialog_title">Tilldela ikoner</string>
     <string name="import_assign_icons_dialog_text">Vill du tilldela ikoner till de importerade posterna?</string>
     <string name="importer_encrypted_exception_google_authenticator">Krypterad post hoppades över: %s</string>
-    <string name="importer_help_direct">Importera poster direkt från %s. Detta kräver att appen är installerad på enheten och att Aegis får rotåtkomst.</string>
+    <string name="importer_help_direct">Importera poster direkt från %s. Detta kräver att appen är installerad på enheten och att Cue får rotåtkomst.</string>
     <string name="groups">Grupper</string>
     <string name="pref_focus_search">Fokusera sökfältet vid appstart</string>
     <string name="pref_focus_search_summary">Fokusera sökfältet direkt när appen öppnas.</string>

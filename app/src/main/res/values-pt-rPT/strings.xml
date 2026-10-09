@@ -28,7 +28,6 @@
     <string name="pref_section_security_title">Segurança</string>
     <string name="pref_section_security_summary">Configurar criptografia, desbloqueio biométrico, bloqueio automático e outras definições de segurança.</string>
     <string name="pref_section_import_export_title">Importar e exportar</string>
-    <string name="pref_section_import_export_summary">Importar backups Aegis ou de outras aplicações de autenticação. Crie exportações manuais do seu cofre Aegis.</string>
     <string name="pref_section_audit_log_title">Registo de auditoria</string>
     <string name="pref_section_audit_log_summary">Encontre uma lista de todos os eventos importantes relatados que ocorreram na aplicação.</string>
     <string name="pref_section_backups_title">Backups</string>
@@ -56,7 +55,7 @@
     <string name="pref_import_file_title">Importar de um ficheiro</string>
     <string name="pref_import_file_summary">Importar \'tokens\' de um ficheiro</string>
     <string name="pref_android_backups_title">Backups na nuvem Android</string>
-    <string name="pref_android_backups_summary">Permitir que o sistema de backup na nuvem Android inclua o cofre Aegis nos seus backups. Apenas possível para cofres encriptados.</string>
+    <string name="pref_android_backups_summary">Permitir que o sistema de backup na nuvem Android inclua o cofre Cue nos seus backups. Apenas possível para cofres encriptados.</string>
     <string name="pref_android_backups_hint"><i>Backups \'Device-to-device\' (D2D) serão sempre permitidos, independentemente das definições acima</i></string>
     <string name="pref_backups_title">Backup automático do cofre</string>
     <string name="pref_backups_summary">Cria automaticamente backups no armazenamento externo, sempre que forem efetuadas alterações. Apenas possível para cofres cifrados.</string>
@@ -103,7 +102,7 @@
     <string name="pref_auto_lock_title">Bloqueio automático</string>
     <string name="pref_auto_lock_summary">Quando %s</string>
     <string name="pref_auto_lock_summary_disabled">Desativado</string>
-    <string name="pref_auto_lock_prompt">Bloquear Aegis automaticamente se</string>
+    <string name="pref_auto_lock_prompt">Bloquear Cue automaticamente se</string>
     <string name="pref_auto_lock_type_back_button">O botão Recuar for pressionado</string>
     <string name="pref_auto_lock_type_minimize">A aplicação for minimizada</string>
     <string name="pref_auto_lock_type_device_lock">O dispositivo for bloqueado</string>
@@ -145,11 +144,10 @@
     <string name="today_at_time">Hoje às %1$s</string>
     <string name="day_of_week_at_time">%1$s às %2$s</string>
     <string name="export_encrypted">Encriptar o cofre</string>
-    <string name="export_help">Esta ação irá exportar o cofre para fora do armazenamento interno do Aegis. Selecione o formato para a exportação:</string>
-    <string name="export_warning_unencrypted">Está prestes a exportar uma cópia não encriptada do seu cofre Aegis. <b>Isto não é recomendado</b>.</string>
+    <string name="export_help">Esta ação irá exportar o cofre para fora do armazenamento interno do Cue. Selecione o formato para a exportação:</string>
+    <string name="export_warning_unencrypted">Está prestes a exportar uma cópia não encriptada do seu cofre Cue. <b>Isto não é recomendado</b>.</string>
     <string name="export_warning_password">As exportações serão encriptadas com a palavra-passe definida nas definições de segurança.</string>
     <string name="understand_risk_accept">Eu compreendo os riscos</string>
-    <string name="export_format_aegis">Aegis (.JSON)</string>
     <string name="export_format_google_auth_uri">Ficheiro de texto (.TXT)</string>
     <string name="export_format_html">Página Web (.HTML)</string>
     <string name="export_format_hint">Formato de exportação</string>
@@ -160,9 +158,9 @@
         <item quantity="other">%d grupos selecionados</item>
     </plurals>
     <string name="export_no_groups_selected">Nenhum grupo selecionado para exportar</string>
-    <string name="export_html_title" comment="The title of an HTML export document">Exportação do Aegis Authenticator</string>
+    <string name="export_html_title" comment="The title of an HTML export document">Exportação do Cue Authenticator</string>
     <string name="choose_authentication_method">Segurança</string>
-    <string name="authentication_method_explanation">O Aegis é uma aplicação 2FA focada em segurança. Tokens são armazenados num cofre, que pode opcionalmente ser criptografado com uma palavra-passe da sua escolha. Se um invasor obtiver o ficheiro criptografado do cofre, não conseguirá aceder ao conteúdo sem saber a palavra-passe.\n\nA opção que achamos que seria melhor para o seu dispositivo foi pré-selecionada.</string>
+    <string name="authentication_method_explanation">O Cue é uma aplicação 2FA focada em segurança. Tokens são armazenados num cofre, que pode opcionalmente ser criptografado com uma palavra-passe da sua escolha. Se um invasor obtiver o ficheiro criptografado do cofre, não conseguirá aceder ao conteúdo sem saber a palavra-passe.\n\nA opção que achamos que seria melhor para o seu dispositivo foi pré-selecionada.</string>
     <string name="authentication_method_none">Nenhum</string>
     <string name="authentication_method_none_description">Não será necessária uma palavra-passe para desbloquear o cofre e este não será encriptado. <b>Esta opção não é recomendada</b>.</string>
     <string name="authentication_method_password">Palavra-passe</string>
@@ -178,17 +176,17 @@
     <string name="set_number">Por favor, insira um número</string>
     <string name="set_password_confirm">Confirme a palavra-passe</string>
     <string name="invalid_password">A senha está incorreta</string>
-    <string name="invalidated_biometrics">Foi detetada uma alteração nas definições de segurança do dispositivo. Aceda a \"Aegis -&gt; Definições -&gt; Segurança -&gt; Desbloqueio biométrico\" para desativar e reativar o desbloqueio biométrico.</string>
+    <string name="invalidated_biometrics">Foi detetada uma alteração nas definições de segurança do dispositivo. Aceda a \"Cue -&gt; Definições -&gt; Segurança -&gt; Desbloqueio biométrico\" para desativar e reativar o desbloqueio biométrico.</string>
     <string name="password_reminder">Por favor, introduza a palavra-passe. Ocasionalmente, pedimos-lhe que o faça para que não se esqueça dela.</string>
     <string name="password_reminder_dialog_title">Desbloqueio biométrico por predefinição</string>
-    <string name="password_reminder_dialog_message">Ocasionalmente, pedimos-lhe que introduza a sua palavra-passe para garantir que não se esquece dela e que não ficará bloqueado fora do cofre. Após introduzir a palavra-passe, o Aegis voltará a utilizar o desbloqueio biométrico por predefinição até ser altura de voltar a relembrar a palavra-passe.</string>
+    <string name="password_reminder_dialog_message">Ocasionalmente, pedimos-lhe que introduza a sua palavra-passe para garantir que não se esquece dela e que não ficará bloqueado fora do cofre. Após introduzir a palavra-passe, o Cue voltará a utilizar o desbloqueio biométrico por predefinição até ser altura de voltar a relembrar a palavra-passe.</string>
     <string name="password_reminder_freq_never">Nunca</string>
     <string name="password_reminder_freq_weekly">Semanal</string>
     <string name="password_reminder_freq_biweekly">Quinzenal</string>
     <string name="password_reminder_freq_monthly">Mensal</string>
     <string name="password_reminder_freq_quarterly">Trimestral</string>
     <string name="enter_password_2fas_message">Parece que esta cópia de segurança 2FAS está encriptada. Introduza abaixo a palavra-passe.</string>
-    <string name="enter_password_authy_message">Parece que os seus tokens do Authy estão encriptados. Por favor, feche o Aegis, abra o Authy e desbloqueie os tokens com a sua palavra-passe. Em vez disso, o Aegis também pode tentar desencriptar os seus tokens do Authy por si, se inserir a sua palavra-passe abaixo.</string>
+    <string name="enter_password_authy_message">Parece que os seus tokens do Authy estão encriptados. Por favor, feche o Cue, abra o Authy e desbloqueie os tokens com a sua palavra-passe. Em vez disso, o Cue também pode tentar desencriptar os seus tokens do Authy por si, se inserir a sua palavra-passe abaixo.</string>
     <string name="enter_password_aegis_title">Por favor, introduza a palavra-passe de importação</string>
     <string name="period_hint">Período (segundos)</string>
     <string name="algorithm_hint">Função hash</string>
@@ -251,9 +249,8 @@
     <string name="saving_profile_error">Erro ao guardar o perfil</string>
     <string name="saving_assign_icons_error">Erro ao atribuir ícones</string>
     <string name="welcome">Bem-vindo</string>
-    <string name="app_description">O Aegis é uma aplicação 2FA gratuita, segura e de código aberto</string>
     <string name="setup_completed">Configuração concluída</string>
-    <string name="setup_completed_description">O Aegis foi configurado e está pronto a ser usado.</string>
+    <string name="setup_completed_description">O Cue foi configurado e está pronto a ser usado.</string>
     <string name="vault_not_found">Cofre não encontrado, a iniciar configuração…</string>
     <string name="copied">Copiado</string>
     <string name="errors_copied">Erros copiados para a área de transferência</string>
@@ -265,8 +262,8 @@
     <string name="saving_error">Ocorreu um erro ao tentar guardar o cofre</string>
     <string name="vault_init_error">Ocorreu um erro ao tentar iniciar o cofre</string>
     <string name="vault_load_error">Ocorreu um erro ao tentar carregar o cofre do armazenamento</string>
-    <string name="biometric_decrypt_error">Ocorreu um erro ao tentar desencriptar o cofre com autenticação biométrica. Isto só acontece normalmente se as definições de segurança do seu dispositivo foram alteradas. Por favor, desbloqueie o cofre com a sua palavra-passe e redefina a autenticação biométrica nas configurações do Aegis.</string>
-    <string name="biometric_init_error">Ocorreu um erro ao tentar preparar a autenticação biométrica. Isto só acontece normalmente se as definições de segurança do seu dispositivo foram alteradas. Por favor, desbloqueie o cofre com a sua palavra-passe e redefina a autenticação biométrica nas configurações do Aegis.</string>
+    <string name="biometric_decrypt_error">Ocorreu um erro ao tentar desencriptar o cofre com autenticação biométrica. Isto só acontece normalmente se as definições de segurança do seu dispositivo foram alteradas. Por favor, desbloqueie o cofre com a sua palavra-passe e redefina a autenticação biométrica nas configurações do Cue.</string>
+    <string name="biometric_init_error">Ocorreu um erro ao tentar preparar a autenticação biométrica. Isto só acontece normalmente se as definições de segurança do seu dispositivo foram alteradas. Por favor, desbloqueie o cofre com a sua palavra-passe e redefina a autenticação biométrica nas configurações do Cue.</string>
     <string name="disable_encryption">Desativar encriptação</string>
     <string name="disable_encryption_description">Tem a certeza de que deseja desativar a encriptação? Isto fará com que o cofre seja armazenado em texto simples. <b>Os backups automáticos também serão desativados</b>.</string>
     <string name="enable_encryption_error">Ocorreu um erro ao ativar a encriptação</string>
@@ -300,7 +297,7 @@
     <string name="file_not_found">Erro: Ficheiro não encontrado</string>
     <string name="reading_file_error">Ocorreu um erro ao tentar ler o ficheiro</string>
     <string name="app_lookup_error">Erro: A aplicação não está instalada</string>
-    <string name="app_version_error">A versão de %s que está instalada não é suportada. As versões recentes começaram a encriptar alguns dos ficheiros no armazenamento interno, tornando o Aegis incapaz de aceder às informações necessárias para a importação. É provável que a tentativa de importação resulte num erro. Gostaria de continuar na mesma?</string>
+    <string name="app_version_error">A versão de %s que está instalada não é suportada. As versões recentes começaram a encriptar alguns dos ficheiros no armazenamento interno, tornando o Cue incapaz de aceder às informações necessárias para a importação. É provável que a tentativa de importação resulte num erro. Gostaria de continuar na mesma?</string>
     <string name="root_error">Erro: Não é possível obter acesso root</string>
     <plurals name="imported_entries_count">
         <item quantity="one">%d entrada importada</item>
@@ -318,7 +315,7 @@
     <string name="encryption_enable_biometrics_error">Ocorreu um erro ao tentar ativar o desbloqueio biométrico. Alguns dispositivos têm más implementações da autenticação biométrica e é provável que o seu seja um deles. Considere mudar para uma configuração com apenas palavra-passe.</string>
     <string name="no_cameras_available">Nenhuma câmara disponível</string>
     <string name="read_qr_error">Ocorreu um erro ao tentar ler o código QR</string>
-    <string name="read_qr_error_phonefactor">Aegis é incompatível com o algoritmo 2FA das propriedades da Microsoft. Por favor, selecione \"Configurar aplicação sem notificações\" quando configurar 2FA no Office 365. </string>
+    <string name="read_qr_error_phonefactor">Cue é incompatível com o algoritmo 2FA das propriedades da Microsoft. Por favor, selecione \"Configurar aplicação sem notificações\" quando configurar 2FA no Office 365. </string>
     <string name="partial_google_auth_import">Foi detetada uma exportação incompleta do Google Authenticator </string>
     <string name="partial_google_auth_import_warning">Faltam alguns códigos QR na sua importação. Os seguintes códigos não foram encontrados:\n\n<b>%s</b>\n\nPode continuar a importar esta exportação parcial, mas recomendamos que tente novamente com todos os códigos QR para não correr o risco de perder o acesso a quaisquer tokens.</string>
     <string name="missing_qr_code_descriptor">• Código QR %d</string>
@@ -405,8 +402,8 @@
     <string name="unknown_issuer">Emissor desconhecido</string>
     <string name="unknown_account_name">Nome de conta desconhecido</string>
     <plurals name="import_error_dialog">
-        <item quantity="one">O Aegis não conseguiu importar %d token. Este token será ignorado. Prima \"detalhes\" para obter mais informações sobre o erro.</item>
-        <item quantity="other">O Aegis não conseguiu importar %d tokens. Estes tokens serão ignorados. Prima \"detalhes\" para obter mais informações sobre os erros.</item>
+        <item quantity="one">O Cue não conseguiu importar %d token. Este token será ignorado. Prima \"detalhes\" para obter mais informações sobre o erro.</item>
+        <item quantity="other">O Cue não conseguiu importar %d tokens. Estes tokens serão ignorados. Prima \"detalhes\" para obter mais informações sobre os erros.</item>
     </plurals>
     <string name="unable_to_process_deeplink">Não é possível processar a ligação profunda</string>
     <string name="unable_to_read_qrcode_file">Não foi possível ler e processar o código QR do ficheiro: %s.</string>
@@ -420,16 +417,15 @@
     <string name="toggle_checkboxes">Alternar caixas de seleção</string>
     <string name="search">Pesquisar</string>
     <string name="channel_name_lock_status">Estado de bloqueio</string>
-    <string name="channel_description_lock_status">O Aegis pode criar uma notificação persistente para informá-lo quando o cofre estiver bloqueado</string>
+    <string name="channel_description_lock_status">O Cue pode criar uma notificação persistente para informá-lo quando o cofre estiver bloqueado</string>
     <string name="vault_unlocked_state">O cofre está desbloqueado. Toque aqui para bloquear.</string>
     <string name="version">Versão</string>
     <string name="changelog">Registo de alterações</string>
     <string name="whats_new">O que há de novo</string>
     <string name="github_description">Código fonte, problemas e informações</string>
     <string name="license">Licença</string>
-    <string name="license_description">O Autenticador Aegis está licenciado sob GPLv3</string>
     <string name="third_party_licenses">Licenças de terceiros</string>
-    <string name="third_party_licenses_description">Licenças das bibliotecas de terceiros utilizadas pelo Aegis</string>
+    <string name="third_party_licenses_description">Licenças das bibliotecas de terceiros utilizadas pelo Cue</string>
     <string name="country_netherlands">Holanda</string>
     <string name="email_us">Escreva um e-mail</string>
     <string name="visit_website">Visite o nosso site</string>
@@ -439,7 +435,7 @@
     <string name="webview_error">Este dispositivo não suporta a vista web, necessária para ver o registo de alterações e a licença. Falta-lhe um componente do sistema.</string>
     <string name="email">Email</string>
     <string name="time_sync_warning_title">Sincronização de tempo automática</string>
-    <string name="time_sync_warning_message">O Aegis depende da hora do sistema para estar sincronizado para gerar códigos corretos. Um desvio de apenas alguns segundos pode resultar em códigos incorretos. Parece que o seu dispositivo não está configurado para sincronizar automaticamente o tempo. Gostaria de o fazer agora?</string>
+    <string name="time_sync_warning_message">O Cue depende da hora do sistema para estar sincronizado para gerar códigos corretos. Um desvio de apenas alguns segundos pode resultar em códigos incorretos. Parece que o seu dispositivo não está configurado para sincronizar automaticamente o tempo. Gostaria de o fazer agora?</string>
     <string name="time_sync_warning_disable">Para de me avisar. Eu sei o que estou a fazer.</string>
     <string name="google_qr_export_unrelated">Código QR não relacionado. Experimente reiniciar o digitalizador.</string>
     <plurals name="google_qr_export_scanned">
@@ -449,8 +445,8 @@
     <string name="google_qr_export_unexpected">Esperado o código QR #%1$d, mas digitalizado #%2$d em vez disso</string>
     <string name="backup_error_bar_message"><b>O ‘backup’ do cofre falhou recentemente</b></string>
     <string name="backup_error_dialog_details" comment="The first parameter is the type of backup (e.g. built-in or Android backup). The second parameter is an elapsed time in the style of 'x seconds/minutes/days ago'.">Uma tentativa recente de backup do cofre usando %1$s falhou devido a um erro. A tentativa ocorreu %2$s. Por favor, verifique as suas configurações de backup para assegurar que os backups possam ser concluídos com sucesso.</string>
-    <string name="backup_permission_error_dialog_details" comment="The first parameter is the type of backup (e.g. built-in or Android backup). The second parameter is an elapsed time in the style of 'x seconds/minutes/days ago'.">Uma tentativa recente de backup do cofre usando %1$s falhou devido à falta de permissão do Aegis para escrever no destino do backup. A tentativa ocorreu %2$s. Este erro pode acontecer se alterou o local/nome do destino do backup ou se restaurou o Aegis a partir de um backup, recentemente. Por favor, redefina novamente o destino do backup.</string>
-    <string name="backup_system_builtin">backups automáticos do Aegis</string>
+    <string name="backup_permission_error_dialog_details" comment="The first parameter is the type of backup (e.g. built-in or Android backup). The second parameter is an elapsed time in the style of 'x seconds/minutes/days ago'.">Uma tentativa recente de backup do cofre usando %1$s falhou devido à falta de permissão do Cue para escrever no destino do backup. A tentativa ocorreu %2$s. Este erro pode acontecer se alterou o local/nome do destino do backup ou se restaurou o Cue a partir de um backup, recentemente. Por favor, redefina novamente o destino do backup.</string>
+    <string name="backup_system_builtin">backups automáticos do Cue</string>
     <string name="backup_system_android">sistema de backup na nuvem do Android</string>
     <string name="backup_reminder_bar_message_with_latest" comment="The parameter is an elapsed time in the style of 'x seconds/minutes/days ago'">O último backup está desatualizado (%s)</string>
     <string name="backup_reminder_bar_message">As mudanças não foram gravadas</string>
@@ -483,7 +479,7 @@
     <string name="uri_copied_to_clipboard">URI copiado para a área de transferência</string>
     <string name="transfer_entry_description">Digitalize este código QR com a aplicação de autenticação para a qual gostaria de transferir esta entrada</string>
     <string name="transfer_entry_brightness">Clique no código QR para ativar/desativar o brilho máximo no ecrã inteiro</string>
-    <string name="google_auth_compatible_transfer_description">Digitalize estes códigos QR com o Aegis ou o Google Authenticator.\n\nDevido às limitações do Google Authenticator, apenas estão incluídos os tokens TOTP e HOTP que utilizam SHA1 e produzem códigos de 6 dígitos</string>
+    <string name="google_auth_compatible_transfer_description">Digitalize estes códigos QR com o Cue ou o Google Authenticator.\n\nDevido às limitações do Google Authenticator, apenas estão incluídos os tokens TOTP e HOTP que utilizam SHA1 e produzem códigos de 6 dígitos</string>
     <string name="password_strength_very_weak">Muito Fraca</string>
     <string name="password_strength_weak">Fraca</string>
     <string name="password_strength_fair">Média</string>
@@ -504,10 +500,9 @@
     <string name="dialog_wipe_entries_title">Limpar entradas</string>
     <string name="dialog_wipe_entries_message">O seu cofre já contém entradas. Você quer remover essas entradas antes de importar este arquivo?\n\n<b>Ao fazer isso, você perderá permanentemente o acesso às entradas existentes no cofre.</b></string>
     <string name="dialog_wipe_entries_checkbox">Limpar conteúdo do cofre</string>
-    <string name="panic_trigger_ignore_toast">Aegis recebeu um gatilho de pânico, mas essa configuração está desativada, portanto será ignorado</string>
+    <string name="panic_trigger_ignore_toast">Cue recebeu um gatilho de pânico, mas essa configuração está desativada, portanto será ignorado</string>
     <string name="pref_panic_trigger_title">Excluir cofre após gatilho de pânico</string>
     <string name="pref_panic_trigger_summary">Excluir cofre quando um gatilho de pânico é recebido do Ripple</string>
-    <string name="import_vault">Importar cofre do Aegis</string>
     <string name="import_vault_hint">Quer importar de uma aplicação 2FA diferente? Conclua a configuração inicial e aceda às definições.</string>
     <plurals name="import_duplicate_toast">
         <item quantity="one">Desmarcado %d potencial duplo. Reveja a lista de entradas.</item>
@@ -525,7 +520,7 @@
     <string name="importer_help_freeotp">FreeOTP 2: Disponibilize um ficheiro de backup.\nFreeOTP 1.x: Disponibilize uma cópia do ficheiro <b>/data/data/org.fedorahosted.freeotp/shared_prefs/tokens.xml</b>, presente no armazenamento interno do FreeOTP.</string>
     <string name="importer_help_freeotp_plus">Fornecer um arquivo de exportação FreeOTP+.</string>
     <string name="importer_warning_title_freeotp2">Compatibilidade FreeOTP 2</string>
-    <string name="importer_warning_message_freeotp2">No FreeOTP 2, existem diversos problemas que podem resultar em backups danificados. O Aegis tentará recuperar o maior número possível de entradas, mas é possível que algumas ou mesmo todas falhem ao importar.</string>
+    <string name="importer_warning_message_freeotp2">No FreeOTP 2, existem diversos problemas que podem resultar em backups danificados. O Cue tentará recuperar o maior número possível de entradas, mas é possível que algumas ou mesmo todas falhem ao importar.</string>
     <string name="importer_help_google_authenticator"><b>Apenas são suportados ficheiros de bases de dados do Google Authenticator v5.10 e anteriores</b>.\n\nForneça uma cópia de <b>/data/data/com.google.android.apps.authenticator2/databases/databases</b>, localizada no diretório de armazenamento interno do Google Authenticator.</string>
     <string name="importer_help_microsoft_authenticator">Fornecer uma cópia de <b>/data/data/com.azure.authenticator/databases/PhoneFactor</b>, localizado no diretório de armazenamento interno do Microsoft Authenticator.</string>
     <string name="importer_help_plain_text">Fornecer um arquivo de texto simples com um URI do Google Authenticator em cada linha.</string>
@@ -537,7 +532,7 @@
     <string name="import_assign_icons_dialog_title">Atribuir ícones</string>
     <string name="import_assign_icons_dialog_text">Pretende atribuir ícones às entradas importadas?</string>
     <string name="importer_encrypted_exception_google_authenticator">A entrada encriptada foi ignorada: %s</string>
-    <string name="importer_help_direct">Importar entradas diretamente de %s. Isto requer que a aplicação seja instalada neste dispositivo e que acesso root seja concedido ao Aegis.</string>
+    <string name="importer_help_direct">Importar entradas diretamente de %s. Isto requer que a aplicação seja instalada neste dispositivo e que acesso root seja concedido ao Cue.</string>
     <string name="groups">Grupos</string>
     <string name="pref_focus_search">Focar pesquisa no início da aplicação</string>
     <string name="pref_focus_search_summary">Focar a pesquisa imediatamente após abrir a aplicação.</string>

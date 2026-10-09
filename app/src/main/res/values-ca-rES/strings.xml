@@ -28,7 +28,6 @@
     <string name="pref_section_security_title">Seguretat</string>
     <string name="pref_section_security_summary">Configurar xifrat, desbloqueig biometric i altres opcions de seguretat.</string>
     <string name="pref_section_import_export_title">Importa i exporta</string>
-    <string name="pref_section_import_export_summary">Importa còpies de seguretat d\'Aegis o altres aplicacions d\'autentificació. Exporta manualment la caixa forta d\'Aegis.</string>
     <string name="pref_section_audit_log_title">Registre d\'auditoria</string>
     <string name="pref_section_audit_log_summary">Llista de tots els esdeveniments importants registrats de l\'aplicació.</string>
     <string name="pref_section_backups_title">Còpies de seguretat</string>
@@ -56,14 +55,14 @@
     <string name="pref_import_file_title">Importa des d\'un fitxer</string>
     <string name="pref_import_file_summary">Importar fitxes des d\'un fitxer</string>
     <string name="pref_android_backups_title">Copies al núvol d\'Android</string>
-    <string name="pref_android_backups_summary">Permetre al sistema de còpies al núvol d\'Android incloure la caixa forta d\'Aegis a les còpies. Això només funciona per caixes fortes xifrades.</string>
+    <string name="pref_android_backups_summary">Permetre al sistema de còpies al núvol d\'Android incloure la caixa forta d\'Cue a les còpies. Això només funciona per caixes fortes xifrades.</string>
     <string name="pref_android_backups_hint"><i>Les còpies dispositiu-a-dispositiu (D2D) sempre estan permeses, sense tenir en compte la configuració de dalt</i></string>
     <string name="pref_backups_title">Copia la caixa forta automàticament</string>
     <string name="pref_backups_summary">Crear còpies de seguretat de la caixa forta a l\'emmagatzematge extern quan es facin canvis. Això només funciona per a caixes fortes xifrades.</string>
     <string name="pref_backups_reminder_title">Recordatori de còpia</string>
     <string name="pref_backups_reminder_summary">Mostra un recordatori per a fer còpia de seguretat de la caixa forta si no has desat els teus últims canvis.</string>
     <string name="pref_backups_reminder_dialog_title">Desactivar recordatori de còpia</string>
-    <string name="pref_backups_reminder_dialog_summary">Desactivant aquest recordatori, l\'Aegis no t\'alertarà en cas de tenir fitxes sense còpia de seguretat. Això posa en risc l\'accés a les teves fitxes. Segur que vols desactivar el recordatori?</string>
+    <string name="pref_backups_reminder_dialog_summary">Desactivant aquest recordatori, l\'Cue no t\'alertarà en cas de tenir fitxes sense còpia de seguretat. Això posa en risc l\'accés a les teves fitxes. Segur que vols desactivar el recordatori?</string>
     <string name="pref_backups_versioning_strategy_title">Estratègia de còpia de seguretat</string>
     <string name="pref_backups_versioning_strategy_keep_x_versions">Mantenir un nombre de versions</string>
     <string name="pref_backups_versioning_strategy_single_backup">Còpia de seguretat única</string>
@@ -103,7 +102,7 @@
     <string name="pref_auto_lock_title">Bloqueig automàtic</string>
     <string name="pref_auto_lock_summary">Quan %s</string>
     <string name="pref_auto_lock_summary_disabled">Desactivat</string>
-    <string name="pref_auto_lock_prompt">Bloquejar Aegis quan</string>
+    <string name="pref_auto_lock_prompt">Bloquejar Cue quan</string>
     <string name="pref_auto_lock_type_back_button">Es toca el botó enrere</string>
     <string name="pref_auto_lock_type_minimize">Es minimitza l\'app</string>
     <string name="pref_auto_lock_type_device_lock">Es bloqueja el dispositiu</string>
@@ -145,11 +144,10 @@
     <string name="today_at_time">Avui a les %1$s</string>
     <string name="day_of_week_at_time">%1$s a les %2$s</string>
     <string name="export_encrypted">Xifra la caixa forta</string>
-    <string name="export_help">Això exportarà la caixa forta fora d\'Aegis. Tria el format en el que s\'ha d\'exportar:</string>
-    <string name="export_warning_unencrypted">Això exportarà una còpia sense xifrar de la caixa forta d\'Aegis. <b>No recomanat</b>.</string>
+    <string name="export_help">Això exportarà la caixa forta fora d\'Cue. Tria el format en el que s\'ha d\'exportar:</string>
+    <string name="export_warning_unencrypted">Això exportarà una còpia sense xifrar de la caixa forta d\'Cue. <b>No recomanat</b>.</string>
     <string name="export_warning_password">Les exportacions es xifren fent servir una contrasenya diferent, configurada a la secció de seguretat.</string>
     <string name="understand_risk_accept">Entenc el risc</string>
-    <string name="export_format_aegis">Aegis (.JSON)</string>
     <string name="export_format_google_auth_uri">Fitxers de text (*.txt)</string>
     <string name="export_format_html">Pàgina web (.HTML)</string>
     <string name="export_format_hint">Format d\'exportació</string>
@@ -160,9 +158,9 @@
         <item quantity="other">%d grups seleccionats</item>
     </plurals>
     <string name="export_no_groups_selected">No s\'han triat grups per a exportar</string>
-    <string name="export_html_title" comment="The title of an HTML export document">Exportat d\'Aegis Authenticator</string>
+    <string name="export_html_title" comment="The title of an HTML export document">Exportat d\'Cue Authenticator</string>
     <string name="choose_authentication_method">Seguretat</string>
-    <string name="authentication_method_explanation">Aegis es una app d\'A2F. Les fitxes es desen a una caixa forta que opcionalment pot ser xifrada amb una contrasenya. Si un atacant obté el fitxer de la caixa forta, no hi podrà accedir sense la contrasenya.\n\nHem preseleccionat la opció que creiem que anirà millor al teu dispositiu.</string>
+    <string name="authentication_method_explanation">Cue es una app d\'A2F. Les fitxes es desen a una caixa forta que opcionalment pot ser xifrada amb una contrasenya. Si un atacant obté el fitxer de la caixa forta, no hi podrà accedir sense la contrasenya.\n\nHem preseleccionat la opció que creiem que anirà millor al teu dispositiu.</string>
     <string name="authentication_method_none">Cap</string>
     <string name="authentication_method_none_description">No cal contrasenya pet a desbloquejar la caixa forta i no es xifrarà.<b>No recomanat</b>.</string>
     <string name="authentication_method_password">Contrasenya</string>
@@ -178,10 +176,10 @@
     <string name="set_number">Introdueix un número</string>
     <string name="set_password_confirm">Confirma la contrasenya</string>
     <string name="invalid_password">La contrasenya no és correcta</string>
-    <string name="invalidated_biometrics">S\'ha detectat un canvi en la configuració de seguretat del dispositiu. Si us plau, ves a \"Aegis -&gt; Configuració -&gt; Seguretat -&gt; Desbloqueig biomètric\" per a desactivar i reactivar-lo.</string>
+    <string name="invalidated_biometrics">S\'ha detectat un canvi en la configuració de seguretat del dispositiu. Si us plau, ves a \"Cue -&gt; Configuració -&gt; Seguretat -&gt; Desbloqueig biomètric\" per a desactivar i reactivar-lo.</string>
     <string name="password_reminder">Introdueix la contrasenya. T\'ho demanarem ocasionalment per tal que no te n\'oblidis.</string>
     <string name="password_reminder_dialog_title">Desbloqueig biomètric per defecte</string>
-    <string name="password_reminder_dialog_message">Ocasionalment et demanarem la contrasenya per tal que no te n\'oblidis i no perdis l\'accés a la teva caixa forta. Després d\'entrar la contrasenya, l\'Aegis tornarà al desbloqueig biomètric per defecte. Et tornarem a demanar la contrasenya en el proper recordatori.</string>
+    <string name="password_reminder_dialog_message">Ocasionalment et demanarem la contrasenya per tal que no te n\'oblidis i no perdis l\'accés a la teva caixa forta. Després d\'entrar la contrasenya, l\'Cue tornarà al desbloqueig biomètric per defecte. Et tornarem a demanar la contrasenya en el proper recordatori.</string>
     <string name="password_reminder_freq_never">Mai</string>
     <string name="password_reminder_freq_weekly">Setmanalment</string>
     <string name="password_reminder_freq_biweekly">Cada dues setmanes</string>
@@ -189,7 +187,7 @@
     <string name="password_reminder_freq_quarterly">Trimestral</string>
     <string name="enter_password_proton_message">Sembla que la còpia de seguretat de Proton Authenticator està xifrada. Introdueix la contrasenya.</string>
     <string name="enter_password_2fas_message">Sembla que la còpia dels A2F està xifrada. Introdueix la contrasenya.</string>
-    <string name="enter_password_authy_message">Sembla que les fitxes d\'Authy estan xifrades. Si us plau, tanca Aegis, obre l\'Authy i desbloqueja les fitxes amb la contrasenya. Si no, Aegis port intentar desxifrar les fitxes d\'Authy per tu, si introdueixes la contrasenya a sota.</string>
+    <string name="enter_password_authy_message">Sembla que les fitxes d\'Authy estan xifrades. Si us plau, tanca Cue, obre l\'Authy i desbloqueja les fitxes amb la contrasenya. Si no, Cue port intentar desxifrar les fitxes d\'Authy per tu, si introdueixes la contrasenya a sota.</string>
     <string name="enter_password_aegis_title">Introdueix la contrasenya</string>
     <string name="period_hint">Període (segons)</string>
     <string name="algorithm_hint">Funció hash</string>
@@ -252,9 +250,8 @@
     <string name="saving_profile_error">Error desant el perfil</string>
     <string name="saving_assign_icons_error">Error en assignar icones</string>
     <string name="welcome">Benvinguts</string>
-    <string name="app_description">Aegis es una app d\'A2F gratuïta, segura i de codi lliure</string>
     <string name="setup_completed">Configuració completada</string>
-    <string name="setup_completed_description">S\'ha configurat Aegis i està llest per a funcionar.</string>
+    <string name="setup_completed_description">S\'ha configurat Cue i està llest per a funcionar.</string>
     <string name="vault_not_found">No s\'ha trobat cap caixa forta, iniciant configuració…</string>
     <string name="copied">Copiat</string>
     <string name="errors_copied">Errors copiant al porta-retalls</string>
@@ -301,7 +298,7 @@
     <string name="file_not_found">Error: no s\'ha trobat el fitxer</string>
     <string name="reading_file_error">S\'ha produït un error mentre s\'intentava carregar el fitxer</string>
     <string name="app_lookup_error">Aquesta aplicació no està instal·lada</string>
-    <string name="app_version_error">La versió instal·lada de %s no està suportada. Les versions recents han començat a xifrar els fitxers de l\'emmagatzematge intern, fent que Aegis no pugui accedir a la informació que necessita per a fer la importació. És molt possible que intentar importar finalitzi amb error. Vols intentar-ho igualment?</string>
+    <string name="app_version_error">La versió instal·lada de %s no està suportada. Les versions recents han començat a xifrar els fitxers de l\'emmagatzematge intern, fent que Cue no pugui accedir a la informació que necessita per a fer la importació. És molt possible que intentar importar finalitzi amb error. Vols intentar-ho igualment?</string>
     <string name="root_error">Error: no s\'ha pogut obtenir accés root</string>
     <plurals name="imported_entries_count">
         <item quantity="one">%d entrades importades</item>
@@ -319,7 +316,7 @@
     <string name="encryption_enable_biometrics_error">S\'ha produït un error al intentar activar el desbloqueig biomètric. Alguns dispositius tenen una implementació deficient i es possible que passi amb el teu. Considera canviar a una configuració amb contrasenya.</string>
     <string name="no_cameras_available">No hi ha càmeres disponibles</string>
     <string name="read_qr_error">S\'ha produït un error al intentar llegir el codi QR</string>
-    <string name="read_qr_error_phonefactor">Aegis no es compatible amb l\'algoritme d\'A2F de Microsoft. Si us plau, tria \"Configurar aplicació sense notificacions\" al configurar l\'A2F al Office 365.</string>
+    <string name="read_qr_error_phonefactor">Cue no es compatible amb l\'algoritme d\'A2F de Microsoft. Si us plau, tria \"Configurar aplicació sense notificacions\" al configurar l\'A2F al Office 365.</string>
     <string name="partial_google_auth_import">S\'ha detectat una exportació incompleta de Google Authenticator</string>
     <string name="partial_google_auth_import_warning">Falten alguns codis QR a la importació. No s\'han trobat els codis següents:\n\n<b>%s</b>\n\nPodeu continuar important aquesta exportació parcial, però us recomanem que torneu a provar amb tots els codis QR perquè no us arriscareu a perdre l\'accés a cap token.</string>
     <string name="missing_qr_code_descriptor">• codi QR %d</string>
@@ -406,8 +403,8 @@
     <string name="unknown_issuer">Emissor desconegut</string>
     <string name="unknown_account_name">Nom de compte desconegut</string>
     <plurals name="import_error_dialog">
-        <item quantity="one">L\'Aegis no pot importar %d fitxa. Aquesta fitxa es descartarà. Prem \"detalls\" per a veure més informació d\'aquest error.</item>
-        <item quantity="other">L\'Aegis no pot importar %d fitxes. Aquestes fitxes es descartaran. Prem \"detalls\" per a veure més informació d\'aquest error.</item>
+        <item quantity="one">L\'Cue no pot importar %d fitxa. Aquesta fitxa es descartarà. Prem \"detalls\" per a veure més informació d\'aquest error.</item>
+        <item quantity="other">L\'Cue no pot importar %d fitxes. Aquestes fitxes es descartaran. Prem \"detalls\" per a veure més informació d\'aquest error.</item>
     </plurals>
     <string name="unable_to_process_deeplink">No es pot processar l\'enllaç profund</string>
     <string name="unable_to_read_qrcode_file">No es pot llegir i processar el codi QR del fitxer: %s.</string>
@@ -421,16 +418,15 @@
     <string name="toggle_checkboxes">Alternar selecció</string>
     <string name="search">Cerca</string>
     <string name="channel_name_lock_status">Estat del bloqueig</string>
-    <string name="channel_description_lock_status">Aegis pot crear una notificació persistent per a avisar-te de que la caixa forta està desbloquejada</string>
+    <string name="channel_description_lock_status">Cue pot crear una notificació persistent per a avisar-te de que la caixa forta està desbloquejada</string>
     <string name="vault_unlocked_state">La caixa forta està desbloquejada. Toca aquí per a bloquejar-la.</string>
     <string name="version">Versió</string>
     <string name="changelog">Registre de canvis</string>
     <string name="whats_new">Què hi ha de nou</string>
     <string name="github_description">Codi font, problemes i informació</string>
     <string name="license">Llicència</string>
-    <string name="license_description">L\'Aegis Authenticator està llicenciat amb GPLv3</string>
     <string name="third_party_licenses">Llicències de tercers</string>
-    <string name="third_party_licenses_description">Llicències de llibreries de tercers que fa servir Aegis</string>
+    <string name="third_party_licenses_description">Llicències de llibreries de tercers que fa servir Cue</string>
     <string name="country_netherlands">Països Baixos</string>
     <string name="email_us">Escriu un correu electrònic</string>
     <string name="visit_website">Visiteu el nostre lloc web</string>
@@ -453,9 +449,9 @@
 Una còpia de seguretat de la caixa forta utilitzant %1$s ha fallat. La còpia s\'ha intentat %2$s. Si us plau, comprova la configuració de la còpia per a assegurar-te de que les còpies es poden fer correctament.
     </string>
     <string name="backup_permission_error_dialog_details" comment="The first parameter is the type of backup (e.g. built-in or Android backup). The second parameter is an elapsed time in the style of 'x seconds/minutes/days ago'.">
-        Un intent recent de còpia de seguretat de la caixa forta utilitzant %1$s ha fallat perquè l\'Aegis no té permís d\'escriptura en el destí de la còpia de seguretat. La còpia s\'ha intentat %2$s. Aquest error pot aparèixer si has mogut/reanomenat el destí de la còpia de seguretat o si has restaurat l\'Aegis recentment des d\'una còpia de seguretat. Si us plau torna a configurar el destí de la còpia de seguretat.
+        Un intent recent de còpia de seguretat de la caixa forta utilitzant %1$s ha fallat perquè l\'Cue no té permís d\'escriptura en el destí de la còpia de seguretat. La còpia s\'ha intentat %2$s. Aquest error pot aparèixer si has mogut/reanomenat el destí de la còpia de seguretat o si has restaurat l\'Cue recentment des d\'una còpia de seguretat. Si us plau torna a configurar el destí de la còpia de seguretat.
     </string>
-    <string name="backup_system_builtin">Còpies de seguretat integrades a Aegis</string>
+    <string name="backup_system_builtin">Còpies de seguretat integrades a Cue</string>
     <string name="backup_system_android">Còpia al núvol d\'Android</string>
     <string name="backup_reminder_bar_message_with_latest" comment="The parameter is an elapsed time in the style of 'x seconds/minutes/days ago'">
 L\'última còpia de seguretat és molt antiga (%s)    </string>
@@ -490,7 +486,7 @@ No s\'han desat els canvis    </string>
     <string name="uri_copied_to_clipboard">URI copiada al porta-retalls</string>
     <string name="transfer_entry_description">Escaneja aquest codi QR amb l\'aplicació d\'autenticació a la que vols transferir aquesta entrada</string>
     <string name="transfer_entry_brightness">Toca el codi QR per canviar a màxima brillantor</string>
-    <string name="google_auth_compatible_transfer_description">Escanegeu aquests codis QR amb Aegis o Google Authenticator.\n\n A causa de les limitacions de l\'aplicació Google Authenticator, només s\'inclouen tokens TOTP &amp; HOTP que utilitzen SHA1 i produeixen codis de 6 dígits</string>
+    <string name="google_auth_compatible_transfer_description">Escanegeu aquests codis QR amb Cue o Google Authenticator.\n\n A causa de les limitacions de l\'aplicació Google Authenticator, només s\'inclouen tokens TOTP &amp; HOTP que utilitzen SHA1 i produeixen codis de 6 dígits</string>
     <string name="password_strength_very_weak">Molt feble</string>
     <string name="password_strength_weak">Feble</string>
     <string name="password_strength_fair">Correcta</string>
@@ -516,7 +512,6 @@ No s\'han desat els canvis    </string>
     <string name="panic_trigger_ignore_toast">S\'ha rebut el botó del pànic, però està deshabilitat a la configuració, ho hem ignorat</string>
     <string name="pref_panic_trigger_title">Eliminar la caixa forta amb el botó del pànic</string>
     <string name="pref_panic_trigger_summary">Eliminar la caixa forta amb el botó del pànic si es rep des de Ripple</string>
-    <string name="import_vault">Importar la caixa forta d\'Aegis</string>
     <string name="import_vault_hint">Vols importar des d\'una app 2FA diferent? Completa primer la configuració i llavors ves al menú de configuració.</string>
     <plurals name="import_duplicate_toast">
         <item quantity="one">%d possible duplicat desmarcat. Revisa la llista d\'entrades.</item>
@@ -534,7 +529,7 @@ No s\'han desat els canvis    </string>
     <string name="importer_help_freeotp">FreeOTP 2: Subministra un fitxer de còpia de seguretat.\nFreeOTP 1.x: Subministra una còpia de <b>/data/data/org.fedorahosted.freeotp/shared_prefs/tokens.xml</b>, que està a l\'emmagatzematge intern del teu dispositiu, al directori del FreeOTP.</string>
     <string name="importer_help_freeotp_plus">Subministra un fitxer exportat del FreeOTP+.</string>
     <string name="importer_warning_title_freeotp2">Compatibilitat FreeOTP 2</string>
-    <string name="importer_warning_message_freeotp2">Hi ha diversos problemes en el FreeOTP 2 que poden resultar en còpies de seguretat defectuoses. L\'Aegis provarà de recuperar el màxim d\'entrades possible, però potser algunes entrades o totes elles no es puguin importar.</string>
+    <string name="importer_warning_message_freeotp2">Hi ha diversos problemes en el FreeOTP 2 que poden resultar en còpies de seguretat defectuoses. L\'Cue provarà de recuperar el màxim d\'entrades possible, però potser algunes entrades o totes elles no es puguin importar.</string>
     <string name="importer_help_google_authenticator">&lt;b&gt;Només s\'admeten fitxers de bases de dades de Google Authenticator v5.10 i anteriors&lt;/b&gt;.\n\nProporcioneu una còpia de &lt;b&gt;/data/data/com.google.android.apps.authenticator2/databases/databases&lt; /b&gt;, situada al directori d\'emmagatzematge intern de Google Authenticator.</string>
     <string name="importer_help_microsoft_authenticator">Subministra una còpia de <b>/data/data/com.azure.authenticator/databases/PhoneFactor</b>, que està a l\'emmagatzematge intern del teu dispositiu, al directori del Microsoft Authenticator.</string>
     <string name="importer_help_plain_text">Subministra un fitxer de text pla amb una URI de Google Authenticator a cada línia.</string>
@@ -546,7 +541,7 @@ No s\'han desat els canvis    </string>
     <string name="import_assign_icons_dialog_title">Assignar icones</string>
     <string name="import_assign_icons_dialog_text">Vols assignar icones a les entrades importades?</string>
     <string name="importer_encrypted_exception_google_authenticator">S\'ha omès l\'entrada xifrada: %s</string>
-    <string name="importer_help_direct">Importa entrades directament de %s. Per a fer això, cal que l\'aplicació estigui instal·lada i cal que l\'Aegis tingui accés root.</string>
+    <string name="importer_help_direct">Importa entrades directament de %s. Per a fer això, cal que l\'aplicació estigui instal·lada i cal que l\'Cue tingui accés root.</string>
     <string name="groups">Grups</string>
     <string name="pref_focus_search">Posar el cursor a la casella de cerca en iniciar</string>
     <string name="pref_focus_search_summary">Enfocar la cerca immediatament després d\'obrir l\'aplicació.</string>

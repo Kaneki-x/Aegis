@@ -35,7 +35,7 @@ public class NotificationService extends Service {
         PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 1, intent, flags);
 
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this, CHANNEL_ID)
-                .setSmallIcon(R.drawable.ic_aegis_notification)
+                .setSmallIcon(R.drawable.ic_cue_notification)
                 .setContentTitle(getString(R.string.app_name_full))
                 .setContentText(getString(R.string.vault_unlocked_state))
                 .setPriority(NotificationCompat.PRIORITY_DEFAULT)

@@ -1,6 +1,6 @@
 # Contributing
 
-Looking to contribute to Aegis? That's great! There are a couple of ways to help
+Looking to contribute to Cue? That's great! There are a couple of ways to help
 out. This document contains some general guidelines for each type of
 contribution.
 
@@ -10,7 +10,7 @@ requesting a feature.
 ## Translations
 
 We use [Crowdin](https://crowdin.com/project/aegis-authenticator) to crowdsource
-translations of Aegis for lots of different languages. __Pull requests that
+translations of Cue for lots of different languages. __Pull requests that
 add/update a translation are no longer accepted.__ Crowdin is our single source
 of truth for translations, to keep things easy to maintain.
 
@@ -22,7 +22,7 @@ add it.
 
 If you're planning on adding a new feature or making other large changes, please
 discuss it with us first through [a
-proposal](https://github.com/beemdevelopment/Aegis/issues/new?labels=proposal&template=feature.md)
+proposal](https://github.com/Kaneki-x/Cue/issues/new?labels=proposal&template=feature.md)
 on GitHub. Discussing your idea with us first ensures that everyone is on the
 same page before you start working on your change. We don't like rejecting pull
 requests.
@@ -41,7 +41,7 @@ it! We're happy to help you if you get stuck along the way.
 ### Capturing a log with ADB
 
 In some cases, we ask our users to obtain a debug log from their device. This is
-typically only necessary if Aegis:
+typically only necessary if Cue:
 - Is unable to recover from an error and crashes.
 - Only shows a generic error to the user, but writes a more detailed one to the
   log.
@@ -88,7 +88,7 @@ __On your Android device__:
 
 __On your Android device__:
 
-1. Start Aegis.
+1. Start Cue.
 
 __On your PC__:
 
@@ -104,7 +104,7 @@ __On your PC__:
     The logcat command captures the full system log by default, which may expose
     some sensitive information. While this information can sometimes help with
     finding the root cause of the issue, it is not always necessary. To only
-    capture the log output of Aegis, replace the last logcat command with the
+    capture the log output of Cue, replace the last logcat command with the
     one below:
 
     ```sh

@@ -5,7 +5,7 @@
     android:isDefault="false">
     <subtype
         android:label="@string/ime_label"
-        android:icon="@drawable/ic_aegis_quicksettings"
+        android:icon="@drawable/ic_cue_mark"
         android:imeSubtypeMode="keyboard"
         android:isAsciiCapable="false" />
 </input-method>
