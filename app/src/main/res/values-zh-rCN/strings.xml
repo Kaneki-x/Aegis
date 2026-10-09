@@ -606,4 +606,9 @@
     <string name="pref_external_grace_1m">1 分钟</string>
     <string name="pref_external_grace_5m">5 分钟</string>
     <string name="pref_external_grace_15m">15 分钟</string>
+    <string name="pref_section_import_export_summary">导入 Aegis、Cue 或其他验证器应用的备份。手动导出你的 Cue 数据库。</string>
+    <string name="export_format_aegis">Cue（.JSON，兼容 Aegis）</string>
+    <string name="import_vault">导入 Cue 或 Aegis 数据库</string>
+    <string name="app_description">Cue 是一款免费、安全、开源的两步验证应用</string>
+    <string name="license_description">Cue 基于 GPLv3 许可证发布</string>
 </resources>

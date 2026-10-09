@@ -6,4 +6,7 @@
     <color name="cue_brand_solid">#5B4DE9</color>
     <color name="cue_brand_debug_start" tools:ignore="UnusedResources">#475569</color>
     <color name="cue_brand_debug_end" tools:ignore="UnusedResources">#64748B</color>
+    <!-- The "changes not backed up" card: softer than the Material error container -->
+    <color name="cue_error_card_background">#FFE4E1</color>
+    <color name="cue_error_card_foreground">#8C1D18</color>
 </resources>

@@ -11,5 +11,8 @@
     <issue id="UnusedResources" severity="error">
         <ignore path="res/raw/aboutlibraries.json" />
         <ignore regexp="res/mipmap.*/ic_launcher_debug.*.png" />
+        <!-- the launcher icon is referenced through a manifest placeholder, which lint can't follow -->
+        <ignore regexp="res/mipmap.*/ic_launcher.png" />
+        <ignore regexp="res/drawable/ic_launcher_(background|foreground|monochrome).xml" />
     </issue>
 </lint>

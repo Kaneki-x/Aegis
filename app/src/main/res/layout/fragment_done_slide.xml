@@ -12,18 +12,17 @@
         android:layout_height="wrap_content"
         android:text="@string/setup_completed"
         android:textAlignment="center"
-        android:textSize="24sp"
+        android:textAppearance="@style/TextAppearance.Cue.Display"
         android:layout_marginTop="30dp"
-        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:layout_width="210dp"
-        android:layout_height="210dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_marginTop="60dp"
         android:adjustViewBounds="true"
-        android:src="@drawable/app_icon"
+        android:src="@drawable/ic_cue_logo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleText"/>

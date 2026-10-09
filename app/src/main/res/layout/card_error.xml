@@ -20,13 +20,13 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:tint="?attr/colorOnErrorContainer"
+        app:tint="@color/cue_error_card_foreground"
         android:src="@drawable/ic_outline_error_24" />
     <TextView
         android:id="@+id/text_error_bar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="?attr/colorOnErrorContainer"
+        android:textColor="@color/cue_error_card_foreground"
         android:textStyle="bold"
         android:layout_marginStart="5dp" />
     </LinearLayout>

@@ -17,9 +17,8 @@
             android:layout_height="wrap_content"
             android:text="@string/choose_authentication_method"
             android:textAlignment="center"
-            android:textSize="24sp"
-            android:layout_marginTop="30dp"
-            android:textStyle="bold" />
+            android:textAppearance="@style/TextAppearance.Cue.Display"
+            android:layout_marginTop="30dp" />
 
         <TextView
             android:layout_width="match_parent"

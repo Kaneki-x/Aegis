@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cue_error_card_background">#3A2224</color>
+    <color name="cue_error_card_foreground">#FFB4AB</color>
+</resources>

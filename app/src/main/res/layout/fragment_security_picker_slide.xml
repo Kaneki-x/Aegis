@@ -16,9 +16,8 @@
             android:layout_height="wrap_content"
             android:text="@string/choose_authentication_method"
             android:textAlignment="center"
-            android:textSize="24sp"
-            android:layout_marginTop="30dp"
-            android:textStyle="bold" />
+            android:textAppearance="@style/TextAppearance.Cue.Display"
+            android:layout_marginTop="30dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -35,20 +34,29 @@
                 android:id="@+id/rg_authenticationMethod"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="24dp">
+                android:layout_marginTop="24dp"
+                android:background="@drawable/cue_option_sheet"
+                android:paddingStart="@dimen/cue_space_3"
+                android:paddingTop="@dimen/cue_space_2"
+                android:paddingEnd="@dimen/cue_space_3"
+                android:paddingBottom="@dimen/cue_space_3"
+                android:showDividers="middle"
+                android:divider="@drawable/cue_option_divider">
 
                 <RadioButton
                     android:id="@+id/rb_none"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/authentication_method_none"
-                    android:textSize="16sp" />
+                    android:textAppearance="@style/TextAppearance.Cue.Title" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="32dp"
                     android:layout_marginTop="-5dp"
+                    android:paddingBottom="@dimen/cue_space_2"
+                    android:textColor="?attr/colorOnSurfaceVariant"
                     android:text="@string/authentication_method_none_description" />
 
                 <RadioButton
@@ -57,13 +65,15 @@
                     android:layout_height="wrap_content"
                     android:checked="true"
                     android:text="@string/authentication_method_password"
-                    android:textSize="16sp" />
+                    android:textAppearance="@style/TextAppearance.Cue.Title" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="32dp"
                     android:layout_marginTop="-5dp"
+                    android:paddingBottom="@dimen/cue_space_2"
+                    android:textColor="?attr/colorOnSurfaceVariant"
                     android:text="@string/authentication_method_password_description" />
 
                 <RadioButton
@@ -72,7 +82,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/authentication_method_biometrics"
-                    android:textSize="16sp" />
+                    android:textAppearance="@style/TextAppearance.Cue.Title" />
 
                 <TextView
                     android:id="@+id/text_rb_biometrics"
@@ -81,7 +91,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="32dp"
                     android:layout_marginTop="-5dp"
-
+                    android:textColor="?attr/colorOnSurfaceVariant"
                     android:text="@string/authentication_method_biometrics_description" />
 
             </RadioGroup>

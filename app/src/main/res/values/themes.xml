@@ -68,6 +68,11 @@
         <item name="dot_color_selected">?attr/colorOnSurfaceVariant</item>
         <item name="cueCardStrokeWidth">0dp</item>
         <item name="chipStyle">@style/Widget.Cue.Chip</item>
+        <!-- Cue component styles: display face on titles, buttons and chips; soft fields -->
+        <item name="textAppearanceTitleLarge">@style/TextAppearance.Cue.Title.Toolbar</item>
+        <item name="textAppearanceHeadlineSmall">@style/TextAppearance.Cue.Headline</item>
+        <item name="textAppearanceLabelLarge">@style/TextAppearance.Cue.Label</item>
+        <item name="textInputStyle">@style/Widget.Cue.TextInputLayout</item>
         <!-- Cue shape tokens: cards 16dp, chips 8dp, sheets and dialogs 28dp -->
         <item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Cue.Small</item>
         <item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Cue.Medium</item>
@@ -146,6 +151,11 @@
         <item name="dot_color_selected">?attr/colorOnSurfaceVariant</item>
         <item name="cueCardStrokeWidth">0dp</item>
         <item name="chipStyle">@style/Widget.Cue.Chip</item>
+        <!-- Cue component styles: display face on titles, buttons and chips; soft fields -->
+        <item name="textAppearanceTitleLarge">@style/TextAppearance.Cue.Title.Toolbar</item>
+        <item name="textAppearanceHeadlineSmall">@style/TextAppearance.Cue.Headline</item>
+        <item name="textAppearanceLabelLarge">@style/TextAppearance.Cue.Label</item>
+        <item name="textInputStyle">@style/Widget.Cue.TextInputLayout</item>
         <!-- Cue shape tokens: cards 16dp, chips 8dp, sheets and dialogs 28dp -->
         <item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Cue.Small</item>
         <item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Cue.Medium</item>
@@ -218,11 +228,27 @@
         <item name="android:windowLightStatusBar">false</item>
     </style>
 
-    <style name="Widget.Aegis.Dropdown" parent="Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu" />
+    <style name="Widget.Aegis.Dropdown" parent="Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="boxCornerRadiusTopStart">@dimen/cue_radius_small_plus</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/cue_radius_small_plus</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/cue_radius_small_plus</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/cue_radius_small_plus</item>
+        <item name="boxStrokeColor">@color/cue_text_input_stroke</item>
+    </style>
+
+    <style name="Widget.Cue.TextInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusTopStart">@dimen/cue_radius_small_plus</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/cue_radius_small_plus</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/cue_radius_small_plus</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/cue_radius_small_plus</item>
+        <item name="boxStrokeColor">@color/cue_text_input_stroke</item>
+    </style>
 
     <style name="ThemeOverlay.Aegis.Preference" parent="@style/PreferenceThemeOverlay">
-        <item name="android:tint">?attr/colorOnSurface</item>
+        <item name="android:tint">?attr/colorPrimary</item>
         <item name="switchPreferenceCompatStyle">@style/Preference.Aegis.SwitchPreference</item>
+        <item name="preferenceCategoryTitleTextAppearance">@style/TextAppearance.Cue.Overline</item>
+        <item name="preferenceCategoryTitleTextColor">?attr/colorPrimary</item>
     </style>
 
     <style name="Preference.Aegis.SwitchPreference" parent="@style/Preference.SwitchPreferenceCompat.Material">
@@ -252,7 +278,7 @@
     </style>
 
     <style name="ThemeOverlay.Aegis.ErrorCardView" parent="">
-        <item name="colorSurfaceContainerHighest">?attr/colorErrorContainer</item>
+        <item name="colorSurfaceContainerHighest">@color/cue_error_card_background</item>
     </style>
 
     <style name="ThemeOverlay.Aegis.ActionMode" parent="">
@@ -335,6 +361,35 @@
     </style>
     <style name="TextAppearance.Cue.Wordmark.Small">
         <item name="android:textSize">17sp</item>
+    </style>
+    <style name="TextAppearance.Cue.Title.Toolbar">
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="TextAppearance.Cue.Headline" parent="TextAppearance.Material3.HeadlineSmall">
+        <item name="android:fontFamily">@font/cue_display</item>
+        <item name="fontFamily">@font/cue_display</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+    <style name="TextAppearance.Cue.Display" parent="TextAppearance.Material3.DisplaySmall">
+        <item name="android:fontFamily">@font/cue_display_extrabold</item>
+        <item name="fontFamily">@font/cue_display_extrabold</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+    <style name="TextAppearance.Cue.Label" parent="TextAppearance.Material3.LabelLarge">
+        <item name="android:fontFamily">@font/cue_display</item>
+        <item name="fontFamily">@font/cue_display</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.01</item>
+    </style>
+    <style name="TextAppearance.Cue.Overline" parent="TextAppearance.Material3.LabelMedium">
+        <item name="android:fontFamily">@font/cue_display</item>
+        <item name="fontFamily">@font/cue_display</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:letterSpacing">0.03</item>
     </style>
 
     <!-- Pill chips instead of Material filter chips -->
