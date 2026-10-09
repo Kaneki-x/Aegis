@@ -61,11 +61,16 @@
         <item name="colorOnDark">@android:color/white</item>
         <item name="colorSuccess">@color/aegis_theme_light_success</item>
         <item name="colorOnSurfaceDim">@color/aegis_theme_light_onSurfaceDim</item>
-        <item name="colorCode">?attr/colorPrimary</item>
+        <item name="colorCode">@color/cue_brand_solid</item>
         <item name="colorCodeHidden">?attr/colorOutlineVariant</item>
         <!-- Intro colors -->
         <item name="dot_color">?attr/colorSurfaceVariant</item>
         <item name="dot_color_selected">?attr/colorOnSurfaceVariant</item>
+        <!-- Cue shape tokens: cards 16dp, chips 8dp, sheets and dialogs 28dp -->
+        <item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Cue.Small</item>
+        <item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Cue.Medium</item>
+        <item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Cue.Large</item>
+        <item name="shapeAppearanceCornerExtraLarge">@style/ShapeAppearance.Cue.ExtraLarge</item>
         <!-- Styles -->
         <item name="dropdownStyle">@style/Widget.Aegis.Dropdown</item>
         <item name="preferenceTheme">@style/ThemeOverlay.Aegis.Preference</item>
@@ -137,6 +142,11 @@
         <!-- Intro colors -->
         <item name="dot_color">?attr/colorSurfaceVariant</item>
         <item name="dot_color_selected">?attr/colorOnSurfaceVariant</item>
+        <!-- Cue shape tokens: cards 16dp, chips 8dp, sheets and dialogs 28dp -->
+        <item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Cue.Small</item>
+        <item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Cue.Medium</item>
+        <item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Cue.Large</item>
+        <item name="shapeAppearanceCornerExtraLarge">@style/ShapeAppearance.Cue.ExtraLarge</item>
         <!-- Styles -->
         <item name="dropdownStyle">@style/Widget.Aegis.Dropdown</item>
         <item name="preferenceTheme">@style/ThemeOverlay.Aegis.Preference</item>
@@ -275,5 +285,37 @@
     <style name="ShapeAppearanceOverlay.Aegis.ImageView.Circle" parent="">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">50%</item>
+    </style>
+
+    <!-- Cue shape tokens -->
+    <style name="ShapeAppearance.Cue.Small" parent="ShapeAppearance.Material3.Corner.Small">
+        <item name="cornerSize">@dimen/cue_radius_small</item>
+    </style>
+    <style name="ShapeAppearance.Cue.Medium" parent="ShapeAppearance.Material3.Corner.Medium">
+        <item name="cornerSize">@dimen/cue_radius_medium</item>
+    </style>
+    <style name="ShapeAppearance.Cue.Large" parent="ShapeAppearance.Material3.Corner.Large">
+        <item name="cornerSize">@dimen/cue_radius_large</item>
+    </style>
+    <style name="ShapeAppearance.Cue.ExtraLarge" parent="ShapeAppearance.Material3.Corner.ExtraLarge">
+        <item name="cornerSize">@dimen/cue_radius_extra_large</item>
+    </style>
+
+    <!-- Cue type tokens: one-time codes are bold, tabular digits with a little tracking -->
+    <style name="TextAppearance.Cue.Code" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?attr/colorCode</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:fontFeatureSettings">tnum</item>
+    </style>
+    <style name="TextAppearance.Cue.Code.Display">
+        <item name="android:textSize">@dimen/cue_code_display</item>
+    </style>
+    <style name="TextAppearance.Cue.Code.Compact">
+        <item name="android:textSize">@dimen/cue_code_compact</item>
+    </style>
+    <style name="TextAppearance.Cue.Code.Inline">
+        <item name="android:textSize">@dimen/cue_code_inline</item>
     </style>
 </resources>

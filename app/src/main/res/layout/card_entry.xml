@@ -119,21 +119,17 @@
                 android:layout_height="match_parent">
 
                 <TextView
+                    android:textAppearance="@style/TextAppearance.Cue.Code.Display"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:fontFamily="sans-serif-light"
                     tools:text="012 345"
                     android:id="@+id/profile_code"
                     android:layoutDirection="ltr"
-                    android:textSize="34sp"
                     android:layout_below="@id/description"
-                    android:textColor="?attr/colorCode"
                     android:includeFontPadding="false"
                     android:fallbackLineSpacing="false"
                     android:layout_alignParentStart="true"
-                    android:layout_marginTop="0dp"
-                    android:textStyle="normal|bold"/>
+                    android:layout_marginTop="0dp" />
 
                 <TextView
                     android:id="@+id/next_profile_code"

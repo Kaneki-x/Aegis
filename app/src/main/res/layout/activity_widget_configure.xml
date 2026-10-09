@@ -32,10 +32,10 @@
             android:focusable="true"
             android:gravity="center_vertical"
             android:orientation="horizontal"
-            android:paddingStart="16dp"
-            android:paddingTop="12dp"
-            android:paddingEnd="16dp"
-            android:paddingBottom="12dp">
+            android:paddingStart="@dimen/cue_space_4"
+            android:paddingTop="@dimen/cue_space_3"
+            android:paddingEnd="@dimen/cue_space_4"
+            android:paddingBottom="@dimen/cue_space_3">
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -61,7 +61,7 @@
                 android:id="@+id/switch_favorites"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
+                android:layout_marginStart="@dimen/cue_space_4"
                 android:clickable="false"
                 android:focusable="false" />
         </LinearLayout>
@@ -70,10 +70,10 @@
             android:id="@+id/select_hint"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingStart="16dp"
-            android:paddingTop="8dp"
-            android:paddingEnd="16dp"
-            android:paddingBottom="4dp"
+            android:paddingStart="@dimen/cue_space_4"
+            android:paddingTop="@dimen/cue_space_2"
+            android:paddingEnd="@dimen/cue_space_4"
+            android:paddingBottom="@dimen/cue_space_1"
             android:text="@string/widget_configure_select_hint"
             android:textAppearance="?attr/textAppearanceLabelLarge"
             android:textColor="?attr/colorPrimary" />

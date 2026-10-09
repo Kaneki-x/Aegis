@@ -1,7 +1,21 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="fab_menu_item_image_size">24dp</dimen>
     <dimen name="list_item_height">48dp</dimen>
     <dimen name="ime_panel_height">300dp</dimen>
     <dimen name="widget_corner_radius">16dp</dimen>
+
+    <!-- Cue design tokens (see design/tokens.json) -->
+    <dimen name="cue_radius_small">8dp</dimen>
+    <dimen name="cue_radius_medium">16dp</dimen>
+    <dimen name="cue_radius_large">20dp</dimen>
+    <dimen name="cue_radius_extra_large">28dp</dimen>
+    <dimen name="cue_space_1">4dp</dimen>
+    <dimen name="cue_space_2">8dp</dimen>
+    <dimen name="cue_space_3">12dp</dimen>
+    <dimen name="cue_space_4">16dp</dimen>
+    <dimen name="cue_space_6" tools:ignore="UnusedResources">24dp</dimen>
+    <dimen name="cue_code_display">34sp</dimen>
+    <dimen name="cue_code_compact">26sp</dimen>
+    <dimen name="cue_code_inline">20sp</dimen>
 </resources>

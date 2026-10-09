@@ -80,17 +80,13 @@
     </LinearLayout>
 
     <TextView
+                    android:textAppearance="@style/TextAppearance.Cue.Code.Inline"
         android:id="@+id/code"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:fontFamily="sans-serif-medium"
         android:includeFontPadding="false"
         android:layoutDirection="ltr"
-        android:letterSpacing="0.04"
-        android:textColor="?attr/colorCode"
-        android:textSize="20sp"
-        android:textStyle="bold"
         tools:text="123 456" />
 
     <FrameLayout
