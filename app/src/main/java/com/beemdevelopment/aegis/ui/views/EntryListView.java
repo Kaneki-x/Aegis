@@ -376,7 +376,8 @@ public class EntryListView extends Fragment implements EntryAdapter.Listener {
     public void onPeriodUniformityChanged(boolean isUniform, int period) {
         setShowProgress(isUniform);
         if (_showProgress) {
-            _progressBar.setVisibility(View.VISIBLE);
+            // in the normal view mode every card carries its own ring, so no top bar
+            _progressBar.setVisibility(_viewMode == ViewMode.NORMAL ? View.GONE : View.VISIBLE);
             _progressBar.setPeriod(period);
             _progressBar.start();
             onRefreshStart();
@@ -602,9 +603,11 @@ public class EntryListView extends Fragment implements EntryAdapter.Listener {
                 outRect.top = _offset;
             }
 
-            // Only non-favorite entries have a bottom margin, except for the final favorite entry
+            // In the normal view mode every entry is its own card and favorites carry a star,
+            // in the other modes favorites are merged into one block with a shared indicator
             int totalFavorites = _adapter.getShownFavoritesCount();
-            if (totalFavorites == 0
+            if (_viewMode == ViewMode.NORMAL
+                    || totalFavorites == 0
                     || (entryIndex < _adapter.getShownEntriesCount() && !_adapter.getEntryAtPosition(adapterPosition).isFavorite())
                     || totalFavorites == entryIndex + 1) {
                 outRect.bottom = _offset;
@@ -615,7 +618,11 @@ public class EntryListView extends Fragment implements EntryAdapter.Listener {
                 outRect.bottom = 0;
             }
 
-            decorateFavoriteEntries((MaterialCardView) view, parent);
+            if (_viewMode == ViewMode.NORMAL) {
+                ((MaterialCardView) view).setShapeAppearanceModel(_defaultShapeModel);
+            } else {
+                decorateFavoriteEntries((MaterialCardView) view, parent);
+            }
         }
 
         private void decorateFavoriteEntries(@NonNull MaterialCardView view, @NonNull RecyclerView parent) {

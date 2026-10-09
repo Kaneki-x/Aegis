@@ -14,190 +14,178 @@
     style="@style/Widget.Aegis.EntryCardView">
 
     <LinearLayout
-        android:orientation="horizontal"
         android:id="@+id/rlCardEntry"
-        android:paddingTop="8dp"
-        android:paddingBottom="8dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/cue_space_4"
+        android:paddingTop="@dimen/cue_space_4"
+        android:paddingEnd="@dimen/cue_space_4"
+        android:paddingBottom="@dimen/cue_space_4">
 
-        <View
-            android:id="@+id/favorite_indicator"
-            android:layout_width="15dp"
-            android:layout_height="match_parent"
-            android:layout_marginStart="-11dp"
-            android:backgroundTint="?attr/colorFavorite"
-            android:background="@drawable/favorite_indicator" />
-
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:paddingStart="14dp">
-
-            <com.google.android.material.imageview.ShapeableImageView
-                android:id="@+id/ivTextDrawable"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_centerVertical="true"
-                android:layout_alignParentStart="true"
-                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Aegis.ImageView.Circle" />
-
-            <com.google.android.material.imageview.ShapeableImageView
-                android:id="@+id/ivSelected"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_alignParentStart="true"
-                android:layout_centerVertical="true"
-                android:src="@drawable/item_selected"
-                android:visibility="gone"
-                android:background="?attr/colorPrimaryAlternative"
-                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Aegis.ImageView.Circle" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="0dp"
+        <!-- Row 1: who this entry is for -->
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="bottom"
-            android:id="@+id/relativeLayout"
-            android:paddingTop="18dp"
-            android:paddingBottom="16dp"
-            android:paddingEnd="16dp"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:paddingStart="16dp">
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
-            <RelativeLayout
-                android:layout_width="wrap_content"
+            <FrameLayout
+                android:layout_width="40dp"
+                android:layout_height="40dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/ivTextDrawable"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Aegis.ImageView.Circle" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/ivSelected"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/item_selected"
+                    android:visibility="gone"
+                    android:background="?attr/colorPrimaryAlternative"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Aegis.ImageView.Circle" />
+            </FrameLayout>
+
+            <!-- description and the "Copied" label share this slot; the holder cross-fades them -->
+            <FrameLayout
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/description"
-                android:layout_alignStart="@+id/profile_codes_layout">
+                android:layout_marginStart="@dimen/cue_space_3"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/profile_issuer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:text="@string/issuer"
+                        android:textColor="?attr/colorOnSurface"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/profile_account_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/profile_issuer"
+                        android:ellipsize="end"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:textColor="?attr/colorOnSurfaceVariant"
+                        android:textSize="14sp"
+                        tools:text=" (AccountName)" />
+                </RelativeLayout>
 
                 <TextView
+                    android:id="@+id/profile_copied"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/profile_issuer"
-                    android:text="@string/issuer"
-                    android:textStyle="bold"
-                    android:includeFontPadding="false"
-                    android:textSize="16sp"
-                    android:ellipsize="end"
-                    android:maxLines="1"/>
-
-                <TextView
-                    android:id="@+id/profile_account_name"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_toEndOf="@id/profile_issuer"
-                    android:ellipsize="end"
                     android:includeFontPadding="false"
                     android:maxLines="1"
+                    android:text="@string/copied"
+                    android:textColor="?attr/colorPrimary"
                     android:textSize="16sp"
-                    tools:text=" - AccountName" />
-
-            </RelativeLayout>
-
-            <TextView
-                android:id="@+id/profile_copied"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:includeFontPadding="false"
-                android:maxLines="1"
-                android:text="@string/copied"
-                android:layout_alignStart="@+id/description"
-                android:layout_below="@id/description"
-                android:textSize="16sp"
-                android:visibility="invisible" />
-
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_marginBottom="0dp"
-                android:paddingBottom="0dp"
-                android:id="@+id/profile_codes_layout"
-                android:layout_below="@id/description"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:textAppearance="@style/TextAppearance.Cue.Code.Display"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    tools:text="012 345"
-                    android:id="@+id/profile_code"
-                    android:layoutDirection="ltr"
-                    android:layout_below="@id/description"
-                    android:includeFontPadding="false"
-                    android:fallbackLineSpacing="false"
-                    android:layout_alignParentStart="true"
-                    android:layout_marginTop="0dp" />
-
-                <TextView
-                    android:id="@+id/next_profile_code"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="0dp"
-                    android:paddingTop="0dp"
-                    android:paddingStart="2dp"
-                    android:layout_alignParentStart="true"
-                    android:textColor="?attr/colorOnSurfaceDim"
-                    android:textSize="20sp"
-                    android:textStyle="normal|bold"
-                    android:includeFontPadding="false"
-                    android:fallbackLineSpacing="false"
-                    tools:text="412 643"/>
-            </LinearLayout>
-
-        </RelativeLayout>
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent">
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+            </FrameLayout>
 
             <ImageView
-                android:id="@+id/buttonRefresh"
-                android:visibility="gone"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="4dp"
-                android:padding="8dp"
-                android:clickable="true"
-                android:focusable="true"
-                android:src="@drawable/ic_outline_refresh_24"
-                app:tint="?attr/colorOnSurface"
-                android:background="?android:attr/selectableItemBackground" />
+                android:id="@+id/favorite_indicator"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="@dimen/cue_space_2"
+                android:contentDescription="@string/favorite"
+                android:src="@drawable/ic_star_24"
+                android:visibility="invisible"
+                app:tint="?attr/colorFavorite" />
 
             <ImageView
                 android:id="@+id/drag_handle"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:layout_gravity="center_vertical"
-                android:layout_marginEnd="-12dp"
-                android:visibility="invisible"
+                android:layout_marginStart="@dimen/cue_space_2"
+                android:importantForAccessibility="no"
                 android:scaleType="fitXY"
-                android:src="@drawable/ic_outline_menu_24" />
-
+                android:src="@drawable/ic_outline_menu_24"
+                android:visibility="invisible"
+                app:tint="?attr/colorOnSurfaceVariant" />
         </LinearLayout>
 
-    </LinearLayout>
+        <!-- Row 2: the code and how long it lasts -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/cue_space_3"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:padding="0dp"
-        android:layout_margin="0dp"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/profile_codes_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
 
-        <com.beemdevelopment.aegis.ui.views.TotpProgressBar
-            style="?android:attr/progressBarStyleHorizontal"
-            android:progressDrawable="@drawable/progress_horizontal"
-            android:layout_width="0dp"
-            android:layout_height="4dp"
-            android:id="@+id/progressBar"
-            android:max="5000"
-            android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/profile_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fallbackLineSpacing="false"
+                    android:includeFontPadding="false"
+                    android:layoutDirection="ltr"
+                    android:textAppearance="@style/TextAppearance.Cue.Code.Display"
+                    tools:text="012 345" />
+
+                <TextView
+                    android:id="@+id/next_profile_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/cue_space_1"
+                    android:fallbackLineSpacing="false"
+                    android:includeFontPadding="false"
+                    android:layoutDirection="ltr"
+                    android:textAppearance="@style/TextAppearance.Cue.Code.Inline"
+                    android:textColor="?attr/colorOnSurfaceDim"
+                    android:visibility="gone"
+                    tools:text="678 901"
+                    tools:visibility="visible" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/buttonRefresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/cue_space_2"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:contentDescription="@string/action_refresh_code"
+                android:focusable="true"
+                android:padding="@dimen/cue_space_2"
+                android:src="@drawable/ic_outline_refresh_24"
+                android:visibility="gone"
+                app:tint="?attr/colorOnSurface" />
+
+            <com.beemdevelopment.aegis.ui.views.TotpProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="@dimen/cue_space_2"
+                android:max="5000"
+                android:progressDrawable="@drawable/progress_ring"
+                android:rotation="-90" />
+        </LinearLayout>
     </LinearLayout>
 
 </com.google.android.material.card.MaterialCardView>

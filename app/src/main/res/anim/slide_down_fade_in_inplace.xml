@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Like slide_down_fade_in, but for a label that already sits in the slot it animates into -->
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillAfter="true"
+    android:fillEnabled="true">
+
+    <translate
+        android:duration="300"
+        android:fromYDelta="-100%"
+        android:toYDelta="0%" />
+
+    <alpha
+        android:fromAlpha="0.0"
+        android:toAlpha="1.0"
+        android:duration="500"/>
+
+</set>

@@ -233,7 +233,7 @@
     </style>
 
     <style name="ThemeOverlay.Aegis.EntryCardView" parent="">
-        <item name="colorSurfaceContainerLow">?attr/colorSurfaceContainer</item>
+        <item name="colorSurfaceContainerLow">?attr/colorSurfaceContainerLowest</item>
     </style>
 
     <style name="ThemeOverlay.Aegis.CompactEntryCardView" parent="">

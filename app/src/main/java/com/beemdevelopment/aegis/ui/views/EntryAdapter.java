@@ -443,7 +443,8 @@ public class EntryAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
             boolean hidden = _tapToReveal && !entry.equals(_focusedEntry);
             boolean paused = _pauseFocused && entry.equals(_focusedEntry);
             boolean dimmed = (_highlightEntry || _tempHighlightEntry) && _focusedEntry != null && !_focusedEntry.equals(entry);
-            boolean showProgress = entry.getInfo() instanceof TotpInfo && ((TotpInfo) entry.getInfo()).getPeriod() != getMostFrequentPeriod();
+            boolean nonUniformPeriod = entry.getInfo() instanceof TotpInfo && ((TotpInfo) entry.getInfo()).getPeriod() != getMostFrequentPeriod();
+            boolean showProgress = nonUniformPeriod || (_viewMode == ViewMode.NORMAL && entry.getInfo() instanceof TotpInfo);
             boolean showAccountName = true;
             if (_onlyShowNecessaryAccountNames) {
                 // Only show account name when there's multiple entries found with the same issuer.
@@ -454,6 +455,10 @@ public class EntryAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
 
             AccountNamePosition accountNamePosition = showAccountName ? _accountNamePosition : AccountNamePosition.HIDDEN;
             entryHolder.setData(entry, _codeGroupSize, _viewMode, accountNamePosition, _showIcon, showProgress, hidden, paused, dimmed, _showExpirationState, _showNextCode);
+            if (showProgress && !nonUniformPeriod) {
+                // ring only; the shared refresher in EntryListView refreshes the code
+                entryHolder.setShowProgress(true, false);
+            }
             entryHolder.setFocused(_selectedEntries.contains(entry));
             entryHolder.setShowDragHandle(isEntryDraggable(entry));
 
@@ -584,7 +589,12 @@ public class EntryAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
 
         for (EntryHolder holder : _holders) {
             if ((holder.getEntry().getInfo() instanceof TotpInfo)) {
-                holder.setShowProgress(((TotpInfo) holder.getEntry().getInfo()).getPeriod() != mostFrequentPeriod);
+                boolean nonUniformPeriod = ((TotpInfo) holder.getEntry().getInfo()).getPeriod() != mostFrequentPeriod;
+                if (nonUniformPeriod) {
+                    holder.setShowProgress(true);
+                } else {
+                    holder.setShowProgress(_viewMode == ViewMode.NORMAL, false);
+                }
             }
         }
 

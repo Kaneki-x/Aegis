@@ -26,6 +26,7 @@ Principles, borrowed from the best of Paste:
 | `type.code.*` | `TextAppearance.Cue.Code.Display / Compact / Inline` |
 | `space.*` | `cue_space_*` dimens |
 | `brand.gradient`, `brand.mark` | launcher icon layers, `ic_cue_logo`, `ic_cue_mark` |
+| `size.countdownRing`, `motion.countdown` | `drawable/progress_ring.xml` on `TotpProgressBar` (list), `CountdownRingView` (keyboard) |
 
 Regenerate the color roles after changing the seed:
 

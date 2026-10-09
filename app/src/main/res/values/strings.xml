@@ -431,6 +431,7 @@
     <string name="select_icon">Select icon</string>
     <string name="tile_open_vault" comment="label for a quick settings tile that opens the app when tapped">Open vault</string>
     <string name="tile_open_scanner" comment="label for a quick settings tile that opens the QR code scanner when tapped">Open scanner</string>
+    <string name="action_refresh_code" comment="content description of the button that advances a counter-based (HOTP) entry to its next code">Next code</string>
     <string name="ime_label" comment="name of the Cue input method as shown in the system keyboard picker">Cue</string>
     <string name="ime_hint_suggested_for" comment="shown in the keyboard header, %s is the name of the app that asks for input">Suggested for %s</string>
     <string name="ime_vault_locked">Vault is locked</string>

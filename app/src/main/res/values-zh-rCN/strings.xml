@@ -561,6 +561,7 @@
     <plurals name="dropdown_checkboxes_default_count">
         <item quantity="other">已选择 %d 个项目</item>
     </plurals>
+    <string name="action_refresh_code">下一个验证码</string>
     <string name="ime_label">Cue 验证码</string>
     <string name="ime_hint_suggested_for">为 %s 推荐</string>
     <string name="ime_vault_locked">数据库已锁定</string>

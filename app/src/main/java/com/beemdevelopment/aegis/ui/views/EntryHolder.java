@@ -4,6 +4,7 @@ import android.animation.AnimatorSet;
 import android.animation.ArgbEvaluator;
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
+import android.content.res.ColorStateList;
 import android.graphics.Paint;
 import android.graphics.Rect;
 import android.os.Build;
@@ -242,6 +243,15 @@ public class EntryHolder extends RecyclerView.ViewHolder {
     }
 
     public void setShowProgress(boolean showProgress) {
+        setShowProgress(showProgress, true);
+    }
+
+    /**
+     * Shows or hides this entry's progress indicator. When ownRefreshLoop is false, the
+     * indicator animates but the code is refreshed by the list's shared refresher instead
+     * of a per-entry one (used when all entries share the same period).
+     */
+    public void setShowProgress(boolean showProgress, boolean ownRefreshLoop) {
         if (_entry.getInfo() instanceof HotpInfo) {
             showProgress = false;
         }
@@ -249,7 +259,12 @@ public class EntryHolder extends RecyclerView.ViewHolder {
         _progressBar.setVisibility(showProgress ? View.VISIBLE : View.GONE);
         if (showProgress) {
             _progressBar.setPeriod(((TotpInfo) _entry.getInfo()).getPeriod());
-            startRefreshLoop();
+            if (ownRefreshLoop) {
+                startRefreshLoop();
+            } else {
+                _refresher.stop();
+                _progressBar.start();
+            }
         } else {
             stopRefreshLoop();
         }
@@ -434,7 +449,7 @@ public class EntryHolder extends RecyclerView.ViewHolder {
         final int totalStateDuration = 7000;
         TotpInfo info = (TotpInfo) _entry.getInfo();
         if (info.getPeriod() * 1000 <= totalStateDuration) {
-            _profileCode.setTextColor(MaterialColors.getColor(_profileCode, androidx.appcompat.R.attr.colorError));
+            setExpiringColor(MaterialColors.getColor(_profileCode, androidx.appcompat.R.attr.colorError));
             return;
         }
 
@@ -443,10 +458,10 @@ public class EntryHolder extends RecyclerView.ViewHolder {
         if (durationScale == 0.0 || Build.VERSION.SDK_INT < Build.VERSION_CODES.O) {
             int color = MaterialColors.getColor(_profileCode, androidx.appcompat.R.attr.colorError);
             if (info.getMillisTillNextRotation() < totalStateDuration) {
-                _profileCode.setTextColor(color);
+                setExpiringColor(color);
             } else {
                 _expirationHandler.postDelayed(() -> {
-                    _profileCode.setTextColor(color);
+                    setExpiringColor(color);
                 }, info.getMillisTillNextRotation() - totalStateDuration);
             }
 
@@ -462,7 +477,7 @@ public class EntryHolder extends RecyclerView.ViewHolder {
         int colorTo = MaterialColors.getColor(_profileCode, androidx.appcompat.R.attr.colorError);
         ValueAnimator colorAnim = ValueAnimator.ofObject(new ArgbEvaluator(), colorFrom, colorTo);
         colorAnim.setDuration((long) (colorShiftDuration / durationScale));
-        colorAnim.addUpdateListener(a -> _profileCode.setTextColor((int) a.getAnimatedValue()));
+        colorAnim.addUpdateListener(a -> setExpiringColor((int) a.getAnimatedValue()));
 
         final int blinkDuration = 3000;
         ValueAnimator delayAnim2 = ValueAnimator.ofFloat(0f, 0f);
@@ -490,6 +505,15 @@ public class EntryHolder extends RecyclerView.ViewHolder {
         int colorTo = MaterialColors.getColor(_profileCode, R.attr.colorCode);
         _profileCode.setTextColor(colorTo);
         _profileCode.setAlpha(1f);
+        _progressBar.setProgressTintList(null);
+    }
+
+    /**
+     * Colors the code and the countdown ring alike while the code is about to expire.
+     */
+    private void setExpiringColor(int color) {
+        _profileCode.setTextColor(color);
+        _progressBar.setProgressTintList(ColorStateList.valueOf(color));
     }
 
     public void showIcon(boolean show) {
@@ -526,7 +550,10 @@ public class EntryHolder extends RecyclerView.ViewHolder {
     public void animateCopyText() {
         _copyAnimationHandler.removeCallbacksAndMessages(null);
 
-        Animation slideDownFadeIn = AnimationsHelper.loadScaledAnimation(itemView.getContext(), R.anim.slide_down_fade_in);
+        // In the normal view mode the "Copied" label shares its slot with the description,
+        // in the other modes it sits below it and slides up into place
+        Animation slideDownFadeIn = AnimationsHelper.loadScaledAnimation(itemView.getContext(),
+                _viewMode == ViewMode.NORMAL ? R.anim.slide_down_fade_in_inplace : R.anim.slide_down_fade_in);
         Animation slideDownFadeOut = AnimationsHelper.loadScaledAnimation(itemView.getContext(), R.anim.slide_down_fade_out);
         Animation fadeOut = AnimationsHelper.loadScaledAnimation(itemView.getContext(), R.anim.fade_out);
         Animation fadeIn = AnimationsHelper.loadScaledAnimation(itemView.getContext(), R.anim.fade_in);

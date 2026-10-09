@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Determinate countdown ring for TotpProgressBar. The view is rotated -90° so the arc starts at 12 o'clock. -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape
+            android:shape="ring"
+            android:innerRadiusRatio="2.8"
+            android:thicknessRatio="9"
+            android:useLevel="false">
+            <solid android:color="?attr/colorSurfaceContainerHighest" />
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <shape
+            android:shape="ring"
+            android:innerRadiusRatio="2.8"
+            android:thicknessRatio="9"
+            android:useLevel="true">
+            <solid android:color="?attr/colorProgressbar" />
+        </shape>
+    </item>
+</layer-list>
