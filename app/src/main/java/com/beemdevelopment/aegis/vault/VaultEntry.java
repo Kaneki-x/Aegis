@@ -1,5 +1,7 @@
 package com.beemdevelopment.aegis.vault;
 
+import androidx.annotation.Nullable;
+
 import com.beemdevelopment.aegis.otp.GoogleAuthInfo;
 import com.beemdevelopment.aegis.otp.OtpInfo;
 import com.beemdevelopment.aegis.otp.OtpInfoException;
@@ -25,6 +27,9 @@ public class VaultEntry extends UUIDMap.Value {
     private int _usageCount;
     private long _lastUsedTimestamp;
     private String _note = "";
+    // The website this entry's codes are for, used by the Cue apps to offer the code through
+    // the system's autofill on that site. Absent in vaults written by other apps.
+    private String _domain;
     private String _oldGroup;
     private Set<UUID> _groups = new TreeSet<>();
 
@@ -58,6 +63,9 @@ public class VaultEntry extends UUIDMap.Value {
             obj.put("issuer", _issuer);
             obj.put("note", _note);
             obj.put("favorite", _isFavorite);
+            if (_domain != null) {
+                obj.put("domain", _domain);
+            }
             VaultEntryIcon.toJson(_icon, obj);
             obj.put("info", _info.toJson());
 
@@ -90,6 +98,7 @@ public class VaultEntry extends UUIDMap.Value {
             entry.setIssuer(obj.getString("issuer"));
             entry.setNote(obj.optString("note", ""));
             entry.setIsFavorite(obj.optBoolean("favorite", false));
+            entry.setDomain(JsonUtils.optString(obj, "domain"));
 
             // If the entry contains a list of group UUID's, assume conversion from the
             // old group system has already taken place and ignore the old group field.
@@ -198,6 +207,18 @@ public class VaultEntry extends UUIDMap.Value {
 
     public void setLastUsedTimestamp(long lastUsedTimestamp) { _lastUsedTimestamp = lastUsedTimestamp; }
 
+    /**
+     * The website this entry belongs to, or null if none was set.
+     */
+    @Nullable
+    public String getDomain() {
+        return _domain;
+    }
+
+    public void setDomain(@Nullable String domain) {
+        _domain = domain == null || domain.trim().isEmpty() ? null : domain.trim();
+    }
+
     public void setNote(String note) {
         _note = note;
     }
@@ -235,6 +256,7 @@ public class VaultEntry extends UUIDMap.Value {
                 && getInfo().equals(entry.getInfo())
                 && Objects.equals(getIcon(), entry.getIcon())
                 && getNote().equals(entry.getNote())
+                && Objects.equals(getDomain(), entry.getDomain())
                 && isFavorite() == entry.isFavorite()
                 && getGroups().equals(entry.getGroups());
     }

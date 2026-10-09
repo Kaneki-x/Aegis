@@ -123,6 +123,7 @@ public class EditEntryActivity extends AegisActivity {
     private LinearLayout _textPinLayout;
     private TextInputEditText _textUsageCount;
     private TextInputEditText _textNote;
+    private TextInputEditText _textDomain;
     private TextView _textLastUsed;
 
     private AutoCompleteTextView _dropdownType;
@@ -213,6 +214,7 @@ public class EditEntryActivity extends AegisActivity {
         _textPinLayout = findViewById(R.id.layout_pin);
         _textUsageCount = findViewById(R.id.text_usage_count);
         _textNote = findViewById(R.id.text_note);
+        _textDomain = findViewById(R.id.text_domain);
         _textLastUsed = findViewById(R.id.text_last_used);
         _dropdownType = findViewById(R.id.dropdown_type);
         DropdownHelper.fillDropdown(this, _dropdownType, R.array.otp_types_array);
@@ -258,6 +260,7 @@ public class EditEntryActivity extends AegisActivity {
         _textName.setText(_origEntry.getName());
         _textIssuer.setText(_origEntry.getIssuer());
         _textNote.setText(_origEntry.getNote());
+        _textDomain.setText(_origEntry.getDomain());
 
         OtpInfo info = _origEntry.getInfo();
 
@@ -312,6 +315,7 @@ public class EditEntryActivity extends AegisActivity {
         _textGroup.addTextChangedListener(_validationListener);
         _textName.addTextChangedListener(_validationListener);
         _textNote.addTextChangedListener(_validationListener);
+        _textDomain.addTextChangedListener(_validationListener);
         _textSecret.addTextChangedListener(_validationListener);
         _dropdownType.addTextChangedListener(_validationListener);
         _dropdownAlgo.addTextChangedListener(_validationListener);
@@ -796,6 +800,7 @@ public class EditEntryActivity extends AegisActivity {
         entry.setIssuer(_textIssuer.getText().toString());
         entry.setName(_textName.getText().toString());
         entry.setNote(_textNote.getText().toString());
+        entry.setDomain(normalizeDomain(_textDomain.getText().toString()));
 
         if (_selectedGroups.isEmpty()) {
             entry.setGroups(new HashSet<>());
@@ -1021,5 +1026,26 @@ public class EditEntryActivity extends AegisActivity {
         public IconType getIconType() {
             return IconType.SVG;
         }
+    }
+
+    /**
+     * Keeps only the host of whatever the user typed, so "https://Login.example.com/2fa"
+     * becomes "login.example.com".
+     */
+    private static String normalizeDomain(String raw) {
+        String s = raw.trim().toLowerCase(Locale.ROOT);
+        int scheme = s.indexOf("://");
+        if (scheme >= 0) {
+            s = s.substring(scheme + 3);
+        }
+        int slash = s.indexOf('/');
+        if (slash >= 0) {
+            s = s.substring(0, slash);
+        }
+        int colon = s.indexOf(':');
+        if (colon >= 0) {
+            s = s.substring(0, colon);
+        }
+        return s;
     }
 }

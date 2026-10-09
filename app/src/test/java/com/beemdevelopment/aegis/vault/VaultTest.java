@@ -1,6 +1,12 @@
 package com.beemdevelopment.aegis.vault;
 
 import static org.junit.Assert.assertEquals;
+import org.json.JSONObject;
+import com.beemdevelopment.aegis.otp.TotpInfo;
+import com.beemdevelopment.aegis.otp.OtpInfoException;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertFalse;
 
 import com.beemdevelopment.aegis.util.IOUtils;
 
@@ -12,6 +18,26 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class VaultTest {
+    @Test
+    public void testDomainRoundTrip() throws VaultEntryException, OtpInfoException {
+        VaultEntry entry = new VaultEntry(new TotpInfo(new byte[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}), "Bob", "Example");
+        // no domain set: the key is absent so vaults stay byte-compatible with other apps
+        assertFalse(entry.toJson().has("domain"));
+        assertNull(VaultEntry.fromJson(entry.toJson()).getDomain());
+
+        entry.setDomain("login.example.com");
+        JSONObject json = entry.toJson();
+        assertEquals("login.example.com", json.optString("domain"));
+        VaultEntry copy = VaultEntry.fromJson(json);
+        assertEquals("login.example.com", copy.getDomain());
+        assertTrue(copy.equivalates(entry));
+
+        // blank input clears the field
+        copy.setDomain("  ");
+        assertNull(copy.getDomain());
+        assertFalse(copy.equivalates(entry));
+    }
+
     @Test
     public void testGroupConversion()
             throws IOException, VaultFileException, VaultException {

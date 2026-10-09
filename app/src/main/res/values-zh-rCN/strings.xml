@@ -611,4 +611,6 @@
     <string name="import_vault">导入 Cue 或 Aegis 数据库</string>
     <string name="app_description">Cue 是一款免费、安全、开源的两步验证应用</string>
     <string name="license_description">Cue 基于 GPLv3 许可证发布</string>
+    <string name="website">网站</string>
+    <string name="website_helper">这个验证码在哪个网站使用，例如 github.com。键盘和小组件会据此推荐。</string>
 </resources>
